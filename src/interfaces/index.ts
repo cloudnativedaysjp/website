@@ -8,3 +8,9 @@ export type User = {
   id: number
   name: string
 }
+
+export type Talk = {
+  id: number
+  title: string
+  abbr: string
+}

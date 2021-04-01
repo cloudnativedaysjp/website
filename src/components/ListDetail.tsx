@@ -1,15 +1,16 @@
 import * as React from 'react'
 
-import { User } from '../interfaces'
+import { Talk } from '../interfaces'
 
 type ListDetailProps = {
-  item: User
+  item: Talk
 }
 
-const ListDetail = ({ item: user }: ListDetailProps) => (
+const ListDetail = ({ item: talk }: ListDetailProps) => (
   <div>
-    <h1>Detail for {user.name}</h1>
-    <p>ID: {user.id}</p>
+    <h1>Detail for {talk.title}</h1>
+    <p>ID: {talk.id}</p>
+    <p>Event: {talk.abbr}</p>
   </div>
 )
 
