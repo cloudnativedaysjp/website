@@ -1,22 +1,27 @@
 {
-  "name": "with-typescript",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "type-check": "tsc"
-  },
-  "dependencies": {
-    "next": "latest",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  },
-  "devDependencies": {
-    "@types/node": "^12.12.21",
-    "@types/react": "^17.0.2",
-    "@types/react-dom": "^17.0.1",
-    "typescript": "4.0"
-  },
-  "license": "MIT"
+    "name": "with-typescript",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start",
+        "export": "next build && next export",
+        "type-check": "tsc",
+        "lint": "eslint '*/**/*.{js,ts}' --quiet --fix",
+        "test": "jest",
+        "test:update": "jest -u",
+        "test:coverage": "jest --collect-coverage"
+    },
+    "dependencies": {
+        "next": "latest",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
+    },
+    "devDependencies": {
+        "@types/node": "^12.12.21",
+        "@types/react": "^17.0.2",
+        "@types/react-dom": "^17.0.1",
+        "typescript": "4.0"
+    },
+    "license": "MIT"
 }
