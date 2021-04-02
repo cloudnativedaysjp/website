@@ -4,7 +4,7 @@ const IndexPage = () => (
   <Layout title="Home | Next.js + TypeScript Example">
     <h1>CloudNative Days</h1>
     <p>
-      だよ
+      だよだよ
     </p>
   </Layout>
 )
