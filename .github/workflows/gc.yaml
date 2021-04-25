@@ -1,0 +1,44 @@
+name: GC
+
+on:
+  pull_request:
+    branches:
+      - main
+    types: [closed]
+
+jobs:
+  gc:
+    runs-on: ubuntu-latest
+    if: ${{ ! contains(github.event.pull_request.title, '[dreamkast-releasebot]') }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set BRANCH
+        id: set-branchname
+        run: |
+          # for debug
+          echo REF ${{ github.ref }}
+          echo HEAD REF ${{ github.head_ref }}
+          echo SHA ${{ github.sha }}
+
+          # get branch name
+          if [ ! -e ${{ github.head_ref }} ]; then
+            BRANCH=${{ github.head_ref }}
+          else
+            BRANCH=$(echo "${{ github.ref }}" | sed -e 's|.*/\(.*\)|\1|')
+          fi
+
+          echo "::set-output name=BRANCH::${BRANCH}"
+
+      - name: Delete preview-app
+        uses: yinlinchen/amplify-preview-actions@v1.1
+        with:
+          branch_name: ${{ steps.set-branchname.outputs.BRANCH }}
+          amplify_command: delete
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AmplifyAppId: ${{ secrets.AMPLIFYAPPID }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          BackendEnvARN: ${{ secrets.BACKEND_ARN_DEV }}
+
