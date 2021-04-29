@@ -18,9 +18,10 @@ jobs:
         id: release-label
         if: ${{ github.event.pull_request.merged == true }}
 
-      - uses: actions-ecosystem/action-get-latest-tag@v1
+      - uses: WyriHaximus/github-action-get-previous-tag@v1
         id: get-latest-tag
-        if: ${{ steps.release-label.outputs.level != null }}
+        with:
+          fallback: v0.0.0
 
       - uses: actions-ecosystem/action-bump-semver@v1
         id: bump-semver
