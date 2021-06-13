@@ -6,10 +6,13 @@ module.exports = {
       colors: {
         lp2021: '#216A9C',
       },
+      height: {
+        section: '70rem',
+      },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('tailwindcss-textshadow')],
 }
