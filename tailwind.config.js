@@ -5,11 +5,16 @@ module.exports = {
     extend: {
       colors: {
         lp2021: '#216A9C',
+        blue: {
+          1000: '#172a54',
+        },
       },
       height: {
         section: '70rem',
+        140: '35rem',
       },
       width: {
+        140: '35rem',
         180: '45rem',
       },
     },

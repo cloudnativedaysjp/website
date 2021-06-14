@@ -15,7 +15,7 @@ export const Lp2021: React.FC = () => {
       <header></header>
       <section
         id="sec-1"
-        className="relative w-full h-section flex justify-center items-center"
+        className="relative h-section flex justify-center items-center"
       >
         <Image
           src="/images/lp2021/section0-bg.jpeg"
@@ -65,6 +65,30 @@ export const Lp2021: React.FC = () => {
           <p className="pt-8 text-lg">
             クラウドネイティブで、未来を共に創造しましょう。
           </p>
+        </div>
+      </section>
+      <section
+        id="sec-3"
+        className="relative h-140 flex justify-center items-center"
+      >
+        <Image
+          src="/images/lp2021/section2-bg.jpeg"
+          layout="fill"
+          objectFit="cover"
+        />
+        <div className="relative flex items-center justify-between flex-col w-180 h-24 bg-blue-1000 bg-opacity-50">
+          <h1 className="text-white text-3xl text-shadow-lg font-bold">
+            Upcoming events
+          </h1>
+          <span className="text-lg font-serif">
+            <a
+              href="https://event.cloudnativedays.jp/cndo2021"
+              className="text-green-400"
+            >
+              CloudNative Days Spring 2021 ONLINE
+            </a>
+            <span className="text-white"> @ Online, March 11-12, 2021</span>
+          </span>
         </div>
       </section>
       <footer className="text-center py-14 bg-lp2021">
