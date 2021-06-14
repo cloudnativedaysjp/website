@@ -14,7 +14,7 @@ export const Lp2021: React.FC = () => {
       </Head>
       <header></header>
       <section
-        id="sec-1"
+        id="sec-header-image"
         className="relative h-section flex justify-center items-center"
       >
         <Image
@@ -36,7 +36,7 @@ export const Lp2021: React.FC = () => {
           </a>
           <div className="pt-6">
             <a
-              href="#sec-2"
+              href="#sec-about"
               className="text-white w-14 h-14 flex justify-center items-center border-2 border-solid border-white rounded-full"
             >
               <KeyboardArrowDownIcon fontSize="large" />
@@ -45,7 +45,7 @@ export const Lp2021: React.FC = () => {
         </div>
       </section>
       <section
-        id="sec-2"
+        id="sec-about"
         className="bg-lp2021 flex justify-center items-center"
       >
         <div className="text-white w-180 py-48 text-center">
@@ -68,7 +68,7 @@ export const Lp2021: React.FC = () => {
         </div>
       </section>
       <section
-        id="sec-3"
+        id="sec-upcoming"
         className="relative h-140 flex justify-center items-center"
       >
         <Image
@@ -80,15 +80,132 @@ export const Lp2021: React.FC = () => {
           <h1 className="text-white text-3xl text-shadow-lg font-bold">
             Upcoming events
           </h1>
-          <span className="text-lg font-serif">
+          <p className="text-lg font-serif">
             <a
               href="https://event.cloudnativedays.jp/cndo2021"
-              className="text-green-400"
+              className="text-green-400 hover:text-green-600 transition-all"
             >
               CloudNative Days Spring 2021 ONLINE
             </a>
             <span className="text-white"> @ Online, March 11-12, 2021</span>
-          </span>
+          </p>
+        </div>
+      </section>
+      <section
+        id="sec-previous"
+        className="bg-lp2021 flex justify-center items-center"
+      >
+        <div className="text-white w-180 py-48 text-center">
+          <h1 className="text-white text-3xl font-bold">Previous events</h1>
+          <p className="pt-8 text-lg font-serif">See You Next Year!👋</p>
+          <p className="pt-8 text-lg font-serif">
+            <a
+              href="https://cndt2020.cloudnativedays.jp/"
+              className="text-green-400 hover:text-green-600 transition-all"
+            >
+              CloudNative Days Tokyo 2020
+            </a>
+            <span className="text-white"> @ Online, September 8-9, 2020</span>
+          </p>
+          <p className="pt-8 text-lg font-serif">
+            <a
+              href="https://cloudnativedays.jp/cndf2019/"
+              className="text-green-400 hover:text-green-600 transition-all"
+            >
+              CloudNative Days Fukuoka 2019
+            </a>
+            <span className="text-white"> @ ACROS Fukuoka, April 16, 2019</span>
+          </p>
+          <p className="pt-8 text-lg font-serif">
+            <a
+              href="https://cloudnativedays.jp/cndt2019/"
+              className="text-green-400 hover:text-green-600 transition-all"
+            >
+              CloudNative Days Tokyo 2019
+            </a>
+            <span className="text-white"> / </span>
+            <a
+              href="https://openstackdays.com/"
+              className="text-green-400 hover:text-green-600 transition-all"
+            >
+              OpenStack Days Tokyo 2019
+            </a>
+            <span className="text-white">
+              {' '}
+              @ Toranomon Hills Forum, July 22-23, 2019
+            </span>
+          </p>
+          <p className="pt-8 text-lg font-serif">
+            <a
+              href="https://cloudnativedays.jp/cndk2019/"
+              className="text-green-400 hover:text-green-600 transition-all"
+            >
+              CloudNative Days Kansai 2019
+            </a>
+            <span className="text-white">
+              {' '}
+              @ Congrès Convention Center, November 27-28, 2019
+            </span>
+          </p>
+        </div>
+      </section>
+      <section
+        id="sec-contact"
+        className="relative h-180 flex justify-center items-center"
+      >
+        <Image
+          src="/images/lp2021/section4-bg.jpeg"
+          layout="fill"
+          objectFit="cover"
+        />
+        <div className="relative flex items-center justify-between flex-col w-180 h-48 bg-blue-1000 bg-opacity-50">
+          <h1 className="text-white text-3xl text-shadow-lg font-bold">
+            Contact
+          </h1>
+          <p className="py-2 text-lg font-serif text-white">
+            You can contact us on the following social media!
+          </p>
+          <div className="flex justify-around w-80">
+            <a
+              className="w-36 h-12 border border-solid border-green-400 flex justify-center items-center hover:bg-green-400 text-green-400 hover:text-black transition-all"
+              href="https://twitter.com/cloudnativedays"
+            >
+              <p className="flex font-bold text-shadow-lg text-center text-xl">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="28px"
+                  style={{ fill: 'currentColor' }}
+                >
+                  <path d="M22,5.8a8.49,8.49,0,0,1-2.36.64,4.13,4.13,0,0,0,1.81-2.27,8.21,8.21,0,0,1-2.61,1,4.1,4.1,0,0,0-7,3.74A11.64,11.64,0,0,1,3.39,4.62a4.16,4.16,0,0,0-.55,2.07A4.09,4.09,0,0,0,4.66,10.1,4.05,4.05,0,0,1,2.8,9.59v.05a4.1,4.1,0,0,0,3.3,4A3.93,3.93,0,0,1,5,13.81a4.9,4.9,0,0,1-.77-.07,4.11,4.11,0,0,0,3.83,2.84A8.22,8.22,0,0,1,3,18.34a7.93,7.93,0,0,1-1-.06,11.57,11.57,0,0,0,6.29,1.85A11.59,11.59,0,0,0,20,8.45c0-.17,0-.35,0-.53A8.43,8.43,0,0,0,22,5.8Z" />
+                </svg>
+                <span className="pl-1">TWITTER</span>
+              </p>
+            </a>
+            <a
+              className="w-36 h-12 border border-solid border-green-400 flex justify-center items-center hover:bg-green-400 text-green-400 hover:text-black transition-all"
+              href="https://github.com/cloudnativedaysjp"
+            >
+              <p className="flex font-bold text-shadow-lg text-center text-xl">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="28px"
+                  style={{ fill: 'currentColor' }}
+                >
+                  <path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z" />
+                </svg>
+                <span className="pl-1">GITHUB</span>
+              </p>
+            </a>
+          </div>
+          <p className="text-lg font-serif">
+            <span className="text-white">Sponsor contact,</span>
+            <a
+              href="mailto:cndj-spo@impress.co.jp"
+              className="text-green-400 hover:text-green-600 transition-all"
+            >
+              cndj-spo@impress.co.jp
+            </a>
+          </p>
         </div>
       </section>
       <footer className="text-center py-14 bg-lp2021">
