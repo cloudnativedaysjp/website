@@ -1,13 +1,12 @@
 import React from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
 
 export const Lp2021: React.FC = () => {
   return (
     <div className="flex flex-col h-screen">
       <Head>
-        <title>{'CloudNative Days 2021'}</title>
+        <title>CloudNative Days 2021</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="shortcut icon" href="/images/lp2021/favicon.ico" />
@@ -15,10 +14,9 @@ export const Lp2021: React.FC = () => {
       <header className="w-screen h-24 bg-lp2021 flex items-center justify-center">
         <div className="w-5/6 flex items-center justify-between">
           <a className="pt-1" href="#page-top">
-            <Image
+            <img
+              className="w-80"
               src="/images/lp2021/cnd_logo_white_small.png"
-              width={300}
-              height={50.5}
             />
           </a>
           <div className="text-white text-md text-shadow-lg font-semibold w-72 flex justify-between">
@@ -34,10 +32,9 @@ export const Lp2021: React.FC = () => {
           id="page-top"
           className="relative h-section flex justify-center items-center"
         >
-          <Image
+          <img
+            className="object-cover absolute w-full h-section"
             src="/images/lp2021/section0-bg.jpeg"
-            layout="fill"
-            objectFit="cover"
           />
           <div className="relative flex items-center flex-col">
             <h1 className="pb-14 max-w-2xl text-center text-8xl font-bold text-white text-shadow-xl">
@@ -88,10 +85,9 @@ export const Lp2021: React.FC = () => {
           id="sec-upcoming-event"
           className="relative h-140 flex justify-center items-center"
         >
-          <Image
+          <img
+            className="object-cover absolute w-full h-140"
             src="/images/lp2021/section2-bg.jpeg"
-            layout="fill"
-            objectFit="cover"
           />
           <div className="relative flex items-center justify-between flex-col w-180 h-24 bg-blue-1000 bg-opacity-50">
             <h1 className="text-white text-3xl text-shadow-lg font-bold">
@@ -173,10 +169,9 @@ export const Lp2021: React.FC = () => {
           id="sec-contact"
           className="relative h-180 flex justify-center items-center"
         >
-          <Image
+          <img
+            className="object-cover absolute w-full h-180"
             src="/images/lp2021/section4-bg.jpeg"
-            layout="fill"
-            objectFit="cover"
           />
           <div className="relative flex items-center justify-between flex-col w-180 h-48 bg-blue-1000 bg-opacity-50">
             <h1 className="text-white text-3xl text-shadow-lg font-bold">
