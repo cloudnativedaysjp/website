@@ -1,12 +1,5 @@
-import Layout from '../components/Layout'
+import { Lp2021 } from '../components/page/Lp2021'
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>CloudNative Days</h1>
-    <p>
-      だよだよ
-    </p>
-  </Layout>
-)
+const IndexPage: React.FC = () => <Lp2021 />
 
 export default IndexPage
