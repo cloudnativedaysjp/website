@@ -42,10 +42,10 @@ export const Lp2021: React.FC = () => {
             </h1>
             <a
               className="w-72 h-14 border border-solid border-green-400 flex justify-center items-center hover:bg-green-400 text-green-400 hover:text-black transition-all"
-              href="https://event.cloudnativedays.jp/cndo2021"
+              href="https://event.cloudnativedays.jp/cicd2021"
             >
               <p className="font-bold text-shadow-lg text-center text-2xl">
-                ATTEND TO CNDO 2021
+                ATTEND TO CI/CD Conference 2021 by CloudNative Days
               </p>
             </a>
             <div className="pt-6">
@@ -95,12 +95,21 @@ export const Lp2021: React.FC = () => {
             </h1>
             <p className="text-lg font-serif">
               <a
-                href="https://event.cloudnativedays.jp/cndo2021"
+                href="https://event.cloudnativedays.jp/cicd2021"
                 className="text-green-400 hover:text-green-600 transition-all"
               >
-                CloudNative Days Spring 2021 ONLINE
+                CI/CD Conference 2021 by CloudNative Days
               </a>
-              <span className="text-white"> @ Online, March 11-12, 2021</span>
+              <span className="text-white"> @ Online, Sep 3, 2021</span>
+            </p>
+            <p className="text-lg font-serif">
+              <a
+                href="https://event.cloudnativedays.jp/cndt2021"
+                className="text-green-400 hover:text-green-600 transition-all"
+              >
+                CloudNative Days Tokyo 2021
+              </a>
+              <span className="text-white"> @ Online, November 4-5, 2021</span>
             </p>
           </div>
         </section>
@@ -111,6 +120,15 @@ export const Lp2021: React.FC = () => {
           <div className="text-white w-180 py-48 text-center">
             <h1 className="text-white text-3xl font-bold">Previous events</h1>
             <p className="pt-8 text-lg font-serif">See You Next Year!👋</p>
+            <p className="pt-8 text-lg font-serif">
+              <a
+                href="https://event.cloudnativedays.jp/cndo2021"
+                className="text-green-400 hover:text-green-600 transition-all"
+              >
+                CloudNative Days Spring 2021 ONLINE
+              </a>
+              <span className="text-white"> @ Online, Mar 11-12, 2021</span>
+            </p>
             <p className="pt-8 text-lg font-serif">
               <a
                 href="https://cndt2020.cloudnativedays.jp/"
