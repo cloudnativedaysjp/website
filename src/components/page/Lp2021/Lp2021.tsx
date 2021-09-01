@@ -44,7 +44,7 @@ export const Lp2021: React.FC = () => {
               className="w-72 h-14 border border-solid border-green-400 flex justify-center items-center hover:bg-green-400 text-green-400 hover:text-black transition-all"
               href="https://event.cloudnativedays.jp/cicd2021"
             >
-              <p className="font-bold text-shadow-lg text-center text-2xl">
+              <p className="font-bold text-shadow-lg text-center text-2xl pl-2 pr-2">
                 ATTEND TO CI/CD Conference 2021 by CloudNative Days
               </p>
             </a>
