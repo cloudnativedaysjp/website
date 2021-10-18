@@ -42,10 +42,10 @@ export const Lp2021: React.FC = () => {
             </h1>
             <a
               className="h-14 border border-solid border-green-400 flex justify-center items-center hover:bg-green-400 text-green-400 hover:text-black transition-all"
-              href="https://event.cloudnativedays.jp/cicd2021"
+              href="https://event.cloudnativedays.jp/cndt2021"
             >
               <p className="font-bold text-shadow-lg text-center text-2xl pl-2 pr-2">
-                ATTEND TO CI/CD Conference 2021 by CloudNative Days
+                ATTEND TO CloudNative Days Tokyo 2021
               </p>
             </a>
             <div className="pt-6">
@@ -95,15 +95,6 @@ export const Lp2021: React.FC = () => {
             </h1>
             <p className="text-lg font-serif">
               <a
-                href="https://event.cloudnativedays.jp/cicd2021"
-                className="text-green-400 hover:text-green-600 transition-all"
-              >
-                CI/CD Conference 2021 by CloudNative Days
-              </a>
-              <span className="text-white"> @ Online, Sep 3, 2021</span>
-            </p>
-            <p className="text-lg font-serif">
-              <a
                 href="https://event.cloudnativedays.jp/cndt2021"
                 className="text-green-400 hover:text-green-600 transition-all"
               >
@@ -120,6 +111,15 @@ export const Lp2021: React.FC = () => {
           <div className="text-white w-180 py-48 text-center">
             <h1 className="text-white text-3xl font-bold">Previous events</h1>
             <p className="pt-8 text-lg font-serif">See You Next Year!👋</p>
+            <p className="text-lg font-serif">
+              <a
+                href="https://event.cloudnativedays.jp/cicd2021"
+                className="text-green-400 hover:text-green-600 transition-all"
+              >
+                CI/CD Conference 2021 by CloudNative Days
+              </a>
+              <span className="text-white"> @ Online, Sep 3, 2021</span>
+            </p>
             <p className="pt-8 text-lg font-serif">
               <a
                 href="https://event.cloudnativedays.jp/cndo2021"
