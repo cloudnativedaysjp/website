@@ -9,7 +9,9 @@ on:
 jobs:
   amplify-for-dev:
     runs-on: ubuntu-latest
-    if: ${{ ! contains(github.event.pull_request.title, '[dreamkast-releasebot]') }}
+    if: >-
+      ! contains(github.event.pull_request.title, '[dreamkast-releasebot]') &&
+      ! contains(github.event.pull_request.labels.*.name, 'dependencies'
     steps:
       - uses: actions/checkout@v2
 
