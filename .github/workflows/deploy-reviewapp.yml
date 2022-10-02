@@ -72,3 +72,9 @@ jobs:
 
             Website
             https://${{ steps.set-branchname.outputs.BRANCH }}.${{ steps.default-domain.outputs.DOMAIN }}/
+
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+        echo "{{ github.event.pull_request.sender }}"
