@@ -1,4 +1,4 @@
-name: Deploy Amplify to development
+name: Deploy Amplify for Review App
 
 on:
   pull_request:
@@ -77,4 +77,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-        echo "{{ github.event.pull_request.sender }}"
+          echo {{ github.event.pull_request.sender }}
