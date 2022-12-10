@@ -1,23 +1,20 @@
 import React from 'react'
 import Head from 'next/head'
-import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
+// import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
 
-export const Lp2021: React.FC = () => {
+export const Lp: React.FC = () => {
   return (
     <div className="flex flex-col h-screen">
       <Head>
-        <title>CloudNative Days 2021</title>
+        <title>CloudNative Days</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="shortcut icon" href="/images/lp2021/favicon.ico" />
+        <link rel="shortcut icon" href="/images/lp/favicon.ico" />
       </Head>
-      <header className="w-screen h-24 bg-lp2021 flex items-center justify-center">
+      <header className="w-screen h-24 bg-lp flex items-center justify-center">
         <div className="w-5/6 flex items-center justify-between">
           <a className="pt-1" href="#page-top">
-            <img
-              className="w-80"
-              src="/images/lp2021/cnd_logo_white_small.png"
-            />
+            <img className="w-80" src="/images/lp/cnd_logo_white_small.png" />
           </a>
           <div className="text-white text-md text-shadow-lg font-semibold w-72 flex justify-between">
             <a href="#sec-about">About</a>
@@ -34,9 +31,10 @@ export const Lp2021: React.FC = () => {
         >
           <img
             className="object-cover absolute w-full h-section"
-            src="/images/lp2021/section0-bg.jpeg"
+            src="/images/lp/section0-bg.jpeg"
           />
           <div className="relative flex items-center flex-col">
+            {/* TODO: get contents from Dreamkast API 
             <h1 className="pb-14 max-w-2xl text-center text-8xl font-bold text-white text-shadow-xl">
               CloudNative Days will come in 2021!!
             </h1>
@@ -56,11 +54,12 @@ export const Lp2021: React.FC = () => {
                 <KeyboardArrowDownIcon fontSize="large" />
               </a>
             </div>
+            */}
           </div>
         </section>
         <section
           id="sec-about"
-          className="bg-lp2021 flex justify-center items-center"
+          className="bg-lp flex justify-center items-center"
         >
           <div className="text-white w-180 py-48 text-center">
             <h1 className="text-white text-3xl font-bold">
@@ -87,12 +86,13 @@ export const Lp2021: React.FC = () => {
         >
           <img
             className="object-cover absolute w-full h-140"
-            src="/images/lp2021/section2-bg.jpeg"
+            src="/images/lp/section2-bg.jpeg"
           />
           <div className="relative flex items-center justify-between flex-col w-180 h-24 bg-blue-1000 bg-opacity-50">
             <h1 className="text-white text-3xl text-shadow-lg font-bold">
               Upcoming events
             </h1>
+            {/* TODO: get contents from Dreamkast API 
             <p className="text-lg font-serif">
               <a
                 href="https://event.cloudnativedays.jp/cndt2021"
@@ -102,15 +102,17 @@ export const Lp2021: React.FC = () => {
               </a>
               <span className="text-white"> @ Online, November 4-5, 2021</span>
             </p>
+            */}
           </div>
         </section>
         <section
           id="sec-previous-event"
-          className="bg-lp2021 flex justify-center items-center"
+          className="bg-lp flex justify-center items-center"
         >
           <div className="text-white w-180 py-48 text-center">
             <h1 className="text-white text-3xl font-bold">Previous events</h1>
             <p className="pt-8 text-lg font-serif">See You Next Year!👋</p>
+            {/* TODO: get contents from Dreamkast API 
             <p className="text-lg font-serif">
               <a
                 href="https://event.cloudnativedays.jp/cicd2021"
@@ -181,6 +183,7 @@ export const Lp2021: React.FC = () => {
                 @ Congrès Convention Center, November 27-28, 2019
               </span>
             </p>
+          */}
           </div>
         </section>
         <section
@@ -189,7 +192,7 @@ export const Lp2021: React.FC = () => {
         >
           <img
             className="object-cover absolute w-full h-180"
-            src="/images/lp2021/section4-bg.jpeg"
+            src="/images/lp/section4-bg.jpeg"
           />
           <div className="relative flex items-center justify-between flex-col w-180 h-48 bg-blue-1000 bg-opacity-50">
             <h1 className="text-white text-3xl text-shadow-lg font-bold">
@@ -241,7 +244,7 @@ export const Lp2021: React.FC = () => {
             </p>
           </div>
         </section>
-        <footer className="text-center font-serif py-14 bg-lp2021">
+        <footer className="text-center font-serif py-14 bg-lp">
           <p className="text-white">
             Copyright © CloudNative Days Committee (Secretariat by Impress
             Corporation)
