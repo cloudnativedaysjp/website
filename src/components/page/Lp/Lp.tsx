@@ -1,8 +1,54 @@
-import React from 'react'
+import React, { useState, useEffect, useMemo } from 'react'
 import Head from 'next/head'
-// import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
+
+import { dkClient } from '../../../dreamkast/client'
+import { Conference } from '../../../dreamkast/types'
 
 export const Lp: React.FC = () => {
+  const now = new Date()
+  const [conferences, setConferences] = useState<Conference[]>([])
+
+  const listConferences = async () => {
+    const conferencesList = await dkClient.List()
+    setConferences(conferencesList)
+  }
+
+  useEffect(() => {
+    listConferences()
+  }, [])
+
+  const archivedConferences = (): Conference[] => {
+    return useMemo<Conference[]>(
+      () =>
+        conferences
+          .filter((c: Conference) => c.status === 'archived')
+          .reverse(),
+      [conferences],
+    )
+  }
+
+  const registeredConferences = (): Conference[] => {
+    return useMemo<Conference[]>(
+      () =>
+        conferences
+          .filter((c: Conference) => c.status === 'registered')
+          .reverse(),
+      [conferences],
+    )
+  }
+
+  const conferenceDate = (c: Conference): string => {
+    return useMemo<string>(
+      () =>
+        c.conferenceDays
+          ?.filter((e) => !e.internal)
+          .map((e) => e.date)
+          .join(','),
+      [conferences],
+    )
+  }
+
   return (
     <div className="flex flex-col h-screen">
       <Head>
@@ -34,18 +80,19 @@ export const Lp: React.FC = () => {
             src="/images/lp/section0-bg.jpeg"
           />
           <div className="relative flex items-center flex-col">
-            {/* TODO: get contents from Dreamkast API 
             <h1 className="pb-14 max-w-2xl text-center text-8xl font-bold text-white text-shadow-xl">
-              CloudNative Days will come in 2021!!
+              CloudNative Days will come in {now.getFullYear()}!!
             </h1>
-            <a
-              className="h-14 border border-solid border-green-400 flex justify-center items-center hover:bg-green-400 text-green-400 hover:text-black transition-all"
-              href="https://event.cloudnativedays.jp/cndt2021"
-            >
-              <p className="font-bold text-shadow-lg text-center text-2xl pl-2 pr-2">
-                ATTEND TO CloudNative Days Tokyo 2021
-              </p>
-            </a>
+            {registeredConferences()?.map((c: Conference) => (
+              <a
+                className="h-14 border border-solid border-green-400 flex justify-center items-center hover:bg-green-400 text-green-400 hover:text-black transition-all"
+                href={'https://event.cloudnativedays.jp/' + c.abbr}
+              >
+                <p className="font-bold text-shadow-lg text-center text-2xl pl-2 pr-2">
+                  ATTEND TO {c.name}
+                </p>
+              </a>
+            ))}
             <div className="pt-6">
               <a
                 href="#sec-about"
@@ -54,7 +101,6 @@ export const Lp: React.FC = () => {
                 <KeyboardArrowDownIcon fontSize="large" />
               </a>
             </div>
-            */}
           </div>
         </section>
         <section
@@ -92,17 +138,17 @@ export const Lp: React.FC = () => {
             <h1 className="text-white text-3xl text-shadow-lg font-bold">
               Upcoming events
             </h1>
-            {/* TODO: get contents from Dreamkast API 
-            <p className="text-lg font-serif">
-              <a
-                href="https://event.cloudnativedays.jp/cndt2021"
-                className="text-green-400 hover:text-green-600 transition-all"
-              >
-                CloudNative Days Tokyo 2021
-              </a>
-              <span className="text-white"> @ Online, November 4-5, 2021</span>
-            </p>
-            */}
+            {registeredConferences()?.map((c: Conference) => (
+              <p className="pt-8 text-lg font-serif">
+                <a
+                  href={'https://event.cloudnativedays.jp/' + c.abbr}
+                  className="text-green-400 hover:text-green-600 transition-all"
+                >
+                  {c.name}
+                </a>
+                <span className="text-white"> @{conferenceDate(c)} </span>
+              </p>
+            ))}
           </div>
         </section>
         <section
@@ -112,34 +158,18 @@ export const Lp: React.FC = () => {
           <div className="text-white w-180 py-48 text-center">
             <h1 className="text-white text-3xl font-bold">Previous events</h1>
             <p className="pt-8 text-lg font-serif">See You Next Year!👋</p>
-            {/* TODO: get contents from Dreamkast API 
-            <p className="text-lg font-serif">
-              <a
-                href="https://event.cloudnativedays.jp/cicd2021"
-                className="text-green-400 hover:text-green-600 transition-all"
-              >
-                CI/CD Conference 2021 by CloudNative Days
-              </a>
-              <span className="text-white"> @ Online, Sep 3, 2021</span>
-            </p>
-            <p className="pt-8 text-lg font-serif">
-              <a
-                href="https://event.cloudnativedays.jp/cndo2021"
-                className="text-green-400 hover:text-green-600 transition-all"
-              >
-                CloudNative Days Spring 2021 ONLINE
-              </a>
-              <span className="text-white"> @ Online, Mar 11-12, 2021</span>
-            </p>
-            <p className="pt-8 text-lg font-serif">
-              <a
-                href="https://cndt2020.cloudnativedays.jp/"
-                className="text-green-400 hover:text-green-600 transition-all"
-              >
-                CloudNative Days Tokyo 2020
-              </a>
-              <span className="text-white"> @ Online, September 8-9, 2020</span>
-            </p>
+            {archivedConferences()?.map((c: Conference) => (
+              <p className="pt-8 text-lg font-serif">
+                <a
+                  href={'https://event.cloudnativedays.jp/' + c.abbr}
+                  className="text-green-400 hover:text-green-600 transition-all"
+                >
+                  {c.name}
+                </a>
+                <span className="text-white"> @{conferenceDate(c)}</span>
+              </p>
+            ))}
+            {/* Dreamkast で配信していないイベントのリンクはハードコード */}
             <p className="pt-8 text-lg font-serif">
               <a
                 href="https://cloudnativedays.jp/cndf2019/"
@@ -183,7 +213,6 @@ export const Lp: React.FC = () => {
                 @ Congrès Convention Center, November 27-28, 2019
               </span>
             </p>
-          */}
           </div>
         </section>
         <section
