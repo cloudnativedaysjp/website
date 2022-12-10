@@ -1,1 +1,0 @@
-export { Lp } from './Lp'
