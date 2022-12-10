@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react'
-import Head from 'next/head'
 import type { NextPage, GetStaticProps } from 'next'
+import Head from 'next/head'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
 
 import { dkClient } from '../dreamkast/client'
@@ -50,7 +50,11 @@ const IndexPage: NextPage<Props> = (props) => {
       <header className="w-screen h-24 bg-lp flex items-center justify-center">
         <div className="w-5/6 flex items-center justify-between">
           <a className="pt-1" href="#page-top">
-            <img className="w-80" src="/images/lp/cnd_logo_white_small.png" />
+            <img
+              className="w-80"
+              alt="cnd_logo_white_small"
+              src="/images/lp/cnd_logo_white_small.png"
+            />
           </a>
           <div className="text-white text-md text-shadow-lg font-semibold w-72 flex justify-between">
             <a href="#sec-about">About</a>
@@ -67,6 +71,7 @@ const IndexPage: NextPage<Props> = (props) => {
         >
           <img
             className="object-cover absolute w-full h-section"
+            alt="section0"
             src="/images/lp/section0-bg.jpeg"
           />
           <div className="relative flex items-center flex-col">
@@ -75,6 +80,7 @@ const IndexPage: NextPage<Props> = (props) => {
             </h1>
             {registeredConferences?.map((c: Conference) => (
               <a
+                key={c.id}
                 className="h-14 border border-solid border-green-400 flex justify-center items-center hover:bg-green-400 text-green-400 hover:text-black transition-all"
                 href={'https://event.cloudnativedays.jp/' + c.abbr}
               >
@@ -122,6 +128,7 @@ const IndexPage: NextPage<Props> = (props) => {
         >
           <img
             className="object-cover absolute w-full h-140"
+            alt="section2"
             src="/images/lp/section2-bg.jpeg"
           />
           <div className="relative flex items-center justify-between flex-col w-180 h-24 bg-blue-1000 bg-opacity-50">
@@ -129,7 +136,7 @@ const IndexPage: NextPage<Props> = (props) => {
               Upcoming events
             </h1>
             {registeredConferences?.map((c: Conference) => (
-              <p className="pt-8 text-lg font-serif">
+              <p key={c.id} className="pt-8 text-lg font-serif">
                 <a
                   href={'https://event.cloudnativedays.jp/' + c.abbr}
                   className="text-green-400 hover:text-green-600 transition-all"
@@ -149,7 +156,7 @@ const IndexPage: NextPage<Props> = (props) => {
             <h1 className="text-white text-3xl font-bold">Previous events</h1>
             <p className="pt-8 text-lg font-serif">See You Next Year!👋</p>
             {archivedConferences?.map((c: Conference) => (
-              <p className="pt-8 text-lg font-serif">
+              <p key={c.id} className="pt-8 text-lg font-serif">
                 <a
                   href={'https://event.cloudnativedays.jp/' + c.abbr}
                   className="text-green-400 hover:text-green-600 transition-all"
@@ -211,6 +218,7 @@ const IndexPage: NextPage<Props> = (props) => {
         >
           <img
             className="object-cover absolute w-full h-180"
+            alt="section4"
             src="/images/lp/section4-bg.jpeg"
           />
           <div className="relative flex items-center justify-between flex-col w-180 h-48 bg-blue-1000 bg-opacity-50">
