@@ -1,47 +1,23 @@
 import React from 'react'
 import Head from 'next/head'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
-import {
-  useGetApiV1EventsQuery,
-  Event,
-} from '../../../store/dreamkast-api.generated'
 
-export const Lp: React.FC = () => {
-  const query = useGetApiV1EventsQuery()
-
-  const getAchivedEvents = () => {
-    if (!query.data) {
-      return null
-    }
-    return query.data.filter((e) => e.status === 'archived').reverse()
-  }
-
-  const getRegisteredEvents = () => {
-    if (!query.data) {
-      return null
-    }
-    return query.data.filter((e) => e.status === 'registered').reverse()
-  }
-
-  const getEventDate = (event: Event) => {
-    return event.conferenceDays
-      ?.filter((e) => !e.internal)
-      .map((e) => e.date)
-      .join(',')
-  }
-
+export const Lp2021: React.FC = () => {
   return (
     <div className="flex flex-col h-screen">
       <Head>
-        <title>CloudNative Days</title>
+        <title>CloudNative Days 2021</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="shortcut icon" href="/images/lp/favicon.ico" />
+        <link rel="shortcut icon" href="/images/lp2021/favicon.ico" />
       </Head>
       <header className="w-screen h-24 bg-lp2021 flex items-center justify-center">
         <div className="w-5/6 flex items-center justify-between">
           <a className="pt-1" href="#page-top">
-            <img className="w-80" src="/images/lp/cnd_logo_white_small.png" />
+            <img
+              className="w-80"
+              src="/images/lp2021/cnd_logo_white_small.png"
+            />
           </a>
           <div className="text-white text-md text-shadow-lg font-semibold w-72 flex justify-between">
             <a href="#sec-about">About</a>
@@ -58,12 +34,20 @@ export const Lp: React.FC = () => {
         >
           <img
             className="object-cover absolute w-full h-section"
-            src="/images/lp/section0-bg.jpeg"
+            src="/images/lp2021/section0-bg.jpeg"
           />
           <div className="relative flex items-center flex-col">
             <h1 className="pb-14 max-w-2xl text-center text-8xl font-bold text-white text-shadow-xl">
               CloudNative Days will come in 2021!!
             </h1>
+            <a
+              className="h-14 border border-solid border-green-400 flex justify-center items-center hover:bg-green-400 text-green-400 hover:text-black transition-all"
+              href="https://event.cloudnativedays.jp/cndt2021"
+            >
+              <p className="font-bold text-shadow-lg text-center text-2xl pl-2 pr-2">
+                ATTEND TO CloudNative Days Tokyo 2021
+              </p>
+            </a>
             <div className="pt-6">
               <a
                 href="#sec-about"
@@ -103,23 +87,21 @@ export const Lp: React.FC = () => {
         >
           <img
             className="object-cover absolute w-full h-140"
-            src="/images/lp/section2-bg.jpeg"
+            src="/images/lp2021/section2-bg.jpeg"
           />
           <div className="relative flex items-center justify-between flex-col w-180 h-24 bg-blue-1000 bg-opacity-50">
             <h1 className="text-white text-3xl text-shadow-lg font-bold">
               Upcoming events
             </h1>
-            {getRegisteredEvents()?.map((e) => (
-              <p className="pt-8 text-lg font-serif">
-                <a
-                  href={'https://event.cloudnativedays.jp/' + e.abbr}
-                  className="text-green-400 hover:text-green-600 transition-all"
-                >
-                  {e.name}
-                </a>
-                <span className="text-white"> @{getEventDate(e)} </span>
-              </p>
-            ))}
+            <p className="text-lg font-serif">
+              <a
+                href="https://event.cloudnativedays.jp/cndt2021"
+                className="text-green-400 hover:text-green-600 transition-all"
+              >
+                CloudNative Days Tokyo 2021
+              </a>
+              <span className="text-white"> @ Online, November 4-5, 2021</span>
+            </p>
           </div>
         </section>
         <section
@@ -129,18 +111,33 @@ export const Lp: React.FC = () => {
           <div className="text-white w-180 py-48 text-center">
             <h1 className="text-white text-3xl font-bold">Previous events</h1>
             <p className="pt-8 text-lg font-serif">See You Next Year!👋</p>
-            {getAchivedEvents()?.map((e) => (
-              <p className="pt-8 text-lg font-serif">
-                <a
-                  href={'https://event.cloudnativedays.jp/' + e.abbr}
-                  className="text-green-400 hover:text-green-600 transition-all"
-                >
-                  {e.name}
-                </a>
-                <span className="text-white"> @{getEventDate(e)}</span>
-              </p>
-            ))}
-            {/* Dreamkast で配信していないイベントのリンクはハードコード */}
+            <p className="text-lg font-serif">
+              <a
+                href="https://event.cloudnativedays.jp/cicd2021"
+                className="text-green-400 hover:text-green-600 transition-all"
+              >
+                CI/CD Conference 2021 by CloudNative Days
+              </a>
+              <span className="text-white"> @ Online, Sep 3, 2021</span>
+            </p>
+            <p className="pt-8 text-lg font-serif">
+              <a
+                href="https://event.cloudnativedays.jp/cndo2021"
+                className="text-green-400 hover:text-green-600 transition-all"
+              >
+                CloudNative Days Spring 2021 ONLINE
+              </a>
+              <span className="text-white"> @ Online, Mar 11-12, 2021</span>
+            </p>
+            <p className="pt-8 text-lg font-serif">
+              <a
+                href="https://cndt2020.cloudnativedays.jp/"
+                className="text-green-400 hover:text-green-600 transition-all"
+              >
+                CloudNative Days Tokyo 2020
+              </a>
+              <span className="text-white"> @ Online, September 8-9, 2020</span>
+            </p>
             <p className="pt-8 text-lg font-serif">
               <a
                 href="https://cloudnativedays.jp/cndf2019/"
@@ -192,7 +189,7 @@ export const Lp: React.FC = () => {
         >
           <img
             className="object-cover absolute w-full h-180"
-            src="/images/lp/section4-bg.jpeg"
+            src="/images/lp2021/section4-bg.jpeg"
           />
           <div className="relative flex items-center justify-between flex-col w-180 h-48 bg-blue-1000 bg-opacity-50">
             <h1 className="text-white text-3xl text-shadow-lg font-bold">
