@@ -21,14 +21,15 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 }
 
 const IndexPage: NextPage<Props> = (props) => {
-  const now = new Date()
   const conferences = props.conferences
 
   const archivedConferences = (): Conference[] => {
     return useMemo<Conference[]>(
       () =>
         conferences
-          .filter((c: Conference) => c.status === 'archived')
+          .filter(
+            (c: Conference) => c.status === 'closed' || c.status === 'archived',
+          )
           .reverse(),
       [conferences],
     )
@@ -87,7 +88,7 @@ const IndexPage: NextPage<Props> = (props) => {
           />
           <div className="relative flex items-center flex-col">
             <h1 className="pb-14 max-w-2xl text-center text-8xl font-bold text-white text-shadow-xl">
-              CloudNative Days will come in {now.getFullYear()}!!
+              CloudNative Days will come!!
             </h1>
             {registeredConferences()?.map((c: Conference) => (
               <a
