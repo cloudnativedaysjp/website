@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React, { useCallback } from 'react'
 import Head from 'next/head'
 import type { NextPage, GetStaticProps } from 'next'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
@@ -7,54 +7,37 @@ import { dkClient } from '../dreamkast/client'
 import { Conference } from '../dreamkast/types'
 
 type Props = {
-  conferences: Conference[]
+  archivedConferences: Conference[]
+  registeredConferences: Conference[]
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const conferences = await dkClient.List()
-
   return {
     props: {
-      conferences: conferences,
+      archivedConferences: conferences
+        .filter((c: Conference) => c.status === 'archived')
+        .reverse(),
+      registeredConferences: conferences
+        .filter((c: Conference) => c.status === 'registered')
+        .reverse(),
     },
+    revalidate: 60,
   }
 }
 
 const IndexPage: NextPage<Props> = (props) => {
-  const conferences = props.conferences
+  const archivedConferences = props.archivedConferences
+  const registeredConferences = props.registeredConferences
 
-  const archivedConferences = (): Conference[] => {
-    return useMemo<Conference[]>(
-      () =>
-        conferences
-          .filter(
-            (c: Conference) => c.status === 'closed' || c.status === 'archived',
-          )
-          .reverse(),
-      [conferences],
-    )
-  }
-
-  const registeredConferences = (): Conference[] => {
-    return useMemo<Conference[]>(
-      () =>
-        conferences
-          .filter((c: Conference) => c.status === 'registered')
-          .reverse(),
-      [conferences],
-    )
-  }
-
-  const conferenceDate = (c: Conference): string => {
-    return useMemo<string>(
-      () =>
-        c.conferenceDays
-          ?.filter((e) => !e.internal)
-          .map((e) => e.date)
-          .join(','),
-      [conferences],
-    )
-  }
+  const conferenceDate = useCallback(
+    (c: Conference): string =>
+      c.conferenceDays
+        ?.filter((e) => !e.internal)
+        .map((e) => e.date)
+        .join(','),
+    [],
+  )
 
   return (
     <div className="flex flex-col h-screen">
@@ -90,7 +73,7 @@ const IndexPage: NextPage<Props> = (props) => {
             <h1 className="pb-14 max-w-2xl text-center text-8xl font-bold text-white text-shadow-xl">
               CloudNative Days will come!!
             </h1>
-            {registeredConferences()?.map((c: Conference) => (
+            {registeredConferences?.map((c: Conference) => (
               <a
                 className="h-14 border border-solid border-green-400 flex justify-center items-center hover:bg-green-400 text-green-400 hover:text-black transition-all"
                 href={'https://event.cloudnativedays.jp/' + c.abbr}
@@ -145,7 +128,7 @@ const IndexPage: NextPage<Props> = (props) => {
             <h1 className="text-white text-3xl text-shadow-lg font-bold">
               Upcoming events
             </h1>
-            {registeredConferences()?.map((c: Conference) => (
+            {registeredConferences?.map((c: Conference) => (
               <p className="pt-8 text-lg font-serif">
                 <a
                   href={'https://event.cloudnativedays.jp/' + c.abbr}
@@ -165,7 +148,7 @@ const IndexPage: NextPage<Props> = (props) => {
           <div className="text-white w-180 py-48 text-center">
             <h1 className="text-white text-3xl font-bold">Previous events</h1>
             <p className="pt-8 text-lg font-serif">See You Next Year!👋</p>
-            {archivedConferences()?.map((c: Conference) => (
+            {archivedConferences?.map((c: Conference) => (
               <p className="pt-8 text-lg font-serif">
                 <a
                   href={'https://event.cloudnativedays.jp/' + c.abbr}
