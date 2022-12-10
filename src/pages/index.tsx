@@ -1,22 +1,28 @@
-import React, { useState, useEffect, useMemo } from 'react'
+import React, { useMemo } from 'react'
 import Head from 'next/head'
+import type { NextPage, GetStaticProps } from 'next'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
 
 import { dkClient } from '../dreamkast/client'
 import { Conference } from '../dreamkast/types'
 
-const IndexPage: React.FC = () => {
-  const now = new Date()
-  const [conferences, setConferences] = useState<Conference[]>([])
+type Props = {
+  conferences: Conference[]
+}
 
-  const listConferences = async () => {
-    const conferencesList = await dkClient.List()
-    setConferences(conferencesList)
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const conferences = await dkClient.List()
+
+  return {
+    props: {
+      conferences: conferences,
+    },
   }
+}
 
-  useEffect(() => {
-    listConferences()
-  }, [])
+const IndexPage: NextPage<Props> = (props) => {
+  const now = new Date()
+  const conferences = props.conferences
 
   const archivedConferences = (): Conference[] => {
     return useMemo<Conference[]>(
