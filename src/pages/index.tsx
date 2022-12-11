@@ -11,36 +11,38 @@ type Props = {
   registeredConferences: Conference[]
 }
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
-  let conferences: Conference[]
-  try {
-    conferences = await dkClient.List()
-  } catch (err) {
-    return {
-      props: {
-        archivedConferences: [],
-        registeredConferences: [],
-      },
-      revalidate: 60,
-    }
-  }
-
-  return {
-    props: {
-      archivedConferences: conferences
-        .filter((c: Conference) => c.status === 'archived')
-        .reverse(),
-      registeredConferences: conferences
-        .filter((c: Conference) => c.status === 'registered')
-        .reverse(),
-    },
-    revalidate: 60,
-  }
-}
+// export const getStaticProps: GetStaticProps<Props> = async () => {
+//   let conferences: Conference[]
+//   try {
+//     conferences = await dkClient.List()
+//   } catch (err) {
+//     return {
+//       props: {
+//         archivedConferences: [],
+//         registeredConferences: [],
+//       },
+//       revalidate: 60,
+//     }
+//   }
+//
+//   return {
+//     props: {
+//       archivedConferences: conferences
+//         .filter((c: Conference) => c.status === 'archived')
+//         .reverse(),
+//       registeredConferences: conferences
+//         .filter((c: Conference) => c.status === 'registered')
+//         .reverse(),
+//     },
+//     revalidate: 60,
+//   }
+// }
 
 const IndexPage: NextPage<Props> = (props) => {
-  const archivedConferences = props.archivedConferences
-  const registeredConferences = props.registeredConferences
+  // const archivedConferences = props.archivedConferences
+  // const registeredConferences = props.registeredConferences
+  const archivedConferences: Conference[] = []
+  const registeredConferences: Conference[] = []
 
   const conferenceDate = useCallback(
     (c: Conference): string =>
