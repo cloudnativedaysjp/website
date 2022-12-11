@@ -12,7 +12,19 @@ type Props = {
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const conferences = await dkClient.List()
+  let conferences: Conference[]
+  try {
+    conferences = await dkClient.List()
+  } catch (err) {
+    return {
+      props: {
+        archivedConferences: [],
+        registeredConferences: [],
+      },
+      revalidate: 60,
+    }
+  }
+
   return {
     props: {
       archivedConferences: conferences
