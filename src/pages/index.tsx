@@ -44,14 +44,11 @@ const IndexPage: NextPage<Props> = (props) => {
   const archivedConferences: Conference[] = []
   const registeredConferences: Conference[] = []
 
-  const conferenceDate = useCallback(
-    (c: Conference): string =>
-      c.conferenceDays
-        ?.filter((e) => !e.internal)
-        .map((e) => e.date)
-        .join(','),
-    [],
-  )
+  const conferenceDate = (c: Conference): string =>
+    c.conferenceDays
+      ?.filter((e) => !e.internal)
+      .map((e) => e.date)
+      .join(',')
 
   return (
     <div className="flex flex-col h-screen">
