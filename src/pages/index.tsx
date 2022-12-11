@@ -16,7 +16,9 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   return {
     props: {
       archivedConferences: conferences
-        .filter((c: Conference) => c.status === 'archived')
+        .filter(
+          (c: Conference) => c.status === 'archived' || c.status == 'closed',
+        )
         .reverse(),
       registeredConferences: conferences
         .filter((c: Conference) => c.status === 'registered')
