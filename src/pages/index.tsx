@@ -24,7 +24,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
         .filter((c: Conference) => c.status === 'registered')
         .reverse(),
     },
-    revalidate: 60,
+    revalidate: 3600,
   }
 }
 
