@@ -1,20 +1,20 @@
 module.exports = {
   root: true,
   env: {
-    es6: true,
     node: true,
+    es2022: true,
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 2018,
-    tsconfigRootDir: __dirname,
+    project: './tsconfig.json',
+    ecmaVersion: 2022,
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'eslint-plugin-prettier'],
   extends: [
     'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    'plugin:prettier/recommended',
+    'eslint-config-prettier',
+    'next/core-web-vitals',
   ],
   rules: {
     'prettier/prettier': [
@@ -28,5 +28,6 @@ module.exports = {
         tabWidth: 2,
       },
     ],
+    '@next/next/no-img-element': ['off'],
   },
 }

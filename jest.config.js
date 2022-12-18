@@ -2,13 +2,12 @@ module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'node',
   roots: ['<rootDir>/src'],
-  setupFilesAfterEnv: ['<rootDir>/test/setupTests.ts'],
+  //setupFilesAfterEnv: ['<rootDir>/test/setupTests.ts'],
   testPathIgnorePatterns: [
     '<rootDir>/.next/',
     '<rootDir>/node_modules/',
     '/client-axios/',
   ],
-  snapshotSerializers: ['enzyme-to-json/serializer'],
   testMatch: [
     '**/__tests__/**/*.+(ts|tsx|js)',
     '**/?(*.)+(spec|test).+(ts|tsx|js)',
@@ -26,4 +25,5 @@ module.exports = {
       tsconfig: '<rootDir>/test/tsconfig.jest.json',
     },
   },
+  passWithNoTests: true,
 }
