@@ -9,9 +9,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
           generate_release_notes: true
+
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: "Merge from main to release"
+        run: |
+          git switch release
+          git merge origin/main
+          git push origin release
