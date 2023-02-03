@@ -1,0 +1,27 @@
+---
+import { Conferences } from "../data/conferences";
+import Layout from "../layouts/Layout.astro";
+export async function getStaticPaths() {
+	return Conferences.map((conference) => {
+		return { params: { abbr: conference.abbr } }
+	})
+}
+const { abbr } = Astro.params;
+const conference = Conferences.find((conference) => conference.abbr == abbr )
+const conferenceExists = conference != undefined
+
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		{conferenceExists &&
+			<div>
+	  	      <h1>{conference.name}</h1>
+	  	      <h2>{conference.theme}</h2>
+	  	      <p>{conference.conferenceDays.filter((day) => !day.internal).map((day) => day.date).join(", ")}</p>
+	  	      <h2>About</h2>
+	  	      <p>{conference.about}</p>
+			</div>
+		}
+	</main>
+</Layout>
