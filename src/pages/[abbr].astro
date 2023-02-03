@@ -1,5 +1,6 @@
 ---
 import { Conferences } from "../data/conferences";
+import { talkMap } from "../data/talks";
 import Layout from "../layouts/Layout.astro";
 export async function getStaticPaths() {
 	return Conferences.map((conference) => {
@@ -9,6 +10,7 @@ export async function getStaticPaths() {
 const { abbr } = Astro.params;
 const conference = Conferences.find((conference) => conference.abbr == abbr )
 const conferenceExists = conference != undefined
+const talks = talkMap.get(abbr||"")
 
 ---
 
@@ -21,6 +23,11 @@ const conferenceExists = conference != undefined
 	  	      <p>{conference.conferenceDays.filter((day) => !day.internal).map((day) => day.date).join(", ")}</p>
 	  	      <h2>About</h2>
 	  	      <p>{conference.about}</p>
+			  <ul>
+			 	 {talks?.map((talk) => {
+					return <li>{talk.title}</li>
+				  })}
+				</ul>
 			</div>
 		}
 	</main>
