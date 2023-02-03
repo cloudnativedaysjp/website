@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import { Conferences } from '../data/conferences';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<div>
+		{Conferences?.map((conference) => (
+			<p>
+				<a href="http://event.cloudnativedays.jp/${event.abbr}">{conference.name}</a>@{conference.conferenceDays.map((day) => day.date).join(",")}
+			</p>
+		))}
+		</div>
+	</main>
+</Layout>

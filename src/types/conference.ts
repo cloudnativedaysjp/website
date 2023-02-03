@@ -6,6 +6,9 @@ export type Conference = {
   theme: string
   about: string
   privacy_policy: string
+  privacy_policy_for_speaker: string | null
+  copyright: String
+  coc: String
   conferenceDays: ConferenceDay[]
 }
 
