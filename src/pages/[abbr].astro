@@ -25,7 +25,8 @@ const talks = talkMap.get(abbr||"")
 	  	      <p>{conference.about}</p>
 			  <ul>
 			 	 {talks?.map((talk) => {
-					return <li>{talk.title}</li>
+					const url = `/${abbr}/talks/${talk.id}`
+					return <li><a href={url}>{talk.title}</a></li>
 				  })}
 				</ul>
 			</div>
