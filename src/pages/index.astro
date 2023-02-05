@@ -2,16 +2,21 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import { Conferences } from '../data/conferences';
+import type { Conference } from '../types/conference';
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
 		<div>
-		{Conferences?.map((conference) => (
-			<p>
-				<a href="http://event.cloudnativedays.jp/${event.abbr}">{conference.name}</a>@{conference.conferenceDays.map((day) => day.date).join(",")}
-			</p>
-		))}
+		{Conferences?.map((conference) => {
+			const url = `/${conference.abbr}`
+			const eventDays = conference.conferenceDays.filter((day) => !day.internal).map((day) => day.date).join(",")
+			return (
+				<p>
+					<a href={url}>{conference.name}</a>@{eventDays}
+				</p>
+			)})
+		}
 		</div>
 	</main>
 </Layout>
