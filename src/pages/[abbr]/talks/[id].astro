@@ -1,8 +1,6 @@
 ---
-import { speakerMap } from "../../../data/speakers"
 import { talkMap } from "../../../data/talks"
 import Layout from "../../../layouts/Layout.astro"
-import type { Speaker } from "../../../types/speaker"
 
 export async function getStaticPaths() {
 	return [...talkMap.entries()].map((a) => {
@@ -17,20 +15,7 @@ const { abbr, id} = Astro.params;
 const talk = talkMap.get(abbr||"")?.find((talk) => {
     return talk.id == Number(id)
 })
-
-const isSpeaker = (item: Speaker | undefined): item is Speaker => {
-    return !!item
-}
-
-const speakers: Speaker[] = talk?.speakers.map((speaker) => speaker.id).map((id) => {
-    const speaker = speakerMap.get(abbr||"")?.find((speaker) => {
-        return speaker.id == id
-    })
-    return speaker
-}).filter(isSpeaker) || []
-
 const talkExists = talk != undefined
-const speakersExists = speakers?.length > 0
 ---
 
 <Layout title="Welcome to Astro.">
@@ -40,6 +25,7 @@ const speakersExists = speakers?.length > 0
                 <p>{talk.title}</p>
                 <p>{talk.abstract}</p>
                 <p>{talk.speakers.map((speaker) => speaker.name).join(",")}</p>
+                <p></p>
                 <p></p>
                 <p></p>
                 <p></p>
@@ -53,21 +39,6 @@ const speakersExists = speakers?.length > 0
                     <source src={talk.videoId} type="application/x-mpegURL" />
                 </video>
                 <a href={talk.documentUrl}>発表資料</a>
-            </div>
-        }
-        {speakersExists &&
-            <div>
-                {speakers?.map((speaker) => {
-                    return (
-                        <p>{speaker.name}</p>
-                        <p>{speaker.company}</p>
-                        <p>{speaker.jobTitle}</p>
-                        <p>{speaker.profile}</p>
-                        <p>{speaker.twitterId}</p>
-                        <p>{speaker.githubId}</p>
-                    )
-                })
-                }
             </div>
         }
 	</main>
