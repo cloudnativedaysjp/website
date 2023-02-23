@@ -1,0 +1,24 @@
+---
+import type { Speaker } from '../types/speaker';
+export interface Props {
+  id: number;
+  abbr?: string;
+  title?: string;
+  speakers?: {id: number, name: string}[];
+}
+
+const { id, abbr, title, speakers } = Astro.props;
+---
+
+<div class="lg:pt-12 md:w-6/12 pt-12 pt-3 w-full px-4 text-center">
+  <div
+    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+  >
+    <div class="px-4 py-5 flex-auto">
+      <h6 class="text-xl font-semibold"><a href={`/${abbr}/talks/${id}`}>{title}</a></h6>
+      <p class="mt-2 mb-4 text-gray-600">
+        {speakers?.map((s) => s.name ).join(',')}
+      </p>
+    </div>
+  </div>
+</div>
