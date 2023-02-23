@@ -1,5 +1,6 @@
 ---
 import { Conferences } from "../data/conferences";
+import Hero from '../components/Hero.astro';
 import { talkMap } from "../data/talks";
 import Layout from "../layouts/Layout.astro";
 export async function getStaticPaths() {
@@ -17,19 +18,27 @@ const talks = talkMap.get(abbr||"")
 <Layout title="Welcome to Astro.">
 	<main>
 		{conferenceExists &&
-			<div>
-	  	      <h1>{conference.name}</h1>
-	  	      <h2>{conference.theme}</h2>
-	  	      <p>{conference.conferenceDays.filter((day) => !day.internal).map((day) => day.date).join(", ")}</p>
-	  	      <h2>About</h2>
-	  	      <p>{conference.about}</p>
-			  <ul>
-			 	 {talks?.map((talk) => {
-					const url = `/${abbr}/talks/${talk.id}`
-					return <li><a href={url}>{talk.title}</a></li>
-				  })}
-				</ul>
-			</div>
+			<Hero title={conference.name} href={"/" + abbr}>
+				<p class="mt-4 text-lg text-gray-300">
+
+				{conference.theme}
+				</p>
+				<p class="mt-4 text-lg text-gray-300 whitespace-pre-line">
+					{conference.conferenceDays.filter((day) => !day.internal).map((day) => day.date).join(", ")}
+				</p>
+			</Hero>
+			<section class="pb-20 bg-gray-300">
+				<div class="container mx-auto px-4">
+					<div class="flex flex-wrap">
+						<ul>
+							{talks?.map((talk) => {
+								const url = `/${abbr}/talks/${talk.id}`
+								return <li><a href={url}>{talk.title}</a></li>
+							})}
+						</ul>
+					</div>
+				</div>
+			</section>
 		}
 	</main>
 </Layout>

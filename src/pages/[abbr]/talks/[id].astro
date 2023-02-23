@@ -1,7 +1,9 @@
 ---
 import { speakerMap } from "../../../data/speakers"
 import { talkMap } from "../../../data/talks"
+import Hero from '../../../components/Hero.astro';
 import Layout from "../../../layouts/Layout.astro"
+import { Conferences } from "../../../data/conferences";
 import type { Speaker } from "../../../types/speaker"
 
 export async function getStaticPaths() {
@@ -31,44 +33,60 @@ const speakers: Speaker[] = talk?.speakers.map((speaker) => speaker.id).map((id)
 
 const talkExists = talk != undefined
 const speakersExists = speakers?.length > 0
+const conference = Conferences.find((conference) => conference.abbr == abbr )
+const conferenceExists = conference != undefined
+
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-        {talkExists &&
-            <div>
-                <p>{talk.title}</p>
-                <p>{talk.abstract}</p>
-                <p>{talk.speakers.map((speaker) => speaker.name).join(",")}</p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <video
-                    id="my-player"
-                    class="video-js video-js vjs-16-9 vjs-big-play-centered"
-                    data-setup='{"fluid": true}'
-                    controls
-                    preload="auto"
-                >
-                    <source src={talk.videoId} type="application/x-mpegURL" />
-                </video>
-                <a href={talk.documentUrl}>発表資料</a>
-            </div>
+		{conferenceExists &&
+            <Hero title={conference.name} href={"/" + abbr}>
+                <p class="mt-4 text-lg text-gray-300">
+
+                {conference.theme}
+                </p>
+                <p class="mt-4 text-lg text-gray-300 whitespace-pre-line">
+                    {conference.conferenceDays.filter((day) => !day.internal).map((day) => day.date).join(", ")}
+                </p>
+            </Hero>
         }
-        {speakersExists &&
-            <div>
-                {speakers?.map((speaker) => {
-                    return (
-                        <p>{speaker.name}</p>
-                        <p>{speaker.company}</p>
-                        <p>{speaker.jobTitle}</p>
-                        <p>{speaker.profile}</p>
-                        <p>{speaker.twitterId}</p>
-                        <p>{speaker.githubId}</p>
-                    )
-                })
-                }
-            </div>
-        }
+
+            {talkExists &&
+                <div>
+                    <p>{talk.title}</p>
+                    <p>{talk.abstract}</p>
+                    <p>{talk.speakers.map((speaker) => speaker.name).join(",")}</p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <video
+                        id="my-player"
+                        class="video-js video-js vjs-16-9 vjs-big-play-centered"
+                        data-setup='{"fluid": true}'
+                        controls
+                        preload="auto"
+                    >
+                        <source src={talk.videoId} type="application/x-mpegURL" />
+                    </video>
+                    <a href={talk.documentUrl}>発表資料</a>
+                </div>
+            }
+            
+            {speakersExists &&
+                <div>
+                    {speakers?.map((speaker) => {
+                        return (
+                            <p>{speaker.name}</p>
+                            <p>{speaker.company}</p>
+                            <p>{speaker.jobTitle}</p>
+                            <p>{speaker.profile}</p>
+                            <p>{speaker.twitterId}</p>
+                            <p>{speaker.githubId}</p>
+                        )
+                    })
+                    }
+                </div>
+            }
 	</main>
 </Layout>
