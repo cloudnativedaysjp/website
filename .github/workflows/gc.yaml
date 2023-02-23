@@ -46,4 +46,3 @@ jobs:
           AmplifyAppId: ${{ secrets.AMPLIFYAPPID }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
           BackendEnvARN: ${{ secrets.BACKEND_ARN_DEV }}
-

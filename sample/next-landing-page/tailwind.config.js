@@ -6,11 +6,11 @@ module.exports = {
   purge: false,
   theme: {
     fontFamily: {
-      "display" : ["Noto Sans","sans-serif"],
-      "body" : ["Noto Sans","sans-serif"],
+      display: ["Noto Sans", "sans-serif"],
+      body: ["Noto Sans", "sans-serif"],
     },
     extend: {},
   },
   variants: {},
   plugins: [],
-}
+};

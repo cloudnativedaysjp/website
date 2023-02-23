@@ -102,8 +102,7 @@ export default function Navbar(props) {
                   className={
                     (props.transparent
                       ? "lg:text-gray-300 text-gray-500"
-                      : "text-gray-500") +
-                    " fab fa-twitter text-lg leading-lg "
+                      : "text-gray-500") + " fab fa-twitter text-lg leading-lg "
                   }
                 />
                 <span className="lg:hidden inline-block ml-2">Tweet</span>
@@ -124,8 +123,7 @@ export default function Navbar(props) {
                   className={
                     (props.transparent
                       ? "lg:text-gray-300 text-gray-500"
-                      : "text-gray-500") +
-                    " fab fa-github text-lg leading-lg "
+                      : "text-gray-500") + " fab fa-github text-lg leading-lg "
                   }
                 />
                 <span className="lg:hidden inline-block ml-2">Star</span>
