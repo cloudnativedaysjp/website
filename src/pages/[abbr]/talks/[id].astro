@@ -1,0 +1,92 @@
+---
+import { speakerMap } from "../../../data/speakers";
+import { talkMap } from "../../../data/talks";
+import Hero from "../../../components/Hero.astro";
+import Layout from "../../../layouts/Layout.astro";
+import { Conferences } from "../../../data/conferences";
+import type { Speaker } from "../../../types/speaker";
+
+export async function getStaticPaths() {
+  return [...talkMap.entries()].map((a) => {
+    const abbr = a[0];
+    const talks = a[1];
+    return talks.map((talk) => {
+      return { params: { abbr: abbr, id: talk.id } };
+    });
+  });
+}
+const { abbr, id } = Astro.params;
+const talk = talkMap.get(abbr || "")?.find((talk) => {
+  return talk.id == Number(id);
+});
+
+const isSpeaker = (item: Speaker | undefined): item is Speaker => {
+  return !!item;
+};
+
+const speakers: Speaker[] =
+  talk?.speakers
+    .map((speaker) => speaker.id)
+    .map((id) => {
+      const speaker = speakerMap.get(abbr || "")?.find((speaker) => {
+        return speaker.id == id;
+      });
+      return speaker;
+    })
+    .filter(isSpeaker) || [];
+
+const talkExists = talk != undefined;
+const speakersExists = speakers?.length > 0;
+const conference = Conferences.find((conference) => conference.abbr == abbr);
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    {
+      talkExists && (
+        <Hero title={talk.title}>
+          <p class="mt-4 text-lg text-gray-300 whitespace-pre-line">
+            {talk.abstract}
+          </p>
+          <p class="mt-4 text-lg text-gray-300">
+            {talk?.speakers.map((speaker) => speaker.name).join(" / ")}
+          </p>
+        </Hero>
+        <div class="pt-12 pt-12 pt-3 w-full px-4 text-center -mt-24">
+        <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+          <div class="px-4 py-5 flex-auto">
+              <div>
+                  <video
+                      id="my-player"
+                      class="video-js video-js vjs-16-9 vjs-big-play-centered"
+                      data-setup='{"fluid": true}'
+                      controls
+                      preload="auto"
+                  >
+                      <source src={talk.videoId} type="application/x-mpegURL" />
+                  </video>
+                  <a href={talk.documentUrl}>発表資料</a>
+              </div>
+          
+          {speakersExists &&
+              <div>
+                  {speakers?.map((speaker) => {
+                      return (
+                          <p>{speaker.name}</p>
+                          <p>{speaker.company}</p>
+                          <p>{speaker.jobTitle}</p>
+                          <p>{speaker.profile}</p>
+                          <p>{speaker.twitterId}</p>
+                          <p>{speaker.githubId}</p>
+                      )
+                  })
+                  }
+              </div>
+          }
+          </div>
+        </div>
+      </div>
+      )
+    }
+  </main>
+</Layout>

@@ -1,0 +1,72 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Event from "../components/Event.astro";
+import { Conferences } from "../data/conferences";
+import type { Conference } from "../types/conference";
+---
+
+<Layout title="CloudNative Days">
+  <main>
+    <Hero title="CloudNative Days">
+      <p class="mt-4 text-lg text-gray-300">
+        CloudNative Days
+        はコミュニティ、企業、技術者が一堂に会し、クラウドネイティブムーブメントを牽引することを目的としたテックカンファレンスです。
+      </p>
+      <p class="mt-4 text-lg text-gray-300">
+        最新の活用事例や先進的なアーキテクチャを学べるのはもちろん、ナレッジの共有やディスカッションの場を通じて登壇者と参加者、参加者同士の繋がりを深め、初心者から熟練者までが共に成長できる機会を提供します。
+      </p>
+      <p class="mt-4 text-lg text-gray-300">
+        皆様がクラウドネイティブ技術を適切に選択し、活用し、次のステップに進む手助けになることを願っています。
+      </p>
+      <p class="mt-4 text-lg text-gray-300">
+        クラウドネイティブで、未来を共に創造しましょう。
+      </p>
+    </Hero>
+    <section class="pb-20 bg-gray-300 -mt-24">
+      <div class="container mx-auto px-4">
+        <h2 class="text-white relative px-4 text-4xl font-bold">Upcoming Event</h2>
+        <div class="flex flex-wrap">
+          {
+            Conferences?.filter((conf) => conf.status == 'registered')
+            .map((conference) => {
+              const url = `https://event.cloudnativedays.jp/${conference.abbr}`;
+              const eventDays = conference.conferenceDays
+                .filter((day) => !day.internal)
+                .map((day) => day.date)
+                .join(",");
+              return (
+                <p>
+                  <Event url={url} name={conference.name} days={eventDays} />
+                </p>
+              );
+            })
+          }
+        </div>
+      </div>
+    </section>
+    <section class="pb-20 bg-gray-300">
+      <div class="container mx-auto px-4">
+        <h2 class="text-black relative px-4 text-4xl font-bold">Past Events</h2>
+        <div class="flex flex-wrap">
+          {
+            Conferences?.filter((conference) => conference.status == 'archived')
+            .sort((first, second) => second.id - first.id)
+            .map((conference) => {
+              const url = `/${conference.abbr}`;
+              const eventDays = conference.conferenceDays
+                .filter((day) => !day.internal)
+                .map((day) => day.date)
+                .join(",");
+              return (
+                <p>
+                  <Event url={url} name={conference.name} days={eventDays} />
+                </p>
+              );
+            })
+          }
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
