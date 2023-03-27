@@ -8,3 +8,4 @@ export default defineConfig({
   integrations: [tailwind()],
   site: 'https://cloudnativedays.jp',
 });
+X
