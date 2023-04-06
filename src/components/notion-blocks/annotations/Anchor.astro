@@ -1,0 +1,24 @@
+---
+import { RichText } from '../../../lib/interfaces.ts'
+
+export interface Props {
+  richText: RichText
+}
+
+const { richText } = Astro.props
+---
+
+{
+  /* prettier-ignore */
+  richText.Href ? (
+    <a href={richText.Href}><slot /></a>
+  ) : (
+    <slot />
+  )
+}
+
+<style>
+  a {
+    text-decoration: underline;
+  }
+</style>

@@ -1,0 +1,65 @@
+---
+import { NUMBER_OF_POSTS_PER_PAGE } from '../../server-constants'
+import {
+  getPosts,
+  getRankedPosts,
+  getAllTags,
+  getNumberOfPages,
+} from '../../lib/notion/client'
+import NoContents from '../../components/NoContents.astro'
+import PostDate from '../../components/PostDate.astro'
+import PostTags from '../../components/PostTags.astro'
+import PostTitle from '../../components/PostTitle.astro'
+import PostExcerpt from '../../components/PostExcerpt.astro'
+import ReadMoreLink from '../../components/ReadMoreLink.astro'
+import Pagination from '../../components/Pagination.astro'
+import BlogPostsLink from '../../components/BlogPostsLink.astro'
+import BlogTagsLink from '../../components/BlogTagsLink.astro'
+import styles from '../../styles/blog.module.css'
+import Layout from '../../layouts/Layout.astro';
+import Hero from "../../components/Hero.astro";
+
+
+const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
+  getPosts(NUMBER_OF_POSTS_PER_PAGE),
+  getRankedPosts(),
+  getAllTags(),
+  getNumberOfPages(),
+])
+---
+<Layout title="CloudNative Days">
+  <Hero title="Blog">
+      <p class="mt-4 text-lg text-gray-300">
+        CloudNative Days実行委員会によるブログ
+      </p>
+    </Hero>
+  <div class="flex flex-wrap mx-10 md:mx-10 gap-5">
+    <main class='md:w-8/12 w-12/12'>
+      
+      {
+        posts.length === 0 ? (
+          <NoContents contents={posts} />
+        ) : (
+          posts.map((post) => (
+            <div className={styles.post} key={post.Slug}>
+              <PostDate post={post} />
+              <PostTags post={post} />
+              <PostTitle post={post} />
+              <PostExcerpt post={post} />
+              <ReadMoreLink post={post} />
+            </div>
+          ))
+        )
+      }
+
+      <footer>
+        <Pagination currentPage={1} numberOfPages={numberOfPages} />
+      </footer>
+    </main>
+
+    <aside class='md:flex-auto w-12/12'>
+      <BlogPostsLink heading="Recommended" posts={rankedPosts} />
+      <BlogTagsLink heading="Categories" tags={tags} />
+    </aside>
+  </div>
+</Layout>
