@@ -20,7 +20,8 @@ const { title } = Astro.props;
     />
     <script src="https://unpkg.com/video.js/dist/video.js"></script>
     <title>{title}</title>
-    <script
+  </head>
+  <script
       type="text/partytown"
       src="https://www.googletagmanager.com/gtag/js?id=G-XDSEZ66VFX"
     ></script>
@@ -31,8 +32,7 @@ const { title } = Astro.props;
       }
       gtag("js", new Date());
       gtag("config", "G-XDSEZ66VFX");
-    </script>
-  </head>
+  </script>
   <body>
     <Navbar />
     <slot />
