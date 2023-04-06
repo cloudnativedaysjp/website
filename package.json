@@ -1,14 +1,20 @@
 {
   "name": "@example/basics",
-  "type": "module",
+  "type": "commonjs",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "build:cached": "npm run cache:fetch && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "npx prettier --write .",
+    "cache:fetch": "node scripts/blog-contents-cache.cjs",
+    "cache:purge": "nx reset && rm -f tmp/*",
+    "_fetch-notion-blocks": "node scripts/retrieve-block-children.cjs",
+    "lint": "prettier --write '**/*.{js,jsx,ts,tsx}' && eslint --fix './**/*.{js,jsx,ts,tsx}' --config .eslintrc.cjs && eslint '*/**/*.{js,ts}' --quiet --fix --config .eslintrc.cjs"
   },
   "dependencies": {
     "@astrojs/image": "^0.16.6",

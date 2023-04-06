@@ -17,7 +17,7 @@ export const filePath = (url: URL): string => {
 
 export const extractTargetBlocks = (
   blockType: string,
-  blocks: Block[]
+  blocks: Block[],
 ): Block[] => {
   return blocks
     .reduce((acc: Block[], block) => {
@@ -27,39 +27,39 @@ export const extractTargetBlocks = (
 
       if (block.ColumnList && block.ColumnList.Columns) {
         acc = acc.concat(
-          _extractTargetBlockFromColums(blockType, block.ColumnList.Columns)
+          _extractTargetBlockFromColums(blockType, block.ColumnList.Columns),
         )
       } else if (block.BulletedListItem && block.BulletedListItem.Children) {
         acc = acc.concat(
-          extractTargetBlocks(blockType, block.BulletedListItem.Children)
+          extractTargetBlocks(blockType, block.BulletedListItem.Children),
         )
       } else if (block.NumberedListItem && block.NumberedListItem.Children) {
         acc = acc.concat(
-          extractTargetBlocks(blockType, block.NumberedListItem.Children)
+          extractTargetBlocks(blockType, block.NumberedListItem.Children),
         )
       } else if (block.ToDo && block.ToDo.Children) {
         acc = acc.concat(extractTargetBlocks(blockType, block.ToDo.Children))
       } else if (block.SyncedBlock && block.SyncedBlock.Children) {
         acc = acc.concat(
-          extractTargetBlocks(blockType, block.SyncedBlock.Children)
+          extractTargetBlocks(blockType, block.SyncedBlock.Children),
         )
       } else if (block.Toggle && block.Toggle.Children) {
         acc = acc.concat(extractTargetBlocks(blockType, block.Toggle.Children))
       } else if (block.Paragraph && block.Paragraph.Children) {
         acc = acc.concat(
-          extractTargetBlocks(blockType, block.Paragraph.Children)
+          extractTargetBlocks(blockType, block.Paragraph.Children),
         )
       } else if (block.Heading1 && block.Heading1.Children) {
         acc = acc.concat(
-          extractTargetBlocks(blockType, block.Heading1.Children)
+          extractTargetBlocks(blockType, block.Heading1.Children),
         )
       } else if (block.Heading2 && block.Heading2.Children) {
         acc = acc.concat(
-          extractTargetBlocks(blockType, block.Heading2.Children)
+          extractTargetBlocks(blockType, block.Heading2.Children),
         )
       } else if (block.Heading3 && block.Heading3.Children) {
         acc = acc.concat(
-          extractTargetBlocks(blockType, block.Heading3.Children)
+          extractTargetBlocks(blockType, block.Heading3.Children),
         )
       } else if (block.Quote && block.Quote.Children) {
         acc = acc.concat(extractTargetBlocks(blockType, block.Quote.Children))
@@ -74,7 +74,7 @@ export const extractTargetBlocks = (
 
 const _extractTargetBlockFromColums = (
   blockType: string,
-  columns: Column[]
+  columns: Column[],
 ): Block[] => {
   return columns
     .reduce((acc: Block[], column) => {
@@ -87,7 +87,7 @@ const _extractTargetBlockFromColums = (
 }
 
 export const buildURLToHTMLMap = async (
-  urls: URL[]
+  urls: URL[],
 ): Promise<{ [key: string]: string }> => {
   const htmls: string[] = await Promise.all(
     urls.map(async (url: URL) => {
@@ -107,7 +107,7 @@ export const buildURLToHTMLMap = async (
         .finally(() => {
           clearTimeout(timeout)
         })
-    })
+    }),
   )
 
   return urls.reduce((acc: { [key: string]: string }, url, i) => {
@@ -145,7 +145,7 @@ export const getPageLink = (page: number, tag: string) => {
   return tag
     ? pathJoin(
         BASE_PATH,
-        `/posts/tag/${encodeURIComponent(tag)}/page/${page.toString()}`
+        `/posts/tag/${encodeURIComponent(tag)}/page/${page.toString()}`,
       )
     : pathJoin(BASE_PATH, `/posts/page/${page.toString()}`)
 }

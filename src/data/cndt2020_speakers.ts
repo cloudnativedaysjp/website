@@ -1,664 +1,789 @@
-import type { Speaker } from "../types/speaker";
+import type { Speaker } from '../types/speaker'
 
 export const CNDT2020Speakers: Speaker[] = [
   {
-    "id": 1,
-    "name": "林 政利",
-    "company": "Amazon Web Services Japan K.K.",
-    "jobTitle": "Solutions Architect",
-    "profile": "フリーランスやWeb系企業で業務システムやWebサービスの開発、インフラ運用に10年ほど従事していました。近年はベンダーでコンテナ技術の普及に努めており、現在、AWS JapanでAmazon EKSやAmazon ECSでのコンテナ運用や開発プロセス構築を中心にアーキテクトとして活動しています。",
-    "githubId": "literalice",
-    "twitterId": "literalice",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/5c9f018bd98c6167864f62405028b45a.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=504446e02a6df7e791c4a2787c60996be8246de33ddae91e86ebadcac28a5350"
-  },
-  {
-    "id": 2,
-    "name": "太田 航平",
-    "company": "HPE",
-    "jobTitle": "Solutions Architect",
-    "profile": "2018年から2年間ZOZOテクノロジーズにてコンテナを中心としたインフラの開発や運用などに携わった後、HPEにソリューションアーキテクトとして入社。\n開発者体験を落とさず、セキュアでスケーラブルなインフラ基盤をどうやって作るかを考えることが好き。\n2020年5月よりCNCFのCloud Native Ambassadorに就任し、新しい技術をわかりやすく伝えられるように修業の日々を送っている。",
-    "githubId": "inductor",
-    "twitterId": "_inductor_",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/54c66816360c7808959043dcd32c5473.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=45246a5977a3a7281545e8e8da85bff3f505190a0a16432708c7b91e84239fe7"
-  },
-  {
-    "id": 3,
-    "name": "三神 拓哉",
-    "company": "ZOZOテクノロジーズ",
-    "jobTitle": "Infrastructure Engineer",
-    "profile": "2014年にDMM.comに入社後、オンプレミスの大規模インフラ環境の運用に従事。 VMware環境におけるWebサービスの運用やSoftware Defined Storageの運用を担当。 2019年にZOZOテクノロジーズに入社。オンプレミス運用が多いチームに配属になったが諸々の事情でクラウドとk8sを利用した案件に参加。 現在はクラウド/k8s環境のSREとして奮闘中。",
-    "githubId": "takuya-mikami",
-    "twitterId": "Tadanokumakuma",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/3ebd2fa9e160e817cb7b92c37ff03364.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=b7e8b061d582c2dfd3ba2731a9847bba68263a6bea92aa466ee9cf177f041e73"
-  },
-  {
-    "id": 4,
-    "name": "昔農 凜太朗",
-    "company": "NTTコミュニケーションズ株式会社",
-    "jobTitle": "Site Reliability Engineer",
-    "profile": "NTTコミュニケーションズにおいて商用サービスのリリースサイクル向上のためCI/CDパイプラインの設計，実装及びパブリッククラウドに対するInfrastructure as Codeを含めたインフラストラクチャの設計を行っています。\nこれまではクラウドサービスのSDNコントローラの開発やキャリアグレードネットワークの設計，運用に従事していました。",
-    "githubId": "sekinet",
-    "twitterId": "TAR_O_RIN",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/43aadf04e598d112188dd9994532ba22.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=e37ec8d83b6a42805915cfd5105edd5c6f4a557bc6d30c64afda47dd03b7938e"
-  },
-  {
-    "id": 5,
-    "name": "チェシャ猫",
-    "company": "ProofCafe",
-    "jobTitle": "Software Engineer",
-    "profile": "普段の業務では、Docker や Kubernetes を中心としたコンテナオーケストレーション技術の検証と基盤設計を担当。それと並行してプライベートでは、関数型プログラミングや数理的手法によるソフトウェア検証について研究していたりいなかったりする。トレードマークは猫耳。",
-    "githubId": "y-taka-23",
-    "twitterId": "y_taka_23",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/4b51bbef827f7a6a8ce376e11f159d1a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=759b5a21490b79fe27f24cbae57b97bb502728a08a270e79f31badc7ac9ab8a1"
-  },
-  {
-    "id": 6,
-    "name": "宇都宮 雅彦",
-    "company": "株式会社NTTデータ",
-    "jobTitle": "Infrastructure Engineer",
-    "profile": "NTTデータでクラウドネイティブな金融システムの開発に取り組んでいるインフラエンジニアです。\nマイクロサービスのシステム開発をスムーズにするために日々試行錯誤しています。\n昨年は CloudNative Days Kansai 2019 に登壇させて頂いています。",
-    "githubId": "polar3130",
-    "twitterId": "polar3130",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/e650064ba54b10c46ce87e696d668cd3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=950b0dfa2a323f129327494f8cbea1ba54094e515a3fc612f5f5dfd353a00319"
-  },
-  {
-    "id": 7,
-    "name": "長谷川 誠",
-    "company": "株式会社サイバーエージェント",
-    "jobTitle": "Engineer",
-    "profile": "株式会社サイバーエージェントにてプライベートクラウドの構築、運用に従事。社内向け Kubernetes as a Service の提供も行っている。",
-    "githubId": "makocchi-git",
-    "twitterId": "makocchi",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/a67546c1fd3c3a27509123aa89e719f9.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=97a348f14b6de0e8ddad44b11cd2ac07e4610c49fe1ff5f3acbbf16da06878a8"
-  },
-  {
-    "id": 8,
-    "name": "大村 伸吾",
-    "company": "株式会社Preferred Networks",
-    "jobTitle": "Engineer",
-    "profile": "中堅SIer, Web系スタートアップを経て、 2018年1月より現職。Preferred Networksでエンジニアとして従事。分散システム 、コンテナ技術全般に興味がある。PFNでは深層学習向け大規模GPU Kuberntes クラスタのスケジューラの開発運用に携わっており、Kubernetes プロジェクト(sig-scheduling)へも積極的に参加している。",
-    "githubId": "everpeace",
-    "twitterId": "everpeace",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/ac28859a54c04c2280a0d16cdb91fccd.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=fc5f893d4ae0c7f1605826ba03a5185a1f275fb1a0fcc868983f00a2ca9b5bc9"
-  },
-  {
-    "id": 9,
-    "name": "早川 博",
-    "company": "ヤフー株式会社",
-    "jobTitle": "インフラエンジニア",
-    "profile": "この2月からヤフー株式会社にJoinし、Cloud Nativeなインフラの開発に取り組んでいます。\n- Cloud Native Developers JP オーガナイザー\n- Japan Container Days 12.18、CloudNative Days Tokyo 2019登壇\n- 「Kubernetes実践ガイド」著者（共著）",
-    "githubId": null,
-    "twitterId": "hhiroshell",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/0aea60355d709e8663b2057139273a50.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=cff23e87bdf15a14f42782a5d4178c915c459c120ff6414017d068762074a327"
-  },
-  {
-    "id": 10,
-    "name": "青山 真也",
-    "company": "CyberAgent, Inc.",
-    "jobTitle": "Software Engineer",
-    "profile": "OpenStackを使ったプライベートクラウドやGKE互換なコンテナプラットフォームをゼロから構築。CyberAgentでは Kubernetes/CloudNative 領域の Developer Expertsとしても従事。国内カンファレンスでのKeynoteや海外カンファレンス等、登壇経験多数。世界で2番目にKubernetesの認定資格を取得。著書に『Kubernetes完全ガイド』『みんなのDocker/Kubernetes』。現在はOSSへのContribute 活動をはじめ、CNCF公式のCloud Native Meetup TokyoやKubernetes Meetup TokyoのOrganizerなどコミュニティ活動にも従事。",
-    "githubId": "MasayaAoyama",
-    "twitterId": "amsy810",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/cac3a56f9d0858a1b65075f08a657120.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=f4caaffc4ee2961950306fb7852e6f45ea89ccd071f2f04471ea1119930112d7"
-  },
-  {
-    "id": 11,
-    "name": "山本 佳代子",
-    "company": "freee株式会社",
-    "jobTitle": "SRE",
-    "profile": "2019年2月にfreeeに入社。SREとしてfreeeのインフラの進化に貢献すべく日々邁進しています。",
-    "githubId": null,
-    "twitterId": null,
-    "avatarUrl": null
-  },
-  {
-    "id": 12,
-    "name": "磯 賢大",
-    "company": "COLOPL, Inc.",
-    "jobTitle": "インフラエンジニア",
-    "profile": "システムインテグレータにて業務システムの開発に携わった後、2019年05月より株式会社コロプラにてインフラエンジニアとしてKubernetesとエコシステムを中心としたCloud Nativeな基盤の構築・運用に従事しています。Minikube Contributor。NextPublishing「実践Helm」「実践入門Kubernetes カスタムコントローラーへの道」著者",
-    "githubId": "govargo",
-    "twitterId": "go_vargo",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/c5b738a228d274c36f0c343b1c99aa56.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=5b6262fd452626880ec2201e03b9cc9f84bc339d98a54c0156c4ce6e31211889"
-  },
-  {
-    "id": 13,
-    "name": "仲亀 拓馬",
-    "company": "さくらインターネット 株式会社",
-    "jobTitle": "インフラエンジニア",
-    "profile": "新卒でSIerのデータセンター部門へ就職し、インフラの基礎を学んだ後さくらインターネットへ転職。\n現在は、Prometheusを中心としたKubernetesの監視システムの構築やObservabilityの実現を行う傍ら、エバンジェリストとして対外的活動に力を入れている。",
-    "githubId": "TakumaNakagame",
-    "twitterId": "kameneko1004",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/7284d6ae1541bb10743e2b34059c2fc1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=6777b9695868d7f546dee2e38971da0322b84b46ef67e134368547c0df9caac4"
-  },
-  {
-    "id": 14,
-    "name": "坂下 幸徳",
-    "company": "ゼットラボ株式会社",
-    "jobTitle": "Software Engineer",
-    "profile": "15年以上にわたりサーバ・ストレージなどインフラの運用管理技術の研究開発を行った後、\n2018年よりゼットラボ株式会社に移り、Kubernetesを中心とした運用管理・クラウド技術の研究開発に従事。また、2012年よりストレージの業界団体SNIAでも活動。\n博士(情報科学)、情報処理学会会員、「Kubernetes実践入門」共著者(技術評論社)",
-    "githubId": "ysakashita",
-    "twitterId": "ysakashita3",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/f294884b1534004a121ace21f55fa05b.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=e90af1c0afb35e811c7997ee0f95b47daa025cdd5716e8392deca081bb75dd8b"
-  },
-  {
-    "id": 15,
-    "name": "南 直",
-    "company": "Wantedly, Inc.",
-    "jobTitle": "Software Engineer",
-    "profile": "Wantedly の Infrastructure Team で Software Engineer として働いています。マイクロサービスの re-architecting や gRPC の導入など、プロダクト開発を支える為の基盤的開発をしています。",
-    "githubId": "south37",
-    "twitterId": "south37777",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/f36c03860fa299149d0f6f0e3215c015.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=0ff944ed09f28f848ce26914a37e15954471dd70c74747a5ce8d068b2aa868c6"
-  },
-  {
-    "id": 16,
-    "name": "長澤 翼",
-    "company": "株式会社コロプラ",
-    "jobTitle": "インフラエンジニア",
-    "profile": "2018年から約1年半 CyberAgent で認証基盤/ポイントサービスの SRE を担当。新規サービスで Knative 本番導入に失敗し、2020年3月からコロプラで Kubernetes エンジニアをしています。急激なトラフィックのスパイクが発生するゲームタイトルでも手動事前スケール不要な世界にするのが夢です。",
-    "githubId": "toVersus",
-    "twitterId": "toversus26",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/eba04913e0e7a6865cca400614844b11.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=babd82dceaef2015970fea84c8a09d86ce965abb9b7ccfaf451719eaf099ae2a"
-  },
-  {
-    "id": 17,
-    "name": "徳永 航平",
-    "company": "NTT",
-    "jobTitle": "Engineer",
-    "profile": "日本電信電話株式会社でコンテナ仮想化技術に関する研究開発に従事。CNCF containerdにおいては、非コアサブプロジェクト「Stargz Snapshotter」のメンテナを務める。コンテナランタイムに焦点を当てたミートアップ「Container Runtime Meetup」を主催。",
-    "githubId": "ktock",
-    "twitterId": "TokunagaKohei",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/b79c4c6fa106905cdfb0931138653ca6.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=3104419ccb441ad806a15e281bf9ecd302a4bc3412bb905f7773cf148820974e"
-  },
-  {
-    "id": 18,
-    "name": "大坪 新平",
-    "company": "Wantedly, Inc.",
-    "jobTitle": "Engineer",
-    "profile": "Wantedly, Inc. に新卒入社後、社内に残る Kubernetes で動いていないアプリケーションをすべて移行する / 社内全クラスタのダウンタイムなしに新環境に移行するなどのプロジェクトのリードを担当。3年目になる現在は技術基盤チームのリーダーとして「未来の開発体験をつくる」というミッションのもとインフラからモバイルまで様々なレイヤーにまたがり生産性を向上するプロジェクトを行っている。",
-    "githubId": "potsbo",
-    "twitterId": "potsbo",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/33893ac1d1df9f4e1e18036b4dc5dc27.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=ffbf2b48632d5cd3b6308033b9e56645eb147ad5a389e9806709e7b99d555690"
-  },
-  {
-    "id": 19,
-    "name": "森本 くるみ",
-    "company": "Wantedly, Inc. / 慶應義塾大学",
-    "jobTitle": "Engineer Intern",
-    "profile": "Wantedly, Inc. のインターン生。慶應義塾大学理工学部情報工学科4年生で、大学ではHCIに関する研究をしている。フルスタックエンジニアを目指して日々奮闘中！",
-    "githubId": "morux2",
-    "twitterId": null,
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/495619159006fdc49a789ef27886c9a6.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=5389ea6d228dc772df7fc8fe261c8338145f80b88cef1ddd7fe950069bae6e6d"
-  },
-  {
-    "id": 20,
-    "name": "源波 陸",
-    "company": "株式会社サイバーエージェント",
-    "jobTitle": "Infra Engineer",
-    "profile": "2020年4月 株式会社サイバーエージェント入社 AI事業本部 Strategic Infrastructure Agencyという部署に配属",
-    "githubId": null,
-    "twitterId": null,
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/dc52b16d85472620863d93da80d7511e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=e649d253644c475ecd3f1fe8d8203f21d1924a706a063c09f270e72287d4d29b"
-  },
-  {
-    "id": 21,
-    "name": "川部 勝也",
-    "company": "株式会社サイバーエージェント",
-    "jobTitle": "Infra Engineer",
-    "profile": "2020年4月 株式会社サイバーエージェント入社 AI事業本部 Strategic Infrastructure Agencyという部署に配属",
-    "githubId": null,
-    "twitterId": null,
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/f3070e7d7656191ef3eddce37ad971b4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=44f5e5571618bf8f3e1aa81eb7fdb411dc844ef9bf8430bfeceb689db16e730d"
-  },
-  {
-    "id": 22,
-    "name": "市川 豊",
-    "company": "株式会社エーピーコミュニケーションズ",
-    "jobTitle": "Technical Evangelist",
-    "profile": "インフラエンジニア、フロントエンドエンジニアとして官公庁のインフラ基盤を中心としたサーバの設計構築、運用保守、Webシステム開発を担当。専門学校で非常勤講師としてOSS（Linux、Docker、k8s、Rancher、Cloud等）を教えたり、アドボケート／エバンジェリストとして、ミートアップや勉強会、カンファレンスで登壇、企業様向けプライベートトレーニング講師としても活動中。最近は執筆活動にも力を入れています。\n共著：「コンテナベースオーケストレーション」（翔泳社）、「RancherによるKubernetes活用完全ガイド」（インプレス）\n連載：「Rancherってどんなもの？」第1回~第3回（ThinkIT）",
-    "githubId": "cyberblack28",
-    "twitterId": "cyberblack28",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/78fd75a71db4205eabf9b6354d23461a.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=f568b8623aecc4f651c39658e95f8d9a7176d4528d77996464df6bf0969d196d"
-  },
-  {
-    "id": 23,
-    "name": "瀬尾 直利",
-    "company": "ZOZOテクノロジーズ",
-    "jobTitle": "リーダー",
-    "profile": "2019年1月にSREスペシャリストとしてZOZOテクノロジーズに中途入社。2019年4月にMLOpsチームを立ち上げ、2020年4月にZOZOリプレイスSREチームのリーダーも兼務で務め始める。ZOZO CSIRT兼任。社外活動としてCRuby, Fluentdのコミッター。ex-DeNA",
-    "githubId": "sonots",
-    "twitterId": "sonots",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/e42d30f08c3b9eb3a10baf6a26160ba3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=0991374941deca16c4a827d6308d97a8d2df152a5b2efd62dcd5aba46a978625"
-  },
-  {
-    "id": 24,
-    "name": "亀井 宏幸",
-    "company": "ZOZOテクノロジーズ",
-    "jobTitle": "エンジニア",
-    "profile": "2017年9月にZOZOテクノロジーズに中途入社。ZOZOTOWNのオンプレサーバ運用を経て2019年9月にPF-SREチームへ、パブリッククラウド・k8sを初体験しながらZOZOリプレイスに携わっている。",
-    "githubId": "hiroyuki-kamei",
-    "twitterId": "hiroyuki-kamei",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/0888017a044ec36e65f89e409b596058.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=90acb5b9eb94f6cde0d88a52f692262efb38571c08e5c6bdb5690d7b0333a69c"
-  },
-  {
-    "id": 26,
-    "name": "小林 優吾",
-    "company": "信州大学",
-    "jobTitle": "学生",
-    "profile": "CloudNativeな技術が好きな大学院生",
-    "githubId": "koba1t",
-    "twitterId": "0x6b6f62",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/e9600f2f8404616c07af4e6c6b4de334.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=2d2a8a9a4d035743107b87d64d22af42733202e4bd4357cec561ef2dbe293c1a"
-  },
-  {
-    "id": 27,
-    "name": "北山 晋吾",
-    "company": "Red Hat K.K.",
-    "jobTitle": "Solution Architect",
-    "profile": "Red Hat OpenShiftのソリューションアーキテクトとして、プロダクト戦略企画やコンサルティングを行っている。",
-    "githubId": "spchildren",
-    "twitterId": "spchildren",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/444882587dd5a8357e7d1122bc7c0b85.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=f0475f8e5c2f56d92c36e986f81f7a7c9eb50cb30a77b75625da8442dba45a9a"
-  },
-  {
-    "id": 29,
-    "name": "高木 潤一郎",
-    "company": "メルペイ",
-    "jobTitle": "SRE",
-    "profile": "2018年にメルペイSREとして入社し、メルペイのインフラとSREチームの立ち上げを行いました。\n今はSREチームのEngineering ManagerとTechLeadをやっています。\n昨年のCNDT2019では「メルペイにおけるマイクロサービスの構築と運用」というタイトルで発表しました。\n",
-    "githubId": "tjun",
-    "twitterId": "tjun",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/b01d0f35478c3befa1010beddc955cc8.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=591dc3106cde09220a8608cb4677bc1dea279411be30e20e945f24320cb3abf9"
-  },
-  {
-    "id": 30,
-    "name": "藤井 秀行",
-    "company": "NTTデータ",
-    "jobTitle": "Infrastructure Engineer",
-    "profile": "NTTデータにてOSS開発、NTT OSSセンタにて主にLinux分野のサポートとコンテナ技術の研究開発に従事。2020年はクラウドとコンテナのセキュリティを専門としつつ、セキュリティ全般も見ている。",
-    "githubId": null,
-    "twitterId": "fujiihda",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/a6bddc3b7d1627e94fc5890309106a47.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=6946102765e4ae67e4eca8445ff0bbe55c7dbc491fa92d9707210e1d411a173a"
-  },
-  {
-    "id": 31,
-    "name": "吉田 龍馬",
-    "company": "Z Lab Corporation",
-    "jobTitle": "Software Engineer",
-    "profile": "2015年に DMM.com に新卒として入社。Hadoop Ecosystem を利用したデータ分析基盤の開発と運用に従事。2018年12月よりゼットラボ株式会社で Kubernetes をベースとしたインフラ基盤の研究開発を行っており、現在は Cloud Native なアクセス制御システム（認証, 認可）の研究開発を担当している。SPIFFE/SPIRE プロジェクトのコントリビューター。CKA-1900-001691-0100 保有。",
-    "githubId": "ryysud",
-    "twitterId": "ryysud",
-    "avatarUrl": null
-  },
-  {
-    "id": 32,
-    "name": "本村 あおい",
-    "company": "サイボウズ株式会社",
-    "jobTitle": "SRE",
-    "profile": "大手メーカーにてSWエンジニアを経て2019年7月サイボウズ株式会社に入社。 現在SREと・インフラ基盤移行プロジェクト(Maneki)チームを兼務中。",
-    "githubId": "aoi1",
-    "twitterId": "_a0i",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/706c770cecd44c0953a4eb98edd625ed.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=7c5ced35d22b92fdb2e63fec31737c25676a475f2234c658a24ead22fcd2fe3d"
-  },
-  {
-    "id": 73,
-    "name": "吉川 拓哉",
-    "company": "サイボウズ株式会社",
-    "jobTitle": "サービス運用部長",
-    "profile": "NTT OSSセンタでLinuxのKVMモジュールの開発活動を担当し、長くカーネルを専門として働く。その後、通信サービス関連のビッグデータを分散処理基盤で分析するプロジェクト等を担当し、2018年にサイボウズ入社。現在はサービス運用部長としてcybozu.comのクラウド基盤の開発・運用を担当。2019年からは新規構築されたKubernetes基盤上のクラスタにサービスを移行するManekiプロジェクトのマネージメントも担当。",
-    "githubId": "takuya44kw",
-    "twitterId": "takuya44kw",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/18bb36ec9d8b9011f52e42872a207112.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=841a1729cd0b15b7ff0a1f36f8fefd0a2769db5d20105f12ca1841e5cd570577"
-  },
-  {
-    "id": 33,
-    "name": "草間 一人",
-    "company": "VMware",
-    "jobTitle": "Senior Solutions Architect",
-    "profile": "VMware Tanzu(旧Pivotal)にてプロフェッショナルサービスに携わる。VMware Tanzu製品のTechnical enablementのほか、勝てるプラットフォームチームを作る『Platform Dojo』サービスの提供を行っている。専門技術はCloud Foundry, Kubernetes,Concourseなど。コミュニティ活動としてPaaS勉強会を2012年から主催。",
-    "githubId": "jacopen",
-    "twitterId": "jacopen",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/b3b0e9ca6ece15d26166940d4d10f6ad.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=9cace1af0367bcd9571701ac7e08b857871a32dc187aeebeb530cf9c36392f7a"
-  },
-  {
-    "id": 34,
-    "name": "原 トリ",
-    "company": "AWS",
-    "jobTitle": "Sr. Product Developer Advocate",
-    "profile": "ERPパッケージベンダーR&Dチームにてソフトウェアエンジニアとして設計・開発に従事。その後クラウドを前提としたSI+MSP企業での設計・開発・運用業務を経てAmazon Web Services Japanへ。現在はAWSコンテナサービスを中心とした技術領域におけるお客様への技術支援をリードするとともに、その普及活動にも力を入れている。",
-    "githubId": "toricls",
-    "twitterId": "toricls",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/6eca5802e38e80e93dc8e78a2a24e7a9.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=4f63d741a8a5631c1f1f0e26233ea48c2d2a22b32516e26a0dac103cff763d9f"
-  },
-  {
-    "id": 35,
-    "name": "川村 亮清",
-    "company": "株式会社みらい翻訳",
-    "jobTitle": "ソフトウェアエンジニア",
-    "profile": "株式会社みらい翻訳でソフトウェアエンジニアとして AI 翻訳サービス 「MiraiTranslator」 の開発を行なっています。\n元々はバックエンドエンジニアで API の開発をメインに行なっていましたが、最近は SRE としてサービスの改善を行なっています",
-    "githubId": null,
-    "twitterId": null,
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/1ad3edfc89e22cded26b81a12525aec2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=cf95bbc855c3deba41235828cf8c19bb615a0c79cf589f0d28663596a2f2ea5e"
-  },
-  {
-    "id": 36,
-    "name": "bells17",
-    "company": "-",
-    "jobTitle": "Software Engineer",
-    "profile": "これまでにWebサービスの開発にKubernetesを利用した開発/インフラ環境構築/運用に関わって来ました。\n現在はKubernetesの独自Cloud Controller Manager/CSI Driver/Ingress Controllerの開発などKubernetesの各種コンポーネントの開発を行っています。",
-    "githubId": "bells17",
-    "twitterId": "bells17_",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/524a4da015b06f338d7a177cfe98faf2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=7c8fdd5b728d30e0557d7c7f81e86c246ce6f8cdfd958cc88f28455570b4e08d"
-  },
-  {
-    "id": 37,
-    "name": "多田 健太",
-    "company": "ソニー株式会社",
-    "jobTitle": "Software Engineer",
-    "profile": "ソニー株式会社にて、組み込みシステム向けのコンテナ基盤技術やコンテナトレーシング技術に従事しています。",
-    "githubId": "KentaTada",
-    "twitterId": null,
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/28eace078e22d8accb1f04a578cda42f.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=5bdb24aab27c1181dd106ce7ba88d09a1450da5b0c9a4bd7f19e0b5c4fbfbbc1"
-  },
-  {
-    "id": 38,
-    "name": "池田 森人",
-    "company": "慶應義塾大学",
-    "jobTitle": "SoftwareEngineer",
-    "profile": "金融事業や動画広告事業でGoやKubernetesを使った開発に携わってきました。\ngVisorやFirecrackerなどサンドボックス技術のOSSにコントリビュートしています。\nコンテナランタイムに関する電子書籍を出版予定です。",
-    "githubId": "moricho",
-    "twitterId": "_moricho_",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/5429ef80e20f1650028c3a1aaeb16792.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=7a22884a98d52acb1034d8e95e29ee31c3f6706a9bad79cf2354798145261dbf"
-  },
-  {
-    "id": 40,
-    "name": "森本 健司",
-    "company": "サイボウズ株式会社",
-    "jobTitle": "Site Reliability Engineer",
-    "profile": "サイボウズ株式会社のクラウドサービス\"cybozu.com\"の運用基盤の開発・管理に従事。\n現在は運用基盤刷新プロジェクト\"Neco\"でクラウドネイティブな基盤開発に日夜呻吟している。\n",
-    "githubId": "morimoto-cybozu",
-    "twitterId": null,
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/8973a4cbccbd41cd7bd23a3dd7d7cbd2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=8cc9dd15c48552a5605ceab01334e92e85a4e4f2511f65d78ab69ce3c1cb6535"
-  },
-  {
-    "id": 41,
-    "name": "中村 勇介",
-    "company": "Black Inc.",
-    "jobTitle": "Webアプリケーションプログラマー",
-    "profile": "福井高専卒業後、自社サービスを運営するベンチャー企業に入社。以後Rubyを中心に、Webアプリケーションのバックエンド開発・運用、AWSやGCPを用いたインフラ構築に関連する業務を担当。2019年夏からBlack Inc.に参加し、バックエンド全般を担当。",
-    "githubId": "unasuke",
-    "twitterId": "yu_suke1994",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/f0e64f7386aee67a0ce9043fcb9f50d3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=a0dd70b1bcdee76984ca2d81677324d3510ff33e13180ff0b5a04de38f56a522"
-  },
-  {
-    "id": 42,
-    "name": "湯原 孝明",
-    "company": "株式会社メルペイ",
-    "jobTitle": "SRE",
-    "profile": "通信事業者で公共系のSIに従事し、その後Web企業でインフラエンジニアとしての経験を経て、2019年6月にメルペイにジョインしました。SREとしてメルペイのサービスを安定して提供するための仕組み作りや日々の運用業務に関わっています。",
-    "githubId": "tyuhara",
-    "twitterId": "__yuhara",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/28a77ab6a5db926cc24480906dfe0c4f.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=74c607f7d28192db0cdd0404dcbdd8fb99084b70b050d1c9a82c56157e3a31c1"
-  },
-  {
-    "id": 43,
-    "name": "山下 慶将",
-    "company": "株式会社メルペイ",
-    "jobTitle": "SRE",
-    "profile": "2019年4月に株式会社メルペイのSREとして新卒入社しました。\n金融事業を支えるための信頼性を向上に取り組んでいます。また、メルカリ社内の勤怠打刻サービスを開発・運用しています。今年度からはCI/CDチームに所属し、安全なデプロイができるように注力しています。",
-    "githubId": "KeisukeYamashita",
-    "twitterId": "_k_e_k_e",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/02db754efe166bd10353b65cd349cfae.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=1c7b74f086acefa0db296e676109b35ec1c0071ddce014d3b1eee96adfb67ef6"
-  },
-  {
-    "id": 44,
-    "name": "後藤 健汰",
-    "company": "株式会社マネーフォワード",
-    "jobTitle": "インフラエンジニア",
-    "profile": "2019年1月より、マネーフォワードでインフラエンジニアとして勤務しています。主にアプリケーションのコンテナ化、AWS/Kubernetesを用いたインフラの構築を担当しています",
-    "githubId": "kennygt51",
-    "twitterId": "kennygt51",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/da7773ad8ee7941cc6fea44a2c7c287e.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=464f1e9da10ae320824722cc125611c7e638111d586bbcfbc6dd7e022e195860"
-  },
-  {
-    "id": 45,
-    "name": "濱田孝治",
-    "company": "クラスメソッド株式会社",
-    "jobTitle": "マネージャー",
-    "profile": "独立系SIerでアプリケーションの開発〜プロジェクトマネジメントと、全社プロジェクトでのアーキテクチャリングを実施。現職では、多数の顧客企業に対してAWSの利用のコンサルティング〜実装を担当。",
-    "githubId": null,
-    "twitterId": "hamako9999",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/5890f15a151fcedc81619f18be5a539c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=1c06697eba73cf36f336626eefedd70aa516e2ac68af922938050f7a9f198294"
-  },
-  {
-    "id": 46,
-    "name": "竜田 茂",
-    "company": "ソフトバンク株式会社",
-    "jobTitle": "シニアシステムエンジニア",
-    "profile": "前職の日本オラクルでは Java アプリケーションサーバ、SOA 製品の技術支援を経て、2013 年よりソフトバンクに参画し、Java ミドルウェア製品の全社導入支援、およびリアルタイム処理基盤 Chronos-Coreプロジェクト、IBM Watson のローカライズにも参画。現在は Java でのクラウドネイティブな開発、DevOps の実現を推進中。",
-    "githubId": "dragonfield",
-    "twitterId": "doragod",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/e444924c6537abd22b721ed5912380d9.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=0c34ac2d470f6a956d86bbbd1bec3dcbdff86ffd098a1db857d000fa1a2e090d"
-  },
-  {
-    "id": 47,
-    "name": "山本 泰宇",
-    "company": "サイボウズ株式会社",
-    "jobTitle": "執行役員",
-    "profile": "東京大学大学院で情報科学を専攻後、サイボウズ株式会社に入社。\n開発本部長、最高技術責任者、cybozu.com 開発責任者、運用本部長を歴任し、\n現在は cybozu.com のアーキテクチャ刷新プロジェクト Neco の責任者を務める。",
-    "githubId": "ymmt2005",
-    "twitterId": "ymmt2005",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/c44c804d1c3d53f1a88a9fb6ba1e10be.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=dcc1265270709c55054c090cb2c01c8f43d479241f0037289abf44c1448e28f4"
-  },
-  {
-    "id": 48,
-    "name": "亀澤 寛之",
-    "company": "富士通株式会社",
-    "jobTitle": "Senior Professional Engineer",
-    "profile": "2003年に富士通に入社。2013年中頃までLinux カーネル開発に従事し memory cgroupのメンテナなどを努めた。以後、2018年までOpen Container InitiativeやCloud Native Computing Foundationの活動に従事。富士通からのボードメンバーとして活動した。近年はサービス開発の責任者としてFUJITSU Cloud Service Tunaclo API Connectの開発を主導している。",
-    "githubId": null,
-    "twitterId": "hiro_kamezawa",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/620dc2701dee2d2d2eb08c39a1622fd3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=c2aee8f45cc4bba599e335823b0e2c63103b20e57d2a099e33dc784cca4ae743"
-  },
-  {
-    "id": 49,
-    "name": "菅井 健太",
-    "company": "株式会社コロプラ",
-    "jobTitle": "取締役 CTO",
-    "profile": "システム開発会社、スタートアップ企業にて、プログラマーとしてBtoCのwebサービス開発に従事。\n2010年6月に株式会社コロプラへ入社。サーバーサイドの開発、ゲームタイトルのプロジェクトマネジメント、横断的な技術開発など幅広く担当。\n2017年1月に取締役に就任。現在 CTO として従事。",
-    "githubId": null,
-    "twitterId": null,
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/8fe9c40c099599bff1aee58a8fce3c7d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=7b29d503882f84636ab38a9952ef4646aa25d714f9d47d864b0c7b0059639611"
-  },
-  {
-    "id": 50,
-    "name": "牧野 祐己",
-    "company": "PLAID",
-    "jobTitle": "CTO",
-    "profile": "東京大学工学系研究科で修士課程卒業\n2009 年から2014 年までIBM ソフトウェア開発研究所でビッグデータ関連の研究開発業務に従事\n2015 年にプレイドに参画し、KARTEのデータ分析エンジンの研究開発を担当",
-    "githubId": null,
-    "twitterId": null,
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/bbfa1dab428086fb4e8ac8d169d84612.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=d5c1a6478a1d18254f8791eb4cfccc8f9285e83ab9114d7f8195b6135fbf59b3"
-  },
-  {
-    "id": 54,
-    "name": "多田 真敏",
-    "company": "株式会社カサレアル",
-    "jobTitle": "チーフエンジニア",
-    "profile": "研修トレーナー。専門はJava/Spring/Microservices/Kubernetes。2019年11月、CKAD取得。日本Springユーザ会スタッフ、OSSのドキュメント翻訳など、プライベートでも色々やってます。",
-    "githubId": "MasatoshiTada",
-    "twitterId": "suke_masa",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/9438515b06ae35a21d0f4c111591b8ee.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=eeb27675c2d963df71ff4ea328a0b7b3e5d070017e506195c7523966d0d91303"
-  },
-  {
-    "id": 55,
-    "name": "高良 真穂",
-    "company": "日本アイ・ビー・エム株式会社",
-    "jobTitle": "ハイブリッドクラウド CTO",
-    "profile": "日本IBMへ入社以来、自動車、航空、金融、大学および研究機関などのプロジェクトに参加し、基幹系システムから科学計算システムまで、幅広いシステムを手掛ける。現在、IBMクラウド戦略の一環であるKubernetesをコアとしたIBMクラウドサービスやソフトウェア製品を担当。 「15Stepで習得 Dockerから入るKubernetes コンテナ開発からK8s本番運用まで (StepUp!選書)」の著者",
-    "githubId": "takara9",
-    "twitterId": "MahoTakara",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/347deeb3c3d2e2a19a9fb5bf935662c3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=f04781c3a1ac97d731e90ba4351b2eacd18583a60772c62de70fa2bbc479f4a1"
-  },
-  {
-    "id": 56,
-    "name": "古澤 慧",
-    "company": "富士通株式会社",
-    "jobTitle": "Marketing Engineer",
-    "profile": "通信事業者向けのSDN製品の開発をエンジニアとして担当し、一昨年よりクラウドネイティブなサービスの企画および拡販を担当する部門へ異動。現在は、新製品Tunaclo API Connectのマーケティングを主にやっています。SoftwareDesign誌 8月号からゼロトラストネットワークの特集記事を連載中！",
-    "githubId": null,
-    "twitterId": "furusawa_kei",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/390f0356454e782b285e11ff26d8cbb0.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=9452b411708e5aec574e28a2c72cf41988f3bb12393fe5df9fbb87edf2b604ff"
-  },
-  {
-    "id": 57,
-    "name": "清水 毅",
-    "company": "New Relic ",
-    "jobTitle": "Senior Solutions Consultant",
-    "profile": "パッケージベンダーにてecommerceシステムのソフトウェアエンジニア、インフラエンジニアを経験後、DevOpsチームの立ち上げやSaaSビジネスのパフォーマンスやセキュリティに特化したチームの立ち上げに従事。その後、AWSにて1人目のSaaS専門ソリューションアーキテクトとして多くの日本企業のSaaS化、セキュリティ対策、SRE立ち上げを支援し、現職。特にインフラ、パフォーマンス、セキュリティという非機能要件の設計から運用を得意とする。",
-    "githubId": null,
-    "twitterId": null,
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/5d6fdb1e680acc976f62c1eddb60bd08.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=b0c1835417f011497962126a6b79789eebec34741dd750627b2a2a223e344aec"
-  },
-  {
-    "id": 61,
-    "name": "槌野 雅敏",
-    "company": "サイオステクノロジー株式会社",
-    "jobTitle": "シニアアーキテクト",
-    "profile": "シニアアーキテクトとしてAPIマネジメントやコンテナに特化したコンサルティング、アドバイザリー案件を数多く担当。外資系ベンダーでのソリューションアーキテクトを経て、大規模プロジェクトのPMを務め、開発・運用業務に携わる。現在は、サブスクリプションビジネスを支援するプラットフォームで自社開発したサービス「SIOS bilink」のアーキテクトを担当。",
-    "githubId": null,
-    "twitterId": null,
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/03422033627587bf55b509d8ac01f027.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=f7c79a5fef1aa49d89961ec101ffd41c0e87d379107a92e58c79115b2ce601f6"
-  },
-  {
-    "id": 62,
-    "name": "鈴木 孝彰",
-    "company": "F5ネットワークス合同会社",
-    "jobTitle": "NGINX Technical Solutions Architect",
-    "profile": "インターネットデータセンターにてネットワークエンジニアを経験後、プライベートクラウドSDN、Ubuntu OS、グルメサービスに参画。現在はF5ネットワークスジャパン合同会社にてNGINXのテクニカルソリューションズアーキテクトを担当。",
-    "githubId": null,
-    "twitterId": null,
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/f280556a877867fa2de4689a8b833fca.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=13bff655c229fc93f693c457acb46c96eeba4ad8a37738c78f68c6f9364d165b"
-  },
-  {
-    "id": 63,
-    "name": "仁井田 拓也",
-    "company": "日本オラクル株式会社",
-    "jobTitle": "ソリューションエンジニア",
-    "profile": "日本オラクル株式会社所属。SIerにて様々なOSSを活用したシステム開発を経験し現職。現在は、SIer時代の知見を活かし、ソリューションエンジニアとしてクラウドでのアプリケーション開発やクラウドネイティブ技術に関する技術/案件支援に従事。",
-    "githubId": null,
-    "twitterId": "takuya_0301",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/b3663ac7683605f5bcd4db95c15f7892.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=fba7ec3dabc87290b71b860ca956f7a37185253c30a0594d0167612b16c96583"
-  },
-  {
-    "id": 64,
-    "name": "斎藤 和史",
-    "company": "レッドハット株式会社",
-    "jobTitle": "Cloud Solution Architect",
-    "profile": "ここ数年は，Kubernetesをベースにしたソリューション開発，技術支援，営業提案など幅広く実施中。他にも多数のテックコミュニティ活動に取り組んでいる。Red Hatには2019年にJOIN。",
-    "githubId": "capsmalt",
-    "twitterId": "capsmalt",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/2b41c5c9eb70e4af5993ed2e71ddfe06.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=64f0a912fb3ccd0e56de7ec22c9d55644ec4f48316bdbdc9555d51c5424206f4"
-  },
-  {
-    "id": 65,
-    "name": "佐野 雄一郎",
-    "company": "ヤフー株式会社 / システム統括本部",
-    "jobTitle": "クラウドプラットフォーム本部 技術4部 部長",
-    "profile": "Yahoo! JAPANで社内PaaS/CaaSのプラットフォームの推進、運用を担当したのち、現在は社内のモニタリング系プラットフォームの推進、運用を担当",
-    "githubId": null,
-    "twitterId": null,
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/0bd1f333902ce06d849dca744f0710e1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=c77db820257fdfb9b2f56734f687611233c34f2b8cdfb696626d4d52be52a916"
-  },
-  {
-    "id": 66,
-    "name": "篠原 一徳",
-    "company": "グーグル・クラウド・ジャパン合同会社",
-    "jobTitle": "Application Modernization Specialist",
-    "profile": "通信会社にて、エンタープライズ向けのシステム インテグレーション、クラウドサービスの開発や OSS へのコントリビューションに従事。Google Cloud では、主にエンタープライズのお客様向けに Anthos をはじめとしたコンテナや Kubernetes 関連サービスの提案、アーキテクチャ設計や PoC などの技術的なサポートを行っている。",
-    "githubId": "kazshinohara",
-    "twitterId": "kazshinohara",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/e02e36087c47d98029a135ca9348075c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=251343d7c1c96aea44b3b83b69262aec20e22379e7e3d3194e1a31a878441d66"
-  },
-  {
-    "id": 67,
-    "name": "小沢周平",
-    "company": "株式会社サイバーエージェント/技術本部",
-    "jobTitle": "インフラエンジニア",
-    "profile": "中途2年目のインフラエンジニア。サイバーエージェント所属",
-    "githubId": null,
-    "twitterId": null,
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/182b0b58ac1787a3efc800a3a87a55e2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=d1145e58eb6930305944a735bed06749e03158e711facebf2098ce212997ab69"
-  },
-  {
-    "id": 68,
-    "name": "荻野 陽太",
-    "company": "株式会社サイバーエージェント/ Ameba事業本部",
-    "jobTitle": "サーバサイドエンジニア",
-    "profile": "新卒2年目のサーバーサイドエンジニア。サイバーエージェント所属",
-    "githubId": null,
-    "twitterId": null,
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/e6b84ac63c266182bfc2d9a48dc832d8.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=2dc4bcbae04cea2bb9bb93a0162ea180de1503ffd4901368a8b2fbff04476224"
-  },
-  {
-    "id": 69,
-    "name": "横田紋奈",
-    "company": "JFrog",
-    "jobTitle": "デベロッパーアドボケイト / Developer Advocate",
-    "profile": "元バックエンドエンジニアのデベロッパーアドボケイト。\n\n開発からは離れたものの、SIer、広告系Web企業、金融系スタートアップといろいろな環境で積んだ経験をいかし、少しでも現場に近い目線でDevOpsについて考え続けたい。広く色々な方と話したい。\n\nJava女子部、JJUGといったJava系のコミュニティに出没。サンフランシスコで開催されたJavaOne 2017登壇経験もあり。マネジメントや組織に関する話も好き。\n著書『いちばんやさしいGit&GitHubの教本』",
-    "githubId": "ihcomega56",
-    "twitterId": "ihcomega",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/d7b352c24b604fa39853bdd4cbf992f7.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=579633936f310dac2068ec2653dcc54485b6810c322a287979e15f7391503c40"
-  },
-  {
-    "id": 72,
-    "name": "Katelin W Ramer",
-    "company": "Cloud Native Computing Foundation",
-    "jobTitle": "-",
-    "profile": "-",
-    "githubId": null,
-    "twitterId": null,
-    "avatarUrl": null
-  },
-  {
-    "id": 74,
-    "name": "星野 真知",
-    "company": "VMware",
-    "jobTitle": "VMware Tanzu Platform Architect",
-    "profile": "10数年Linux、OpenStack、Kubernetes、CloudFoundryなどのOSSインフラに関わる。現在はVMware Tanzuチームに所属し、Kubernetesの普及およびアプリケーションモダナイゼーションを行っている。",
-    "githubId": null,
-    "twitterId": null,
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/37c6a85bfbe2685ba366b8614edfbbf5.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=48e6963953093bb65e4db9ff384ddf3f6de7fdecee8ed1489021d31f4d90d82c"
-  },
-  {
-    "id": 75,
-    "name": "舟木 類佳",
-    "company": "株式会社LegalForce",
-    "jobTitle": "執行役員 兼 最高研究開発責任者",
-    "profile": "東京大学情報理工学系研究科創造情報学専攻修了。 大学院では画像認識と自然言語処理を組み合わせたマルチモーダル機械学習の研究を実施。 その後、株式会社リクルートへ入社し、１０を超える画像認識・機械学習のプロジェクトを推進。 現在はLegalForceの最高研究開発責任者として研究開発組織を立ち上げ、自然言語処理システムやデータ基盤、機械学習基盤の構築を行っている。",
-    "githubId": null,
-    "twitterId": "ruka_funaki",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/b1190b8cac205920c8552a052a683dc7.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=d13372c9ec1db48c0a5d37994e04d193f7a8f85cdd32681c6d63b3472a60b0fa"
-  },
-  {
-    "id": 77,
-    "name": "寺田 佳央",
-    "company": "Microsoft Corporation",
-    "jobTitle": "Sr. Cloud Advocate",
-    "profile": "サン・マイクロシステムズ所属時から日本における Java の普及活動を行う。現在はマイクロソフト・コーポレーションに所属しクラウド・アドボケイトとして、Java on Azure の利用促進・啓蒙活動を実施中。2016 年 7 月、日本人で 2 人目となる Java Champion に就任し、日本 Java ユーザ・グループの幹事でもある。",
-    "githubId": "yoshioterada",
-    "twitterId": "yoshioterada",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/900c1bdeb8c74d2c45413f4189e64345.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=12de2706d3cc6ccfd9e4cb5fe5b623a057043767531cd14fa377c4403f687ea3"
-  },
-  {
-    "id": 79,
-    "name": "施 文翰",
-    "company": "Rancher Labs, Inc.",
-    "jobTitle": "Support Engineer",
-    "profile": "\"36歳、現在横浜で４人家族で暮らしています。\n10年間近くOSSのサポート＆開発に従事し、現在はRancher Labsのサポートエンジニアとして、主にAPAC地域の顧客に対するクラウドネイティブ製品のサポートサービスを提供しています。\n得意分野はメモリ回収、分散型ストレージとファイルシステム。\n休日はほぼ子供と遊んでいるので自分の時間が少ないが、生活に便利なIoTグッズを家で作って家庭的な地位を挽回している。\"",
-    "githubId": "xibuka",
-    "twitterId": "shi_wenhan",
-    "avatarUrl": "https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/0773e6ec6553e1a5cc34b2c91d89e21b.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=a704ab1e00790595ab78da87ab71ac55e45d2141db8b9404650555d534b9544b"
-  }
+    id: 1,
+    name: '林 政利',
+    company: 'Amazon Web Services Japan K.K.',
+    jobTitle: 'Solutions Architect',
+    profile:
+      'フリーランスやWeb系企業で業務システムやWebサービスの開発、インフラ運用に10年ほど従事していました。近年はベンダーでコンテナ技術の普及に努めており、現在、AWS JapanでAmazon EKSやAmazon ECSでのコンテナ運用や開発プロセス構築を中心にアーキテクトとして活動しています。',
+    githubId: 'literalice',
+    twitterId: 'literalice',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/5c9f018bd98c6167864f62405028b45a.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=504446e02a6df7e791c4a2787c60996be8246de33ddae91e86ebadcac28a5350',
+  },
+  {
+    id: 2,
+    name: '太田 航平',
+    company: 'HPE',
+    jobTitle: 'Solutions Architect',
+    profile:
+      '2018年から2年間ZOZOテクノロジーズにてコンテナを中心としたインフラの開発や運用などに携わった後、HPEにソリューションアーキテクトとして入社。\n開発者体験を落とさず、セキュアでスケーラブルなインフラ基盤をどうやって作るかを考えることが好き。\n2020年5月よりCNCFのCloud Native Ambassadorに就任し、新しい技術をわかりやすく伝えられるように修業の日々を送っている。',
+    githubId: 'inductor',
+    twitterId: '_inductor_',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/54c66816360c7808959043dcd32c5473.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=45246a5977a3a7281545e8e8da85bff3f505190a0a16432708c7b91e84239fe7',
+  },
+  {
+    id: 3,
+    name: '三神 拓哉',
+    company: 'ZOZOテクノロジーズ',
+    jobTitle: 'Infrastructure Engineer',
+    profile:
+      '2014年にDMM.comに入社後、オンプレミスの大規模インフラ環境の運用に従事。 VMware環境におけるWebサービスの運用やSoftware Defined Storageの運用を担当。 2019年にZOZOテクノロジーズに入社。オンプレミス運用が多いチームに配属になったが諸々の事情でクラウドとk8sを利用した案件に参加。 現在はクラウド/k8s環境のSREとして奮闘中。',
+    githubId: 'takuya-mikami',
+    twitterId: 'Tadanokumakuma',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/3ebd2fa9e160e817cb7b92c37ff03364.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=b7e8b061d582c2dfd3ba2731a9847bba68263a6bea92aa466ee9cf177f041e73',
+  },
+  {
+    id: 4,
+    name: '昔農 凜太朗',
+    company: 'NTTコミュニケーションズ株式会社',
+    jobTitle: 'Site Reliability Engineer',
+    profile:
+      'NTTコミュニケーションズにおいて商用サービスのリリースサイクル向上のためCI/CDパイプラインの設計，実装及びパブリッククラウドに対するInfrastructure as Codeを含めたインフラストラクチャの設計を行っています。\nこれまではクラウドサービスのSDNコントローラの開発やキャリアグレードネットワークの設計，運用に従事していました。',
+    githubId: 'sekinet',
+    twitterId: 'TAR_O_RIN',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/43aadf04e598d112188dd9994532ba22.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=e37ec8d83b6a42805915cfd5105edd5c6f4a557bc6d30c64afda47dd03b7938e',
+  },
+  {
+    id: 5,
+    name: 'チェシャ猫',
+    company: 'ProofCafe',
+    jobTitle: 'Software Engineer',
+    profile:
+      '普段の業務では、Docker や Kubernetes を中心としたコンテナオーケストレーション技術の検証と基盤設計を担当。それと並行してプライベートでは、関数型プログラミングや数理的手法によるソフトウェア検証について研究していたりいなかったりする。トレードマークは猫耳。',
+    githubId: 'y-taka-23',
+    twitterId: 'y_taka_23',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/4b51bbef827f7a6a8ce376e11f159d1a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=759b5a21490b79fe27f24cbae57b97bb502728a08a270e79f31badc7ac9ab8a1',
+  },
+  {
+    id: 6,
+    name: '宇都宮 雅彦',
+    company: '株式会社NTTデータ',
+    jobTitle: 'Infrastructure Engineer',
+    profile:
+      'NTTデータでクラウドネイティブな金融システムの開発に取り組んでいるインフラエンジニアです。\nマイクロサービスのシステム開発をスムーズにするために日々試行錯誤しています。\n昨年は CloudNative Days Kansai 2019 に登壇させて頂いています。',
+    githubId: 'polar3130',
+    twitterId: 'polar3130',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/e650064ba54b10c46ce87e696d668cd3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=950b0dfa2a323f129327494f8cbea1ba54094e515a3fc612f5f5dfd353a00319',
+  },
+  {
+    id: 7,
+    name: '長谷川 誠',
+    company: '株式会社サイバーエージェント',
+    jobTitle: 'Engineer',
+    profile:
+      '株式会社サイバーエージェントにてプライベートクラウドの構築、運用に従事。社内向け Kubernetes as a Service の提供も行っている。',
+    githubId: 'makocchi-git',
+    twitterId: 'makocchi',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/a67546c1fd3c3a27509123aa89e719f9.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=97a348f14b6de0e8ddad44b11cd2ac07e4610c49fe1ff5f3acbbf16da06878a8',
+  },
+  {
+    id: 8,
+    name: '大村 伸吾',
+    company: '株式会社Preferred Networks',
+    jobTitle: 'Engineer',
+    profile:
+      '中堅SIer, Web系スタートアップを経て、 2018年1月より現職。Preferred Networksでエンジニアとして従事。分散システム 、コンテナ技術全般に興味がある。PFNでは深層学習向け大規模GPU Kuberntes クラスタのスケジューラの開発運用に携わっており、Kubernetes プロジェクト(sig-scheduling)へも積極的に参加している。',
+    githubId: 'everpeace',
+    twitterId: 'everpeace',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/ac28859a54c04c2280a0d16cdb91fccd.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=fc5f893d4ae0c7f1605826ba03a5185a1f275fb1a0fcc868983f00a2ca9b5bc9',
+  },
+  {
+    id: 9,
+    name: '早川 博',
+    company: 'ヤフー株式会社',
+    jobTitle: 'インフラエンジニア',
+    profile:
+      'この2月からヤフー株式会社にJoinし、Cloud Nativeなインフラの開発に取り組んでいます。\n- Cloud Native Developers JP オーガナイザー\n- Japan Container Days 12.18、CloudNative Days Tokyo 2019登壇\n- 「Kubernetes実践ガイド」著者（共著）',
+    githubId: null,
+    twitterId: 'hhiroshell',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/0aea60355d709e8663b2057139273a50.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=cff23e87bdf15a14f42782a5d4178c915c459c120ff6414017d068762074a327',
+  },
+  {
+    id: 10,
+    name: '青山 真也',
+    company: 'CyberAgent, Inc.',
+    jobTitle: 'Software Engineer',
+    profile:
+      'OpenStackを使ったプライベートクラウドやGKE互換なコンテナプラットフォームをゼロから構築。CyberAgentでは Kubernetes/CloudNative 領域の Developer Expertsとしても従事。国内カンファレンスでのKeynoteや海外カンファレンス等、登壇経験多数。世界で2番目にKubernetesの認定資格を取得。著書に『Kubernetes完全ガイド』『みんなのDocker/Kubernetes』。現在はOSSへのContribute 活動をはじめ、CNCF公式のCloud Native Meetup TokyoやKubernetes Meetup TokyoのOrganizerなどコミュニティ活動にも従事。',
+    githubId: 'MasayaAoyama',
+    twitterId: 'amsy810',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/cac3a56f9d0858a1b65075f08a657120.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=f4caaffc4ee2961950306fb7852e6f45ea89ccd071f2f04471ea1119930112d7',
+  },
+  {
+    id: 11,
+    name: '山本 佳代子',
+    company: 'freee株式会社',
+    jobTitle: 'SRE',
+    profile:
+      '2019年2月にfreeeに入社。SREとしてfreeeのインフラの進化に貢献すべく日々邁進しています。',
+    githubId: null,
+    twitterId: null,
+    avatarUrl: null,
+  },
+  {
+    id: 12,
+    name: '磯 賢大',
+    company: 'COLOPL, Inc.',
+    jobTitle: 'インフラエンジニア',
+    profile:
+      'システムインテグレータにて業務システムの開発に携わった後、2019年05月より株式会社コロプラにてインフラエンジニアとしてKubernetesとエコシステムを中心としたCloud Nativeな基盤の構築・運用に従事しています。Minikube Contributor。NextPublishing「実践Helm」「実践入門Kubernetes カスタムコントローラーへの道」著者',
+    githubId: 'govargo',
+    twitterId: 'go_vargo',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/c5b738a228d274c36f0c343b1c99aa56.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=5b6262fd452626880ec2201e03b9cc9f84bc339d98a54c0156c4ce6e31211889',
+  },
+  {
+    id: 13,
+    name: '仲亀 拓馬',
+    company: 'さくらインターネット 株式会社',
+    jobTitle: 'インフラエンジニア',
+    profile:
+      '新卒でSIerのデータセンター部門へ就職し、インフラの基礎を学んだ後さくらインターネットへ転職。\n現在は、Prometheusを中心としたKubernetesの監視システムの構築やObservabilityの実現を行う傍ら、エバンジェリストとして対外的活動に力を入れている。',
+    githubId: 'TakumaNakagame',
+    twitterId: 'kameneko1004',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/7284d6ae1541bb10743e2b34059c2fc1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=6777b9695868d7f546dee2e38971da0322b84b46ef67e134368547c0df9caac4',
+  },
+  {
+    id: 14,
+    name: '坂下 幸徳',
+    company: 'ゼットラボ株式会社',
+    jobTitle: 'Software Engineer',
+    profile:
+      '15年以上にわたりサーバ・ストレージなどインフラの運用管理技術の研究開発を行った後、\n2018年よりゼットラボ株式会社に移り、Kubernetesを中心とした運用管理・クラウド技術の研究開発に従事。また、2012年よりストレージの業界団体SNIAでも活動。\n博士(情報科学)、情報処理学会会員、「Kubernetes実践入門」共著者(技術評論社)',
+    githubId: 'ysakashita',
+    twitterId: 'ysakashita3',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/f294884b1534004a121ace21f55fa05b.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=e90af1c0afb35e811c7997ee0f95b47daa025cdd5716e8392deca081bb75dd8b',
+  },
+  {
+    id: 15,
+    name: '南 直',
+    company: 'Wantedly, Inc.',
+    jobTitle: 'Software Engineer',
+    profile:
+      'Wantedly の Infrastructure Team で Software Engineer として働いています。マイクロサービスの re-architecting や gRPC の導入など、プロダクト開発を支える為の基盤的開発をしています。',
+    githubId: 'south37',
+    twitterId: 'south37777',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/f36c03860fa299149d0f6f0e3215c015.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=0ff944ed09f28f848ce26914a37e15954471dd70c74747a5ce8d068b2aa868c6',
+  },
+  {
+    id: 16,
+    name: '長澤 翼',
+    company: '株式会社コロプラ',
+    jobTitle: 'インフラエンジニア',
+    profile:
+      '2018年から約1年半 CyberAgent で認証基盤/ポイントサービスの SRE を担当。新規サービスで Knative 本番導入に失敗し、2020年3月からコロプラで Kubernetes エンジニアをしています。急激なトラフィックのスパイクが発生するゲームタイトルでも手動事前スケール不要な世界にするのが夢です。',
+    githubId: 'toVersus',
+    twitterId: 'toversus26',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/eba04913e0e7a6865cca400614844b11.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=babd82dceaef2015970fea84c8a09d86ce965abb9b7ccfaf451719eaf099ae2a',
+  },
+  {
+    id: 17,
+    name: '徳永 航平',
+    company: 'NTT',
+    jobTitle: 'Engineer',
+    profile:
+      '日本電信電話株式会社でコンテナ仮想化技術に関する研究開発に従事。CNCF containerdにおいては、非コアサブプロジェクト「Stargz Snapshotter」のメンテナを務める。コンテナランタイムに焦点を当てたミートアップ「Container Runtime Meetup」を主催。',
+    githubId: 'ktock',
+    twitterId: 'TokunagaKohei',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/b79c4c6fa106905cdfb0931138653ca6.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=3104419ccb441ad806a15e281bf9ecd302a4bc3412bb905f7773cf148820974e',
+  },
+  {
+    id: 18,
+    name: '大坪 新平',
+    company: 'Wantedly, Inc.',
+    jobTitle: 'Engineer',
+    profile:
+      'Wantedly, Inc. に新卒入社後、社内に残る Kubernetes で動いていないアプリケーションをすべて移行する / 社内全クラスタのダウンタイムなしに新環境に移行するなどのプロジェクトのリードを担当。3年目になる現在は技術基盤チームのリーダーとして「未来の開発体験をつくる」というミッションのもとインフラからモバイルまで様々なレイヤーにまたがり生産性を向上するプロジェクトを行っている。',
+    githubId: 'potsbo',
+    twitterId: 'potsbo',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/33893ac1d1df9f4e1e18036b4dc5dc27.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=ffbf2b48632d5cd3b6308033b9e56645eb147ad5a389e9806709e7b99d555690',
+  },
+  {
+    id: 19,
+    name: '森本 くるみ',
+    company: 'Wantedly, Inc. / 慶應義塾大学',
+    jobTitle: 'Engineer Intern',
+    profile:
+      'Wantedly, Inc. のインターン生。慶應義塾大学理工学部情報工学科4年生で、大学ではHCIに関する研究をしている。フルスタックエンジニアを目指して日々奮闘中！',
+    githubId: 'morux2',
+    twitterId: null,
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/495619159006fdc49a789ef27886c9a6.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=5389ea6d228dc772df7fc8fe261c8338145f80b88cef1ddd7fe950069bae6e6d',
+  },
+  {
+    id: 20,
+    name: '源波 陸',
+    company: '株式会社サイバーエージェント',
+    jobTitle: 'Infra Engineer',
+    profile:
+      '2020年4月 株式会社サイバーエージェント入社 AI事業本部 Strategic Infrastructure Agencyという部署に配属',
+    githubId: null,
+    twitterId: null,
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/dc52b16d85472620863d93da80d7511e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=e649d253644c475ecd3f1fe8d8203f21d1924a706a063c09f270e72287d4d29b',
+  },
+  {
+    id: 21,
+    name: '川部 勝也',
+    company: '株式会社サイバーエージェント',
+    jobTitle: 'Infra Engineer',
+    profile:
+      '2020年4月 株式会社サイバーエージェント入社 AI事業本部 Strategic Infrastructure Agencyという部署に配属',
+    githubId: null,
+    twitterId: null,
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/f3070e7d7656191ef3eddce37ad971b4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=44f5e5571618bf8f3e1aa81eb7fdb411dc844ef9bf8430bfeceb689db16e730d',
+  },
+  {
+    id: 22,
+    name: '市川 豊',
+    company: '株式会社エーピーコミュニケーションズ',
+    jobTitle: 'Technical Evangelist',
+    profile:
+      'インフラエンジニア、フロントエンドエンジニアとして官公庁のインフラ基盤を中心としたサーバの設計構築、運用保守、Webシステム開発を担当。専門学校で非常勤講師としてOSS（Linux、Docker、k8s、Rancher、Cloud等）を教えたり、アドボケート／エバンジェリストとして、ミートアップや勉強会、カンファレンスで登壇、企業様向けプライベートトレーニング講師としても活動中。最近は執筆活動にも力を入れています。\n共著：「コンテナベースオーケストレーション」（翔泳社）、「RancherによるKubernetes活用完全ガイド」（インプレス）\n連載：「Rancherってどんなもの？」第1回~第3回（ThinkIT）',
+    githubId: 'cyberblack28',
+    twitterId: 'cyberblack28',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/78fd75a71db4205eabf9b6354d23461a.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=f568b8623aecc4f651c39658e95f8d9a7176d4528d77996464df6bf0969d196d',
+  },
+  {
+    id: 23,
+    name: '瀬尾 直利',
+    company: 'ZOZOテクノロジーズ',
+    jobTitle: 'リーダー',
+    profile:
+      '2019年1月にSREスペシャリストとしてZOZOテクノロジーズに中途入社。2019年4月にMLOpsチームを立ち上げ、2020年4月にZOZOリプレイスSREチームのリーダーも兼務で務め始める。ZOZO CSIRT兼任。社外活動としてCRuby, Fluentdのコミッター。ex-DeNA',
+    githubId: 'sonots',
+    twitterId: 'sonots',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/e42d30f08c3b9eb3a10baf6a26160ba3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=0991374941deca16c4a827d6308d97a8d2df152a5b2efd62dcd5aba46a978625',
+  },
+  {
+    id: 24,
+    name: '亀井 宏幸',
+    company: 'ZOZOテクノロジーズ',
+    jobTitle: 'エンジニア',
+    profile:
+      '2017年9月にZOZOテクノロジーズに中途入社。ZOZOTOWNのオンプレサーバ運用を経て2019年9月にPF-SREチームへ、パブリッククラウド・k8sを初体験しながらZOZOリプレイスに携わっている。',
+    githubId: 'hiroyuki-kamei',
+    twitterId: 'hiroyuki-kamei',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/0888017a044ec36e65f89e409b596058.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=90acb5b9eb94f6cde0d88a52f692262efb38571c08e5c6bdb5690d7b0333a69c',
+  },
+  {
+    id: 26,
+    name: '小林 優吾',
+    company: '信州大学',
+    jobTitle: '学生',
+    profile: 'CloudNativeな技術が好きな大学院生',
+    githubId: 'koba1t',
+    twitterId: '0x6b6f62',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/e9600f2f8404616c07af4e6c6b4de334.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=2d2a8a9a4d035743107b87d64d22af42733202e4bd4357cec561ef2dbe293c1a',
+  },
+  {
+    id: 27,
+    name: '北山 晋吾',
+    company: 'Red Hat K.K.',
+    jobTitle: 'Solution Architect',
+    profile:
+      'Red Hat OpenShiftのソリューションアーキテクトとして、プロダクト戦略企画やコンサルティングを行っている。',
+    githubId: 'spchildren',
+    twitterId: 'spchildren',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/444882587dd5a8357e7d1122bc7c0b85.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=f0475f8e5c2f56d92c36e986f81f7a7c9eb50cb30a77b75625da8442dba45a9a',
+  },
+  {
+    id: 29,
+    name: '高木 潤一郎',
+    company: 'メルペイ',
+    jobTitle: 'SRE',
+    profile:
+      '2018年にメルペイSREとして入社し、メルペイのインフラとSREチームの立ち上げを行いました。\n今はSREチームのEngineering ManagerとTechLeadをやっています。\n昨年のCNDT2019では「メルペイにおけるマイクロサービスの構築と運用」というタイトルで発表しました。\n',
+    githubId: 'tjun',
+    twitterId: 'tjun',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/b01d0f35478c3befa1010beddc955cc8.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=591dc3106cde09220a8608cb4677bc1dea279411be30e20e945f24320cb3abf9',
+  },
+  {
+    id: 30,
+    name: '藤井 秀行',
+    company: 'NTTデータ',
+    jobTitle: 'Infrastructure Engineer',
+    profile:
+      'NTTデータにてOSS開発、NTT OSSセンタにて主にLinux分野のサポートとコンテナ技術の研究開発に従事。2020年はクラウドとコンテナのセキュリティを専門としつつ、セキュリティ全般も見ている。',
+    githubId: null,
+    twitterId: 'fujiihda',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/a6bddc3b7d1627e94fc5890309106a47.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=6946102765e4ae67e4eca8445ff0bbe55c7dbc491fa92d9707210e1d411a173a',
+  },
+  {
+    id: 31,
+    name: '吉田 龍馬',
+    company: 'Z Lab Corporation',
+    jobTitle: 'Software Engineer',
+    profile:
+      '2015年に DMM.com に新卒として入社。Hadoop Ecosystem を利用したデータ分析基盤の開発と運用に従事。2018年12月よりゼットラボ株式会社で Kubernetes をベースとしたインフラ基盤の研究開発を行っており、現在は Cloud Native なアクセス制御システム（認証, 認可）の研究開発を担当している。SPIFFE/SPIRE プロジェクトのコントリビューター。CKA-1900-001691-0100 保有。',
+    githubId: 'ryysud',
+    twitterId: 'ryysud',
+    avatarUrl: null,
+  },
+  {
+    id: 32,
+    name: '本村 あおい',
+    company: 'サイボウズ株式会社',
+    jobTitle: 'SRE',
+    profile:
+      '大手メーカーにてSWエンジニアを経て2019年7月サイボウズ株式会社に入社。 現在SREと・インフラ基盤移行プロジェクト(Maneki)チームを兼務中。',
+    githubId: 'aoi1',
+    twitterId: '_a0i',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/706c770cecd44c0953a4eb98edd625ed.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=7c5ced35d22b92fdb2e63fec31737c25676a475f2234c658a24ead22fcd2fe3d',
+  },
+  {
+    id: 73,
+    name: '吉川 拓哉',
+    company: 'サイボウズ株式会社',
+    jobTitle: 'サービス運用部長',
+    profile:
+      'NTT OSSセンタでLinuxのKVMモジュールの開発活動を担当し、長くカーネルを専門として働く。その後、通信サービス関連のビッグデータを分散処理基盤で分析するプロジェクト等を担当し、2018年にサイボウズ入社。現在はサービス運用部長としてcybozu.comのクラウド基盤の開発・運用を担当。2019年からは新規構築されたKubernetes基盤上のクラスタにサービスを移行するManekiプロジェクトのマネージメントも担当。',
+    githubId: 'takuya44kw',
+    twitterId: 'takuya44kw',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/18bb36ec9d8b9011f52e42872a207112.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=841a1729cd0b15b7ff0a1f36f8fefd0a2769db5d20105f12ca1841e5cd570577',
+  },
+  {
+    id: 33,
+    name: '草間 一人',
+    company: 'VMware',
+    jobTitle: 'Senior Solutions Architect',
+    profile:
+      'VMware Tanzu(旧Pivotal)にてプロフェッショナルサービスに携わる。VMware Tanzu製品のTechnical enablementのほか、勝てるプラットフォームチームを作る『Platform Dojo』サービスの提供を行っている。専門技術はCloud Foundry, Kubernetes,Concourseなど。コミュニティ活動としてPaaS勉強会を2012年から主催。',
+    githubId: 'jacopen',
+    twitterId: 'jacopen',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/b3b0e9ca6ece15d26166940d4d10f6ad.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=9cace1af0367bcd9571701ac7e08b857871a32dc187aeebeb530cf9c36392f7a',
+  },
+  {
+    id: 34,
+    name: '原 トリ',
+    company: 'AWS',
+    jobTitle: 'Sr. Product Developer Advocate',
+    profile:
+      'ERPパッケージベンダーR&Dチームにてソフトウェアエンジニアとして設計・開発に従事。その後クラウドを前提としたSI+MSP企業での設計・開発・運用業務を経てAmazon Web Services Japanへ。現在はAWSコンテナサービスを中心とした技術領域におけるお客様への技術支援をリードするとともに、その普及活動にも力を入れている。',
+    githubId: 'toricls',
+    twitterId: 'toricls',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/6eca5802e38e80e93dc8e78a2a24e7a9.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=4f63d741a8a5631c1f1f0e26233ea48c2d2a22b32516e26a0dac103cff763d9f',
+  },
+  {
+    id: 35,
+    name: '川村 亮清',
+    company: '株式会社みらい翻訳',
+    jobTitle: 'ソフトウェアエンジニア',
+    profile:
+      '株式会社みらい翻訳でソフトウェアエンジニアとして AI 翻訳サービス 「MiraiTranslator」 の開発を行なっています。\n元々はバックエンドエンジニアで API の開発をメインに行なっていましたが、最近は SRE としてサービスの改善を行なっています',
+    githubId: null,
+    twitterId: null,
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/1ad3edfc89e22cded26b81a12525aec2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=cf95bbc855c3deba41235828cf8c19bb615a0c79cf589f0d28663596a2f2ea5e',
+  },
+  {
+    id: 36,
+    name: 'bells17',
+    company: '-',
+    jobTitle: 'Software Engineer',
+    profile:
+      'これまでにWebサービスの開発にKubernetesを利用した開発/インフラ環境構築/運用に関わって来ました。\n現在はKubernetesの独自Cloud Controller Manager/CSI Driver/Ingress Controllerの開発などKubernetesの各種コンポーネントの開発を行っています。',
+    githubId: 'bells17',
+    twitterId: 'bells17_',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/524a4da015b06f338d7a177cfe98faf2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=7c8fdd5b728d30e0557d7c7f81e86c246ce6f8cdfd958cc88f28455570b4e08d',
+  },
+  {
+    id: 37,
+    name: '多田 健太',
+    company: 'ソニー株式会社',
+    jobTitle: 'Software Engineer',
+    profile:
+      'ソニー株式会社にて、組み込みシステム向けのコンテナ基盤技術やコンテナトレーシング技術に従事しています。',
+    githubId: 'KentaTada',
+    twitterId: null,
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/28eace078e22d8accb1f04a578cda42f.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=5bdb24aab27c1181dd106ce7ba88d09a1450da5b0c9a4bd7f19e0b5c4fbfbbc1',
+  },
+  {
+    id: 38,
+    name: '池田 森人',
+    company: '慶應義塾大学',
+    jobTitle: 'SoftwareEngineer',
+    profile:
+      '金融事業や動画広告事業でGoやKubernetesを使った開発に携わってきました。\ngVisorやFirecrackerなどサンドボックス技術のOSSにコントリビュートしています。\nコンテナランタイムに関する電子書籍を出版予定です。',
+    githubId: 'moricho',
+    twitterId: '_moricho_',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/5429ef80e20f1650028c3a1aaeb16792.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=7a22884a98d52acb1034d8e95e29ee31c3f6706a9bad79cf2354798145261dbf',
+  },
+  {
+    id: 40,
+    name: '森本 健司',
+    company: 'サイボウズ株式会社',
+    jobTitle: 'Site Reliability Engineer',
+    profile:
+      'サイボウズ株式会社のクラウドサービス"cybozu.com"の運用基盤の開発・管理に従事。\n現在は運用基盤刷新プロジェクト"Neco"でクラウドネイティブな基盤開発に日夜呻吟している。\n',
+    githubId: 'morimoto-cybozu',
+    twitterId: null,
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/8973a4cbccbd41cd7bd23a3dd7d7cbd2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=8cc9dd15c48552a5605ceab01334e92e85a4e4f2511f65d78ab69ce3c1cb6535',
+  },
+  {
+    id: 41,
+    name: '中村 勇介',
+    company: 'Black Inc.',
+    jobTitle: 'Webアプリケーションプログラマー',
+    profile:
+      '福井高専卒業後、自社サービスを運営するベンチャー企業に入社。以後Rubyを中心に、Webアプリケーションのバックエンド開発・運用、AWSやGCPを用いたインフラ構築に関連する業務を担当。2019年夏からBlack Inc.に参加し、バックエンド全般を担当。',
+    githubId: 'unasuke',
+    twitterId: 'yu_suke1994',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/f0e64f7386aee67a0ce9043fcb9f50d3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=a0dd70b1bcdee76984ca2d81677324d3510ff33e13180ff0b5a04de38f56a522',
+  },
+  {
+    id: 42,
+    name: '湯原 孝明',
+    company: '株式会社メルペイ',
+    jobTitle: 'SRE',
+    profile:
+      '通信事業者で公共系のSIに従事し、その後Web企業でインフラエンジニアとしての経験を経て、2019年6月にメルペイにジョインしました。SREとしてメルペイのサービスを安定して提供するための仕組み作りや日々の運用業務に関わっています。',
+    githubId: 'tyuhara',
+    twitterId: '__yuhara',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/28a77ab6a5db926cc24480906dfe0c4f.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=74c607f7d28192db0cdd0404dcbdd8fb99084b70b050d1c9a82c56157e3a31c1',
+  },
+  {
+    id: 43,
+    name: '山下 慶将',
+    company: '株式会社メルペイ',
+    jobTitle: 'SRE',
+    profile:
+      '2019年4月に株式会社メルペイのSREとして新卒入社しました。\n金融事業を支えるための信頼性を向上に取り組んでいます。また、メルカリ社内の勤怠打刻サービスを開発・運用しています。今年度からはCI/CDチームに所属し、安全なデプロイができるように注力しています。',
+    githubId: 'KeisukeYamashita',
+    twitterId: '_k_e_k_e',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/02db754efe166bd10353b65cd349cfae.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=1c7b74f086acefa0db296e676109b35ec1c0071ddce014d3b1eee96adfb67ef6',
+  },
+  {
+    id: 44,
+    name: '後藤 健汰',
+    company: '株式会社マネーフォワード',
+    jobTitle: 'インフラエンジニア',
+    profile:
+      '2019年1月より、マネーフォワードでインフラエンジニアとして勤務しています。主にアプリケーションのコンテナ化、AWS/Kubernetesを用いたインフラの構築を担当しています',
+    githubId: 'kennygt51',
+    twitterId: 'kennygt51',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/da7773ad8ee7941cc6fea44a2c7c287e.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=464f1e9da10ae320824722cc125611c7e638111d586bbcfbc6dd7e022e195860',
+  },
+  {
+    id: 45,
+    name: '濱田孝治',
+    company: 'クラスメソッド株式会社',
+    jobTitle: 'マネージャー',
+    profile:
+      '独立系SIerでアプリケーションの開発〜プロジェクトマネジメントと、全社プロジェクトでのアーキテクチャリングを実施。現職では、多数の顧客企業に対してAWSの利用のコンサルティング〜実装を担当。',
+    githubId: null,
+    twitterId: 'hamako9999',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/5890f15a151fcedc81619f18be5a539c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=1c06697eba73cf36f336626eefedd70aa516e2ac68af922938050f7a9f198294',
+  },
+  {
+    id: 46,
+    name: '竜田 茂',
+    company: 'ソフトバンク株式会社',
+    jobTitle: 'シニアシステムエンジニア',
+    profile:
+      '前職の日本オラクルでは Java アプリケーションサーバ、SOA 製品の技術支援を経て、2013 年よりソフトバンクに参画し、Java ミドルウェア製品の全社導入支援、およびリアルタイム処理基盤 Chronos-Coreプロジェクト、IBM Watson のローカライズにも参画。現在は Java でのクラウドネイティブな開発、DevOps の実現を推進中。',
+    githubId: 'dragonfield',
+    twitterId: 'doragod',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/e444924c6537abd22b721ed5912380d9.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=0c34ac2d470f6a956d86bbbd1bec3dcbdff86ffd098a1db857d000fa1a2e090d',
+  },
+  {
+    id: 47,
+    name: '山本 泰宇',
+    company: 'サイボウズ株式会社',
+    jobTitle: '執行役員',
+    profile:
+      '東京大学大学院で情報科学を専攻後、サイボウズ株式会社に入社。\n開発本部長、最高技術責任者、cybozu.com 開発責任者、運用本部長を歴任し、\n現在は cybozu.com のアーキテクチャ刷新プロジェクト Neco の責任者を務める。',
+    githubId: 'ymmt2005',
+    twitterId: 'ymmt2005',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/c44c804d1c3d53f1a88a9fb6ba1e10be.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=dcc1265270709c55054c090cb2c01c8f43d479241f0037289abf44c1448e28f4',
+  },
+  {
+    id: 48,
+    name: '亀澤 寛之',
+    company: '富士通株式会社',
+    jobTitle: 'Senior Professional Engineer',
+    profile:
+      '2003年に富士通に入社。2013年中頃までLinux カーネル開発に従事し memory cgroupのメンテナなどを努めた。以後、2018年までOpen Container InitiativeやCloud Native Computing Foundationの活動に従事。富士通からのボードメンバーとして活動した。近年はサービス開発の責任者としてFUJITSU Cloud Service Tunaclo API Connectの開発を主導している。',
+    githubId: null,
+    twitterId: 'hiro_kamezawa',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/620dc2701dee2d2d2eb08c39a1622fd3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=c2aee8f45cc4bba599e335823b0e2c63103b20e57d2a099e33dc784cca4ae743',
+  },
+  {
+    id: 49,
+    name: '菅井 健太',
+    company: '株式会社コロプラ',
+    jobTitle: '取締役 CTO',
+    profile:
+      'システム開発会社、スタートアップ企業にて、プログラマーとしてBtoCのwebサービス開発に従事。\n2010年6月に株式会社コロプラへ入社。サーバーサイドの開発、ゲームタイトルのプロジェクトマネジメント、横断的な技術開発など幅広く担当。\n2017年1月に取締役に就任。現在 CTO として従事。',
+    githubId: null,
+    twitterId: null,
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/8fe9c40c099599bff1aee58a8fce3c7d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=7b29d503882f84636ab38a9952ef4646aa25d714f9d47d864b0c7b0059639611',
+  },
+  {
+    id: 50,
+    name: '牧野 祐己',
+    company: 'PLAID',
+    jobTitle: 'CTO',
+    profile:
+      '東京大学工学系研究科で修士課程卒業\n2009 年から2014 年までIBM ソフトウェア開発研究所でビッグデータ関連の研究開発業務に従事\n2015 年にプレイドに参画し、KARTEのデータ分析エンジンの研究開発を担当',
+    githubId: null,
+    twitterId: null,
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/bbfa1dab428086fb4e8ac8d169d84612.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=d5c1a6478a1d18254f8791eb4cfccc8f9285e83ab9114d7f8195b6135fbf59b3',
+  },
+  {
+    id: 54,
+    name: '多田 真敏',
+    company: '株式会社カサレアル',
+    jobTitle: 'チーフエンジニア',
+    profile:
+      '研修トレーナー。専門はJava/Spring/Microservices/Kubernetes。2019年11月、CKAD取得。日本Springユーザ会スタッフ、OSSのドキュメント翻訳など、プライベートでも色々やってます。',
+    githubId: 'MasatoshiTada',
+    twitterId: 'suke_masa',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/9438515b06ae35a21d0f4c111591b8ee.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=eeb27675c2d963df71ff4ea328a0b7b3e5d070017e506195c7523966d0d91303',
+  },
+  {
+    id: 55,
+    name: '高良 真穂',
+    company: '日本アイ・ビー・エム株式会社',
+    jobTitle: 'ハイブリッドクラウド CTO',
+    profile:
+      '日本IBMへ入社以来、自動車、航空、金融、大学および研究機関などのプロジェクトに参加し、基幹系システムから科学計算システムまで、幅広いシステムを手掛ける。現在、IBMクラウド戦略の一環であるKubernetesをコアとしたIBMクラウドサービスやソフトウェア製品を担当。 「15Stepで習得 Dockerから入るKubernetes コンテナ開発からK8s本番運用まで (StepUp!選書)」の著者',
+    githubId: 'takara9',
+    twitterId: 'MahoTakara',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/347deeb3c3d2e2a19a9fb5bf935662c3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=f04781c3a1ac97d731e90ba4351b2eacd18583a60772c62de70fa2bbc479f4a1',
+  },
+  {
+    id: 56,
+    name: '古澤 慧',
+    company: '富士通株式会社',
+    jobTitle: 'Marketing Engineer',
+    profile:
+      '通信事業者向けのSDN製品の開発をエンジニアとして担当し、一昨年よりクラウドネイティブなサービスの企画および拡販を担当する部門へ異動。現在は、新製品Tunaclo API Connectのマーケティングを主にやっています。SoftwareDesign誌 8月号からゼロトラストネットワークの特集記事を連載中！',
+    githubId: null,
+    twitterId: 'furusawa_kei',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/390f0356454e782b285e11ff26d8cbb0.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=9452b411708e5aec574e28a2c72cf41988f3bb12393fe5df9fbb87edf2b604ff',
+  },
+  {
+    id: 57,
+    name: '清水 毅',
+    company: 'New Relic ',
+    jobTitle: 'Senior Solutions Consultant',
+    profile:
+      'パッケージベンダーにてecommerceシステムのソフトウェアエンジニア、インフラエンジニアを経験後、DevOpsチームの立ち上げやSaaSビジネスのパフォーマンスやセキュリティに特化したチームの立ち上げに従事。その後、AWSにて1人目のSaaS専門ソリューションアーキテクトとして多くの日本企業のSaaS化、セキュリティ対策、SRE立ち上げを支援し、現職。特にインフラ、パフォーマンス、セキュリティという非機能要件の設計から運用を得意とする。',
+    githubId: null,
+    twitterId: null,
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/5d6fdb1e680acc976f62c1eddb60bd08.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=b0c1835417f011497962126a6b79789eebec34741dd750627b2a2a223e344aec',
+  },
+  {
+    id: 61,
+    name: '槌野 雅敏',
+    company: 'サイオステクノロジー株式会社',
+    jobTitle: 'シニアアーキテクト',
+    profile:
+      'シニアアーキテクトとしてAPIマネジメントやコンテナに特化したコンサルティング、アドバイザリー案件を数多く担当。外資系ベンダーでのソリューションアーキテクトを経て、大規模プロジェクトのPMを務め、開発・運用業務に携わる。現在は、サブスクリプションビジネスを支援するプラットフォームで自社開発したサービス「SIOS bilink」のアーキテクトを担当。',
+    githubId: null,
+    twitterId: null,
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/03422033627587bf55b509d8ac01f027.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=f7c79a5fef1aa49d89961ec101ffd41c0e87d379107a92e58c79115b2ce601f6',
+  },
+  {
+    id: 62,
+    name: '鈴木 孝彰',
+    company: 'F5ネットワークス合同会社',
+    jobTitle: 'NGINX Technical Solutions Architect',
+    profile:
+      'インターネットデータセンターにてネットワークエンジニアを経験後、プライベートクラウドSDN、Ubuntu OS、グルメサービスに参画。現在はF5ネットワークスジャパン合同会社にてNGINXのテクニカルソリューションズアーキテクトを担当。',
+    githubId: null,
+    twitterId: null,
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/f280556a877867fa2de4689a8b833fca.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=13bff655c229fc93f693c457acb46c96eeba4ad8a37738c78f68c6f9364d165b',
+  },
+  {
+    id: 63,
+    name: '仁井田 拓也',
+    company: '日本オラクル株式会社',
+    jobTitle: 'ソリューションエンジニア',
+    profile:
+      '日本オラクル株式会社所属。SIerにて様々なOSSを活用したシステム開発を経験し現職。現在は、SIer時代の知見を活かし、ソリューションエンジニアとしてクラウドでのアプリケーション開発やクラウドネイティブ技術に関する技術/案件支援に従事。',
+    githubId: null,
+    twitterId: 'takuya_0301',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/b3663ac7683605f5bcd4db95c15f7892.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=fba7ec3dabc87290b71b860ca956f7a37185253c30a0594d0167612b16c96583',
+  },
+  {
+    id: 64,
+    name: '斎藤 和史',
+    company: 'レッドハット株式会社',
+    jobTitle: 'Cloud Solution Architect',
+    profile:
+      'ここ数年は，Kubernetesをベースにしたソリューション開発，技術支援，営業提案など幅広く実施中。他にも多数のテックコミュニティ活動に取り組んでいる。Red Hatには2019年にJOIN。',
+    githubId: 'capsmalt',
+    twitterId: 'capsmalt',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/2b41c5c9eb70e4af5993ed2e71ddfe06.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=64f0a912fb3ccd0e56de7ec22c9d55644ec4f48316bdbdc9555d51c5424206f4',
+  },
+  {
+    id: 65,
+    name: '佐野 雄一郎',
+    company: 'ヤフー株式会社 / システム統括本部',
+    jobTitle: 'クラウドプラットフォーム本部 技術4部 部長',
+    profile:
+      'Yahoo! JAPANで社内PaaS/CaaSのプラットフォームの推進、運用を担当したのち、現在は社内のモニタリング系プラットフォームの推進、運用を担当',
+    githubId: null,
+    twitterId: null,
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/0bd1f333902ce06d849dca744f0710e1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=c77db820257fdfb9b2f56734f687611233c34f2b8cdfb696626d4d52be52a916',
+  },
+  {
+    id: 66,
+    name: '篠原 一徳',
+    company: 'グーグル・クラウド・ジャパン合同会社',
+    jobTitle: 'Application Modernization Specialist',
+    profile:
+      '通信会社にて、エンタープライズ向けのシステム インテグレーション、クラウドサービスの開発や OSS へのコントリビューションに従事。Google Cloud では、主にエンタープライズのお客様向けに Anthos をはじめとしたコンテナや Kubernetes 関連サービスの提案、アーキテクチャ設計や PoC などの技術的なサポートを行っている。',
+    githubId: 'kazshinohara',
+    twitterId: 'kazshinohara',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/e02e36087c47d98029a135ca9348075c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=251343d7c1c96aea44b3b83b69262aec20e22379e7e3d3194e1a31a878441d66',
+  },
+  {
+    id: 67,
+    name: '小沢周平',
+    company: '株式会社サイバーエージェント/技術本部',
+    jobTitle: 'インフラエンジニア',
+    profile: '中途2年目のインフラエンジニア。サイバーエージェント所属',
+    githubId: null,
+    twitterId: null,
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/182b0b58ac1787a3efc800a3a87a55e2.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=d1145e58eb6930305944a735bed06749e03158e711facebf2098ce212997ab69',
+  },
+  {
+    id: 68,
+    name: '荻野 陽太',
+    company: '株式会社サイバーエージェント/ Ameba事業本部',
+    jobTitle: 'サーバサイドエンジニア',
+    profile: '新卒2年目のサーバーサイドエンジニア。サイバーエージェント所属',
+    githubId: null,
+    twitterId: null,
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/e6b84ac63c266182bfc2d9a48dc832d8.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=2dc4bcbae04cea2bb9bb93a0162ea180de1503ffd4901368a8b2fbff04476224',
+  },
+  {
+    id: 69,
+    name: '横田紋奈',
+    company: 'JFrog',
+    jobTitle: 'デベロッパーアドボケイト / Developer Advocate',
+    profile:
+      '元バックエンドエンジニアのデベロッパーアドボケイト。\n\n開発からは離れたものの、SIer、広告系Web企業、金融系スタートアップといろいろな環境で積んだ経験をいかし、少しでも現場に近い目線でDevOpsについて考え続けたい。広く色々な方と話したい。\n\nJava女子部、JJUGといったJava系のコミュニティに出没。サンフランシスコで開催されたJavaOne 2017登壇経験もあり。マネジメントや組織に関する話も好き。\n著書『いちばんやさしいGit&GitHubの教本』',
+    githubId: 'ihcomega56',
+    twitterId: 'ihcomega',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/d7b352c24b604fa39853bdd4cbf992f7.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=579633936f310dac2068ec2653dcc54485b6810c322a287979e15f7391503c40',
+  },
+  {
+    id: 72,
+    name: 'Katelin W Ramer',
+    company: 'Cloud Native Computing Foundation',
+    jobTitle: '-',
+    profile: '-',
+    githubId: null,
+    twitterId: null,
+    avatarUrl: null,
+  },
+  {
+    id: 74,
+    name: '星野 真知',
+    company: 'VMware',
+    jobTitle: 'VMware Tanzu Platform Architect',
+    profile:
+      '10数年Linux、OpenStack、Kubernetes、CloudFoundryなどのOSSインフラに関わる。現在はVMware Tanzuチームに所属し、Kubernetesの普及およびアプリケーションモダナイゼーションを行っている。',
+    githubId: null,
+    twitterId: null,
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/37c6a85bfbe2685ba366b8614edfbbf5.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=48e6963953093bb65e4db9ff384ddf3f6de7fdecee8ed1489021d31f4d90d82c',
+  },
+  {
+    id: 75,
+    name: '舟木 類佳',
+    company: '株式会社LegalForce',
+    jobTitle: '執行役員 兼 最高研究開発責任者',
+    profile:
+      '東京大学情報理工学系研究科創造情報学専攻修了。 大学院では画像認識と自然言語処理を組み合わせたマルチモーダル機械学習の研究を実施。 その後、株式会社リクルートへ入社し、１０を超える画像認識・機械学習のプロジェクトを推進。 現在はLegalForceの最高研究開発責任者として研究開発組織を立ち上げ、自然言語処理システムやデータ基盤、機械学習基盤の構築を行っている。',
+    githubId: null,
+    twitterId: 'ruka_funaki',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/b1190b8cac205920c8552a052a683dc7.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=d13372c9ec1db48c0a5d37994e04d193f7a8f85cdd32681c6d63b3472a60b0fa',
+  },
+  {
+    id: 77,
+    name: '寺田 佳央',
+    company: 'Microsoft Corporation',
+    jobTitle: 'Sr. Cloud Advocate',
+    profile:
+      'サン・マイクロシステムズ所属時から日本における Java の普及活動を行う。現在はマイクロソフト・コーポレーションに所属しクラウド・アドボケイトとして、Java on Azure の利用促進・啓蒙活動を実施中。2016 年 7 月、日本人で 2 人目となる Java Champion に就任し、日本 Java ユーザ・グループの幹事でもある。',
+    githubId: 'yoshioterada',
+    twitterId: 'yoshioterada',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/900c1bdeb8c74d2c45413f4189e64345.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=12de2706d3cc6ccfd9e4cb5fe5b623a057043767531cd14fa377c4403f687ea3',
+  },
+  {
+    id: 79,
+    name: '施 文翰',
+    company: 'Rancher Labs, Inc.',
+    jobTitle: 'Support Engineer',
+    profile:
+      '"36歳、現在横浜で４人家族で暮らしています。\n10年間近くOSSのサポート＆開発に従事し、現在はRancher Labsのサポートエンジニアとして、主にAPAC地域の顧客に対するクラウドネイティブ製品のサポートサービスを提供しています。\n得意分野はメモリ回収、分散型ストレージとファイルシステム。\n休日はほぼ子供と遊んでいるので自分の時間が少ないが、生活に便利なIoTグッズを家で作って家庭的な地位を挽回している。"',
+    githubId: 'xibuka',
+    twitterId: 'shi_wenhan',
+    avatarUrl:
+      'https://dreamkast-prd-bucket.s3.ap-northeast-1.amazonaws.com/avatar/0773e6ec6553e1a5cc34b2c91d89e21b.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIV7MAE4X%2F20230224%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20230224T060118Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEGUaDmFwLW5vcnRoZWFzdC0xIkYwRAIgPy0LWa8hB55mkTquULJW0w2w5Q5kJFp1JlMUMclUpmwCIH7CZOtX4bynbLKlu%2F2S4980xC1nph3Ef8VJNwQNvaEbKtQFCP7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQARoMNjA3MTY3MDg4OTIwIgxgaekG1BO2WaXlz2YqqAWfKCRveUS4e86TumuBQ5M2LwmNIIH63%2FxZ4edOE50xY%2BWeLLd7TgRWet7CFu80%2Bp4XIl5qvwn0awVFqWOcH64FQxHiPFWBqopDkhBFcyoxnE31NQJbTOYR%2FYMbCPlqVb3VhT6XNk1SsEzfbJwrYwXYn%2BEJggx02KPuOpiwzf5fNh4f9vJbOPqHZX8YCsG%2FDEQA7DQRYsrLrjq7gbiDz9uby8eO05%2FGY20m8jISG4Umhp0Wh3ki7KSZruMgBhK3cmW6Kfld8PtqLV1rVPaaOYdFtw9IcKKn5JHYB6R%2FAvc52kwSQtm7r4db7UZOAR6E9MqtlyLAyxnAMsNQwa7MKl2BEsWsK5cQAlGl0s%2BTLbG3MObb6Mp9yyRDYJXdyFie%2FCm8PnY933OHTucO3bhTXJJn29wblplQ86A8KyJPUOmdy7381Bs1Pr48k7w4VLjaUQJg%2FrfxlPdCvh216ctMrE48gZdzJZrNxMktiwDvL2SDVJ97SqYyYOiCHcBGsfssPx1JpZvU%2B%2FvCL2AbxSoz24mwkyH3z806donyc7nZiWxaVJz9dY3%2Fs%2BEARbBtw6KCKsrnvZCb%2BF2hAOQxlyonuygPU7bQ6kce3Qw4SJOQzFFybBo1Yqnjxjs2X1AB6jjpcPc0goy7ITQMjWBJh5uGc0gAgYXusxmXrHLZ970Qgo34XY9Lv%2FMtun09mlQI1t9G2le5elSPZC9RcwdQEhEZ%2BTTfxUPy0vzDvwEbfkCrLeeRYBMIlDWGfZ%2BRaMlrtwI8fXeWU%2BSBnW590sH0h%2FYgcL7GUGty9mxjY8J0cKBNEKME%2BU88q00836qfOdOc%2B%2FES6A3QOT7%2BuukCqDUy3bxpX0Vu4xEPsUEyomb9uf9s8%2Fz0wbIDHO24h5uMNPMPMOcZNBq2JC6zrmqx7DCHjeGfBjqyATgERxzbQtrLzLRyVAYfo3d9Wvun5BTXh6hJf%2FukZTa6xarJAhcnjycz4BlmclAOpj4eEiWqCjeJa2umCjMoPddsYbXLGaEV0lLrF9Yu8j1cHYgxzlFhPHZCidK4JkhRlE5vicnV7EchEzktDSmQ3syA%2F1NU2ybkJXQuIR3m%2Fqe5PtpOyhmKq7vkR60Mc9mIa9zQHXTEzwwUgNDs7%2F2ZBPTXUoJrWP0W7ij8QK6c3YpJ%2B6M%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=a704ab1e00790595ab78da87ab71ac55e45d2141db8b9404650555d534b9544b',
+  },
 ]
