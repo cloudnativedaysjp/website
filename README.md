@@ -1,39 +1,28 @@
-# Astro Starter Kit: Basics
+# CloudNative Days website
 
-```
-npm create astro@latest -- --template basics
-```
+cloudnativedays.jpのウェブサイトを管理するリポジトリです。Astroを使って構築しています。
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/s/github/withastro/astro/tree/latest/examples/basics)
+## 🚀 Getting Started
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### Prerquisites
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+- Node.js(v16)
 
-## 🚀 Project Structure
+### How to setup a development environment
 
-Inside of your Astro project, you'll see the following folders and files:
+1. Install Node.js
+2. `npm install`
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+That's it.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### Run local dev server
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+`npm run dev`
 
-Any static assets, like images, can be placed in the `public/` directory.
+### Build
+
+`npm run build`
+
 
 ## 🧞 Commands
 
