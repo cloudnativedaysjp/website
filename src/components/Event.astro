@@ -1,11 +1,14 @@
 ---
+import { Picture } from "@astrojs/image/components";
+
 export interface Props {
   url: string;
   name: string;
   days: string;
+  img: string;
 }
 
-const { url, name, days } = Astro.props;
+const { url, name, days, img } = Astro.props;
 ---
 
 <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
@@ -14,9 +17,17 @@ const { url, name, days } = Astro.props;
   >
     <div class="px-4 py-5 flex-auto">
       <div
-        class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
+        class="w-12 h-12 rounded-full ring-offset-base-100 ring-offset-2 items-center justify-center text-white inline-flex mb-4 bg-white"
       >
-        <i class="fas fa-award"></i>
+        <Picture
+          src={img}
+          class="w-12 h-12 rounded-full"
+          widths={[400, 768]}
+          sizes=""
+          alt="Event trademark image"
+          aspectRatio="1:1"
+          style=""
+        />
       </div>
       <h6 class="text-xl font-semibold"><a href={url}>{name}</a></h6>
       <p class="mt-2 mb-4 text-gray-600">
