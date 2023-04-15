@@ -3,6 +3,7 @@ export type Conference = {
   name: string;
   abbr: string;
   status: string;
+  image: string;
   theme: string;
   about: string;
   privacy_policy: string;
