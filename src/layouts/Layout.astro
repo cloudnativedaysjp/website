@@ -54,7 +54,20 @@ const {
       gtag("config", "G-XDSEZ66VFX");
   </script>
 	<body>
-		<Navbar />
+		<Navbar links={[
+      {
+        href: "/#about",
+        text: "About"
+      },
+      {
+        href: "/posts",
+        text: "Blog"
+      },
+      {
+        href: "https://twitter.com/astrodotbuild",
+        icon: "tabler:brand-twitter",
+      }
+    ]} />
 		<slot />
 	</body>
 </html>

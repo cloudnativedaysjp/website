@@ -16,9 +16,8 @@ import Pagination from '../../components/Pagination.astro'
 import BlogPostsLink from '../../components/BlogPostsLink.astro'
 import BlogTagsLink from '../../components/BlogTagsLink.astro'
 import styles from '../../styles/blog.module.css'
-import Layout from '../../layouts/Layout.astro';
-import Hero from "../../components/Hero.astro";
-
+import Layout from '../../layouts/Layout.astro'
+import Hero from '../../components/Hero.astro'
 
 const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
   getPosts(NUMBER_OF_POSTS_PER_PAGE),
@@ -27,15 +26,15 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
   getNumberOfPages(),
 ])
 ---
+
 <Layout title="CloudNative Days">
   <Hero title="Blog">
-      <p class="mt-4 text-lg text-gray-300">
-        CloudNative Days実行委員会によるブログ
-      </p>
-    </Hero>
+    <p class="mt-4 text-lg text-gray-300">
+      CloudNative Days実行委員会によるブログ
+    </p>
+  </Hero>
   <div class="flex flex-wrap mx-10 md:mx-10 gap-5">
-    <main class='md:w-8/12 w-12/12'>
-      
+    <main class="md:w-8/12 w-12/12">
       {
         posts.length === 0 ? (
           <NoContents contents={posts} />
@@ -57,7 +56,7 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
       </footer>
     </main>
 
-    <aside class='md:flex-auto w-12/12'>
+    <aside class="md:flex-auto w-12/12">
       <BlogPostsLink heading="Recommended" posts={rankedPosts} />
       <BlogTagsLink heading="Categories" tags={tags} />
     </aside>

@@ -7,7 +7,7 @@ export const Conferences: Conference[] = [
     name: 'CloudNative Days Tokyo 2020',
     abbr: 'cndt2020',
     status: 'archived',
-    image: "/images/assets/cndt2020.png",
+    image: '/images/assets/cndt2020.png',
     theme: '+Native 〜ともに創るクラウドネイティブの世界〜',
     about:
       'CloudNative Days はコミュニティ、企業、技術者が一堂に会し、クラウドネイティブムーブメントを牽引することを目的としたテックカンファレンスです。\n最新の活用事例や先進的なアーキテクチャを学べるのはもちろん、ナレッジの共有やディスカッションの場を通じて登壇者と参加者、参加者同士の繋がりを深め、初心者から熟練者までが共に成長できる機会を提供します。\n皆様がクラウドネイティブ技術を適切に選択し、活用し、次のステップに進む手助けになることを願っています。\nクラウドネイティブで、未来を共に創造しましょう。\n',
@@ -51,7 +51,7 @@ export const Conferences: Conference[] = [
     abbr: 'cndo2021',
     status: 'archived',
     theme: 'ともに踏み出す CloudNative祭',
-    image: "/images/assets/cnds2021.png",
+    image: '/images/assets/cnds2021.png',
     about:
       '    『クラウドネイティブ』って何だっけ？ 私たち自身ずっと考えてきました。\n    CNCFによる定義によると、『近代的でダイナミックな環境で、スケーラブルなアプリケーションを構築・実行するための能力を組織にもたらす』のがクラウドネイティブ技術です。\n    また、オープンソースでベンダー中立なエコシステムを育成・維持し、このパラダイムの採用を促進したいとも述べられています。\n    私たちはこの考えに賛同します。クラウドネイティブ技術を日本にも浸透させるべく、過去数年にわたりイベントを行ってきました。\n\n    しかし世の中が大きく変わりつつある昨今。我々はこう考えました。\n    『今ならオンラインの特性を生かして、CloudNative Daysをダイナミックな環境でスケーラブルな形に更に進化させられるのではないか？』\n\n    オンラインでは、誰でも情報を得ることができ、誰もが発信することもできます。オープンな思想のもとに作られたインターネットには境界がありません。\n    そうしたインターネットの成り立ちを思い出し、初心者から達人まで、住んでいる場所を問わず、クラウドネイティブに取り組む人が、\n\n    ・今まで参加者だった人が壁を感じずに発信できる\n    ・参加者が、これまで以上に多様な視点から学びを得られる\n\n    そんな機会を創り出し、登壇者・参加者・イベント主催者といった垣根を超えて、クラウドネイティブ・コミュニティを広げていきたいと考えています。\n    CloudNative Days Spring 2021 Onlineでは、クラウドネイティブ技術を通じて培った知見やマインドセットを最大限に活用し、これまでに無かった斬新なイベントを目指しています。\n',
     privacy_policy:
@@ -85,7 +85,7 @@ export const Conferences: Conference[] = [
     abbr: 'cicd2021',
     status: 'archived',
     theme: 'Continuous 〜 技術を知り、試し、取り入れる 〜',
-    image: "/images/assets/cicd2021.png",
+    image: '/images/assets/cicd2021.png',
     about:
       'CI/CD Conferenceは、CI/CDに特化したテックカンファレンスです。『技術を知り、試して、取り入れる』のコンセプトのもと、参加者が優れたCI/CDの知見を取り入れ、改善を行っていけるイベントを目指しています。そして、ゆくゆくは参加者が登壇者となり、他の人に知見を共有していける、Continuousなイベントでありたいと思っています。\n',
     privacy_policy:
@@ -113,7 +113,7 @@ export const Conferences: Conference[] = [
     abbr: 'cndt2021',
     status: 'archived',
     theme: '＋Native 〜ともに繋げるクラウドネイティブの世界〜',
-    image: "/images/assets/cndt2021.png",
+    image: '/images/assets/cndt2021.png',
     about:
       '    "CloudNative Days" は最新の活用事例や先進的なアーキテクチャを学べるのはもちろん、ナレッジの共有やディスカッションの場を通じて登壇者と参加者、参加者同士の繋がりを深め、初心者から熟練者までが共に成長できる機会を提供するテックカンファレンスです。\n    今日、多くの技術者、コミュニティ、企業がクラウドネイティブを目指す旅路を歩んでいます。\n\n    それぞれの旅路において、拾い集めた様々な経験、知識、疑問、悩みを共有する"交差点"にして欲しい、そんな思いが"CloudNative Days" には込められています。\n    まだ旅への一歩を踏み出せていない人も、再び旅に出る人も、この"交差点"に集まることで過去を振り返りながら新たなクラウドネイティブの旅をともに歩み進めることができると私達は信じています。\n\n    旅をする準備をしませんか？ "交差点"で会えるのを楽しみにしています。\n',
     privacy_policy:
@@ -145,7 +145,7 @@ export const Conferences: Conference[] = [
     name: 'Observability Conference 2022 by CloudNative Days',
     abbr: 'o11y2022',
     status: 'archived',
-    image: "/images/assets/o11y2022.png",
+    image: '/images/assets/o11y2022.png',
     theme:
       'Observe the Observability 〜知らないことを知り、見えていないものを見る〜',
     about:
@@ -175,7 +175,7 @@ export const Conferences: Conference[] = [
     abbr: 'cnsec2022',
     status: 'archived',
     theme: 'Go "Green"〜ともに目指す持続可能なセキュリティ〜',
-    image: "/images/assets/cnsec2022.png",
+    image: '/images/assets/cnsec2022.png',
     about:
       'CloudNative Security Conference 2022 by CloudNative Days (CNSec2022) は、クラウドネイティブセキュリティに特化したテックカンファレンスです。\n\nクラウドネイティブなセキュリティとは、いったいどのようなものでしょうか。私達は、"Green"というキーワードに想いを込めてみました。\n\n自然と同じく、セキュリティはシステムやアプリケーション、サービスなどにおいて欠くことのできない大切なものです。しかし、手放しにしていてはやがてシステムは衰退していくことになるでしょう。\n\n刻一刻と変化する状況の中で、新しい知見・技術を導入したり、脅威になる部分や脆弱な仕組みを伐採したりしながら、新たな自然の芽を育てるように常に最適で正常な状態に整えていかなければならないと私達は考えます。\n\n脅威に対し、継続して柔軟かつ俊敏に対応できる、身軽でしなやかな持続可能のセキュリティこそ、クラウドネイティブ時代のセキュリティの理想のひとつではないでしょうか。\n\nそのような持続可能なセキュリティを実現するために、このイベントで様々な知見や技術を持ち寄って、安全で豊かな"Green"をともに目指してみませんか？\n',
     privacy_policy:
@@ -203,7 +203,7 @@ export const Conferences: Conference[] = [
     abbr: 'cndt2022',
     status: 'archived',
     theme: '+Native 〜ともに広がるクラウドネイティブの世界〜',
-    image: "/images/assets/cndt2022.png",
+    image: '/images/assets/cndt2022.png',
     about:
       '    "CloudNative Days" は最新の活用事例や先進的なアーキテクチャを学べるのはもちろん、ナレッジの共有やディスカッションの場を通じて登壇者と参加者、参加者同士の繋がりを深め、初心者から熟練者までが共に成長できる機会を提供するテックカンファレンスです。\n\n    世の中の在り方が広がっても、私たちは共に物理的・時間的な距離を乗り越えていきます。\n    クラウドネイティブの世界が広がっても、私たちは共に新しい未知の道を開拓し続けていきます。\n    \n    これまでもこれからも、広がり続けるクラウドネイティブにおいて、様々な人・会社・技術・考え方で目指す多様性を受け入れ、共に時間を共有し、新しい地図を広げていきましょう。\n',
     privacy_policy:

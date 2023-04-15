@@ -4,7 +4,7 @@ export type Conference = {
   abbr: string
   status: string
   theme: string
-  image: string;
+  image: string
   about: string
   privacy_policy: string
   privacy_policy_for_speaker: string | null
