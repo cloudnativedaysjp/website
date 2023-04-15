@@ -91,12 +91,12 @@ const prevPost = allPosts[currentPostIndex + 1];
 const nextPost = allPosts[currentPostIndex - 1];
 
 let ogImage = "";
-// if (post.FeaturedImage && post.FeaturedImage.Url) {
-//   ogImage = new URL(filePath(new URL(post.FeaturedImage.Url)), Astro.site)
-// }
+if (post.FeaturedImage && post.FeaturedImage.Url) {
+  ogImage = new URL(filePath(new URL(post.FeaturedImage.Url)), Astro.site).toString();
+}
 ---
 
-<Layout>
+<Layout title={post.Title} description={post.Excerpt} url={`blog/${slug}`} ogImage={ogImage}>
   <Hero title={post.Title}>
     <p class="mt-4 text-lg text-gray-300">
       CloudNative Days実行委員会によるブログ

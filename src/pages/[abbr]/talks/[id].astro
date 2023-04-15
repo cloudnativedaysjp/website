@@ -40,7 +40,7 @@ const speakersExists = speakers?.length > 0;
 const conference = Conferences.find((conference) => conference.abbr == abbr);
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={talk.title}>
   <main>
     {
       talkExists && (

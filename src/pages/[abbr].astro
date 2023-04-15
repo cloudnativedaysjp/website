@@ -4,7 +4,6 @@ import Hero from "../components/Hero.astro";
 import Talk from "../components/Talk.astro";
 import { talkMap } from "../data/talks";
 import Layout from "../layouts/Layout.astro";
-import tailwindConfig from "../../tailwind.config.cjs";
 export async function getStaticPaths() {
   return Conferences.map((conference) => {
     return { params: { abbr: conference.abbr } };
@@ -16,7 +15,7 @@ const conferenceExists = conference != undefined;
 const talks = talkMap.get(abbr || "");
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={conference.name}>
   <main>
     {
       conferenceExists && (
