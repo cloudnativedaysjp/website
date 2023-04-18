@@ -1,0 +1,62 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="cloud" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Cloud-native</h2>
+		<p>クラウドネイティブ・マインドセットを提唱。クラウドネイティブ技術の根底にある思想を、エンジニアリング組織だけでなく多くの人たちに活用して貰えるよう、啓蒙活動を行っています。</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="community" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Community Leader</h2>
+		<p>日本最大のクラウドネイティブ技術のカンファレンスを主導しているほか、いくつかの技術コミュニティを運営。</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="facilitate" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Facilitator</h2>
+		<p>ファシリテーション力を生かし、オンライン・オフライン問わず組織運営をスムーズにするための支援活動を行っています。</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>

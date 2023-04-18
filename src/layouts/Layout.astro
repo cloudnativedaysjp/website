@@ -1,26 +1,46 @@
 ---
 import Navbar from "../components/Navbar.astro";
+import {
+  PUBLIC_SITE_TITLE,
+} from "../server-constants";
 export interface Props {
   title: string;
+  description: string;
+  url?: URL | undefined;
+  ogImage: string;
 }
 
-const { title } = Astro.props;
+const {
+  title,
+  description,
+  url,
+  ogImage,
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <link
-      href="https://unpkg.com/video.js/dist/video-js.css"
-      rel="stylesheet"
-    />
-    <script src="https://unpkg.com/video.js/dist/video.js"></script>
-    <title>{title}</title>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="robots" content="max-image-preview:large" />
+		<meta name="description" content={description} />
+		<meta property="og:url" content={url} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:site_name" content={PUBLIC_SITE_TITLE} />
+		<meta property="og:image" content={ogImage} />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:image" content={ogImage} />
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+		<script src="https://unpkg.com/video.js/dist/video.js"></script>
+		<title>{title}</title>
+	</head>
   <script
       type="text/partytown"
       src="https://www.googletagmanager.com/gtag/js?id=G-XDSEZ66VFX"
@@ -33,10 +53,23 @@ const { title } = Astro.props;
       gtag("js", new Date());
       gtag("config", "G-XDSEZ66VFX");
   </script>
-  <body>
-    <Navbar />
-    <slot />
-  </body>
+	<body>
+		<Navbar links={[
+      {
+        href: "/#about",
+        text: "About"
+      },
+      {
+        href: "/posts",
+        text: "Blog"
+      },
+      {
+        href: "https://twitter.com/cloudnativedays",
+        icon: "tabler:brand-twitter",
+      }
+    ]} />
+		<slot />
+	</body>
 </html>
 <style is:global>
   :root {

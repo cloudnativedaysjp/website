@@ -1,18 +1,59 @@
-<nav
-  class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3"
+---
+import { Icon } from "astro-icon";
+
+interface Link {
+  text?: string;
+  href?: string;
+  ariaLabel?: string;
+  icon?: string;
+}
+
+export interface Props {
+  links: Array<Link>;
+}
+
+const { links = [] } = Astro.props;
+---
+
+<header
+  class="sticky top-0 z-40 flex-none mx-auto w-full transition-all ease-in duration-100 bg-white bg-opacity-75 
+  "
+  id="header"
 >
-  <div
-    class="container px-4 mx-auto flex flex-wrap items-center justify-between"
-  >
-    <div
-      class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
-    >
-      <a
-        class="text-white title-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-        href="/"
+  <div class="mx-auto w-full md:flex md:justify-between">
+    <nav class="w-full flex flex-wrap items-center justify-between px-2 py-1">
+      <div
+        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
       >
-        <img src="/images/lp/cnd_logo_white_small.png" class="w-48" />
-      </a>
-    </div>
+        <div
+          class="w-full  flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <a
+            class="text-white title-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+            href="/"
+          >
+            <img src="/images/lp/cnd_logo_black_small.png" class="w-48" />
+          </a>
+        </div>
+        <div
+          class="w-full  flex flex-row lg:w-auto lg:block "
+        >
+          <ul class="flex gap-4">
+            {links.map(({ ariaLabel, href, text, icon }) => (
+              <li>
+                <a
+                  class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex"
+                  aria-label={ariaLabel}
+                  href={href}
+                >
+                  {icon && <Icon name={icon} class="w-5 h-5" />}
+                  <Fragment set:html={text} />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </nav>
   </div>
-</nav>
+</header>
