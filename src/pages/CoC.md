@@ -7,7 +7,7 @@ layout: '../layouts/MarkdownLayout.astro'
 
 ハラスメント行為を目撃したり懸念を感じた場合は CloudNative Days 実行委員会 [@cloudnativedays](https://twitter.com/cloudnativedays) まで速やかにお知らせください。（この行動規範は Linux Foundation のドキュメントを参考にしています）
 
-## 容認できない行為
+### 容認できない行為
 
 - 性的な言語や画像の使用
 - 個人的な攻撃
