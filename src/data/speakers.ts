@@ -6,6 +6,7 @@ import { CNDT2021Speakers } from './cndt2021_speakers'
 import { CNDT2022Speakers } from './cndt2022_speakers'
 import { CNSEC2022Speakers } from './cnsec2022_speakers'
 import { O11Y2022Speakers } from './o11y2022_speakers'
+import { CICD2023Speakers } from './cicd2023_speakers'
 
 export const speakerMap = new Map<string, Speaker[]>([
   ['cndt2020', CNDT2020Speakers],
@@ -16,4 +17,5 @@ export const speakerMap = new Map<string, Speaker[]>([
   ['o11y2022', O11Y2022Speakers],
   ['cnsec2022', CNSEC2022Speakers],
   ['cndt2022', CNDT2022Speakers],
+  ['cicd2023', CICD2023Speakers],
 ])
