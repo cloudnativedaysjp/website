@@ -326,7 +326,7 @@ export const Conferences: Conference[] = [
 - その他の非倫理的な行為
     `,
     conferenceDays: [
-      {id: 25, date: "2023-08-02", internal: false},
+      {id: 25, date: "2023-08-02", internal: true},
       {id: 25, date: "2023-08-03", internal: false},
     ]
   },
