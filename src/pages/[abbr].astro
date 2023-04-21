@@ -1,18 +1,18 @@
 ---
-import { Conferences } from "../data/conferences";
-import Hero from "../components/Hero.astro";
-import Talk from "../components/Talk.astro";
-import { talkMap } from "../data/talks";
-import Layout from "../layouts/Layout.astro";
+import { Conferences } from '../data/conferences'
+import Hero from '../components/Hero.astro'
+import Talk from '../components/Talk.astro'
+import { talkMap } from '../data/talks'
+import Layout from '../layouts/Layout.astro'
 export async function getStaticPaths() {
   return Conferences.map((conference) => {
-    return { params: { abbr: conference.abbr } };
-  });
+    return { params: { abbr: conference.abbr } }
+  })
 }
-const { abbr } = Astro.params;
-const conference = Conferences.find((conference) => conference.abbr == abbr);
-const conferenceExists = conference != undefined;
-const talks = talkMap.get(abbr || "");
+const { abbr } = Astro.params
+const conference = Conferences.find((conference) => conference.abbr == abbr)
+const conferenceExists = conference != undefined
+const talks = talkMap.get(abbr || '')
 ---
 
 <Layout title={conference.name}>
@@ -20,13 +20,13 @@ const talks = talkMap.get(abbr || "");
     {
       conferenceExists && (
         <>
-          <Hero title={conference.name} href={"/" + abbr}>
+          <Hero title={conference.name} href={'/' + abbr}>
             <p class="mt-4 text-lg text-gray-300">{conference.theme}</p>
             <p class="mt-4 text-lg text-gray-300 whitespace-pre-line">
               {conference.conferenceDays
                 .filter((day) => !day.internal)
                 .map((day) => day.date)
-                .join(", ")}
+                .join(', ')}
             </p>
           </Hero>
           <section class="pb-20 bg-gray-300 -mt-24">
@@ -34,26 +34,41 @@ const talks = talkMap.get(abbr || "");
               <h2 class="text-white relative px-4 text-4xl font-bold">
                 Sessions
               </h2>
-              <div class="flex flex-wrap">
+
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-24"
+                style={{ autoRows: 'minmax(0, auto)' }}
+              >
                 {talks ? (
                   talks?.map((talk) => {
-                    const url = `/${abbr}/talks/${talk.id}`;
+                    const url = `/${abbr}/talks/${talk.id}`
                     return (
-                      <Talk
-                        id={talk.id}
-                        abbr={abbr}
-                        title={talk.title}
-                        speakers={talk.speakers}
-                      />
-                    );
+                      <div class="border border-gray-600 rounded-md overflow-hidden flex">
+                        <div
+                          class="p-4 flex-grow"
+                          style={{
+                            backgroundColor: '#fff',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            borderRadius: '4px',
+                          }}
+                        >
+                          <Talk
+                            id={talk.id}
+                            abbr={abbr}
+                            title={talk.title}
+                            speakers={talk.speakers}
+                            content={talk.content}
+                          />
+                        </div>
+                      </div>
+                    )
                   })
                 ) : (
                   <div class="pt-12 pt-12 pt-3 w-full px-4 text-center">
                     <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                       <div class="px-4 py-5 flex-auto">
-                        <h6 class="text-xl font-semibold">
-                          近日公開！
-                        </h6>
+                        <h6 class="text-xl font-semibold">近日公開！</h6>
                       </div>
                     </div>
                   </div>
