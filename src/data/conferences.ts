@@ -290,5 +290,44 @@ export const Conferences: Conference[] = [
         internal: true
       }
     ]
-  }
+  },
+  {
+    id: 9,
+    name: "CloudNative Days Fukuoka 2023",
+    abbr: "cndf2023",
+    status: 'registered',
+    theme: "“Unlearning” 〜 クラウドの『べき』を外して、新たな世界と繋がろう",
+    image: '/images/assets/cndf2023.png',
+    about: `
+      業務でクラウドを利用していても、その真のパワーを活用できていないと感じている人は多いのではないでしょうか？
+      一方で、高度なクラウド技術を持っているのに、自信が持てなかったり、自らの真価に気づいていない組織も多いのではないでしょうか。
+      そこで、いったん「クラウドネイティブとはかくあるべき」という固定概念を外して、気軽にクラウド技術について語り合いませんか？
+      クラウドやコンテナを使い倒したいインフラエンジニア、クラウドの可能性をもっと引き出したいアプリエンジニアが、知見や課題を共有しながら、新たな人や技術と繋がる場所を作りたいと考えています。
+
+　    そこで、CloudNative Days Japan Tour復活の第一弾として、先進IT・スタートアップコミュニティを擁する福岡の地でCNDF2023を開催します。福岡発で、現地だけでなくオンライン配信を通して、全国のクラウドコミュニティの活性化への貢献を目指します。
+    `,
+    privacy_policy: "",
+    privacy_policy_for_speaker: "",
+    copyright: '© CloudNative Days (Secretariat by Impress Corporation)',
+    coc: `
+    #### Code of Conduct (行動規範)
+
+イベント主催者は、参加者が人権侵害や差別を受けることのないよう努力しています。本イベントは技術情報の共有や技術者同士のコラボレーションを目指したものです。講演者、来場者、スポンサー、展示関係者、スタッフなどすべての参加者は、いかなる形でもハラスメントに関わってはなりません。
+
+ハラスメント行為を目撃したり懸念を感じた場合はCloudNative Days 実行委員会 [@cloudnativedays](https://twitter.com/cloudnativedays) まで速やかにお知らせください。（この行動規範はLinux Foundationのドキュメントを参考にしています）
+
+##### 容認できない行為
+
+- 性的な言語や画像の使用
+- 個人的な攻撃
+- 侮辱/軽蔑的なコメント
+- 公的または私的なハラスメント
+- 許可なく他人の個人情報を公開すること
+- その他の非倫理的な行為
+    `,
+    conferenceDays: [
+      {id: 25, date: "2023-08-02", internal: false},
+      {id: 25, date: "2023-08-03", internal: false},
+    ]
+  },
 ]
