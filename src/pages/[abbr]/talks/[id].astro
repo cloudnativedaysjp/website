@@ -1,7 +1,8 @@
 ---
+import { Icon } from "astro-icon";
 import { speakerMap } from "../../../data/speakers";
 import { talkMap } from "../../../data/talks";
-import Hero from "../../../components/Hero.astro";
+import Headline from "../../../components/Headline.astro";
 import Layout from "../../../layouts/Layout.astro";
 import { Conferences } from "../../../data/conferences";
 import type { Speaker } from "../../../types/speaker";
@@ -44,18 +45,21 @@ const conference = Conferences.find((conference) => conference.abbr == abbr);
   <main>
     {
       talkExists && (
-        <Hero title={talk.title}>
-          <p class="mt-4 text-lg text-gray-300 whitespace-pre-line">
+        <div class="pb-20">
+        <Headline title={talk.title}>
+          <p class="mt-4 text-lg text-gray-200 whitespace-pre-line">
             {talk.abstract}
           </p>
           <p class="mt-4 text-lg text-gray-300">
             {talk?.speakers.map((speaker) => speaker.name).join(" / ")}
           </p>
-        </Hero>
-        <div class="pt-12 pt-12 pt-3 w-full px-4 text-center -mt-24">
-        <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-          <div class="px-4 py-5 flex-auto">
-              <div>
+        </Headline>
+        </div>
+        <div class="pt-6">
+          <div class="pt-12 pt-12 pt-3 mx-auto max-w-7xl px-4 text-center -mt-24">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-4 rounded-lg border-2 border-gray-400">
+              <div class="px-4 py-5 flex-auto">
+                <div>
                   <video
                       id="my-player"
                       class="video-js video-js vjs-16-9 vjs-big-play-centered"
@@ -63,26 +67,59 @@ const conference = Conferences.find((conference) => conference.abbr == abbr);
                       controls
                       preload="auto"
                   >
-                      <source src={talk.videoId} type="application/x-mpegURL" />
+                    <source src={talk.videoId} type="application/x-mpegURL" />
                   </video>
-                  <a href={talk.documentUrl}>発表資料</a>
+                </div>
               </div>
-          
-          {speakersExists &&
-              <div>
-                  {speakers?.map((speaker) => {
-                      return (
-                          <p>{speaker.name}</p>
-                          <p>{speaker.company}</p>
+            </div>
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 rounded-lg border-2 border-gray-400">
+                {speakersExists &&
+                <div>
+                  <div class="py-4 px-6 text-left bg-gray-200 rounded-t-lg border-b-2 border-gray-400 flex items-center">
+                    <Icon name="tabler:user" class="w-6 h-6 mr-1 text-gray-600" />
+                    <span>登壇者プロフィール</span>
+                  </div>
+                {speakers?.map((speaker) => {
+                  return (
+                    <div class="p-6">
+                      <div class="flex flex-col items-start">
+                        <div class="mr-16 mb-4 text-left">
+                          <p class="mr-6 font-bold text-2xl mb-2">{speaker.name}</p>
+                          <p class="mr-6">{speaker.company}</p>
                           <p>{speaker.jobTitle}</p>
-                          <p>{speaker.profile}</p>
-                          <p>{speaker.twitterId}</p>
-                          <p>{speaker.githubId}</p>
-                      )
-                  })
-                  }
+                        </div>
+                        <div class="mr-16 text-left">
+                          <div class="flex flex-wrap">
+                            {speaker.twitterId && (
+                              <div class="flex items-center mb-2">
+                                <Icon name="tabler:brand-twitter" class="w-5 h-5 mr-1 text-gray-800" />
+                                    <p class="mr-6 text-center">{speaker.twitterId}</p>
+                                  </div>
+                                )}
+                            {speaker.githubId && (
+                                <div class="flex items-center mb-2">
+                                  <Icon name="tabler:brand-github" class="w-5 h-5 mr-1 text-gray-800" />
+                                  <p class="mr-6 text-center">{speaker.githubId}</p>
+                                </div>
+                            )}
+                            {talk.documentUrl && (
+                                <div class="flex items-center mb-2">
+                                  <Icon name="tabler:link" class="w-5 h-5 mr-1 text-gray-800" />
+                                  <a class="text-center" href={talk.documentUrl}>発表資料</a>
+                                </div>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                    <hr class="mt-4 pb-4 border-t-1 border-gray-300" />
+                      <div class="mr-16 text-left">
+                        <p>{speaker.profile}</p>
+                      </div>
+                    </div>
+                  )
+                })}
               </div>
-          }
+            }
           </div>
         </div>
       </div>

@@ -1,9 +1,9 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Hero from "../components/Hero.astro";
-import Event from "../components/Event.astro";
-import { Conferences } from "../data/conferences";
-import type { Conference } from "../types/conference";
+import Layout from '../layouts/Layout.astro'
+import Hero from '../components/Hero.astro'
+import Event from '../components/Event.astro'
+import { Conferences } from '../data/conferences'
+import type { Conference } from '../types/conference'
 ---
 
 <Layout title="CloudNative Days">
@@ -23,61 +23,76 @@ import type { Conference } from "../types/conference";
         クラウドネイティブで、未来を共に創造しましょう。
       </p>
     </Hero>
-    <section class="pb-20 bg-gray-300 -mt-24">
+    <section class="pb-10 bg-gray-300 -mt-24">
       <div class="container mx-auto px-4">
-        <h2 class="text-white relative px-4 text-4xl font-bold">
+        <h2 class="text-white relative px-4 text-4xl font-bold pb-16">
           Upcoming Event
         </h2>
-        <div class="flex flex-wrap">
-          {
-            Conferences?.filter((conf) => conf.status == "registered").map(
-              (conference) => {
-                const url = `https://event.cloudnativedays.jp/${conference.abbr}`;
+        <div class="relative">
+          <div class="grid grid-cols-1 gap-4">
+            {
+              Conferences?.filter(
+                (conference) => conference.status == 'registered',
+              ).map((conference) => {
+                const url = `https://event.cloudnativedays.jp/${conference.abbr}`
                 const eventDays = conference.conferenceDays
                   .filter((day) => !day.internal)
                   .map((day) => day.date)
-                  .join(",");
+                  .join(',')
                 return (
-                  <p>
-                    <Event
-                      url={url}
-                      name={conference.name}
-                      days={eventDays}
-                      img={conference.image}
-                    />
-                  </p>
-                );
-              }
-            )
-          }
+                  <>
+                    <div class="bg-white border-2 border-gray-600 rounded-md overflow-hidden hover:bg-gray-100">
+                      <a href={url} class="block" />
+                      <Event
+                        url={url}
+                        name={conference.name}
+                        days={eventDays}
+                        img={conference.image}
+                      />
+                    </div>
+                  </>
+                )
+              })
+            }
+          </div>
         </div>
       </div>
     </section>
     <section class="pb-20 bg-gray-300">
       <div class="container mx-auto px-4">
-        <h2 class="text-black relative px-4 text-4xl font-bold">Past Events</h2>
-        <div class="flex flex-wrap">
-          {
-            Conferences?.filter((conference) => conference.status == "archived")
-              .sort((first, second) => second.id - first.id)
-              .map((conference) => {
-                const url = `/${conference.abbr}`;
-                const eventDays = conference.conferenceDays
-                  .filter((day) => !day.internal)
-                  .map((day) => day.date)
-                  .join(",");
-                return (
-                  <p>
-                    <Event
-                      url={url}
-                      name={conference.name}
-                      days={eventDays}
-                      img={conference.image}
-                    />
-                  </p>
-                );
-              })
-          }
+        <h2 class="text-black relative px-4 text-4xl font-bold pb-3">
+          Past Events
+        </h2>
+        <div class="relative">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {
+              Conferences?.filter(
+                (conference) => conference.status == 'archived',
+              )
+                .sort((first, second) => second.id - first.id)
+                .map((conference) => {
+                  const url = `/${conference.abbr}`
+                  const eventDays = conference.conferenceDays
+                    .filter((day) => !day.internal)
+                    .map((day) => day.date)
+                    .join(',')
+                  return (
+                    <>
+                      <div class="bg-white border-2 border-gray-600 rounded-md overflow-hidden hover:bg-gray-100">
+                        <a href={url} class="block">
+                          <Event
+                            url={url}
+                            name={conference.name}
+                            days={eventDays}
+                            img={conference.image}
+                          />
+                        </a>
+                      </div>
+                    </>
+                  )
+                })
+            }
+          </div>
         </div>
       </div>
     </section>
