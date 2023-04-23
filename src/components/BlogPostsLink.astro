@@ -1,18 +1,18 @@
 ---
-import { Post } from '../lib/interfaces.ts'
-import { getPostLink } from '../lib/blog-helpers.ts'
-import NoContents from './NoContents.astro'
+import { Post } from "../lib/interfaces.ts";
+import { getPostLink } from "../lib/blog-helpers.ts";
+import NoContents from "./NoContents.astro";
 
 export interface Props {
-  heading: string
-  posts: Post[]
+  heading: string;
+  posts: Post[];
 }
 
-const { heading, posts } = Astro.props
+const { heading, posts } = Astro.props;
 ---
 
 <div class="blog-posts-link">
-  <h3>{heading}</h3>
+  <div class="text-xl text-gray-800">{heading}</div>
   {
     posts.length === 0 ? (
       <NoContents contents={posts} />
@@ -20,13 +20,16 @@ const { heading, posts } = Astro.props
       <ul>
         {posts.map((post: Post) => (
           <li>
-            <a href={getPostLink(post.Slug)} title={`${post.Icon?.Emoji || ''}${post.Title}`}>
-              {post.Icon && post.Icon.Type === 'emoji' ? (
+            <a
+              href={getPostLink(post.Slug)}
+              title={`${post.Icon?.Emoji || ""}${post.Title}`}
+            >
+              {post.Icon && post.Icon.Type === "emoji" ? (
                 <>
                   <span>{post.Icon.Emoji}</span>
                   {post.Title}
                 </>
-              ) : post.Icon && post.Icon.Type === 'external' ? (
+              ) : post.Icon && post.Icon.Type === "external" ? (
                 <>
                   <img src={post.Icon.Url} />
                   {post.Title}
