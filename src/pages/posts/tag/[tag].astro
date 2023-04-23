@@ -40,9 +40,11 @@ const currentTag = posts[0].Tags.find((t) => t.name === tag)
 ---
 
 <Layout title="CloudNative Days Blog">
-  <Headline title="Blog">
+  <Headline title={`${tag}`}>
     <p class="mt-4 text-lg text-gray-300">
+      <!--
       <h2><span class={`tag ${currentTag.color}`}>{tag}</span></h2>
+      -->
     </p>
   </Headline>
   <div class="px-8 flex flex-wrap gap-5 max-w-7xl md:justify-center md:mx-auto">

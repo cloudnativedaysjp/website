@@ -33,7 +33,7 @@ export async function getStaticPaths() {
           params.push({ params: { tag: tag.name, page: i.toString() } })
         }
       })
-    })
+    }),
   )
 
   return params
@@ -52,43 +52,42 @@ const currentTag = posts[0].Tags.find((t) => t.name === tag)
 ---
 
 <Layout title="CloudNative Days Blog">
-    <Hero title="Blog">
-      <p class="mt-4 text-lg text-gray-300">
-        <h2><span class={`tag ${currentTag.color}`}>{tag}</span></h2>
-      </p>
-    </Hero>
-    <div class="flex flex-wrap mx-10 md:mx-10 gap-5">
-      <main class="md:w-8/12 w-12/12">
-        {
-            posts.length === 0 ? (
-              <NoContents contents={posts} />
-            ) : (
-              posts.map((post) => (
-                <div class={styles.post} key={post.Slug}>
-                  <PostDate post={post} />
-                  <PostTags post={post} />
-                  <PostTitle post={post} />
-                  <PostFeaturedImage post={post} />
-                  <PostExcerpt post={post} />
-                  <ReadMoreLink post={post} />
-                </div>
-              ))
-            )
-          }
-  
-        <footer>
-            <Pagination
-            tag={tag}
-            currentPage={parseInt(page, 10)}
-            numberOfPages={numberOfPages}
-            />
-        </footer>
-      </main>
-  
-      <aside class="md:flex-auto w-12/12">
-        <BlogPostsLink heading="Recommended" posts={rankedPosts} />
-        <BlogTagsLink heading="Categories" tags={tags} />
-      </aside>
-    </div>
-  </Layout>
-  
+  <Hero title="Blog">
+    <p class="mt-4 text-lg text-gray-300">
+      <h2><span class={`tag ${currentTag.color}`}>{tag}</span></h2>
+    </p>
+  </Hero>
+  <div class="flex flex-wrap mx-10 md:mx-10 gap-5">
+    <main class="md:w-8/12 w-12/12">
+      {
+        posts.length === 0 ? (
+          <NoContents contents={posts} />
+        ) : (
+          posts.map((post) => (
+            <div class={styles.post} key={post.Slug}>
+              <PostDate post={post} />
+              <PostTags post={post} />
+              <PostTitle post={post} />
+              <PostFeaturedImage post={post} />
+              <PostExcerpt post={post} />
+              <ReadMoreLink post={post} />
+            </div>
+          ))
+        )
+      }
+
+      <footer>
+        <Pagination
+          tag={tag}
+          currentPage={parseInt(page, 10)}
+          numberOfPages={numberOfPages}
+        />
+      </footer>
+    </main>
+
+    <aside class="md:flex-auto w-12/12">
+      <BlogPostsLink heading="Recommended" posts={rankedPosts} />
+      <BlogTagsLink heading="Categories" tags={tags} />
+    </aside>
+  </div>
+</Layout>
