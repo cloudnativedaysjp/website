@@ -43,24 +43,17 @@ const talks = talkMap.get(abbr || '')
                   talks?.map((talk) => {
                     const url = `/${abbr}/talks/${talk.id}`
                     return (
-                      <div class="border-2 border-gray-600 rounded-md overflow-hidden flex">
-                        <div
-                          class="p-4 flex-grow"
-                          style={{
-                            backgroundColor: '#fff',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            borderRadius: '4px',
-                          }}
-                        >
-                          <Talk
-                            id={talk.id}
-                            abbr={abbr}
-                            title={talk.title}
-                            speakers={talk.speakers}
-                            content={talk.content}
-                          />
-                        </div>
+                      <div class="border-2 border-gray-600 rounded-md overflow-hidden relative bg-white p-4 flex-grow hover:bg-gray-100">
+                        <a
+                          href={url}
+                          class="block absolute top-0 bottom-0 left-0 right-0"
+                        />
+                        <Talk
+                          id={talk.id}
+                          abbr={abbr}
+                          title={talk.title}
+                          speakers={talk.speakers}
+                        />
                       </div>
                     )
                   })
