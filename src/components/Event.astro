@@ -11,27 +11,31 @@ export interface Props {
 const { url, name, days, img } = Astro.props;
 ---
 
-<div class="lg:pt-12 pt-6 w-full px-4 text-center">
-  <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8">
-    <div class="px-4 py-5 flex-auto">
-      <div
-        class="w-12 h-12 rounded-full ring-offset-base-100 ring-offset-2 items-center justify-center text-white inline-flex mb-4 bg-white"
-      >
-        <Picture
-          src={img}
-          class="w-12 h-12 rounded-full"
-          widths={[400, 768]}
-          sizes=""
-          alt="Event trademark image"
-          aspectRatio="1:1"
-          style=""
-        />
+<a href={url}>
+  <div class="lg:pt-12 pt-6 w-full px-4 text-center">
+    <div
+      class="relative flex flex-col min-w-0 break-words w-full mb-8 hover:bg-gray-100"
+    >
+      <div class="px-4 py-5 flex-auto">
+        <div
+          class="w-12 h-12 rounded-full ring-offset-base-100 ring-offset-2 items-center justify-center text-white inline-flex mb-4 bg-white"
+        >
+          <Picture
+            src={img}
+            class="w-12 h-12 rounded-full"
+            widths={[400, 768]}
+            sizes=""
+            alt="Event trademark image"
+            aspectRatio="1:1"
+            style=""
+          />
+        </div>
+        <h6 class="text-xl font-semibold">{name}</h6>
+        <div class="my-2 border-b-2 border-gray-300"></div>
+        <p class="mt-2 mb-4 text-gray-600">
+          {days}
+        </p>
       </div>
-      <h6 class="text-xl font-semibold"><a href={url}>{name}</a></h6>
-      <div class="my-2 border-b-2 border-gray-300"></div>
-      <p class="mt-2 mb-4 text-gray-600">
-        {days}
-      </p>
     </div>
   </div>
-</div>
+</a>
