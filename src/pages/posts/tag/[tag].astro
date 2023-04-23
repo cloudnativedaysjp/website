@@ -20,7 +20,7 @@ import BlogTagsLink from '../../../components/BlogTagsLink.astro'
 import styles from '../../../styles/blog.module.css'
 import '../../../styles/notion-color.css'
 import Layout from '../../../layouts/Layout.astro'
-import Hero from '../../../components/Hero.astro'
+import Headline from '../../../components/Headline.astro'
 
 export async function getStaticPaths() {
   const allTags = await getAllTags()
@@ -40,11 +40,11 @@ const currentTag = posts[0].Tags.find((t) => t.name === tag)
 ---
 
 <Layout title="CloudNative Days Blog">
-  <Hero title="Blog">
+  <Headline title="Blog">
     <p class="mt-4 text-lg text-gray-300">
       <h2><span class={`tag ${currentTag.color}`}>{tag}</span></h2>
     </p>
-  </Hero>
+  </Headline>
   <div class="px-8 flex flex-wrap gap-5 max-w-7xl md:justify-center md:mx-auto">
     <main class="md:w-8/12 w-12/12">
       {

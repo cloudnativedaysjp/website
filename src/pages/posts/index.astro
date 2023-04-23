@@ -17,7 +17,7 @@ import BlogPostsLink from '../../components/BlogPostsLink.astro'
 import BlogTagsLink from '../../components/BlogTagsLink.astro'
 import styles from '../../styles/blog.module.css'
 import Layout from '../../layouts/Layout.astro'
-import Hero from '../../components/Hero.astro'
+import Headline from '../../components/Headline.astro'
 
 const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
   getPosts(NUMBER_OF_POSTS_PER_PAGE),
@@ -28,11 +28,11 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
 ---
 
 <Layout title="CloudNative Days Blog">
-  <Hero title="Blog">
+  <Headline title="Blog">
     <p class="mt-4 text-lg text-gray-300">
       CloudNative Days実行委員会によるブログ
     </p>
-  </Hero>
+  </Headline>
   <div class="px-8 flex flex-wrap gap-5 max-w-7xl md:justify-center md:mx-auto">
     <main class="md:w-8/12 w-12/12">
       {

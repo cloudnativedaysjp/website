@@ -25,7 +25,7 @@ import BlogPostsLink from '../../components/BlogPostsLink.astro'
 import BlogTagsLink from '../../components/BlogTagsLink.astro'
 import styles from '../../styles/blog.module.css'
 import Layout from '../../layouts/Layout.astro'
-import Hero from '../../components/Hero.astro'
+import Headline from '../../components/Headline.astro'
 
 export async function getStaticPaths() {
   const posts = await getAllPosts()
@@ -105,11 +105,11 @@ if (post.FeaturedImage && post.FeaturedImage.Url) {
   url={`blog/${slug}`}
   ogImage={ogImage}
 >
-  <Hero title={post.Title}>
+  <Headline title={post.Title}>
     <p class="mt-4 text-lg text-gray-300">
       CloudNative Days実行委員会によるブログ
     </p>
-  </Hero>
+  </Headline>
   <div class="flex flex-wrap mx-auto justify-center max-w-8xl mt-4">
     <main class="w-full lg:w-8/12 lg:mx-20 mx-10">
       <div class="leading-7">
