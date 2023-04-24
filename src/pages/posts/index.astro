@@ -17,7 +17,7 @@ import BlogPostsLink from '../../components/BlogPostsLink.astro'
 import BlogTagsLink from '../../components/BlogTagsLink.astro'
 import styles from '../../styles/blog.module.css'
 import Layout from '../../layouts/Layout.astro'
-import Hero from '../../components/Hero.astro'
+import Headline from '../../components/Headline.astro'
 
 const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
   getPosts(NUMBER_OF_POSTS_PER_PAGE),
@@ -28,35 +28,40 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
 ---
 
 <Layout title="CloudNative Days Blog">
-  <Hero title="Blog">
+  <Headline title="Blog">
     <p class="mt-4 text-lg text-gray-300">
       CloudNative Days実行委員会によるブログ
     </p>
-  </Hero>
-  <div class="flex flex-wrap mx-10 md:mx-10 gap-5">
+  </Headline>
+  <div class="px-8 flex flex-wrap gap-5 max-w-7xl md:justify-center md:mx-auto">
     <main class="md:w-8/12 w-12/12">
       {
         posts.length === 0 ? (
           <NoContents contents={posts} />
         ) : (
           posts.map((post) => (
-            <div className={styles.post} key={post.Slug}>
-              <PostDate post={post} />
-              <PostTags post={post} />
-              <PostTitle post={post} />
-              <PostExcerpt post={post} />
-              <ReadMoreLink post={post} />
+            <div class="py-6">
+              <div class={styles.post} key={post.Slug}>
+                <div class="mb-3">
+                  <PostDate post={post} />
+                  <PostTitle post={post} />
+                  <div class="mb-2 border-b-2 border-gray-200" />
+                  <PostTags post={post} />
+                </div>
+                <PostExcerpt post={post} />
+                <ReadMoreLink post={post} />
+              </div>
             </div>
           ))
         )
       }
 
-      <footer>
+      <footer class="flex justify-center items-center mt-5">
         <Pagination currentPage={1} numberOfPages={numberOfPages} />
       </footer>
     </main>
 
-    <aside class="md:flex-auto w-12/12">
+    <aside class="md:mt-6 md:ml-4 md:flex-auto w-12/12">
       <BlogPostsLink heading="Recommended" posts={rankedPosts} />
       <BlogTagsLink heading="Categories" tags={tags} />
     </aside>
