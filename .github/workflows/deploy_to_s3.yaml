@@ -2,8 +2,8 @@ name: Deploy Website to S3
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - v*
 
 permissions:
   contents: read
@@ -20,12 +20,6 @@ jobs:
         with:
           aws-region: 'ap-northeast-1'
           role-to-assume: 'arn:aws:iam::607167088920:role/github-actions'
-    #   - name: Configure AWS Credentials
-    #     uses: aws-actions/configure-aws-credentials@v1
-    #     # with:
-    #     #   aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-    #     #   aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-    #     #   aws-region: us-east-1
       - name: Install, build, and upload your site
         uses: withastro/action@v0
         env: 
