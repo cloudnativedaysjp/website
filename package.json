@@ -53,10 +53,10 @@
     "astro-icon": "^0.8.0",
     "cli-progress": "^3.11.2",
     "eslint": "^8.37.0",
-    "eslint-plugin-astro": "^0.21.1",
-    "nx": "15.5.3",
+    "eslint-plugin-astro": "^0.27.0",
+    "nx": "15.9.4",
     "prettier": "^2.8.7",
-    "prettier-plugin-astro": "^0.8.0",
+    "prettier-plugin-astro": "^0.10.0",
     "svgo": "2.8.0"
   },
   "nx": {
