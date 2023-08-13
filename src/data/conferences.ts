@@ -295,7 +295,7 @@ export const Conferences: Conference[] = [
     id: 9,
     name: "CloudNative Days Fukuoka 2023",
     abbr: "cndf2023",
-    status: 'registered',
+    status: 'archived',
     theme: "“Unlearning” 〜 クラウドの『べき』を外して、新たな世界と繋がろう",
     image: '/images/assets/cndf2023.png',
     about: `
