@@ -23,7 +23,7 @@
     "@astrojs/rss": "^2.0.0",
     "@astrojs/tailwind": "^3.0.1",
     "@notionhq/client": "^2.2.3",
-    "@supercharge/promise-pool": "^2.3.2",
+    "@supercharge/promise-pool": "^3.0.0",
     "@tailwindcss/typography": "^0.5.9",
     "astro": "^2.8.2",
     "katex": "^0.16.4",
