@@ -1,0 +1,55 @@
+---
+import { Conferences } from '../../data/conferences'
+import Hero from '../../components/Hero.astro'
+import Layout from '../../layouts/Layout.astro'
+export async function getStaticPaths() {
+  return Conferences.map((conference) => {
+    return { params: { abbr: conference.abbr } }
+  })
+}
+const { abbr } = Astro.params
+const conference = Conferences.find((conference) => conference.abbr == abbr)
+const conferenceExists = conference != undefined
+---
+
+<Layout title={conference.name}>
+  <main>
+    {
+      conferenceExists && (
+        <>
+          <Hero title={conference.name} href={'/' + abbr}>
+            <p class="mt-4 text-lg text-gray-300">{conference.theme}</p>
+            <p class="mt-4 text-lg text-gray-300 whitespace-pre-line">
+              {conference.conferenceDays
+                .filter((day) => !day.internal)
+                .map((day) => day.date)
+                .join(', ')}
+            </p>
+          </Hero>
+          <section class="pb-20 bg-gray-300 -mt-24">
+            <div class="container mx-auto px-4">
+              <div class="flex flex-row">
+                <a href={'/' + abbr}>
+                  <h2 class="text-black relative px-4 text-4xl font-bold">
+                  Sessions
+                  </h2>
+                </a>
+                <a href={'/' + abbr + '/members'}>
+                  <h2 class="text-white relative px-4 text-4xl font-bold">
+                  Members
+                  </h2>
+                </a>
+              </div>
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-24"
+                style={{ autoRows: 'minmax(0, auto)' }}
+              >
+                ここに実行委員リストを表示する
+              </div>
+            </div>
+          </section>
+        </>
+      )
+    }
+  </main>
+</Layout>
