@@ -7,6 +7,7 @@ import { CNDT2022Talks } from './cndt2022_talks'
 import { CNSEC2022Talks } from './cnsec2022_talks'
 import { O11Y2022Talks } from './o11y2022_talks'
 import { CICD2023Talks } from './cicd2023_talks'
+import { CNDF2023Talks } from "./cndf2023_talks";
 
 export const talkMap = new Map<string, Talk[]>([
   ['cndt2020', CNDT2020Talks],
@@ -18,4 +19,5 @@ export const talkMap = new Map<string, Talk[]>([
   ['cnsec2022', CNSEC2022Talks],
   ['cndt2022', CNDT2022Talks],
   ['cicd2023', CICD2023Talks],
+  ['cndf2023', CNDF2023Talks],
 ])
