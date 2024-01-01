@@ -13,15 +13,15 @@ export interface Props {
 
 const { block, level, headings } = Astro.props
 
-const listTypes = ['1', 'a', 'i']
+const listTypes = ['i', '1', 'a']
 ---
 
-<ol type={listTypes[level % 3]} class="ml-4">
+<ol type={listTypes[level % 3]}>
   {
     block.ListItems.filter(
       (b: interfaces.Block) => b.Type === 'numbered_list_item'
     ).map((b: interfaces.Block) => (
-      <li class:list={[snakeToKebab(b.NumberedListItem.Color), "list-item", "list-decimal", "list-inside"]}>
+      <li class={snakeToKebab(b.NumberedListItem.Color)}>
         {b.NumberedListItem.RichTexts.map((richText: interfaces.RichText) => (
           <RichText richText={richText} />
         ))}
