@@ -334,7 +334,7 @@ export const Conferences: Conference[] = [
     id: 10,
     name: "CloudNative Days Tokyo 2023",
     abbr: "cndt2023",
-    status: "registered",
+    status: "archived",
     theme: "+Native ともに飛び出せ！",
     image: '/images/assets/cndt2023.png',
     about: `
