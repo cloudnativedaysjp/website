@@ -1,6 +1,4 @@
-import type { Talk } from "../types/talk";
-
-export const CNDF2023Talks: Talk[] = [
+[
   {
     "id": 1838,
     "conferenceId": 9,

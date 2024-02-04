@@ -1,6 +1,4 @@
-import type { Speaker } from "../types/speaker";
-
-export const CNDF2023Speakers: Speaker[] = [
+[
   {
     "id": 1473,
     "name": "Kazuhiko Tsuji",

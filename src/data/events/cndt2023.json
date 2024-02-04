@@ -1,0 +1,30 @@
+{
+  "id": 10,
+  "name": "CloudNative Days Tokyo 2023",
+  "abbr": "cndt2023",
+  "status": "archived",
+  "theme": "+Native ともに飛び出せ！",
+  "image": "/images/assets/cndt2023.png",
+  "about": "\n      \"CloudNative Days\"は、技術を学び、技術と人・人と人の繋がりを深めるテックカンファレンスです。\n      コロナ禍で生じたコミュニティの分断を乗り越え、一体感を再び取り戻し、仲間や友達と共に成長しましょう。\n      今回は分断されたコミュニティを再集結するための一歩として、東京で開催します!\n      みなさんの所属組織の垣根を飛び越え、CloudNativeを元に交流する場に飛び込みませんか？\n      \"CloudNative\"を学び、新たな世界に飛び出し ませんか？\n      さあ、ともに飛び出しましょう。\n      \"CloudNative Days\"で、新たな繋がりと成長をお楽しみください。\n    ",
+  "privacy_policy": "",
+  "privacy_policy_for_speaker": "",
+  "copyright": "© CloudNative Days (Secretariat by Impress Corporation)",
+  "coc": "\n    #### Code of Conduct (行動規範)\n    \n    イベント主催者は、参加者が人権侵害や差別を受けることのないよう努力しています。本イベントは技術情報 の共有や技術者同士のコラボレーションを目指したものです。講演者、来場者、スポンサー、展示関係者、スタッフなどすべての参加者は、いかなる形でもハラスメントに関わってはなりません。\n    \n    ハラスメント行為を目撃したり懸念を感じた場合はCloudNative Days 実行委員会 [@cloudnativedays](https://twitter.com/cloudnativedays) まで速やかにお知らせください。（この行動規範はLinux Foundationのドキュメントを参考にしています）\n    \n    ##### 容認できない行為\n    \n    - 性的な言語や画像の使用\n    - 個人的な攻撃\n    - 侮辱/軽蔑的なコメント\n    - 公的または私的なハラスメント\n    - 許可なく他人の個人情報を公開すること\n    - その他 の非倫理的な行為\n    ",
+  "conferenceDays": [
+    {
+      "id": 29,
+      "date": "2023-11-20",
+      "internal": true
+    },
+    {
+      "id": 27,
+      "date": "2023-12-11",
+      "internal": false
+    },
+    {
+      "id": 28,
+      "date": "2023-12-12",
+      "internal": false
+    }
+  ]
+}
