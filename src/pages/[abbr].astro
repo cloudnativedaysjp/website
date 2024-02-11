@@ -1,8 +1,8 @@
 ---
-import { Conferences } from '../data/conferences'
+import { Conferences } from '../data/data'
 import Hero from '../components/Hero.astro'
 import Talk from '../components/Talk.astro'
-import { talkMap } from '../data/talks'
+import { talkMap } from '../data/data'
 import Layout from '../layouts/Layout.astro'
 export async function getStaticPaths() {
   return Conferences.map((conference) => {

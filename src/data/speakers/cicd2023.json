@@ -1,6 +1,4 @@
-import type { Speaker } from "../types/speaker";
-
-export const CICD2023Speakers: Speaker[] = [
+[
   {
     "id": 1430,
     "name": "Ryuichi Watanabe",

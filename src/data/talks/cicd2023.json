@@ -1,6 +1,4 @@
-import type { Talk } from "../types/talk";
-
-export const CICD2023Talks: Talk[] = [
+[
   {
     "id": 1755,
     "conferenceId": 8,
