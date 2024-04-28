@@ -102,7 +102,7 @@ export async function getAllPosts(): Promise<Post[]> {
       async (bail) => {
         try {
           return (await client.databases.query(
-            params as any // eslint-disable-line @typescript-eslint/no-explicit-any
+            params as any, // eslint-disable-line @typescript-eslint/no-explicit-any
           )) as responses.QueryDatabaseResponse
         } catch (error: unknown) {
           if (error instanceof APIResponseError) {
@@ -115,7 +115,7 @@ export async function getAllPosts(): Promise<Post[]> {
       },
       {
         retries: numberOfRetry,
-      }
+      },
     )
 
     results = results.concat(res.results)
@@ -165,7 +165,7 @@ export async function getPostByPageId(pageId: string): Promise<Post | null> {
 
 export async function getPostsByTag(
   tagName: string,
-  pageSize = 10
+  pageSize = 10,
 ): Promise<Post[]> {
   if (!tagName) return []
 
@@ -192,7 +192,7 @@ export async function getPostsByPage(page: number): Promise<Post[]> {
 // page starts from 1 not 0
 export async function getPostsByTagAndPage(
   tagName: string,
-  page: number
+  page: number,
 ): Promise<Post[]> {
   if (page < 1) {
     return []
@@ -200,7 +200,7 @@ export async function getPostsByTagAndPage(
 
   const allPosts = await getAllPosts()
   const posts = allPosts.filter((post) =>
-    post.Tags.find((tag) => tag.name === tagName)
+    post.Tags.find((tag) => tag.name === tagName),
   )
 
   const startIndex = (page - 1) * NUMBER_OF_POSTS_PER_PAGE
@@ -220,7 +220,7 @@ export async function getNumberOfPages(): Promise<number> {
 export async function getNumberOfPagesByTag(tagName: string): Promise<number> {
   const allPosts = await getAllPosts()
   const posts = allPosts.filter((post) =>
-    post.Tags.find((tag) => tag.name === tagName)
+    post.Tags.find((tag) => tag.name === tagName),
   )
   return (
     Math.floor(posts.length / NUMBER_OF_POSTS_PER_PAGE) +
@@ -243,7 +243,7 @@ export async function getAllBlocksByBlockId(blockId: string): Promise<Block[]> {
         async (bail) => {
           try {
             return (await client.blocks.children.list(
-              params as any // eslint-disable-line @typescript-eslint/no-explicit-any
+              params as any, // eslint-disable-line @typescript-eslint/no-explicit-any
             )) as responses.RetrieveBlockChildrenResponse
           } catch (error: unknown) {
             if (error instanceof APIResponseError) {
@@ -256,7 +256,7 @@ export async function getAllBlocksByBlockId(blockId: string): Promise<Block[]> {
         },
         {
           retries: numberOfRetry,
-        }
+        },
       )
 
       results = results.concat(res.results)
@@ -339,7 +339,7 @@ export async function getBlock(blockId: string): Promise<Block> {
     async (bail) => {
       try {
         return (await client.blocks.retrieve(
-          params as any // eslint-disable-line @typescript-eslint/no-explicit-any
+          params as any, // eslint-disable-line @typescript-eslint/no-explicit-any
         )) as responses.RetrieveBlockResponse
       } catch (error: unknown) {
         if (error instanceof APIResponseError) {
@@ -352,7 +352,7 @@ export async function getBlock(blockId: string): Promise<Block> {
     },
     {
       retries: numberOfRetry,
-    }
+    },
   )
 
   return _buildBlock(res)
@@ -372,7 +372,7 @@ export async function getAllTags(): Promise<SelectProperty[]> {
       return acc
     }, [] as SelectProperty[])
     .sort((a: SelectProperty, b: SelectProperty) =>
-      a.name.localeCompare(b.name)
+      a.name.localeCompare(b.name),
     )
 }
 
@@ -433,7 +433,7 @@ export async function getDatabase(): Promise<Database> {
     async (bail) => {
       try {
         return (await client.databases.retrieve(
-          params as any // eslint-disable-line @typescript-eslint/no-explicit-any
+          params as any, // eslint-disable-line @typescript-eslint/no-explicit-any
         )) as responses.RetrieveDatabaseResponse
       } catch (error: unknown) {
         if (error instanceof APIResponseError) {
@@ -446,7 +446,7 @@ export async function getDatabase(): Promise<Database> {
     },
     {
       retries: numberOfRetry,
-    }
+    },
   )
 
   let icon: FileObject | Emoji | null = null
@@ -788,7 +788,7 @@ async function _getTableRows(blockId: string): Promise<TableRow[]> {
         async (bail) => {
           try {
             return (await client.blocks.children.list(
-              params as any // eslint-disable-line @typescript-eslint/no-explicit-any
+              params as any, // eslint-disable-line @typescript-eslint/no-explicit-any
             )) as responses.RetrieveBlockChildrenResponse
           } catch (error: unknown) {
             if (error instanceof APIResponseError) {
@@ -801,7 +801,7 @@ async function _getTableRows(blockId: string): Promise<TableRow[]> {
         },
         {
           retries: numberOfRetry,
-        }
+        },
       )
 
       results = results.concat(res.results)
@@ -853,7 +853,7 @@ async function _getColumns(blockId: string): Promise<Column[]> {
         async (bail) => {
           try {
             return (await client.blocks.children.list(
-              params as any // eslint-disable-line @typescript-eslint/no-explicit-any
+              params as any, // eslint-disable-line @typescript-eslint/no-explicit-any
             )) as responses.RetrieveBlockChildrenResponse
           } catch (error: unknown) {
             if (error instanceof APIResponseError) {
@@ -866,7 +866,7 @@ async function _getColumns(blockId: string): Promise<Column[]> {
         },
         {
           retries: numberOfRetry,
-        }
+        },
       )
 
       results = results.concat(res.results)
@@ -891,7 +891,7 @@ async function _getColumns(blockId: string): Promise<Column[]> {
       }
 
       return column
-    })
+    }),
   )
 }
 

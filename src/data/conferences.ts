@@ -232,10 +232,10 @@ export const Conferences: Conference[] = [
   },
   {
     id: 8,
-    name: "CI/CD Conference 2023 by CloudNative Days",
-    abbr: "cicd2023",
+    name: 'CI/CD Conference 2023 by CloudNative Days',
+    abbr: 'cicd2023',
     status: 'archived',
-    theme: "Continuous 〜ともに回す高速なアプリケーション開発ライフサイクル〜",
+    theme: 'Continuous 〜ともに回す高速なアプリケーション開発ライフサイクル〜',
     image: '/images/assets/cicd2023.png',
     about: `
       CI/CD Conference 2023 by CloudNative Days（CICD2023）は、CI/CDに特化したテックカンファレンスです。
@@ -248,8 +248,8 @@ export const Conferences: Conference[] = [
 
     開発と運用の垣根を超えて、継続的に価値を高めるライフサイクルをともに回していける世界を一緒に体験してみましょう！
     `,
-    privacy_policy: "",
-    privacy_policy_for_speaker: "",
+    privacy_policy: '',
+    privacy_policy_for_speaker: '',
     copyright: '© CloudNative Days (Secretariat by Impress Corporation)',
     coc: `
     #### Code of Conduct (行動規範)
@@ -271,32 +271,33 @@ export const Conferences: Conference[] = [
     conferenceDays: [
       {
         id: 21,
-        date: "2023-03-20",
-        internal: false},
+        date: '2023-03-20',
+        internal: false,
+      },
       {
         id: 22,
-        date: "2023-02-27",
-        internal: true
+        date: '2023-02-27',
+        internal: true,
       },
       {
         id: 23,
-        date: "2023-03-04",
-        internal: true
+        date: '2023-03-04',
+        internal: true,
       },
 
       {
         id: 24,
-        date: "2023-03-19",
-        internal: true
-      }
-    ]
+        date: '2023-03-19',
+        internal: true,
+      },
+    ],
   },
   {
     id: 9,
-    name: "CloudNative Days Fukuoka 2023",
-    abbr: "cndf2023",
+    name: 'CloudNative Days Fukuoka 2023',
+    abbr: 'cndf2023',
     status: 'archived',
-    theme: "“Unlearning” 〜 クラウドの『べき』を外して、新たな世界と繋がろう",
+    theme: '“Unlearning” 〜 クラウドの『べき』を外して、新たな世界と繋がろう',
     image: '/images/assets/cndf2023.png',
     about: `
       業務でクラウドを利用していても、その真のパワーを活用できていないと感じている人は多いのではないでしょうか？
@@ -306,8 +307,8 @@ export const Conferences: Conference[] = [
 
 　    そこで、CloudNative Days Japan Tour復活の第一弾として、先進IT・スタートアップコミュニティを擁する福岡の地でCNDF2023を開催します。福岡発で、現地だけでなくオンライン配信を通して、全国のクラウドコミュニティの活性化への貢献を目指します。
     `,
-    privacy_policy: "",
-    privacy_policy_for_speaker: "",
+    privacy_policy: '',
+    privacy_policy_for_speaker: '',
     copyright: '© CloudNative Days (Secretariat by Impress Corporation)',
     coc: `
     #### Code of Conduct (行動規範)
@@ -326,16 +327,16 @@ export const Conferences: Conference[] = [
 - その他の非倫理的な行為
     `,
     conferenceDays: [
-      {id: 25, date: "2023-08-02", internal: true},
-      {id: 25, date: "2023-08-03", internal: false},
-    ]
+      { id: 25, date: '2023-08-02', internal: true },
+      { id: 25, date: '2023-08-03', internal: false },
+    ],
   },
   {
     id: 10,
-    name: "CloudNative Days Tokyo 2023",
-    abbr: "cndt2023",
-    status: "registered",
-    theme: "+Native ともに飛び出せ！",
+    name: 'CloudNative Days Tokyo 2023',
+    abbr: 'cndt2023',
+    status: 'registered',
+    theme: '+Native ともに飛び出せ！',
     image: '/images/assets/cndt2023.png',
     about: `
       "CloudNative Days"は、技術を学び、技術と人・人と人の繋がりを深めるテックカンファレンスです。
@@ -346,9 +347,9 @@ export const Conferences: Conference[] = [
       さあ、ともに飛び出しましょう。
       "CloudNative Days"で、新たな繋がりと成長をお楽しみください。
     `,
-    privacy_policy: "",
-    privacy_policy_for_speaker: "",
-    copyright: "© CloudNative Days (Secretariat by Impress Corporation)",
+    privacy_policy: '',
+    privacy_policy_for_speaker: '',
+    copyright: '© CloudNative Days (Secretariat by Impress Corporation)',
     coc: `
     #### Code of Conduct (行動規範)
     
@@ -366,9 +367,9 @@ export const Conferences: Conference[] = [
     - その他 の非倫理的な行為
     `,
     conferenceDays: [
-      {id: 29, date: "2023-11-20", internal: true},
-      {id: 27, date: "2023-12-11", internal: false},
-      {id: 28, date: "2023-12-12", internal: false }
-    ]
-  }
+      { id: 29, date: '2023-11-20', internal: true },
+      { id: 27, date: '2023-12-11', internal: false },
+      { id: 28, date: '2023-12-12', internal: false },
+    ],
+  },
 ]
