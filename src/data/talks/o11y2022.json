@@ -4,7 +4,7 @@
     "conferenceId": 5,
     "trackId": 27,
     "videoPlatform": null,
-    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/medialive/o11y2022/talks/1347/1347.m3u8",
+    "videoId": "https://www.youtube.com/embed/mp73gISk1yE",
     "title": "OpenTelemetryのこれまでとこれから",
     "abstract": "オブザーバビリティにおいてテレメトリーの計装と収集は欠かせません。OpenTelemetryはオブザーバビリティの三本柱であるログ、メトリクス、トレースの計装と収集を標準化しようとする野心的なプロジェクトです。この講演ではOpenTelemetryがどういったプロジェクトであるか、その目的と技術的詳細を紹介し、その現状と今後の方向性を共有します。本公演に参加することで、参加者はプロジェクトにおいて採用の判断をより自信をもって行うことができるでしょう。",
     "speakers": [
@@ -31,7 +31,7 @@
     "conferenceId": 5,
     "trackId": 28,
     "videoPlatform": null,
-    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/medialive/o11y2022/talks/1349/1349.m3u8",
+    "videoId": "https://www.youtube.com/embed/u1Z80aNyej0",
     "title": "小さな巨人 Telegraf を使ってお手軽オブザーバビリティ",
     "abstract": "オブザーバリティで見たいものがどんどん増えていくのは楽しいですよね？見たいものを増やす、という観点でカスタムのエクスポーターを作っていくことになるかと思います。そんな時活躍するのが小さな巨人であるTelegrafです。このセッションではTelegrafの紹介だけでなく、ちょっとした小技を紹介するセッションです。",
     "speakers": [
@@ -58,7 +58,7 @@
     "conferenceId": 5,
     "trackId": 27,
     "videoPlatform": null,
-    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/medialive/o11y2022/talks/1354/1354.m3u8",
+    "videoId": "https://www.youtube.com/embed/hWQn5X6jlcc",
     "title": "入門 OpenTelemetry Collector",
     "abstract": "OpenTelemetryを使う上で重要となるのが、OpenTelemetry Collector（OTel Collector, otel-collector）の取り扱いです。本セッションでは、OpenTelemetry Collectorで何ができるのか、どのように設定すればいいのかを紹介しつつ、OpenTelemetry Collectorの便利さについて解説していきます。\r\n\r\nそして、OpenTelemetryからのテレメトリデータをSplunk Observability Cloudがどのように処理・可視化し、活用できるのかについて紹介していきます。",
     "speakers": [
@@ -85,7 +85,7 @@
     "conferenceId": 5,
     "trackId": 27,
     "videoPlatform": null,
-    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/medialive/o11y2022/talks/1355/1355.m3u8",
+    "videoId": "https://www.youtube.com/embed/JBbR0RUjX4k",
     "title": "月間動画再生数 2億回を支えるTVerのオブザーバビリティ",
     "abstract": "私達はテレビの見逃し配信サービスである TVer を運営しており、2021年10月には月間動画再生数が2億回を達成することができました。\r\n\r\nTVerは「好きな番組を、好きな時に、好きな場所で、好きなデバイスで、自由に視聴できるテレビの新しいスタイルを提供する動画配信サービス」を謳っており、対象となるデバイスはPC・スマートフォン・コネクテッドTVなど多岐にわたります。\r\n\r\nテレビ × インターネットという新しいフィールドで膨大なトラフィックを捌き、ユーザーに快適に利用して貰うというミッションを実現するため、私達はオブザーバビリティプラットフォームとして New Relic を採用しました。\r\n\r\n本セッションではTVerでのオブザーバビリティを実現するにあたり、現状と理想の整理、New Relicの各機能をどのように活用しているのか、その結果サービスのオブザーバビリティはどのように変化したのかをお話します。\r\n",
     "speakers": [
@@ -112,7 +112,7 @@
     "conferenceId": 5,
     "trackId": 27,
     "videoPlatform": null,
-    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/medialive/o11y2022/talks/1356/1356.m3u8",
+    "videoId": "https://www.youtube.com/embed/PmW3PtnQf3s",
     "title": "Cloud Profilerによるワーカープロセスのパフォーマンス改善",
     "abstract": "オブザーバビリティの3本柱(Three Pillars of Observability)として、ログ、トレース、メトリクスがよく重視されていますが、それらに加えてプロファイルも実行中のサービスについて有益な情報を与えてくれます。\r\nマネーフォワードケッサイ株式会社ではGoogle Cloudを広く使っています。Cloud Profilerを使ったGKE上で動くワーカープロセス(コンテナ)のパフォーマンス改善について、実際の開発業務で得られた知見をもとにお話します。\r\nCloud Profilerを使ってプロファイルを取得できるようにする環境づくりから、ボトルネックの特定方法、改善策の実施と改善結果の確認など、一連の改善サイクルについてどのように実践したかをお伝えします。\r\nCloud Profiler自体は現状Google Cloudを使っていなくても使い始めることができ、聴講に際してGoogle Cloudの前提知識も不要です。",
     "speakers": [
@@ -139,7 +139,7 @@
     "conferenceId": 5,
     "trackId": 26,
     "videoPlatform": null,
-    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/medialive/o11y2022/talks/1357/1357.m3u8",
+    "videoId": "https://www.youtube.com/embed/tlcfg0nAr7c",
     "title": "実践オブザーバビリティ ~ プロダクショングレード監視/ログ基盤とその実用例",
     "abstract": "オブザーバビリティが高いシステムの利点を知りたい方に向けて、サイボウズがGrafana Dashboards/Loki, VictoriaMetricsを使って構築した監視/ログ基盤について説明します。\r\n\r\n具体的には上述の監視/ログ基盤の構成、および、この構成にした意図や工夫点について説明します。また、この基盤を実際にどのように活用して、何がうれしかったのかについて述べます。",
     "speakers": [
@@ -166,7 +166,7 @@
     "conferenceId": 5,
     "trackId": 26,
     "videoPlatform": null,
-    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/medialive/o11y2022/talks/1358/1358.m3u8",
+    "videoId": "https://www.youtube.com/embed/Fp4gBQrUFtU",
     "title": "Observability and Chaos Engineering",
     "abstract": " With the growth of the distributed system, stability faces more serious challenges. Chaos Engineering is an experiment discipline that could introduce \"controlled real-world fault\" into your application for making your application tougher and more robust. When operating chaos experiments,  observability is very important for measuring the \"steady-state\" of application. \r\n\r\nThis presentation would introduce the best practice of observability with chaos engineering, and how chaos engineering affect the construction of existing observability system.",
     "speakers": [
@@ -193,7 +193,7 @@
     "conferenceId": 5,
     "trackId": 28,
     "videoPlatform": null,
-    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/medialive/o11y2022/talks/1368/1368.m3u8",
+    "videoId": "https://www.youtube.com/embed/AbGB3Vl7tis",
     "title": "マイクロサービスアーキテクチャな組織、システムにSLOを導入している話",
     "abstract": "株式会社スタンバイでは求人検索エンジン『スタンバイ』を開発運用しています。 マイクロサービスアーキテクチャなシステム、組織にSLOの導入を行っていく中で、いくつかの課題が見えてきました。課題に対してSRE、開発エンジニアたちはどのように立ち向かったのか。横断的なSLOルールの策定やDatadogを使ったSLO運用環境の統合といった取り組みを、組織・技術面合わせて紹介します。 \r\nSLOのオーナーシップ、SLO違反時の対応フロー、ユーザーの行動に寄り添ったSLOなどを、どのように設計・導入・改善していったのか。\r\n『100年続く会社ではなく、100回変わる会社』を目指すスタンバイの軌跡を、皆様のSLO導入に関するヒントとしてお使い頂けると幸いです",
     "speakers": [
@@ -220,7 +220,7 @@
     "conferenceId": 5,
     "trackId": 28,
     "videoPlatform": null,
-    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/medialive/o11y2022/talks/1370/1370.m3u8",
+    "videoId": "https://www.youtube.com/embed/hCW22Lo3szk",
     "title": "開発者が語る！事例を通したオブザーバビリティの活用ポイント",
     "abstract": "『オブザーバビリティ』とは一体何でしょう？『オブザーバビリティ』とは『可観測性』です。皆様は『可観測性』としてキチンと活用できているでしょうか？\r\n観測できるようにするには開発者がキーパーソンだと考えています。\r\n本セッションでは、開発者であるスピーカー自身のオブザーバビリティによる活用事例を通し、オブザーバビリティの活用ポイントをご説明します。",
     "speakers": [
@@ -247,7 +247,7 @@
     "conferenceId": 5,
     "trackId": 28,
     "videoPlatform": null,
-    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/medialive/o11y2022/talks/1373/1373.m3u8",
+    "videoId": "https://www.youtube.com/embed/KyE7grxNNlQ",
     "title": "Deep Dive Distributed Tracing",
     "abstract": "オブザーバビリティを得るための強力なツールとなっているものの一つが分散トレーシング(Distributed Tracing)です。複数のサービス境界をまたいでいく様子は「一筆書き」とも呼ばれます。また高トラフィックなサイトでは大量のトレースが発生するため注目すべきものを選択する技術、即ちサンプリングも必要です。OpenTelemetryやW3C Trace Contextなどの標準を読み解くことで、どのようにふと筆書きがつながるか、どうサンプリングしているか、の2点に着目しながら、価値ある分散トレーシングを取得する方法をその理由から理解できるようになることが本セッションの目標です。なお、登壇者の所属する企業のサービスであるNew Relicをはじめベンダー固有の話はオープンな標準を理解するための要素としてのみ登場します。",
     "speakers": [
@@ -274,7 +274,7 @@
     "conferenceId": 5,
     "trackId": 27,
     "videoPlatform": null,
-    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/medialive/o11y2022/talks/1374/1374.m3u8",
+    "videoId": "https://www.youtube.com/embed/mYPWS7pxYHE",
     "title": "日2億リクエストを越えるNTTドコモのAPI基盤で開発者と利用者にオブザーバビリティを提供する話",
     "abstract": "NTTドコモではdTVやdマガジンなどの大規模サービスを多数提供しています。このようなサービスを高速に低コストで実装・開発するためのAPI基盤「RAFTEL」を社内に公開するためのプロジェクトが立ち上がりました。\r\n我々RAFTELチームは1日2億リクエストを超える大規模API基盤としての信頼性を保ちながら、RAFTELのサービスレベルを公開しオブザーバビリティを提供することでAPI利用開発者の体験を向上する活動を行なっています。\r\n　\r\n本セッションではこれまでの過程で具体的に発生した課題から解決までの道筋をご紹介し、その結果RAFTELチーム内・RAFTEL API利用者にどのような効果があったかまでお話しします。",
     "speakers": [
@@ -301,7 +301,7 @@
     "conferenceId": 5,
     "trackId": 26,
     "videoPlatform": null,
-    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/medialive/o11y2022/talks/1378/1378.m3u8",
+    "videoId": "https://www.youtube.com/embed/kVJyMD61eLs",
     "title": "データ分析基盤におけるオブザーバビリティの取り組み",
     "abstract": "GMOペパボ株式会社では主にGoogle Cloud Platformのサービスを利用してデータ分析基盤を構築し運用しています。その中心となるのがデータウェアハウスのBigQueryとワークフローエンジンのCloud Composerです。また、社内向けのデータ可視化(ダッシュボード)システムではCloud Runを利用しています。\r\nデータ分析基盤から得られる情報を重要な意思決定に用いるためには、ユーザーに提供しているインフラと同様に、可用性を明らかにし、継続的に可用性を高める Realiability エンジニアリングが必要となります。本講演ではGCPで構築されているデータ分析基盤を題材として、データ分析基盤に求められる可用性や、小規模なチームにおけるオブザーバビリティへの取り組みについてご紹介します。",
     "speakers": [
@@ -328,7 +328,7 @@
     "conferenceId": 5,
     "trackId": 26,
     "videoPlatform": null,
-    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/medialive/o11y2022/talks/1381/1381.m3u8",
+    "videoId": "https://www.youtube.com/embed/CieEya2Ny2I",
     "title": "Kubernetes Observability入門",
     "abstract": "CNDT2019で話した「Kubernetes Logging入門」のObservability版になります。\r\n\r\nCNCFではObservabilityに関する知見を提供してくれる\"TAG Observability\"というグループがあり、そこで\"Observability Whitepaper\"というObservability実施するためのガイドラインのようなドキュメントが提供されています。今回はその内容をKubernetesの場合はどうやって実践していけばいいのかという観点でお話させていただきます。",
     "speakers": [
@@ -355,7 +355,7 @@
     "conferenceId": 5,
     "trackId": 26,
     "videoPlatform": null,
-    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/medialive/o11y2022/talks/1382/1382.m3u8",
+    "videoId": "https://www.youtube.com/embed/dJkbQHWnTZE",
     "title": "Dapr の概念と実装から学ぶ Observability への招待",
     "abstract": "Dapr は CloudNative な技術を背景に持つ分散アプリケーションランタイムです。本セッションでは Dapr の Observability に関する各種機能と、その実装について解説していきます。さらにスリーシェイクの Dapr と Observability への取り組みに関してもご紹介します。Dapr の機能でカバーできる点とできない点、今後どのように進めていくかの展望についてお話しします。\r\n\r\nこれらの話を通して CloudNative な Observability への理解を深めていただければと思います。",
     "speakers": [
@@ -382,7 +382,7 @@
     "conferenceId": 5,
     "trackId": 28,
     "videoPlatform": null,
-    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/medialive/o11y2022/talks/1384/1384.m3u8",
+    "videoId": "https://www.youtube.com/embed/9zOCQuu7ZL8",
     "title": "Google Cloud で実現するコンテナ時代のオブザーバビリティ",
     "abstract": "近年マイクロサービス アーキテクチャの採用、またコンテナでの開発が盛り上がってきています。その結果、運用、監視する対象が激増し、より適切、かつ効率的にモニタリング、オブザーバビリティを行う必要性がでてきています。そして Google Cloud ではそれらをサポートする機能がはじめから多数組み込まれています。本セッションでは、Google Cloud でコンテナというと、Google Kubernetes Engine や Cloud Run ですが、それらの運用でも重要となるオブザーバビリティに焦点を当て、Google Cloud Managed Service for Prometheus など最新の機能も交えご紹介いたします。",
     "speakers": [
@@ -409,7 +409,7 @@
     "conferenceId": 5,
     "trackId": 27,
     "videoPlatform": null,
-    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/medialive/o11y2022/talks/1385/1385.m3u8",
+    "videoId": "https://www.youtube.com/embed/A_2vSZgmLNE",
     "title": "NGINXのログやトレースによる問題特定とGrafana Cloud Loki/Tempo連携による分析サポート",
     "abstract": "DevOpsチームにとってアプリケーション開発における最大の課題の1つは、アプリケーションのパフォーマンス、セキュリティ、可視化に関するインサイトを得ることです。これらの観測や洞察は、チームが問題を迅速にトラブルシューティングし、トラフィックの急増に先手を打って備えるのに役立ちます。本セッションではNGINXに特化しログやトレース、Grafana CloudのLokiとTempoを活用した連携と分析についてご紹介します。",
     "speakers": [
@@ -436,7 +436,7 @@
     "conferenceId": 5,
     "trackId": 26,
     "videoPlatform": null,
-    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/medialive/o11y2022/talks/1386/1386.m3u8",
+    "videoId": "https://www.youtube.com/embed/Y1-0Fn0GCIo",
     "title": "JFrogのDevOps Platformづくりを支えるオブザーバビリティ",
     "abstract": "JFrogはソフトウェアのアーティファクト管理、セキュリティスキャン、CI/CDなどDevOpsを支えるプラットフォームを作る会社です。普段はイベント登壇となると自社プロダクトがカバーする領域のネタが多くなります。\r\nしかし、皆さんご存知(と信じています)のとおり、任意のサービスのオブザーバビリティに対応したプロダクトは持っていません。今回はソフトウェアを開発・運用する立場として、オブザーバビリティをテーマにJFrog内部での事例をお話しします。",
     "speakers": [
@@ -463,7 +463,7 @@
     "conferenceId": 5,
     "trackId": 28,
     "videoPlatform": null,
-    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/medialive/o11y2022/talks/1387/1387.m3u8",
+    "videoId": "https://www.youtube.com/embed/6FOXYOeM-K0",
     "title": "開発×運用、両軸で向上させる自社サービスの信頼性　－Splunkで実現するObservabilityー",
     "abstract": "DXが加速する中、自社サービスの開発・運用に求められるのは、「スピード」と「信頼性」です。昨今注目されているObservability（可観測性）の実現は、開発、運用の両面で、品質向上につなげることができます。本セッションでは、開発チームと運用管理チームが連携してObservabilityを実現する方法について、Splunkのテクノロジーを一例として解説していきます。",
     "speakers": [
@@ -490,7 +490,7 @@
     "conferenceId": 5,
     "trackId": 27,
     "videoPlatform": null,
-    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/medialive/o11y2022/talks/1388/1388.m3u8",
+    "videoId": "https://www.youtube.com/embed/Qg5YpCAUsZY",
     "title": "オブザーバビリティがもたらす利点、その実現方法をDatadogのデモを交えて徹底解説",
     "abstract": "運用監視でトラブルをEメールや電話で知らせてもらうだけの時代から、インフラやアプリの健全性やユーザーの利用状況などの深いインサイトを広い関係者が知るべき時代に変わりました。インフラ監視だけでなく、サービス観点でのモニタリングを高い解像度で行うことが大きなメリットをもたらします。システムやアプリそしてユーザーのインサイトをエンド企業のシステム管理者、開発者、そしてビジネス担当にも関わるオブザーバビリティをDatadogで実現する方法をデモを中心に徹底解説します。モニタリングをはじめる方法、あらかじめ用意されたダッシュボードの活用、アプリケーションパフォーマンスモニタリング(APM)、ログ分析など本セッションで学びましょう。",
     "speakers": [
