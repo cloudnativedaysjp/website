@@ -31,10 +31,18 @@ const talks = talkMap.get(abbr || '')
           </Hero>
           <section class="pb-20 bg-gray-300 -mt-24">
             <div class="container mx-auto px-4">
-              <h2 class="text-white relative px-4 text-4xl font-bold">
-                Sessions
-              </h2>
-
+              <div class="flex flex-row">
+                <a href={'/' + abbr}>
+                  <h2 class="text-white relative px-4 text-4xl font-bold">
+                  Sessions
+                  </h2>
+                </a>
+                <a href={'/' + abbr + '/members'}>
+                  <h2 class="text-black relative px-4 text-4xl font-bold">
+                  Members
+                  </h2>
+                </a>
+              </div>
               <div
                 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-24"
                 style={{ autoRows: 'minmax(0, auto)' }}
