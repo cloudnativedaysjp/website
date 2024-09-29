@@ -15,7 +15,8 @@ const events = [
   'cicd2023',
   'cndf2023',
   'cndt2023',
-  'cnds2024'
+  'cnds2024',
+  'cndw2024'
 ]
 
 export const Conferences: Conference[] = events.map((eventName) => {

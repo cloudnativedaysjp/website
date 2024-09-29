@@ -1,0 +1,26 @@
+{
+  "id": 12,
+  "name": "CloudNative Days Winter 2024",
+  "abbr": "cndw2024",
+  "status": "registered",
+  "rehearsalMode": false,
+  "theme": "小さな一歩、大きな飛躍〜クラウドネイティブを継続する",
+  "image": "/images/assets/cndw2024.png",
+  "about": "    クラウドネイティブをこれから始める人\n    今まさに取り組んでいる人\n    一定の成果を達成して、次のステップに迷っている人\n    CloudNative Daysには様々な人が集まります。\n\n    エンジニアも組織も、そしてシステムも\n    クラウドネイティブから実りを得るには\n    一度きりではなく、学びと改善を何度も繰り返す\n    継続的な取り組みが重要です。\n\n    小さな一歩を踏み出すのをためらわないでください。\n    小さくても歩みを止めないでください。\n    継続することをやめなければ、変化と経験の蓄積が\n    やがて大きな飛躍をもたらします。\n\n    そしてコミュニティが知見とモチベーションの交換を通して\n    あなたの一歩を後押しします。\n    CloudNative Daysは、クラウドネイティブへの小さな一歩を踏み出し、\n    大きな飛躍へと前進するエンジニアと共に歩んでいきます。\n",
+  "privacy_policy": "",
+  "privacy_policy_for_speaker": "",
+  "copyright": "© CloudNative Days (Secretariat by Impress Corporation)",
+  "coc": "#### Code of Conduct (行動規範)\n\nイベント主催者は、参加者が人権侵害や差別を受けることのないよう努力しています。本イベントは技術情報の共有や技術者同士のコラボレーションを目指したものです。講演者、来場者、スポンサー、展示関係者、スタッフなどすべての参加者は、いかなる形でもハラスメントに関わってはなりません。\n\nハラスメント行為を目撃したり懸念を感じた場合はCloudNative Days 実行委員会 [@cloudnativedays](https://twitter.com/cloudnativedays) まで速やかにお知らせください。（この行動規範はLinux Foundationのドキュメントを参考にしています）\n\n##### 容認できない行為\n\n- 性的な言語や画像の使用\n- 個人的な攻撃\n- 侮辱/軽蔑的なコメント\n- 公的または私的なハラスメント\n- 許可なく他人の個人情報を公開すること\n- その他の非倫理的な行為\n",
+  "conferenceDays": [
+    {
+      "id": 32,
+      "date": "2024-11-28",
+      "internal": false
+    },
+    {
+      "id": 33,
+      "date": "2024-11-29",
+      "internal": false
+    }
+  ]
+}
