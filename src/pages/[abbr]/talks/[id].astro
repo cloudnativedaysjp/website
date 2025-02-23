@@ -1,12 +1,12 @@
 ---
+import * as path from 'path'
 import { Icon } from "astro-icon";
+import Headline from "../../../components/Headline.astro";
 import { speakerMap } from "../../../data/data";
 import { talkMap } from "../../../data/data";
-import Headline from "../../../components/Headline.astro";
-import Layout from "../../../layouts/Layout.astro";
 import { Conferences } from "../../../data/data";
+import Layout from "../../../layouts/Layout.astro";
 import type { Speaker } from "../../../types/speaker";
-import * as path from 'path'
 
 export async function getStaticPaths() {
   return [...talkMap.entries()].flatMap((a) => {
@@ -40,16 +40,20 @@ const speakers: Speaker[] =
 const talkExists = talk != undefined;
 const speakersExists = speakers?.length > 0;
 const conference = Conferences.find((conference) => conference.abbr == abbr);
+
+const title = talk?.title || "";
+const description = talk?.abstract || "";
+const ogImage = conference?.image || "/favicon.svg";
 ---
 
-<Layout title={talk.title}>
+<Layout title={title} description={description} ogImage={ogImage}>
   <main>
     {
       talkExists && (
         <div class="pb-20">
-        <Headline title={talk.title}>
+        <Headline title={title}>
           <p class="mt-4 text-lg text-gray-200 whitespace-pre-line">
-            {talk.abstract}
+            {description}
           </p>
           <p class="mt-4 text-lg text-gray-300">
             {talk?.speakers.map((speaker) => speaker.name).join(" / ")}
