@@ -9,7 +9,7 @@ import type { Speaker } from "../../../types/speaker";
 import * as path from 'path'
 
 export async function getStaticPaths() {
-  return [...talkMap.entries()].map((a) => {
+  return [...talkMap.entries()].flatMap((a) => {
     const abbr = a[0];
     const talks = a[1];
     return talks.map((talk) => {
@@ -57,7 +57,7 @@ const conference = Conferences.find((conference) => conference.abbr == abbr);
         </Headline>
         </div>
         <div class="pt-6">
-          <div class="pt-12 pt-12 pt-3 mx-auto max-w-7xl px-4 text-center -mt-24">
+          <div class="pt-12 mx-auto max-w-7xl px-4 text-center -mt-24">
             <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-4 rounded-lg border-2 border-gray-400">
               <div class="px-4 py-5 flex-auto">
                 {path.extname(talk.videoId) == ".m3u8" ?

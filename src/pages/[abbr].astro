@@ -5,7 +5,7 @@ import Talk from '../components/Talk.astro'
 import { talkMap } from '../data/data'
 import Layout from '../layouts/Layout.astro'
 export async function getStaticPaths() {
-  return Conferences.map((conference) => {
+  return Conferences.flatMap((conference) => {
     return { params: { abbr: conference.abbr } }
   })
 }

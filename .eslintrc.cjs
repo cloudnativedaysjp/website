@@ -1,7 +1,6 @@
 module.exports = {
   ignorePatterns: ['*.d.ts'],
   extends: [
-    // ...
     "plugin:astro/recommended",
   ],
   parserOptions: {
@@ -38,7 +37,6 @@ module.exports = {
       },
     },
     {
-      // Define the configuration for `.ts` file.
       files: ["*.ts", "*.tsx"],
       parserOptions: {
         parser: "@typescript-eslint/parser",
