@@ -1,3 +1,17 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext", 
+    "strict": true,
+    "noImplicitAny": false,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "moduleResolution": "node"
+  },
+  "include": ["src", "src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

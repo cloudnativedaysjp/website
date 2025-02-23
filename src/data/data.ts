@@ -16,7 +16,7 @@ const events = [
   'cndf2023',
   'cndt2023',
   'cnds2024',
-  'cndw2024'
+  'cndw2024',
 ]
 
 export const Conferences: Conference[] = events.map((eventName) => {
@@ -25,14 +25,21 @@ export const Conferences: Conference[] = events.map((eventName) => {
   return event
 })
 
-export const talkMap =  new Map<string, Talk[]>(events.map((eventName) => {
-  const rawData = fs.readFileSync(`src/data/talks/${eventName}.json`, 'utf-8')
-  const talks: Talk[] = JSON.parse(rawData)
-  return [eventName, talks]
-}))
+export const talkMap = new Map<string, Talk[]>(
+  events.map((eventName) => {
+    const rawData = fs.readFileSync(`src/data/talks/${eventName}.json`, 'utf-8')
+    const talks: Talk[] = JSON.parse(rawData)
+    return [eventName, talks]
+  }),
+)
 
-export const speakerMap =  new Map<string, Speaker[]>(events.map((eventName) => {
-  const rawData = fs.readFileSync(`src/data/speakers/${eventName}.json`, 'utf-8')
-  const speakers: Speaker[] = JSON.parse(rawData)
-  return [eventName, speakers]
-}))
+export const speakerMap = new Map<string, Speaker[]>(
+  events.map((eventName) => {
+    const rawData = fs.readFileSync(
+      `src/data/speakers/${eventName}.json`,
+      'utf-8',
+    )
+    const speakers: Speaker[] = JSON.parse(rawData)
+    return [eventName, speakers]
+  }),
+)

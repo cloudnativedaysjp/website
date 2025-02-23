@@ -1,23 +1,25 @@
 ---
-import { NUMBER_OF_POSTS_PER_PAGE } from '../../server-constants'
+import Layout from '../../layouts/Layout.astro'
+import Headline from '../../components/Headline.astro'
+import BlogPostsLink from '../../components/BlogPostsLink.astro'
+import BlogTagsLink from '../../components/BlogTagsLink.astro'
+import Headline from '../../components/Headline.astro'
+import NoContents from '../../components/NoContents.astro'
+import Pagination from '../../components/Pagination.astro'
+import PostDate from '../../components/PostDate.astro'
+import PostExcerpt from '../../components/PostExcerpt.astro'
+import PostTags from '../../components/PostTags.astro'
+import PostTitle from '../../components/PostTitle.astro'
+import ReadMoreLink from '../../components/ReadMoreLink.astro'
+import Layout from '../../layouts/Layout.astro'
 import {
   getPosts,
   getRankedPosts,
   getAllTags,
   getNumberOfPages,
 } from '../../lib/notion/client'
-import NoContents from '../../components/NoContents.astro'
-import PostDate from '../../components/PostDate.astro'
-import PostTags from '../../components/PostTags.astro'
-import PostTitle from '../../components/PostTitle.astro'
-import PostExcerpt from '../../components/PostExcerpt.astro'
-import ReadMoreLink from '../../components/ReadMoreLink.astro'
-import Pagination from '../../components/Pagination.astro'
-import BlogPostsLink from '../../components/BlogPostsLink.astro'
-import BlogTagsLink from '../../components/BlogTagsLink.astro'
+import { NUMBER_OF_POSTS_PER_PAGE } from '../../server-constants'
 import styles from '../../styles/blog.module.css'
-import Layout from '../../layouts/Layout.astro'
-import Headline from '../../components/Headline.astro'
 
 const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
   getPosts(NUMBER_OF_POSTS_PER_PAGE),
@@ -27,7 +29,11 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
 ])
 ---
 
-<Layout title="CloudNative Days Blog">
+<Layout 
+  title="CloudNative Days Blog"
+  description="CloudNative Days実行委員会によるブログ"
+  ogImage=""
+>
   <Headline title="Blog">
     <p class="mt-4 text-lg text-gray-300">
       CloudNative Days実行委員会によるブログ
@@ -44,9 +50,9 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
               <div class={styles.post} key={post.Slug}>
                 <div class="mb-3">
                   <PostDate post={post} />
-                  <PostTitle post={post} />
+                  <PostTitle post={post} enableLink={true} />
                   <div class="mb-2 border-b-2 border-gray-200" />
-                  <PostTags post={post} />
+                  <PostTags post={post} enableLink={true} />
                 </div>
                 <PostExcerpt post={post} />
                 <ReadMoreLink post={post} />
@@ -57,7 +63,7 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
       }
 
       <footer class="flex justify-center items-center mt-5">
-        <Pagination currentPage={1} numberOfPages={numberOfPages} />
+        <Pagination currentPage={1} numberOfPages={numberOfPages} tag="" />
       </footer>
     </main>
 

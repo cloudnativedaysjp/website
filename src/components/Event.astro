@@ -1,5 +1,5 @@
 ---
-import { Picture } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 export interface Props {
   url: string;
@@ -20,14 +20,12 @@ const { url, name, days, img } = Astro.props;
         <div
           class="w-12 h-12 rounded-full ring-offset-base-100 ring-offset-2 items-center justify-center text-white inline-flex mb-4"
         >
-          <Picture
+          <Image
             src={img}
             class="w-12 h-12 rounded-full"
-            widths={[400, 768]}
-            sizes=""
+            width={768}
+            height={400}
             alt="Event trademark image"
-            aspectRatio="1:1"
-            style=""
           />
         </div>
         <h6 class="text-xl font-semibold">{name}</h6>

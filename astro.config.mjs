@@ -4,7 +4,6 @@ import FeaturedImageDownloader from './src/integrations/featured-image-downloade
 import PublicNotionCopier from './src/integrations/public-notion-copier'
 import tailwind from '@astrojs/tailwind'
 import partytown from '@astrojs/partytown'
-import image from '@astrojs/image'
 import mdx from '@astrojs/mdx'
 
 const getSite = function () {
@@ -35,10 +34,9 @@ export default defineConfig({
         forward: ['dataLayer.push'],
       },
     }),
-    image(),
     FeaturedImageDownloader(),
     PublicNotionCopier(),
     mdx(),
   ],
-  site: 'https://cloudnativedays.jp',
+  site: getSite(),
 })

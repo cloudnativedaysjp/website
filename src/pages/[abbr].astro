@@ -1,11 +1,11 @@
 ---
-import { Conferences } from '../data/data'
 import Hero from '../components/Hero.astro'
 import Talk from '../components/Talk.astro'
+import { Conferences } from '../data/data'
 import { talkMap } from '../data/data'
 import Layout from '../layouts/Layout.astro'
 export async function getStaticPaths() {
-  return Conferences.map((conference) => {
+  return Conferences.flatMap((conference) => {
     return { params: { abbr: conference.abbr } }
   })
 }
@@ -13,9 +13,14 @@ const { abbr } = Astro.params
 const conference = Conferences.find((conference) => conference.abbr == abbr)
 const conferenceExists = conference != undefined
 const talks = talkMap.get(abbr || '')
+
+const title = conference?.name || '';
+const description = conference?.theme || '';
+const url = Astro.url;
+const ogImage = conference?.image || '/favicon.svg';
 ---
 
-<Layout title={conference.name}>
+<Layout title={title} description={description} url={url} ogImage={ogImage}>
   <main>
     {
       conferenceExists && (
