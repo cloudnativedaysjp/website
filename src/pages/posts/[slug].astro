@@ -102,7 +102,7 @@ if (post.FeaturedImage && post.FeaturedImage.Url) {
 <Layout
   title={post.Title}
   description={post.Excerpt}
-  url={`blog/${slug}`}
+  url={new URL(`blog/${slug}`, Astro.site)}
   ogImage={ogImage}
 >
   <Headline title={post.Title}>
@@ -116,9 +116,9 @@ if (post.FeaturedImage && post.FeaturedImage.Url) {
         <div class="flex flex-col">
           <PostDate post={post} />
           <div class="mb-2 border-b-2 border-gray-200"></div>
-          <PostTitle post={post} enableLink={false} />
+          <PostTitle post={post} enableLink={true} />
           <div class="mt-4">
-            <PostTags post={post} />
+            <PostTags post={post} enableLink={true} />
           </div>
         </div>
         <PostBody blocks={blocks} />
