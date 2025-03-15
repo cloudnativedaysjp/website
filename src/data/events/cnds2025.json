@@ -1,0 +1,21 @@
+{
+  "id": 12,
+  "name": "CloudNative Days Summer 2025",
+  "abbr": "cnds2025",
+  "status": "registered",
+  "rehearsalMode": false,
+  "theme": "Passion ~ CloudNativeに熱中する ~",
+  "image": "/images/assets/cnds2025.png",
+  "about": "今年、CloudNativeはさらなる広がりを見せ、その魅力は多くの人々の情熱を掻き立てています。\n    推しのプロダクトをとことん使い込んでいたり、OSSの開発に熱中するエンジニアたちが集まり、\n    その知見や思いを共有し合うことで新たな発想や出会いが生まれていくのです。\n    \n    2025年は、日本でCloudNativeがいっそう盛り上がる、まさに\"情熱\"に満ちた年となるでしょう。\n    コミュニティに加わることで、人生や仕事に新たな刺激を得て、より豊かで充実した日々を過ごせるはずです。\n    \n    ここには、同じ思いを抱く仲間との出会いがあり、成長のきっかけが無数に散りばめられています。\n    一人ひとりの情熱と行動が重なり合うことで、未来を拓くためのアイデアやイノベーションが紡がれていくでしょう。\n    \n    さぁ、CloudNativeに熱中する旅へ踏み出しましょう。\n    私たちの情熱が、新しい世界と可能性を切り拓いていくのです。",
+  "privacy_policy": "",
+  "privacy_policy_for_speaker": "",
+  "copyright": "© CloudNative Days (Secretariat by Impress Corporation)",
+  "coc": "#### Code of Conduct (行動規範)\n\nイベント主催者は、参加者が人権侵害や差別を受けることのないよう努力しています。本イベントは技術情報の共有や技術者同士のコラボレーションを目指したものです。講演者、来場者、スポンサー、展示関係者、スタッフなどすべての参加者は、いかなる形でもハラスメントに関わってはなりません。\n\nハラスメント行為を目撃したり懸念を感じた場合はCloudNative Days 実行委員会 [@cloudnativedays](https://twitter.com/cloudnativedays) まで速やかにお知らせください。（この行動規範はLinux Foundationのドキュメントを参考にしています）\n\n##### 容認できない行為\n\n- 性的な言語や画像の使用\n- 個人的な攻撃\n- 侮辱/軽蔑的なコメント\n- 公的または私的なハラスメント\n- 許可なく他人の個人情報を公開すること\n- その他の非倫理的な行為\n",
+  "conferenceDays": [
+    {
+      "id": 34,
+      "date": "2025-05-23",
+      "internal": false
+    }
+  ]
+}
