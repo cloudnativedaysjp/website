@@ -1,9 +1,19 @@
 ---
+import BlogPostsLink from '../components/BlogPostsLink.astro'
 import Event from '../components/Event.astro'
 import Hero from '../components/Hero.astro'
+import PostDate from '../components/PostDate.astro'
+import PostExcerpt from '../components/PostExcerpt.astro'
+import PostFeaturedImage from '../components/PostFeaturedImage.astro'
+import PostTitle from '../components/PostTitle.astro'
 import { Conferences } from '../data/data'
 import Layout from '../layouts/Layout.astro'
+import { getPostLink } from '../lib/blog-helpers'
+import { getPosts } from '../lib/notion/client'
 import type { Conference } from '../types/conference'
+
+// 最新の3件のブログ記事を取得
+const latestPosts = await getPosts(3)
 ---
 
 <Layout title="CloudNative Days" description="CloudNative Days はコミュニティ、企業、技術者が一堂に会し、クラウドネイティブムーブメントを牽引することを目的としたテックカンファレンスです。" ogImage="/favicon.svg">
@@ -22,9 +32,9 @@ import type { Conference } from '../types/conference'
         クラウドネイティブで、未来を共に創造しましょう。
       </p>
     </Hero>
-    <section class="pb-10 bg-gray-300 -mt-24">
+    <section class="pb-10 pt-8 bg-gray-300">
       <div class="container mx-auto px-4">
-        <h2 class="text-white relative px-4 text-4xl font-bold pb-16">
+        <h2 class="text-black relative px-4 text-4xl font-bold pb-6 text-center">
           Upcoming Event
         </h2>
         <div class="relative">
@@ -40,7 +50,8 @@ import type { Conference } from '../types/conference'
                   .join(',')
                 return (
                   <>
-                    <div class="bg-white border-2 border-gray-600 rounded-md overflow-hidden hover:bg-gray-100">
+                    {/* カードデザインをブログと統一＆ホバー効果を強化 */}
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition-all duration-300 card-hover">
                       <a href={url} class="block" />
                       <Event
                         url={url}
@@ -57,13 +68,62 @@ import type { Conference } from '../types/conference'
         </div>
       </div>
     </section>
+    
+    {/* 最新ブログエントリーセクション - カード形式に改良 */}
+    <section class="pb-10 bg-gray-300">
+      <div class="container mx-auto px-4">
+        <h2 class="text-black relative px-4 text-4xl font-bold pb-6 text-center">
+          最新ブログ
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {
+            latestPosts.map((post) => (
+              <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition-all duration-300 card-hover">
+                <a href={getPostLink(post.Slug)} class="block">
+                  <div class="relative h-48 overflow-hidden">
+                    {post.FeaturedImage ? (
+                      <PostFeaturedImage post={post} />
+                    ) : (
+                      <div class="bg-gradient-to-r from-blue-500 to-purple-600 h-full flex items-center justify-center">
+                        <span class="text-white text-4xl">
+                          {post.Icon && post.Icon.Type === 'emoji' && 'Emoji' in post.Icon 
+                            ? post.Icon.Emoji 
+                            : '📝'}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                  <div class="p-5">
+                    <div class="text-sm text-gray-500 mb-2">
+                      <PostDate post={post} />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 line-clamp-2">
+                      {post.Title}
+                    </h3>
+                    <div class="text-gray-600 line-clamp-3">
+                      <PostExcerpt post={post} />
+                    </div>
+                  </div>
+                </a>
+              </div>
+            ))
+          }
+        </div>
+        <div class="mt-8 text-center">
+          <a href="/posts" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 hover:scale-105 transition-all duration-300">
+            ブログ記事一覧を見る
+          </a>
+        </div>
+      </div>
+    </section>
+    
     <section class="pb-20 bg-gray-300">
       <div class="container mx-auto px-4">
-        <h2 class="text-black relative px-4 text-4xl font-bold pb-3">
+        <h2 class="text-black relative px-4 text-4xl font-bold pb-6 text-center">
           Past Events
         </h2>
         <div class="relative">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {
               Conferences?.filter(
                 (conference) => conference.status == 'archived' || conference.status == 'migrated',
@@ -77,7 +137,8 @@ import type { Conference } from '../types/conference'
                     .join(',')
                   return (
                     <>
-                      <div class="bg-white border-2 border-gray-600 rounded-md overflow-hidden hover:bg-gray-100">
+                      {/* カードデザインをブログと統一＆ホバー効果を強化 */}
+                      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition-all duration-300 card-hover">
                         <a href={url} class="block">
                           <Event
                             url={url}
@@ -97,3 +158,30 @@ import type { Conference } from '../types/conference'
     </section>
   </main>
 </Layout>
+
+<style>
+  /* line-clampユーティリティクラス */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  /* カスタムのホバーエフェクト強化 */
+  .card-hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-hover:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+  }
+</style>
