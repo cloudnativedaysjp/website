@@ -50,7 +50,8 @@ const latestPosts = await getPosts(3)
                   .join(',')
                 return (
                   <>
-                    <div class="bg-white border-2 border-gray-600 rounded-md overflow-hidden hover:bg-gray-100">
+                    {/* カードデザインをブログと統一＆ホバー効果を強化 */}
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition-all duration-300 card-hover">
                       <a href={url} class="block" />
                       <Event
                         url={url}
@@ -77,7 +78,7 @@ const latestPosts = await getPosts(3)
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {
             latestPosts.map((post) => (
-              <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+              <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition-all duration-300 card-hover">
                 <a href={getPostLink(post.Slug)} class="block">
                   <div class="relative h-48 overflow-hidden">
                     {post.FeaturedImage ? (
@@ -109,7 +110,7 @@ const latestPosts = await getPosts(3)
           }
         </div>
         <div class="mt-8 text-center">
-          <a href="/posts" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-lg font-medium">
+          <a href="/posts" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 hover:scale-105 transition-all duration-300">
             ブログ記事一覧を見る
           </a>
         </div>
@@ -122,7 +123,7 @@ const latestPosts = await getPosts(3)
           Past Events
         </h2>
         <div class="relative">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {
               Conferences?.filter(
                 (conference) => conference.status == 'archived' || conference.status == 'migrated',
@@ -136,7 +137,8 @@ const latestPosts = await getPosts(3)
                     .join(',')
                   return (
                     <>
-                      <div class="bg-white border-2 border-gray-600 rounded-md overflow-hidden hover:bg-gray-100">
+                      {/* カードデザインをブログと統一＆ホバー効果を強化 */}
+                      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition-all duration-300 card-hover">
                         <a href={url} class="block">
                           <Event
                             url={url}
@@ -171,5 +173,15 @@ const latestPosts = await getPosts(3)
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+  
+  /* カスタムのホバーエフェクト強化 */
+  .card-hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-hover:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
   }
 </style>
