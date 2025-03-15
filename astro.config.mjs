@@ -1,10 +1,11 @@
+import mdx from '@astrojs/mdx'
+import partytown from '@astrojs/partytown'
+import tailwind from '@astrojs/tailwind'
 import { defineConfig } from 'astro/config'
-import { CUSTOM_DOMAIN, BASE_PATH } from './src/server-constants'
+import icon from 'astro-icon'
 import FeaturedImageDownloader from './src/integrations/featured-image-downloader'
 import PublicNotionCopier from './src/integrations/public-notion-copier'
-import tailwind from '@astrojs/tailwind'
-import partytown from '@astrojs/partytown'
-import mdx from '@astrojs/mdx'
+import { CUSTOM_DOMAIN, BASE_PATH } from './src/server-constants'
 
 const getSite = function () {
   if (!process.env.CF_PAGES) {
@@ -37,6 +38,11 @@ export default defineConfig({
     FeaturedImageDownloader(),
     PublicNotionCopier(),
     mdx(),
+    icon({
+      include: {
+        tabler: ["*"]
+      }
+    }),
   ],
   site: getSite(),
 })
