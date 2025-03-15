@@ -1,9 +1,19 @@
 ---
+import BlogPostsLink from '../components/BlogPostsLink.astro'
 import Event from '../components/Event.astro'
 import Hero from '../components/Hero.astro'
+import PostDate from '../components/PostDate.astro'
+import PostExcerpt from '../components/PostExcerpt.astro'
+import PostFeaturedImage from '../components/PostFeaturedImage.astro'
+import PostTitle from '../components/PostTitle.astro'
 import { Conferences } from '../data/data'
 import Layout from '../layouts/Layout.astro'
+import { getPostLink } from '../lib/blog-helpers'
+import { getPosts } from '../lib/notion/client'
 import type { Conference } from '../types/conference'
+
+// 最新の3件のブログ記事を取得
+const latestPosts = await getPosts(3)
 ---
 
 <Layout title="CloudNative Days" description="CloudNative Days はコミュニティ、企業、技術者が一堂に会し、クラウドネイティブムーブメントを牽引することを目的としたテックカンファレンスです。" ogImage="/favicon.svg">
@@ -57,9 +67,58 @@ import type { Conference } from '../types/conference'
         </div>
       </div>
     </section>
+    
+    {/* 最新ブログエントリーセクション - カード形式に改良 */}
+    <section class="pb-10 bg-gray-300">
+      <div class="container mx-auto px-4">
+        <h2 class="text-black relative px-4 text-4xl font-bold pb-6">
+          最新ブログ
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {
+            latestPosts.map((post) => (
+              <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                <a href={getPostLink(post.Slug)} class="block">
+                  <div class="relative h-48 overflow-hidden">
+                    {post.FeaturedImage ? (
+                      <PostFeaturedImage post={post} />
+                    ) : (
+                      <div class="bg-gradient-to-r from-blue-500 to-purple-600 h-full flex items-center justify-center">
+                        <span class="text-white text-4xl">
+                          {post.Icon && post.Icon.Type === 'emoji' && 'Emoji' in post.Icon 
+                            ? post.Icon.Emoji 
+                            : '📝'}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                  <div class="p-5">
+                    <div class="text-sm text-gray-500 mb-2">
+                      <PostDate post={post} />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800 line-clamp-2">
+                      {post.Title}
+                    </h3>
+                    <div class="text-gray-600 line-clamp-3">
+                      <PostExcerpt post={post} />
+                    </div>
+                  </div>
+                </a>
+              </div>
+            ))
+          }
+        </div>
+        <div class="mt-8 text-center">
+          <a href="/posts" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-lg font-medium">
+            ブログ記事一覧を見る
+          </a>
+        </div>
+      </div>
+    </section>
+    
     <section class="pb-20 bg-gray-300">
       <div class="container mx-auto px-4">
-        <h2 class="text-black relative px-4 text-4xl font-bold pb-3">
+        <h2 class="text-black relative px-4 text-4xl font-bold pb-6">
           Past Events
         </h2>
         <div class="relative">
@@ -97,3 +156,20 @@ import type { Conference } from '../types/conference'
     </section>
   </main>
 </Layout>
+
+<style>
+  /* line-clampユーティリティクラス */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
