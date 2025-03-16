@@ -1,1 +1,1149 @@
-[]
+[
+  {
+    "id": 2370,
+    "conferenceId": 12,
+    "trackId": 54,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2370/152/playlist.m3u8",
+    "title": "今はまだ小さい東京ガス内製開発チームが、これからもKubernetesと共に歩み続けるために",
+    "abstract": "東京ガス内製開発チームはマイクロサービス化のプラットフォームとしてKubernetes(Amazon EKS)を選択しました。そして2024年11月、いよいよ最初のサービスがリリースされます。約一年弱、二人で構築したこのプラットフォームは、Istio, ArgoCD, Karpenter…様々なエコシステムを活用しています。このエコシステムとKubernetesと共に、我々は歩みを止めずに\"クラウドネイティブ\"であり続けられるのか。そしてエコシステムの恩恵を\"享受する\"だけでいいのか。小さな一歩を踏み出したチームが、リリースに至るまでに得た知見を共有すると共に、これからKubernetesを始める皆さんに小さな勇気を与えられたら幸いです。",
+    "speakers": [
+      {
+        "id": 1785,
+        "name": "Yoshiaki Sakota"
+      },
+      {
+        "id": 1782,
+        "name": "Yusuke Sugiyama"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:20:00.000+09:00",
+    "endTime": "2000-01-01T14:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Microservices / Services Mesh",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/yussugi/jin-hamataxiao-saidong-jing-kasunei-zhi-kai-fa-timuka-korekaramokubernetestogong-nibu-misok-kerutameni",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2371,
+    "conferenceId": 12,
+    "trackId": 53,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2371/183/playlist.m3u8",
+    "title": "クラウドネイティブへの小さな一歩！既存VMからコンテナまで、KubeVirtが実現する『無理しないペースの移行』とは！？",
+    "abstract": "仮想マシンで動く既存アプリケーションを、どのようにクラウドネイティブ化するか迷っている方はいませんか？\r\n\r\nいきなり全てを作り変えられないのでVM基盤は残すしか無い。かといってコンテナ基盤も用意しなくては将来への備えができない。2つの基盤を運用していくにはコストが掛かりすぎる。一体どないせぇと・・・。\r\n\r\nそんな悩みを解決するのがCNCFプロジェクトの『KubeVirt』です。\r\n\r\nKubevirtでは、Kubernetes上で仮想マシンを動かすことで、コンテナも仮想マシンも共通基盤の上で統一的な運用ができます。統一基盤としてコスト抑制だけではなく、アプリケーションのクラウドネイティブ化も、先にVMとしてそのまま乗せ替えて、その後で組織規模や能力に合わせてコンテナ化していくという「無理しないペースでの移行」を実現します。\r\n\r\nまた、本セッションはそれだけに留まらず、VM運用でのGitOpsの活用など、より高度な運用スタイルについてもデモを交えてご紹介します！\r\n\r\n",
+    "speakers": [
+      {
+        "id": 1784,
+        "name": "Takuya UTSUNOMIYA"
+      },
+      {
+        "id": 1783,
+        "name": "Masataka Tsukamoto"
+      }
+    ],
+    "dayId": 33,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T15:20:00.000+09:00",
+    "endTime": "2000-01-01T16:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Architecture Design",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/tsukaman/cndw2024-kubevirt-utsubo-and-tsukaman",
+    "conferenceDayId": 33,
+    "conferenceDayDate": "2024-11-29",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2374,
+    "conferenceId": 12,
+    "trackId": 53,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2374/168/playlist.m3u8",
+    "title": "SIerで200人クラウドネイティブのファンを増やした話",
+    "abstract": "SIerが2年間で200名のエンジニアをクラウドネイティブエンジニアへと育成！\r\nコンテナ、IaC、オブザーバビリティを軸とした実践的なハンズオンで、非クラウドエンジニアの潜在能力を引き出し、組織全体のクラウドネイティブ化を推進してきました。\r\n\r\n本セッションでは、その成功事例と、今後、社内のクラウドネイティブファンを50%に拡大するための戦略を公開します。参加者の皆様には、実践的なノウハウだけでなく、クラウドネイティブへの熱い想いを共有します。",
+    "speakers": [
+      {
+        "id": 1788,
+        "name": "Yuta Shimada"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T17:20:00.000+09:00",
+    "endTime": "2000-01-01T18:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "組織論",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/yuta1979/cndw2024-sierde200ren-kuraudoneiteibunohuanwozeng-yasitahua",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2378,
+    "conferenceId": 12,
+    "trackId": 53,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2378/166/playlist.m3u8",
+    "title": "乗っ取れKubernetes！！ ~リスクから学ぶKubernetesセキュリティの考え方~",
+    "abstract": "Kubernetesを活用する上で、コンテナに対するセキュリティ対策はもちろんのこと、その実行環境であるKubernetesクラスタに対する対策もまた重要です。\r\nいくらコンテナに対策を行っていても、Kubernetesクラスタそのものに対する対策が不十分だと、最終的にコンテナをリスクに晒してしまうことに繋がります。\r\nしかしKubernetesクラスタに関するセキュリティリスクや対策と言われても、具体的にピンとこないという方も多いのではないでしょうか。\r\n本セッションでは過去実際にあった攻撃事例に基づくデモを通じて、主にKubernetesクラスタに焦点を当てたリスクの具体例や、それと関連付けて様々な対策手法がどのような効果を発揮するか順を追って解説します。",
+    "speakers": [
+      {
+        "id": 1796,
+        "name": "Keita Mochizuki"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T15:20:00.000+09:00",
+    "endTime": "2000-01-01T16:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Security",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/mochizuki875/k8s-risk-and-security-c5c4ec65-14dd-4ad8-9209-59f82d880e6d",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2382,
+    "conferenceId": 12,
+    "trackId": 51,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2382/173/playlist.m3u8",
+    "title": "LLMを「速く」「安く」動かすには",
+    "abstract": "初心者にもわかりやすく、ChatGPTをはじめとした近年話題のLLM(Large Language Model)の中身について解説します。また、LLMを大規模に学習するだけではなく、LLMを動かして利用すること（推論）が重要になりつつあることを踏まえ、LLMの推論システムのサービングが難しい理由と、それに対応するための小規模化や量子化などの最近のモデルデータサイズを減らす工夫についてもお話しします。",
+    "speakers": [
+      {
+        "id": 1797,
+        "name": "Shintarou Okada"
+      }
+    ],
+    "dayId": 33,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T10:00:00.000+09:00",
+    "endTime": "2000-01-01T10:20:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Keynote",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/pfn/cloudnative-days-2024-lean-and-swift-llm-deployment",
+    "conferenceDayId": 33,
+    "conferenceDayDate": "2024-11-29",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2385,
+    "conferenceId": 12,
+    "trackId": 51,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2385/184/playlist.m3u8",
+    "title": "レガシーな金融システムをKubernetesを使ってクラウドネイティブ化するためのノウハウ大全",
+    "abstract": "高い信頼性、セキュリティが求められる金融システムにおいても、昨今ではビジネスの成長や変化に柔軟に対応するためにクラウドネイティブ化の波が来ています。\r\n金融システムをKubernetesおよびエコシステム技術を用いてクラウドネイティブ化するにあたって、自身の経験から考慮すべき点や気をつけるべき点をお伝えできればと思います。\r\n特に、これまでオンプレ,IaaSベースの構築経験はあるもののKubernetesやクラウドネイティブ技術はまだあまり馴染みのインフラエンジニアの方に聞いて頂きたいです。",
+    "speakers": [
+      {
+        "id": 1802,
+        "name": "Daiki Takasao"
+      }
+    ],
+    "dayId": 33,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T15:20:00.000+09:00",
+    "endTime": "2000-01-01T16:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Architecture Design",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/daitak/regasinajin-rong-sisutemuwokuberneteswoshi-tutekuraudoneiteibuhua-surutamenonouhauda-quan",
+    "conferenceDayId": 33,
+    "conferenceDayDate": "2024-11-29",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2387,
+    "conferenceId": 12,
+    "trackId": 53,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2387/179/playlist.m3u8",
+    "title": "クラウドネイティブなNewSQLで実現するミッションクリティカルなアプリケーションの運用",
+    "abstract": "DMMの各プロダクトが利用する共通プラットフォームの認可APIのDBについて、中長期的なリクエスト数の増加とダウンタイムが許されないミッションクリティカルなアプリケーションであることを考慮し、オンプレのMySQLからクラウドネイティブなフルマネージドNewSQLであるTiDB Cloudに移行しました。\r\n\r\n共通プラットフォームの認可APIはDMMの各プロダクトおよび共通プラットフォームの各マイクロサービスから利用されるためダウンタイムが許されません。そのため、DB移行は無停止で実施しました。\r\nまた、DBの運用ではクラウドネイティブなDBの特徴を活かして運用時のアプリケーションへの影響を最小限に抑えています。\r\n\r\n本セッションではオンプレからクラウドへの無停止でのDB移行と本番環境におけるTiDB Cloudの運用事例について紹介します。\r\nこれからクラウドネイティブなNewSQLを採用するか検討している人に向けて、クラウドネイティブなNewSQLを採用するか検討するときのポイントについてお話できると思います。",
+    "speakers": [
+      {
+        "id": 1778,
+        "name": "yuyu_hf"
+      }
+    ],
+    "dayId": 33,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:20:00.000+09:00",
+    "endTime": "2000-01-01T14:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Storage / Database",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 33,
+    "conferenceDayDate": "2024-11-29",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2389,
+    "conferenceId": 12,
+    "trackId": 51,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2389/169/playlist.m3u8",
+    "title": "障害特定が超爆速に！セブン&アイ・ネットメディアの秘密兵器〜チームの壁を超越！Observabilityで問題解決力アップ〜",
+    "abstract": "セブン＆アイ・ネットメディアは、グループ会社様システムのクラウド移行を機に、監視システムのあり方の抜本的な改革にチャレンジしています。その切り札としてObservabilityツールを導入しました。が、思ったほど活用されず...\r\n勉強会を何度も実施するなどの地道な活動の結果、認知度が上がり、障害対応で大活躍するように！Observabilityツールが共通言語になるまでのストーリーや効果、課題、これからトライしてみたいことなど、デモを交えながら皆さんにご紹介します！\r\n#APM #Observability #BizDevOps #CCoE #SRE",
+    "speakers": [
+      {
+        "id": 1804,
+        "name": "Kazuya Sato/Kohki Shigenobu"
+      }
+    ],
+    "dayId": 33,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:20:00.000+09:00",
+    "endTime": "2000-01-01T14:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/7nm_tech/zhang-hai-te-ding-gachao-bao-su-ni-sebun-and-ainetutomedeianomi-mi-bing-qi-timunobi-wochao-yue-observabilitydewen-ti-jie-jue-li-atupu",
+    "conferenceDayId": 33,
+    "conferenceDayDate": "2024-11-29",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2393,
+    "conferenceId": 12,
+    "trackId": 53,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2393/186/playlist.m3u8",
+    "title": "次のコンテナセキュリティの時代 - User Namespace With a Pod",
+    "abstract": "本セッションでは GA が近づいている Kubernetes の新機能の「User Namespace」について説明します。本機能は  2016 年から要望のあったコミュニティ待望の機能です。また、「User Namespace」 を用いた Pod は過去にあったコンテナランタイムの脆弱性の多くに対して有効な防御策となります。\r\nただし、本機能はコンテナランタイムなどの周辺知識がないと一見何が起きているのかを理解するのが難しい側面もあります。そのため、本セッションはまず始めに現状のコンテナについての復習から入り、なぜ「User Namespace」が過去の CVE に対して有効かを説明します。その後、知識だけではなくハンズオンなどを用いて本機能のコアの部分に手を動かして触れる機会を提供します。\r\n本セッションが「User Namespace」をあなたの環境で運用するための手助けになることを期待しています。",
+    "speakers": [
+      {
+        "id": 1809,
+        "name": "Toru Komatsu"
+      }
+    ],
+    "dayId": 33,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T16:20:00.000+09:00",
+    "endTime": "2000-01-01T17:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Runtime",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 33,
+    "conferenceDayDate": "2024-11-29",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2394,
+    "conferenceId": 12,
+    "trackId": 51,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2394/150/playlist.m3u8",
+    "title": "PlayStation NetworkにおけるKubernetesマニフェスト管理の物語",
+    "abstract": "40以上のサービスチーム、1000人近くのPlayStation Network開発者が利用しているInternal Developer Platformを開発運用するエンジニアリングチームとして、Kubernetesのマニフェストファイルを中央集権的に提供することはチャレンジの連続だった——\r\n\r\n本セッションでは、Helmのsubchartを活用してセキュリティやコスト管理などのガバナンスを強化しつつ、開発言語やワークロード、パブリッククラウドのアカウントも異なるサービスに対して、最小限の記述で必要なものを設定できるchartを構成する方法について紹介します。\r\nまた、Helmを利用していることで発生した問題や解決のために取った手法についてもお話しします。",
+    "speakers": [
+      {
+        "id": 1810,
+        "name": "Hitoyoshi Ohta"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:20:00.000+09:00",
+    "endTime": "2000-01-01T14:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "CI / CD",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2395,
+    "conferenceId": 12,
+    "trackId": 53,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2395/167/playlist.m3u8",
+    "title": "EKSバージョンアップ工数削減大作戦！~Terraform化とE2Eテスト自動化~ ",
+    "abstract": "EKS（Kubernetes）の運用には欠かせない、定期的なバージョンアップ作業。kubellでは、主要プロダクトである「Chatwork」が稼働しているEKSクラスタをTerraform化してボタン一つで構築できるようにしました。また、本番稼働前のE2EテストをKubernetesのE2Eテストツール「kibertas」を使って自動化することでEKSのバージョンアップ作業の工数削減を実現しました。",
+    "speakers": [
+      {
+        "id": 1813,
+        "name": "Hanayo Masutani"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T16:20:00.000+09:00",
+    "endTime": "2000-01-01T17:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "CI / CD",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2398,
+    "conferenceId": 12,
+    "trackId": 52,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2398/163/playlist.m3u8",
+    "title": "eBPF Deep Dive: Architecture and Safety Mechanisms",
+    "abstract": "本セッションでは、eBPFの基本的なアーキテクチャを解説し、安全性を支える重要な仕組みであるeBPF Verifierの内部実装を詳しく掘り下げます。eBPFは、CiliumやFalcoといったツールを通じて、Kubernetesにおけるセキュリティ、ネットワーキング、オブザーバビリティといった重要な領域での利用が広がっています。\r\n\r\nオープンソースにおいては、eBPFの活用を積極的に行っているCiliumやFalcoがCNCFのGraduateプロジェクトに昇格（それぞれ2023年、2024年）し、今こそ学ぶべき技術である、と応募者である私は確信しています。\r\n\r\nCloudNative Days Winter 2024のテーマ「小さな一歩、大きな飛躍〜クラウドネイティブを継続する〜」に沿って技術領域で一歩を踏み出し、継続していくためには、まず利用するソフトウェアがどのように動くのか、その原理原則を理解することが重要です。\r\n\r\nセッションを通じて、eBPFがどのように機能し、既存の技術とは何が異なるのか、またどのようにして安全性を確保しているのかをお伝えします。\r\n\r\n想定している話の流れは以下の通りです\r\n- 3m: 自己紹介およびセッションの概要説明\r\n- 12m: eBPFの基本的な利用方法とその流れについての解説\r\n- 25m: eBPF を実行する仕組みについて、実際にLinux Kernelのコードを元に紹介します。例えばここではVerifier で無限ループをどのように検出するのか、どのように型検査を行うのかなどが理解できます。",
+    "speakers": [
+      {
+        "id": 1816,
+        "name": "Takeru Hayasaka"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T17:20:00.000+09:00",
+    "endTime": "2000-01-01T18:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "上級者",
+    "talkCategory": "Runtime",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/takehaya/ebpf-deep-dive-architecture-and-safety-mechanisms",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2400,
+    "conferenceId": 12,
+    "trackId": 51,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2400/174/playlist.m3u8",
+    "title": "LINEヤフーにおける超大規模プラットフォーム実現への挑戦と学び",
+    "abstract": "LINEヤフーでは、Webアプリケーションを効率的に運用するための、Kubernetesベースの社内プラットフォームを開発、運用しています。このプラットフォームは、国内有数の規模を誇る弊社のサービス群に対応できる規模とスケーラビリティを実現しています。\r\n本セッションでは、このプラットフォームを実現する過程で遭遇した様々な課題と、それらを解決する中で得た学びを共有します。特にプラットフォームを漸進的に拡大するための技術的アプローチや、ユーザー獲得のための技術的、人的両面の取り組みに焦点を当ててご紹介いたします。",
+    "speakers": [
+      {
+        "id": 1811,
+        "name": "Hiroshi Hayakawa"
+      }
+    ],
+    "dayId": 33,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T10:20:00.000+09:00",
+    "endTime": "2000-01-01T10:40:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Keynote",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 33,
+    "conferenceDayDate": "2024-11-29",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2404,
+    "conferenceId": 12,
+    "trackId": 54,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2404/155/playlist.m3u8",
+    "title": "Engineer Enabling！2000名超のエンジニアを支えるGitOps運用ノウハウを大公開　～GitHub Actionsセルフホステッドランナーを完全プライベートEKSで実現～",
+    "abstract": "エンジニアの生産性最大化をミッションに持つ私たちのチームでは、セキュリティにも最大限配慮した、完全プライベートEKSを基盤とするGitHub Actionsセルフホステッドランナーを全社展開しています。\r\n多様なビルド環境を素早く構築するための仕組み作りや、ビルド速度を向上させるためのチューニング、キャッシュ機構の活用など、数百を超える様々な開発チームがより開発に集中できる環境を提供しています。\r\n運用面においても、年3回のアップグレードをユーザ影響無く安全に実施するためのBlueGreenデプロイメントや機能リリースを楽にするためのGitOps、スケーリングコントロールによるコスト削減に関する工夫も行っています。\r\n大規模な開発体制における、開発生産性と運用・セキュリティの両立に関するウハウを解説します。",
+    "speakers": [
+      {
+        "id": 1821,
+        "name": "Kentaro Nishiyama"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T15:20:00.000+09:00",
+    "endTime": "2000-01-01T16:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "CI / CD",
+    "onAir": false,
+    "documentUrl": "https://www.docswell.com/s/Simplex/KWW4JG-simplex_nishiyama01",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2405,
+    "conferenceId": 12,
+    "trackId": 54,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2405/157/playlist.m3u8",
+    "title": "Kubernetes だけじゃない！Amazon ECS で実現するクラウドネイティブな GitHub Actions セルフホストランナー",
+    "abstract": "スケーラブルな GitHub Actions セルフホストランナーを構築するための OSS として代表的なのが Kubernetes のカスタムコントローラーである ARC (actions/actions-runner-controller) ですが、我々は Amazon ECS をベースに独自で構築する方法を取りました。\r\n\r\n「クラウドネイティブといえば Kubernetes」そんなイメージをお持ちの方も多いのではないでしょうか？本セッションでは、我々がなぜ Kubernetes 及び ARC を採用しなかったのかをチームの状況、運用保守、拡張性、エコシステムの活用の観点などで当時の意思決定を振り返り、実際に1年間運用してみて、その選択は正解だったのかをお伝えします。\r\nまた、社内に提供を開始してから改善を積み重ね、現在では1日に1万以上の Job を捌くほどになった大規模ランナーがどのように運用されているのかをお話します。グループ全体で広く利用される大規模ランナーならではの悩みや、改善に向けたアプローチも紹介します。",
+    "speakers": [
+      {
+        "id": 1781,
+        "name": "Yuya Koda"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T17:20:00.000+09:00",
+    "endTime": "2000-01-01T18:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "CI / CD",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2407,
+    "conferenceId": 12,
+    "trackId": 52,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2407/170/playlist.m3u8",
+    "title": "システムリプレイスプロジェクト発足から7年、改めてコスト最適化に向き合う",
+    "abstract": "弊社の運営するファッションECサイト「ZOZOTOWN」ではクラウド技術を活用したシステムリプレイスが2017年から進行しています。\r\nリプレイスに伴いシステムの安定稼働率や開発者の生産性は高まったものの、多くのマイクロサービスが立ち上がり、リプレイス後のアプリケーション稼働基盤として採用されたAWSやKubernetes（EKS）は徐々に金額面でのコストバランスが合わない状態になりはじめていました。\r\nこの問題に対応すべく我々ZOZOTOWNプロダクトのSREはコスト可視化方法の整備、KarpenterやKEDAの導入など様々な施策を実施してきました。\r\nクラウドネイティブな環境でコスト最適化に向けアクションを模索している方の参考になれば幸いです。",
+    "speakers": [
+      {
+        "id": 1827,
+        "name": "Hiroyuki Kamei"
+      },
+      {
+        "id": 1824,
+        "name": "Takumi Yokota"
+      }
+    ],
+    "dayId": 33,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:20:00.000+09:00",
+    "endTime": "2000-01-01T14:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "FinOps",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/takumi/replace-and-cost-optimization",
+    "conferenceDayId": 33,
+    "conferenceDayDate": "2024-11-29",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2409,
+    "conferenceId": 12,
+    "trackId": 52,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2409/159/playlist.m3u8",
+    "title": "成熟度別 Platform Engineering アーキテクチャ道場！",
+    "abstract": "Platform Engineeringは、現代のソフトウェア開発において注目を集める重要なトレンドです。ガートナーの予測によると、2026年までに80%の大規模ソフトウェアエンジニアリング組織がプラットフォームチームを設立すると言われています。しかし、Platform Engineering を実現しているのは一部の技術的に秀でた企業のみであり、多くの企業にとって、具体的な実装方法は依然として不明確です。\r\n本セッションでは、Platform Engineeringの成熟度モデルごとに、各段階に応じた具体的なリファレンスアーキテクチャを提示します。これにより、参加者は自社の現状を把握し、Platform Engineeringを単なるバズワードから実践的なソリューションへと昇華させる具体的な方法論を学ぶことができます。\r\n成熟度モデルとリファレンスアーキテクチャを活用することで、各組織に適したPlatform Engineeringの実装が可能となり、ソフトウェア開発の効率化と品質向上を実現できるでしょう。",
+    "speakers": [
+      {
+        "id": 1828,
+        "name": "Ryota Yamada"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:20:00.000+09:00",
+    "endTime": "2000-01-01T14:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Architecture Design",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2416,
+    "conferenceId": 12,
+    "trackId": 54,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2416/182/playlist.m3u8",
+    "title": "そのCIは本当に役に立ってますか？ - 高品質なCIプロセスを実現する設計術",
+    "abstract": "現代のクラウドネイティブな環境では、プロダクトやサービスの開発からデプロイまでを高速なサイクルで数多く繰り返すことが当たり前となっており、そのような急速な開発サイクルの中でもなお高いサービス品質を保ち続けるために、継続的インテグレーション(CI)はとても重要な役割を果たしています。\r\nしかし、長い実行時間や無意味な指摘の表出などが頻発するような質の低いCIプロセスは、逆に開発の阻害要因・ブロッカーとなってしまいます。「会社のルールだから」「トレンドだから」といった理由でCIを導入してはみたものの、CIツールから出る指摘に追われ、リリース承認のために見た目を整える作業に手間を取られて疲弊してしまう・その結果CIツールの存在が形骸化してしまうような現場も多いのではないでしょうか。\r\n本セッションでは、CIプロセスを開発の妨げにせず、そこから出る指摘を品質向上に繋がる有意義なものにするためにどのような設定や調整をすればいいのか、CIの設計論を具体的に解説します。これにより、開発者がCIと健全な関係を築き、より効率的かつ質の高い開発環境の構築を行うための方法・マインドセットを考察します。",
+    "speakers": [
+      {
+        "id": 1836,
+        "name": "Haruka Sakihara"
+      }
+    ],
+    "dayId": 33,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T15:20:00.000+09:00",
+    "endTime": "2000-01-01T16:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "CI / CD",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/harukasakihara/sonocihaben-dang-niyi-nili-tutemasuka-gao-pin-zhi-nacipurosesuwoshi-xian-surushe-ji-shu",
+    "conferenceDayId": 33,
+    "conferenceDayDate": "2024-11-29",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2418,
+    "conferenceId": 12,
+    "trackId": 52,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2418/161/playlist.m3u8",
+    "title": "実践/先取り「入門 Kubernetes Validating/Mutating Admission Policy」",
+    "abstract": "マルチテナントの Kubernetes クラスタでは他のテナントに影響を与えないためにポリシ制御によるガードレールを厳密に運用する必要があります。従来、その実現には Validating/Mutating Admission Webhook や Gatekeeper/Kyverno 等のサードパーティアドオンが使用されていますが、運用やパフォーマンスに課題があります。\r\n\r\nPFN では、それらの課題が解決された「Validating Admission Policy (v1.30 で GA)」を早くから実践導入しており、ポリシのテストの課題に対して今年のインターンシップで「kaptest (https://github.com/pfnet/kaptest)」を開発しオープンソースで公開しました。また、今後 Kubernetes に実装予定の「Mutating Admission Policy」への移行についてインターンシップにおいて調査、検証を行いました。\r\n\r\n本発表は、PFN のマルチテナントクラスタにおける  Validating Admission Policy の活用事例と OSS で公開したテストツール、また Mutating Admission Policy の調査検証結果についてインターン生と合同で共有します。仕組みからポリシテストの実践まで、初学者からすでに使用されている中級者まで楽しんでいただける内容です。",
+    "speakers": [
+      {
+        "id": 1872,
+        "name": "Kai Okawa"
+      },
+      {
+        "id": 1839,
+        "name": "Shoma Ansai"
+      },
+      {
+        "id": 1838,
+        "name": "Kazuki Suda"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T15:20:00.000+09:00",
+    "endTime": "2000-01-01T16:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Customizing / Extending",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2420,
+    "conferenceId": 12,
+    "trackId": 54,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2420/171/playlist.m3u8",
+    "title": "気まぐれLLMのふるまいを暴け！  - OpenLLMetryを通して見る世界 - ",
+    "abstract": "OpenAI社のChatGPTを代表とし、LLM（大規模言語モデル）を利用したユースケースは数多く存在します。その活用例は、一般コンシューマ向けや企業内部でのユースケースと非常に多岐に渡るため、規模は問わず類似のアプリケーションを開発した経験がある方は多いのではないでしょうか。\r\n\r\nLLMは便利なコンポーネントですが、動作が非決定的であり、実行してみないとどのようにふるまうか分かりません。特に、アプリケーションが複雑になると、その動作の予測がさらに難しくなります。そのため、LLMのふるまいを正確に把握するためのオブザーバービリティが重要です。\r\n\r\n一般的なアプリケーションのログやトレース、メトリクスを扱う標準としてOpenTelemetryがあり、それをLLM向けに拡張したものがOpenLLMetryです。OpenLLMetryを活用することで、OpenTelemetryの強みを生かしつつ、LLMアプリケーションのオブザーバビリティを向上させることができます。\r\n\r\n本セッションでは、LLMアプリケーションにおけるオブザーバビリティの課題と、OpenLLMetryを活用した解決方法を紹介します。さらに、実際のユースケースを交えたデモンストレーションを通じて、OpenLLMetryの導入がどのようにしてLLMアプリケーションの開発や運用効率を向上させるかを実践的にお見せします。",
+    "speakers": [
+      {
+        "id": 1842,
+        "name": "Yoshitaka Fujii"
+      },
+      {
+        "id": 1841,
+        "name": "Shuhei Kawamura"
+      }
+    ],
+    "dayId": 33,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:20:00.000+09:00",
+    "endTime": "2000-01-01T14:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "onAir": false,
+    "documentUrl": "https://docswell.com/s/shukawam/5N191Q-llm-observability/1",
+    "conferenceDayId": 33,
+    "conferenceDayDate": "2024-11-29",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2421,
+    "conferenceId": 12,
+    "trackId": 51,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2421/158/playlist.m3u8",
+    "title": "50以上のマイクロサービスを支えるアプリケーションプラットフォームの設計・構築の後悔と進化",
+    "abstract": "LegalOn Technologiesでは新プロダクトのリリースに向け、50以上のマイクロサービスを支えるGKE、Cloud Service Mesh、Argo CDなどを中心としたアプリケーションプラットフォームを1年でゼロから構築する挑戦を成功させました。多くのサービスを同時多発的に立ち上げるために、インフラに限らずアプリケーションやCIのテンプレートなど、ソフトウェア開発ライフサイクル上の様々な工夫をこらしています。一方で、マルチリージョン・マルチプロダクトを見据えた拡張を行うには、大規模な移行が必要になるような構造的課題に直面しています。\r\n本セッションでは、リリース直前の破壊的変更、リリース後の大規模な移行、ビジョンの見直しを踏まえ「あのときこうしておけば…」という後悔ポイントを伝えることで、今後生まれるプラットフォームのより健やかな成長に貢献することを目指します。",
+    "speakers": [
+      {
+        "id": 1840,
+        "name": "Toshinori Sugita"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T17:20:00.000+09:00",
+    "endTime": "2000-01-01T18:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Microservices / Services Mesh",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/toshi0607/regrets-and-evolution-of-application-platform",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2422,
+    "conferenceId": 12,
+    "trackId": 52,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2422/188/playlist.m3u8",
+    "title": "大規模環境でCiliumを運用して得られた課題と知見",
+    "abstract": "サイボウズのKubernetes基盤では、CNCF Graduated Projectの一つであるCiliumをネットワークに採用しています。\r\nCiliumは安定したソフトウェアですが、大規模な環境で運用する際は、性能問題や不具合などに遭遇することがあります。\r\n例えば、これまでにPodの作成遅延や特定のPodの通信不調などの問題に遭遇しています。\r\n我々は、それらの問題をCilium本体へのコントリビューションや自作ツールの作成、チューニングといった方法で対処してきました。\r\n本セッションではこれらの取り組みについて紹介し、これからCiliumを大規模環境で運用する方々に、サイボウズで得られた知見を共有します。",
+    "speakers": [
+      {
+        "id": 1873,
+        "name": "tkna"
+      },
+      {
+        "id": 1843,
+        "name": "Tomoya Terashima"
+      }
+    ],
+    "dayId": 33,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T16:20:00.000+09:00",
+    "endTime": "2000-01-01T17:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Networking",
+    "onAir": false,
+    "documentUrl": "https://www.docswell.com/s/cybozu-tech/KP2GGL-cndw2024-neco",
+    "conferenceDayId": 33,
+    "conferenceDayDate": "2024-11-29",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2423,
+    "conferenceId": 12,
+    "trackId": 51,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2423/145/playlist.m3u8",
+    "title": "3人チームでも運用できるパルワールドのクラウドネイティブ技術",
+    "abstract": "発売1ヶ月で総プレイヤー数2500万人を記録したパルワールドのインフラは、クラウドとKubernetesの機能を最大限活用しながら、3名の小規模チームにより運用されています。ユーザーがマルチプレイで遊ぶためのゲームサーバーをKubernetesで上手く扱う手法や、メトリクスに基づくコスト効率化など、プロダクトの運用フェーズをよりコンパクトにするための手法や考え方をご紹介します。",
+    "speakers": [
+      {
+        "id": 1831,
+        "name": "Kazunari Sasa"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T10:20:00.000+09:00",
+    "endTime": "2000-01-01T10:40:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Keynote",
+    "onAir": false,
+    "documentUrl": "https://drive.google.com/file/d/18bofZZpOvfpzb57s26X7NG0ORQ9-opOM/view?usp=drive_link",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2426,
+    "conferenceId": 12,
+    "trackId": 51,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2426/154/playlist.m3u8",
+    "title": "Mastering Cloud Native API Gateway with Envoy",
+    "abstract": "API をホスティングするための様々な共通課題を解決する API Gateway パターンは、クラウドネイティブ環境でも広く利用されているアーキテクチャパターンです。\r\n本セッションでは、クラウドネイティブなネットワークプロキシーである「Envoy」を用いた API Gateway パターンの実践について、下記のトピックを交えつつ解説します！\r\n\r\n- API Gateway パターンの基礎と実践例\r\n- フィルターや xDS、サービスメッシュでの利用例をはじめとした Envoy の基礎\r\n- Envoy の External Authorization・External Processing フィルターを用いたリクエストの検証\r\n- WebAssembly を用いた Envoy の拡張\r\n- CUE を用いた Envoy の設定の管理",
+    "speakers": [
+      {
+        "id": 1846,
+        "name": "Yuki Ito"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T15:20:00.000+09:00",
+    "endTime": "2000-01-01T16:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Architecture Design",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2432,
+    "conferenceId": 12,
+    "trackId": 51,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2432/177/playlist.m3u8",
+    "title": "Woven by ToyotaのFinOpsの取り組み",
+    "abstract": "Woven by Toyotaでは、2018年3月にトヨタ・リサーチ・インスティテュート・アドバンスト・デベロップメント株式会社として誕生して以来、ソフトウェア開発、機械学習、CI/CD環境等々として、クラウドの利用を拡大してきました。近年、クラウド利用コストの最適化の取り組みとして「FinOps」が注目されています。本セッションではWoven by Toyotaが、FinOps活動に取り組んできた中で、直面した課題やその成果について紹介します。",
+    "speakers": [
+      {
+        "id": 1885,
+        "name": "Maftuh Muhammad"
+      },
+      {
+        "id": 1851,
+        "name": "Satoru Moriya"
+      }
+    ],
+    "dayId": 33,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T11:00:00.000+09:00",
+    "endTime": "2000-01-01T11:20:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Keynote",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 33,
+    "conferenceDayDate": "2024-11-29",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2438,
+    "conferenceId": 12,
+    "trackId": 53,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2438/164/playlist.m3u8",
+    "title": "Amazon ECSとCloud Runの相互理解で広げるクラウドネイティブの景色",
+    "abstract": "本セッションでは、AWSとGoogle Cloudにおけるネットワークやアーキテクチャデザイン時の違いを解説しつつ、各クラウドの代表的なコンテナサービスであるAmazon ECSとCloud Run両者の理解を深める手助けをします。\r\nいずれかのサービスに触れたことのある方が、既存のメンタルモデルを活かしながらもう一方のサービスを深く理解することで、コンテナ技術に精通するエンジニアとしてさらなる成長を遂げるためのヒントを提供します。",
+    "speakers": [
+      {
+        "id": 1857,
+        "name": "Masaya Arai"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:20:00.000+09:00",
+    "endTime": "2000-01-01T14:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Architecture Design",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2440,
+    "conferenceId": 12,
+    "trackId": 52,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2440/185/playlist.m3u8",
+    "title": "大規模システムへの OpenTelemetry Collector 導入の勘所と OpAMP に見る未来",
+    "abstract": "OpenTelemetry の導入において OpenTelemetry Collector はとても重要です。テレメトリー収集のゲートウェイとして動作しさまざまな処理を行う Collector ですが、構成要素も多く、管理は規模が大きくなるほど複雑化します。OpenTelemetry プロジェクトは Collector 設定のためのリモートプロトコルである Open Agent Management Protocol（OpAMP）を開発しており、これを用いることで管理コストの削減が期待されています。本セッションでは、Collectorの基本からはじめ、大規模構成における課題、OpAMP がどう解決するか、さらに Kubernetes 上での展開まで幅広く紹介します。",
+    "speakers": [
+      {
+        "id": 1859,
+        "name": "Keisuke SAKASAI"
+      }
+    ],
+    "dayId": 33,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T15:20:00.000+09:00",
+    "endTime": "2000-01-01T16:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/k6s4i53rx/getting-started-opentelemetry-collector-with-opamp",
+    "conferenceDayId": 33,
+    "conferenceDayDate": "2024-11-29",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2447,
+    "conferenceId": 12,
+    "trackId": 51,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2447/176/playlist.m3u8",
+    "title": "クラウドコストと使用量を最適化し、ビジネス価値の最大化へと導く「FinOps」の実践アプローチのご紹介",
+    "abstract": "グローバルでは単なるクラウドの活用から先に進み、クラウドへ支払う料金に対して得られる価値を最大化するための取り組みである「FinOps」の実践が当たり前になりつつある。その一方、国内では知名度も低く、コストを最適化するFinOpsの継続的な活動は、エンジニアから時間を奪うだけの存在だと考える現場もいまだに多い状況である。本セッションでは、クラウドを扱う全員が取り組むべきFinOpsの概要から、業界標準の導入/実践アプローチ手法である「FinOpsフレームワーク」について実践ノウハウを交えて紹介する。",
+    "speakers": [
+      {
+        "id": 1867,
+        "name": "Satoshi Matsuzawa"
+      }
+    ],
+    "dayId": 33,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T10:40:00.000+09:00",
+    "endTime": "2000-01-01T11:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Keynote",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/chacco38/finopsshi-jian-apurotinoshao-jie-v20241129",
+    "conferenceDayId": 33,
+    "conferenceDayDate": "2024-11-29",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2448,
+    "conferenceId": 12,
+    "trackId": 51,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2448/149/playlist.m3u8",
+    "title": "120万口座を支える証券システムのクラウド運用内製化とクラウドネイティブへの挑戦",
+    "abstract": "PayPay証券は、証券会社としては後発ですが、現在120万を超える口座を抱えています。2016年の開始当初からAWSを利用していますが、運用は外部へ委託しており、クラウドネイティブな作りではありませんでした。\r\n2023年より、新NISAの取り扱い開始のタイミングもあり、ユーザ増加を見越してサービス改善を図るため、クラウド運用の内製化や組織改革を始め、IaCの導入、コンテナ化、コスト最適化、セキュリティ強化などに取り組み、モダン化を進めています。\r\n本セッションでは、これらの取り組みについて、証券業界固有の考慮点も交えてお話します。\r\n",
+    "speakers": [
+      {
+        "id": 1868,
+        "name": "Komori Tomoaki"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T11:40:00.000+09:00",
+    "endTime": "2000-01-01T12:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Keynote",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/ppsc/the-challenge-of-making-the-cloud-in-house-and-cloud-native-in-paypay-securities",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2449,
+    "conferenceId": 12,
+    "trackId": 52,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2449/160/playlist.m3u8",
+    "title": "IT運用を包括的に支える新しい自動化プラットフォームとセルフサービス化の実現へ向けて",
+    "abstract": "IBM Rapid Network Automationは、Pliant社の技術を基盤とした自動化プラットフォームで、ネットワーク自動化に留まらず、IT運用全体を包括的にサポートします。ハイブリッド・マルチクラウド環境にも柔軟に対応し、セルフサービス化を実現する具体的な活用方法や、クラウドネイティブ環境での自動化の利点について詳しく解説します。IT運用の効率化と迅速化を目指す企業にとって、必見の内容です。",
+    "speakers": [
+      {
+        "id": 1869,
+        "name": "Yukihiro Koda"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:20:00.000+09:00",
+    "endTime": "2000-01-01T15:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/yukikod/ityun-yong-wobao-gua-de-nizhi-eruxin-siizi-dong-hua-puratutohuomutoseruhusabisuhua-noshi-xian-hexiang-kete",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2450,
+    "conferenceId": 12,
+    "trackId": 51,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2450/2450_master.m3u8",
+    "title": "AI で加速するクラウドネイティブな開発体験",
+    "abstract": "開発の効率化が求められる中、クラウド上での開発体験向上がトレンドになっています。コンテナベースのオンデマンドな開発環境は、必要なリソースを瞬時に提供し、開発スピードを加速させます。その上で、すでに一般的になっている AI による開発支援を組み合わせることでさらなる開発体験の向上が可能になっており、その利用はクラウド運用まで広がっています。本セッションでは、Google Cloud を例にこれらの開発者のための環境についてお話します。",
+    "speakers": [
+      {
+        "id": 1826,
+        "name": "Shintaro Sekimoto"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T11:00:00.000+09:00",
+    "endTime": "2000-01-01T11:20:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Keynote",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2451,
+    "conferenceId": 12,
+    "trackId": 51,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2451/181/playlist.m3u8",
+    "title": "Amazon CloudFrontを活用したゼロダウンタイム実現する安定的なデプロイメント",
+    "abstract": "本講演では Amazon CloudFrontを活用してゼロダウンタイムのデプロイメントを実際のプロジェクトに導入した話について紹介します。\r\nこの手法では、二つの同一環境で新しいコードを並行して稼働させ、必要に応じてトラフィックを切り替えます。\r\nこれにより、ユーザーエクスペリエンスを損なうことなく、新機能や修正をリリースでき、ロールバックも容易にすることができました。\r\nこの手法は、クリティカルなシステム更新や、ステージング環境でのテストなど多様なユースケースで効果的です。",
+    "speakers": [
+      {
+        "id": 1870,
+        "name": "Yoshiki Shinagawa"
+      }
+    ],
+    "dayId": 33,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T11:40:00.000+09:00",
+    "endTime": "2000-01-01T12:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Keynote",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 33,
+    "conferenceDayDate": "2024-11-29",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2452,
+    "conferenceId": 12,
+    "trackId": 54,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2452/178/playlist.m3u8",
+    "title": "SaaSベースのスキャンで実現するWebアプリケーション/APIの脆弱性可視化と保護戦略",
+    "abstract": "クラウドネイティブ化が進んでも、アプリケーションレベルのセキュリティ確保は依然として開発者、運用者にとっての課題です。\r\nこのような課題に対して、F5では、Webアプリケーション/APIを対象とした自動ペネトレーションテストサービスやAPIセキュリティサービスを提供しています。\r\n本セッションでは、これらのF5のソリューションを用いてどのように自社のアプリケーション保護を実現できるのかをご紹介します。",
+    "speakers": [
+      {
+        "id": 1871,
+        "name": "Tomonori Takada"
+      }
+    ],
+    "dayId": 33,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:20:00.000+09:00",
+    "endTime": "2000-01-01T15:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Security",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 33,
+    "conferenceDayDate": "2024-11-29",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2453,
+    "conferenceId": 12,
+    "trackId": 54,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2453/2453_master.m3u8",
+    "title": "マイクロサービスアーキテクチャへのモチベーション整理とその複雑性に対する落としどころ",
+    "abstract": "クラウドネイティブ環境でのアプリケーション開発が進む中、マイクロサービスアーキテクチャは、モノリシックなシステムに代わる柔軟でスケーラブルな選択肢として注目を集めています。\r\nしかし、マイクロサービス導入にあたっては、設計や運用の複雑さが課題となることが少なくありません。\r\n\r\n当セッションでは、マイクロサービスアーキテクチャに取り組むメリットとモチベーションの整理を行った上で\r\n実際のプロジェクトで直面する複雑性にどのように向き合う方法があるのか、現実的な落としどころについて、お話します。",
+    "speakers": [
+      {
+        "id": 1790,
+        "name": "Ryo Ito"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T16:20:00.000+09:00",
+    "endTime": "2000-01-01T17:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Microservices / Services Mesh",
+    "onAir": false,
+    "documentUrl": "https://www.slideshare.net/slideshow/ss-835c/273265544",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "事前収録"
+  },
+  {
+    "id": 2454,
+    "conferenceId": 12,
+    "trackId": 51,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2454/180/playlist.m3u8",
+    "title": "Kong Konnectでマイクロサービスを統括！複数K8s環境を一元管理",
+    "abstract": "Kong Konnectは、マイクロサービスを効率的に管理するための強力なプラットフォームです。複数のKubernetes環境にまたがるマイクロサービス管理を一元化し、運用の煩雑さを大幅に軽減します。さらに、サービス単位でのセキュリティポリシー適用やトラフィックの可視化などの機能も直感的に追加・管理でき、複雑なマイクロサービスアーキテクチャでもスマートに運用可能です。セキュリティとガバナンスを強化しつつ、迅速なデプロイを実現し、開発者と運用担当者の負担を大幅に軽減します。本セッションでは、複雑な環境にも柔軟に対応し、サービス提供を迅速化するKong Konnectの強力な機能を余すところなくご紹介します。",
+    "speakers": [
+      {
+        "id": 1800,
+        "name": "Wenhan Shi"
+      }
+    ],
+    "dayId": 33,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T11:20:00.000+09:00",
+    "endTime": "2000-01-01T11:40:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Keynote",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 33,
+    "conferenceDayDate": "2024-11-29",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2455,
+    "conferenceId": 12,
+    "trackId": 51,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2455/156/playlist.m3u8",
+    "title": "KubernetesクラスタにおけるDify商用環境構築のノウハウ",
+    "abstract": "当社は2024年に、コード不要でAIアプリを構築できる「Dify」をKubernetes上で商用環境に導入しました。その過程でリソース管理、スケーラビリティ、セキュリティ対策などの課題を解決しました。本発表では、Difyの最適設定方法、高可用性とセキュリティの確保、実運用でのベストプラクティスを紹介します。また、カスタムAI質問応答アシスタントの構築事例を通じ、企業のAI導入の可能性と効果を考察します。",
+    "speakers": [
+      {
+        "id": 1880,
+        "name": "Minami Katsumata"
+      },
+      {
+        "id": 1874,
+        "name": "Qiang Wang"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T16:20:00.000+09:00",
+    "endTime": "2000-01-01T17:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Application / Development",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2456,
+    "conferenceId": 12,
+    "trackId": 54,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2456/153/playlist.m3u8",
+    "title": "間違いだらけのポストモーテム - ホントに役立つレビューはこうだ!",
+    "abstract": "みなさんはシステム障害発生後に、きちんとレビューをしていますか？ SREのプラクティスではポストモーテムと呼ぶこともありますね。\r\n\r\nポストモーテムを行うことは、将来のインシデント防止に向けてとてもとても大事です。 インシデント対応そのものよりも大事とすら言えます。ですが、それほど大事なものなにも関わらず、「正しく」レビューが出来ているケースはそれほど多くありません。\r\n\r\n本セッションでは、インシデントを組織の成長機会に繋げていきたいという人に向けて、インシデントという体験から学び組織を強化するベストプラクティスについてお話しします。BlamelessからBlame-awareに、ポストモーテムからポストインデントレビューに。これまであまり語られてこなかった、インシデント後のレビュー方法についてヒントとなる話をします。",
+    "speakers": [
+      {
+        "id": 1875,
+        "name": "Kazuto Kusama"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:20:00.000+09:00",
+    "endTime": "2000-01-01T15:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2457,
+    "conferenceId": 12,
+    "trackId": 51,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2457/172/playlist.m3u8",
+    "title": "5年で社員数3人から100人以上に！インフラのコード化とサービスのコンテナ化による、急成長する事業を支えるためのプラットフォーム戦略とは",
+    "abstract": "急成長する事業を支えるために、リソースの限られた少人数運用チームがどのようにしてプラットフォームを構築し、安定した運用を実現しているのかを、以下のような観点からログラスの具体的な事例を通じて紹介します。\r\n・インフラを少人数で構築・運用するためにどのような仕掛けをして進めたのか？\r\n・インフラのコード化のためにGitHubを採用した背景\r\n・サービス基盤としてコンテナを選択した背景とその中でもECS Fargateを採用した理由とは？\r\n・このようなインフラ構成でどのようにセキュリティ向上施策を進めたのか？\r\n\r\nまた、上記のセキュリティ向上施策の一つであるコンテナセキュリティを深掘りして紹介します。\r\nログラスではコンテナの振る舞い検知にOSSのFalcoをベースとしたSysdigを活用しています。世界中で広く使われているFalco自身と、便利な機能がアドオンされたSysdigについて紹介します。",
+    "speakers": [
+      {
+        "id": 1878,
+        "name": "Yo Takeuchi"
+      },
+      {
+        "id": 1876,
+        "name": "Shin Katsumaru "
+      }
+    ],
+    "dayId": 33,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:20:00.000+09:00",
+    "endTime": "2000-01-01T15:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Security",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 33,
+    "conferenceDayDate": "2024-11-29",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2458,
+    "conferenceId": 12,
+    "trackId": 53,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2458/165/playlist.m3u8",
+    "title": "Kubernetes環境のオブザーバビリティの次の一歩をOpenTelemetryで実現すると何がどうなるの？",
+    "abstract": "本セッションでは、KubernetesやPrometheusに詳しいプラットフォームエンジニア向けに、オブザーバビリティの次のステージを実現するためのOpenTelemetry活用法を解説します。Kubernetes環境における実践例を通じて、メトリクスやトレースの統合による運用効率向上と、リアルタイムな可視化の価値を探ります。また、Splunk Observability製品との連携によって得られる効果的なモニタリングと課題解決のアプローチもご紹介します。",
+    "speakers": [
+      {
+        "id": 1879,
+        "name": "Kazunori Otani"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:20:00.000+09:00",
+    "endTime": "2000-01-01T15:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2460,
+    "conferenceId": 12,
+    "trackId": 51,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2460/151/playlist.m3u8",
+    "title": "AWSセキュリティの最適解！セキュリティ人材不足でも包括的かつ効率的に対策を行う方法",
+    "abstract": "サイバー攻撃が増加する中、セキュリティ対策は重要な経営課題となっています。AWSの利用においても、対応が求められるセキュリティ課題は多岐にわたります。\r\nしかし、多くの企業がエンジニア不足に直面し、必要な人材を確保できないという課題を抱えているのではないでしょうか。\r\n本セッションでは、セキュリティ人材が不足している状況でも工数を削減し包括的なクラウドセキュリティ対策を実現する方法をご紹介します。",
+    "speakers": [
+      {
+        "id": 1882,
+        "name": "Jun Yamamoto"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:20:00.000+09:00",
+    "endTime": "2000-01-01T15:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Security",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2462,
+    "conferenceId": 12,
+    "trackId": 52,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cndw2024/talks/2462/162/playlist.m3u8",
+    "title": "マルチモーダルAIを活用して、運用監視ツール横断で事象解析と傾向分析の自動化にチャレンジしてわかった勘所",
+    "abstract": "DevOps Experienceを次の段階へを掲げて、クラウドサービス「PITWALL®️」を考案して、開発しています。\r\nhttps://pitwall-web.jp/\r\n開発運用現場のみなさんが各種ツールから手作業で集めている情報を、シングルクリック&スクショで一括収集。\r\n\r\nこれに、マルチモーダルAIを活用すれば、障害時やキャパシティモニタリングに関わる解析作業や傾向分析を自動化できるのでは？この技術の可能性に挑んでいます。\r\n\r\n日々進化するAIの現在地は？試すに留まらずに、サービスに組み込むにあたってのエンジニアリングの苦労や、工夫もできる限り共有できればと思っています。\r\n\r\nお楽しみに！ブースもありますので、みなさんの開発運用現場の課題、AI活用の現状をお聞きできるのも楽しみにしています！\r\n\r\n#マルチモーダルAI #AIOps #Observability #CCoE #DevOps #DevEx #OpsEx ",
+    "speakers": [
+      {
+        "id": 1884,
+        "name": "Hisatomo Tanaka"
+      }
+    ],
+    "dayId": 32,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T16:20:00.000+09:00",
+    "endTime": "2000-01-01T17:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 32,
+    "conferenceDayDate": "2024-11-28",
+    "presentationMethod": "現地登壇"
+  }
+]
