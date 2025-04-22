@@ -48,20 +48,20 @@ const ogImage = conference?.image || '/favicon.svg';
                   talks?.map((talk) => {
                     const url = `/${abbr}/talks/${talk.id}`
                     return (
-                      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition-all duration-300 card-hover">
-                        <a
-                          href={url}
-                          class="block absolute top-0 bottom-0 left-0 right-0"
-                        />
-                        <div class="p-4">
-                          <Talk
-                            id={talk.id}
-                            abbr={abbr}
-                            title={talk.title}
-                            speakers={talk.speakers}
-                          />
+                      <a
+                        href={url}
+                        class="block absolute top-0 bottom-0 left-0 right-0">
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition-all duration-300 card-hover">
+                          <div class="p-4">
+                            <Talk
+                              id={talk.id}
+                              abbr={abbr}
+                              title={talk.title}
+                              speakers={talk.speakers}
+                            />
+                          </div>
                         </div>
-                      </div>
+                      </a>
                     )
                   })
                 ) : (
