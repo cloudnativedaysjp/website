@@ -24,7 +24,7 @@ jobs:
           aws-region: 'ap-northeast-1'
           role-to-assume: 'arn:aws:iam::607167088920:role/github-actions'
       - name: Install, build, and upload your site
-        uses: withastro/action@56781b97402ce0487b7e61ce2cb960c0e2cc5289 # v3.0.2
+        uses: withastro/action@063f85a3c9fc861a0a5e5a956225d9031177eff9 # v4.0.0
         env:
           NOTION_API_SECRET: ${{ secrets.NOTION_API_SECRET }}
           DATABASE_ID: ${{ secrets.DATABASE_ID }}
