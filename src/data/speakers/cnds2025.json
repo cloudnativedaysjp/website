@@ -1,1 +1,262 @@
-[]
+[
+  {
+    "id": 1916,
+    "name": "Tsubasa Nomura",
+    "company": "Microsoft corporation",
+    "jobTitle": "SRE",
+    "profile": "Microsoft Azure の SRE。\r\nSRE以前はプロアクティブサポートや開発部門のメンバーとしてAzureを導入するユーザーへの設計・構築支援を担当。",
+    "githubId": "tsubasaxzzz",
+    "twitterId": "tsubasaxzzz",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/fa8d29a43dfa37c9e29f5d456a8053e6.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=cad4a915f1d376b9b30e7eaa0a7d637f727ba94ec51c554089561eeac14ae0dd"
+  },
+  {
+    "id": 1917,
+    "name": "Satoshi Tagomori",
+    "company": "さくらインターネット株式会社",
+    "jobTitle": "プロダクトマネージャ",
+    "profile": "OSS開発者/メンテナ、ほか技術顧問やサービス開発など。さくらインターネット株式会社でプロダクトマネージャ。",
+    "githubId": "tagomoris",
+    "twitterId": "tagomoris",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/323c9a7486a1f95663a14ca40107b523.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=0eced8a55528b23a76831d0c398d6fb4cb682e9ccd4921f34bbdfb30e9196559"
+  },
+  {
+    "id": 1922,
+    "name": "Shinya Kato",
+    "company": "株式会社NTTデータグループ",
+    "jobTitle": "Database Engineer",
+    "profile": "PostgreSQLのコントリビューターであり、Operatorを利用したDB on Kubernetesの社内サービス構築に携わる。そこで得た経験を元に海外カンファレンスでも登壇するなど、Cloud Nativeなデータベース利用を実践する新進気鋭のエンジニア。",
+    "githubId": "shinyaaa",
+    "twitterId": "ShinyaKato_",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/cc6ae017962ae96ab88c1a4b504b35d2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=fd7626886f3b0ed75f9b6f1f6072967cde5eb303772e9873ef8e79b8d3a69519"
+  },
+  {
+    "id": 1921,
+    "name": "Takahiro Kobayashi",
+    "company": "株式会社NTTデータ",
+    "jobTitle": "DBソムリエ",
+    "profile": "SIerやクラウドベンダーを経て現職。25年に渡るDB経験を元に、データベースを様々なプラットフォームで動かす作業に情熱を燃やし、NewSQLやDB on Kubernetesなどのテーマで執筆や登壇活動を行う。DBソムリエを自称し、商用からOSSまでのDBに詳しい。",
+    "githubId": "",
+    "twitterId": "tzkb",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/9ea15e98f43ee3b00c20920230f5ff55.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=94f4fb326a028927f4e5ddc64370c0e5e667c54e931174223dfa0ff25ec9dd97"
+  },
+  {
+    "id": 1928,
+    "name": "Hayato Enokawa",
+    "company": "クラスメソッド株式会社",
+    "jobTitle": "データエンジニア",
+    "profile": "組み込みエンジニア、データ分析エンジニアとしての経験を経て、2021年にクラスメソッド株式会社に入社。\r\n現在は Google Cloud 上でのデータ分析基盤構築支援業務に従事。「Google Cloud Partner Top Engineer 2025」を受賞。\r\nクラウド環境におけるデータインテグレーションに強い関心を持ち、日々最新技術のキャッチアップに努めています。",
+    "githubId": "",
+    "twitterId": "",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/38bf2a7743163f219abfa884ad1ada12.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=0dd8507806ce2ad45805d1f9c1d6a2c5ea2452ccfcf63fa75f80d84413a4469c"
+  },
+  {
+    "id": 1924,
+    "name": "Nagamasa Ohama",
+    "company": "クラスメソッド株式会社",
+    "jobTitle": "プロジェクトマネージャー",
+    "profile": "SIer にて、クラウドサービス開発エンジニアとして従事。\r\n2020年にクラスメソッドに中途入社し、主にAWS上でのデータ分析基盤の開発・運用保守・PMなどを担当している。\r\n\r\n",
+    "githubId": "",
+    "twitterId": "@ngms_ojp",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/8adf30d604253fa2074dd93e835468e3.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=50843e46a50989e9a18d60e22bc9b4f86bf1ecd13f600221111e06411d222c67"
+  },
+  {
+    "id": 1962,
+    "name": "Aoi Kamide",
+    "company": "エヌ・ティ・ティ・コミュニケーションズ株式会社",
+    "jobTitle": "開発エンジニア",
+    "profile": "2019年度～2022年度：L2/L3スイッチやサーバを含むネットワーク機器の運用・保守・監視を担当。\r\n\r\n2022年度～現在：Kubernetesを用いて小型デバイス向けエッジコンピューティングプラットフォームの開発や検証を担当。エッジデバイスの管理やアプリケーションのデプロイ最適化に注力。生成AIを活用したオンプレミスでのAI推論を推進し、リソース制約のある環境でのエッジAI実装の最適化に取り組んでいる。",
+    "githubId": "",
+    "twitterId": "",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/0848d2998aa915a7164723de4d580cb3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=74f1d28ff3795d202f3860be07db94ff2fee6cad23e2580a7b0cce9d3400d30b"
+  },
+  {
+    "id": 1926,
+    "name": "Kakeru Shintani",
+    "company": "エヌ・ティ・ティ・コミュニケーションズ株式会社",
+    "jobTitle": "開発エンジニア",
+    "profile": "2023年度〜現在:エヌ・ティ・ティ・コミュニケーションズ株式会社にて開発エンジニアとして従事。クラウドネイティブ技術を活用したエッジ基盤の開発・設計をメインとし、インフラ設計からPoC開発を行っている。",
+    "githubId": "",
+    "twitterId": "",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/2d806751015b8a02ee5ce1878a3958b2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=eb5fd3eaae0ff8ad57760a3889add51f93dd8bfed4282723e7a289e4584f92f8"
+  },
+  {
+    "id": 1904,
+    "name": "Koichi Uchinishi",
+    "company": "株式会社マネーフォワード",
+    "jobTitle": "横断BizOps本部 Adminグループ",
+    "profile": "2018年に新卒でマネーフォワードに入社し、新規事業やスクラッチリプレイスに携わる。\r\n2021-2024年にはデータベース分離プロジェクトを推進。\r\n現在、マネーフォワードビジネスカンパニー 横断BizOps本部に所属。\r\n課題解決が好きなエンジニア。",
+    "githubId": "4geru",
+    "twitterId": "_4geru",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/e41e32dd1a7c4a78b8ba0696dd1bb4d7.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=f0bcf390df8cd069d3b5cc9198db8280c80335dcee11ceb62ddb85076950b744"
+  },
+  {
+    "id": 1934,
+    "name": "Hokuto Hoshi",
+    "company": "株式会社LayerX",
+    "jobTitle": "執行役員CISO, バクラク事業部 PlatformEngineering部 SREグループマネージャー, コーポレートエンジニアリング室長",
+    "profile": "CISO, SRE, コーポレートエンジニア。2023年まで、料理レシピサービスのセキュリティエンジニア、SRE、コーポレートエンジニアなどを経て CTO 兼 CISO を経験。2024年1月より現職。クラウドとセキュリティと料理が好きです。",
+    "githubId": "kanny",
+    "twitterId": "kani_b",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/ce35f75468381c4459a97be72dc55b99.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=e584e8c526fd1e89ca731decbe8224f67a0ff023f3a37ed116c97e1ec6f6f789"
+  },
+  {
+    "id": 1897,
+    "name": "Keita Nakata",
+    "company": "ちゅらデータ株式会社",
+    "jobTitle": "中継エンジニア",
+    "profile": "先日、PiEEGというraspberrypiでEEG(脳波)を測定モジュールを購入しました。\r\n脳をHackするのが最近の興味テーマです。\r\n\r\n初めまして！\r\n1年前沖縄に移住し、データエンジニアをしています。\r\n趣味では、アプリ開発や、ゲーム開発をしています。\r\n仕事では、画像生成、OTF構築、Text2SQL、画像認識、RAGアプリ、LLMOps、\r\n社内インフラ、アカウント管理などプロジェクトに従事してきました。",
+    "githubId": "tyukei",
+    "twitterId": "tyukei3",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/b4c9cd19065ddf80cfb344abe96dcb0d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=fffebb8b99949e228e174a509433c79997a525c0c5390ab848766fe89c0191f4"
+  },
+  {
+    "id": 1957,
+    "name": "Masataka Tsukamoto",
+    "company": "レッドハット株式会社",
+    "jobTitle": "Account Solution Architect",
+    "profile": "2002年に国内大手SIer教育事業部の営業としてキャリアスタート。その後、面白そうだからという理由でIT技術講師に転身。多くの各ベンダー認定講習やOSSに関するトレーニングの開発とデリバリーを担当する。\r\n2015年、外資系ベンダーにクラウドネイティブ関連プロフェッショナルサービスのスペシャリスト/コンサルとして転職。OpenStackのほか、CephやCeph、あとCephなどの構築を担当する。AWSとかTerraform、Ansibleなども囓りつく。\r\n2024年2月より現職。公共アカウント付きのSolution Architectとして客先で喋り倒す日々を送る。\r\nその他、コミュニティ関連の運営に数多く参画（完全に趣味）。好きなものはメガネ。",
+    "githubId": "tsukaman",
+    "twitterId": "tsukaman",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/9ac72830361169c8d2cb6e53d86bdaf4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=2a41aed6dbdb60df0bccbb3b8fc4d6ab7dcfb286b73884be73f99680a00552e9"
+  },
+  {
+    "id": 1935,
+    "name": "Tsuzuki Tsuchiya",
+    "company": "LINEヤフー株式会社",
+    "jobTitle": "Software Engineer",
+    "profile": "2022年にヤフー株式会社に新卒で入社。現在に至るまで社内のKubernetes as a Serviceの運用および開発に従事。GoやKubernetesを初めとしたクラウドネイティヴ技術を活用してSREの推進や、自動化の取り組みを進める。",
+    "githubId": "tsuzu",
+    "twitterId": "_tsuzu_",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/8250cb217ee60ae245e06c8c031a9aa3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=264f2d4e01e3db80ace638552d4022af453a1039bd9b1e6d7c16854b1f96310e"
+  },
+  {
+    "id": 1946,
+    "name": "Kotaro Inoue",
+    "company": "LINEヤフー株式会社",
+    "jobTitle": "Software Engineer",
+    "profile": "社内向けプライベートクラウドのソフトウェアエンジニアとして、Kubernetes as a Service (KaaS)の開発に携わっている。また、業務内外を問わず、KubernetesやCNCF関連プロダクトを中心にOSS活動を行っている。Kubernetes Orgのメンバーであり、認定Kubestronaut。",
+    "githubId": "musaprg",
+    "twitterId": "musaprg",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/1ba78fe7bf30ca87fcd3ef6c8886eabd.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=107907db4b6c6845224c44ade5b76bfe814db6b15fec711d49b9cdf5adc81ff4"
+  },
+  {
+    "id": 1960,
+    "name": "Yuki Iwai",
+    "company": "CyberAgent, Inc.",
+    "jobTitle": "Software Engineer",
+    "profile": "Yuki is a Software Engineer at CyberAgent, Inc. He works on the internal platform for machine-learning applications and high-performance computing. He is currently a Technical Lead for Kubeflow WG AutoML / Training and Kubernetes Kueue. He is also Kubernetes WG Batch maintainer and kube-controller-manager Job reviewer.",
+    "githubId": "tenzen-y",
+    "twitterId": "",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/0f05544d168507cc2d0cb3375b6e532e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=91a809fa744e3978b67b89abec18decf16dfd5e12550d4e4c86e2481f14e5217"
+  },
+  {
+    "id": 1965,
+    "name": "Yuki Iwanari",
+    "company": "グーグル・クラウド・ジャパン合同会社",
+    "jobTitle": "カスタマーエンジニア",
+    "profile": "グーグル・クラウド・ジャパン合同会社のカスタマーエンジニア。Google Cloudの導入支援やイベント登壇を通じて、スタートアップなどのデジタルネイティブ領域のお客様を技術支援。業務外では、研修講師、書籍執筆、コーチングなど。趣味は旅行とキャンプ。鳥取出身。",
+    "githubId": "iwanariy",
+    "twitterId": "yuki_iwanari",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/617ff246a5e49f5a9dd98f1281566764.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=25e8e078dc6eb94788af10b27c24bc15788c005204d2ce443960fc30ed22bbe7"
+  },
+  {
+    "id": 1964,
+    "name": "Shota Iwami",
+    "company": "newmo, Inc.",
+    "jobTitle": "Software Engineer",
+    "profile": "2022年に新卒で株式会社サイバーエージェントに入社。AI事業本部にて主に小売企業と協業でエンドユーザー向けのサービス開発などを行う。2024年11月にnewmo株式会社に入社。Platform Team でオブザーバビリティの向上や開発速度の改善などを行なっている。",
+    "githubId": "BIwashi",
+    "twitterId": "B_Sardine",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/84ab8e459718eab458dae5e7ba766d1d.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=0616edfdbd0ef3f60084ec90fb79e787da013cb718b6743bdc084ac8abe0c394"
+  },
+  {
+    "id": 1963,
+    "name": "Kento Kimura",
+    "company": "Datadog Japan 合同会社",
+    "jobTitle": "Sales Engineer",
+    "profile": "Datadog Japan 合同会社のセールスエンジニア。クラウド技術とアーキテクトの知識を活かし、さまざまなシステムへのオブザーバビリティの導入支援を担当。複数のクラウドコミュニティでの登壇・運営を中心として活動を行っている。",
+    "githubId": "AoTo0330",
+    "twitterId": "AoToLog_",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/304a9289f2e20cb069ab4600cfcd67bd.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=a3b0df79c8275c7d4053044c660d8558548e6eb87ce2ed5d41ca48acadbdb3aa"
+  },
+  {
+    "id": 1968,
+    "name": "Noriaki Fukuyasu",
+    "company": "The Linux Foundation",
+    "jobTitle": "日本担当バイスプレジデント",
+    "profile": "大学卒業後、総合電機メーカーで海外事業の推進に従事。\r\nその後、ターボリナックスで海外事業を主導。\r\nゼンドジャパンの代表取締役社長などを歴任し、\r\n2009年12月から現職。\r\nオープンソース、Linuxの普及に日夜取り組んでいる。",
+    "githubId": "",
+    "twitterId": "",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/71c874406404e61b925ed540903b44af.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=8e6ffd0f141c69065c02143eb034902317d47df062eee425bcc0fb336c4d2a55"
+  },
+  {
+    "id": 1966,
+    "name": "Yuta Hishinuma",
+    "company": "ちゅらデータ株式会社",
+    "jobTitle": "CTO",
+    "profile": "金融系SI、B2C、HR系検索エンジンなどの領域での経験を経て、直近ではゲーム開発会社での CTO を経験後、2019年よりちゅらデータ株式会社に入社し、データ基盤構築などを主に担当、現在 CTO。2021年 Snowflake より先駆的な技術者として Data Hero Of The Year に、2023年には注目するべきデータリーダーとしてData Leaders to Watch in 2023に選出される。",
+    "githubId": "https://github.com/foursue",
+    "twitterId": "https://x.com/foursue",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/7a8dcc86c817c5946504f66c6843ecc4.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=d5ffaf1fcf09aaa9f68d117dd901d0b2d88c5035dde997cdafceb70f93bb6564"
+  },
+  {
+    "id": 1972,
+    "name": "Taisuke Okamoto",
+    "company": "株式会社IDCフロンティア",
+    "jobTitle": "ソフトウェアエンジニア",
+    "profile": "IDCFクラウドにてKubernetes as a Serviceのエンジニアとして、ネットワーク、ストレージ領域をメインとしたコンポーネント開発を行っています。\r\nまた、SRE的な立場で複数のプロダクトを横断的に支援しています。",
+    "githubId": "b1gb4by",
+    "twitterId": "taisuke_bigbaby",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/e0e83a42d42894c9b77b64fc2614c2f6.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=bd9a5d0105e06e7c24d11889a53ff704f93a9fc5ddc9229f901f58f7f9fb35c0"
+  },
+  {
+    "id": 1971,
+    "name": "Inoue Sachirou",
+    "company": "株式会社はてな",
+    "jobTitle": "アプリケーションエンジニア",
+    "profile": ".｡oO(さっちゃんですよヾ(〃l _ l)ﾉﾞ☆)　\nオブザーバビリティプラットフォームであるMackerelを作っています。",
+    "githubId": "ne-sachirou",
+    "twitterId": "ne_sachirou",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/2d40961604e1cacf0bde2b80db1c3c8a.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=a508faef71c0aaf66b95a38e42022d6860020062e12f05eed9b3e4c314799172"
+  },
+  {
+    "id": 1974,
+    "name": "Kohei Hayama",
+    "company": "Supership株式会社",
+    "jobTitle": "CCoE、SRE",
+    "profile": "Supership株式会社にて、CCoE（Cloud Center of Excellence）およびSREとして活動しています。\r\nクラウド活用の推進や、CI/CDをはじめとする開発基盤の整備・標準化を通じて、プロダクト開発のスピードと信頼性の向上に貢献しています。",
+    "githubId": "hayama17",
+    "twitterId": "hymaaa_k",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/063fa2001f0640e449c455c0992761e1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=ad7b47ddf5f11478e30b0052fd821735d2c2c5fbcf91891fab3c764bbca9c0ed"
+  },
+  {
+    "id": 1973,
+    "name": "Tatsuki Minami",
+    "company": "株式会社ジラフ",
+    "jobTitle": "フルスタックエンジニア",
+    "profile": "フロントエンドからKubernetes幅広く取り組んでいる。\r\n2019年頃からKubernetesを使い始めた。\r\n最近はオブザーバビリティに興味があります。",
+    "githubId": "TatsukiMinami",
+    "twitterId": "south__1003",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/5ca2945d2e67edcd55b6732ec2c57e3e.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=e4ebaf2a12053732154e641821b0030f0b4c18f0690baf768da7694f3dd90658"
+  },
+  {
+    "id": 1970,
+    "name": "Community LT",
+    "company": "CloudNative Days Commitee",
+    "jobTitle": "沖縄コミュニティLT",
+    "profile": "#CNDS2025では、各セッションの休憩時間に「コミュニティLT」が開催されます。沖縄で活動している技術系コミュニティやカンファレンスの運営メンバーの方に、短い時間ではありますが、その魅力を存分に語っていただきます。",
+    "githubId": "",
+    "twitterId": "cloudnativedays ",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/db29650c0027df48c34acf2b392ff02d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=74844dcceb895bd5e1f3a3044cdc171ace5678ffa745d5e323ab78b7bbbed993"
+  },
+  {
+    "id": 1967,
+    "name": "Takumi Kataoka",
+    "company": "LINEヤフー株式会社",
+    "jobTitle": "Software Engineer",
+    "profile": "2023年にヤフー株式会社に新卒で入社。現在に至るまで社内向けPlatform as a Serviceの運用および開発に従事。",
+    "githubId": "agodoriru",
+    "twitterId": "AG0D0R1RV",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/c6da8818e0d6d0b5f2da296bff31423a.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAY2XP2REMIDKAPI6W%2F20250810%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250810T101849Z&X-Amz-Expires=900&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDmFwLW5vcnRoZWFzdC0xIkcwRQIhAMTbGAWH%2Bit6%2BGMd%2BVH%2F0Y1gP7RyyyP9n0MWvU3%2Fsat0AiBpJjVir240Uw%2F1me9sxyCtG3g7FQFoV%2BsoxP8aqS%2BdWSqBBAjP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAIaDDYwNzE2NzA4ODkyMCIMOif1wYjJljZDZBU9KtUDQMXU4dXlEsZxUhpZ1P7j8aTo8Q8CZhs0X3dPkEFUtHDexDRgP1bpnsZJPJLZCOKeXiHN9HXLYpsAWxZi%2FlMHTrmFXNpUI1NPay4AoTIptkIxpwnCI8Wa074nmC4NWv3NEQfrlTPlZZXR7ZZJIRWQAp3Nj5v7AmjBGiuUzTdhn9Z14wC6JpoFTJnQAgEG1YjdKUL8ypKG8xEGzUoJ3%2BjHwvgsax1xY%2FKJH%2FFGuG73RHV76dNaForICPCBr1Sy1BduaDalWCnDYm8uAsFAbfpNEx%2BXEZb5%2FKy0pZCRqtMhWH5BWQYqxTBMUyzO%2BdFkNqNNrVVmiJiH%2FGtuTTkw2ZRe6AYhuvnRNdA8AF%2ByzR3nxM%2BshgyEeFB2hl3j5bW7XoQ%2B1nkVaXBeXcWJqa7RIXlXkki5o%2FHkPqhQsB1Jq34e3tS1hXO4KaTG2dkjlID1HHqMmXtcUnPs%2FWT%2Bpm9G6bn2XXBS8BQkAfqrSaYsLXFYvfQ1fUhnZoYvVDe0%2FjsU2bsRTdaf6Xel%2FyNZeJLTrYy8%2B1FJUr7GyiaF4MtfBINQKfxwTPjYGVk4%2Fso1QHwL4CoYX6OBn5nC7uGGXhmquPGUpueG8m3Rn1CgaxSPVRiguKHciA5BSTDN5%2BDEBjqlASyQxEW2ADTgFRZ5Ni%2BUbskIPSc3L5CcK1JL2tcqzV8aQazUGuBevkM1xGerY2Zw8bqK7%2BkT%2FW7n8j2BSEnnYpqd%2BX8eZvMHiWGozZcRsCLu%2FEywTHo%2FSF1KTIXATs7RkNcf44y4NUUICoSmB7yBt4RvuP%2Bez69faVu9xDr7sKUMtM%2FwsQcH3EpiYDUt7wcA8wPfQKk%2BoD7qI8sGhzbcBQNY%2FVXGcQ%3D%3D&X-Amz-SignedHeaders=host&X-Amz-Signature=eca04524b5edbb38425467980dc563b7bb616abf9c359d1bbaa7c90d1b57cdcb"
+  }
+]

@@ -1,1 +1,543 @@
-[]
+[
+  {
+    "id": 2578,
+    "conferenceId": 13,
+    "trackId": 56,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2025/talks/2578/197/playlist.m3u8",
+    "title": "Azure の裏側を支える SRE の世界 〜パブリッククラウドの信頼性を実現する組織と技術〜",
+    "abstract": "クラウド規模のシステム運用では、どのように高い信頼性や安定した稼働が維持されているのでしょうか？\r\nAzure は全世界に数百万台ものサーバーを擁し、開発チームとSREチームがその安定稼働を日々支えています。\r\n\r\n本セッションでは、AzureのSRE組織の構成と役割を紹介し、インシデント管理/障害管理、SLI/SLO管理、監視といった運用プロセスを紐解きます。\r\nまた、大規模運用を支えるインシデント管理の自動化やAIOps活用の実例も取り上げます。さらに、Change SREチームが実践する変更管理の取り組みとして、AzureにおけるSafe Deployment Practices (SDP) や Ready to Deploy (R2D) の仕組みを紹介し、クラウドスケールの運用の手法を共有します。\r\n\r\n主に話す内容：\r\n・AzureのSREの位置づけ\r\n・AzureのSREの役割（インシデント管理、SLO管理、監視、etc）\r\n・大規模運用を支えるAIOpsの活用事例\r\n・変更管理の実際：Safe Deployment Practices (SDP) と Ready to Deploy (R2D) の概要と実践",
+    "speakers": [
+      {
+        "id": 1916,
+        "name": "Tsubasa Nomura"
+      }
+    ],
+    "dayId": 34,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:20:00.000+09:00",
+    "endTime": "2000-01-01T14:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/tsubasaxzzz/azure-noli-ce-wozhi-eru-sre-noshi-jie-487afc55-4d81-45bf-98f6-87757dda5fad",
+    "conferenceDayId": 34,
+    "conferenceDayDate": "2025-05-23",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2579,
+    "conferenceId": 13,
+    "trackId": 55,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2025/talks/2579/191/playlist.m3u8",
+    "title": "さくらのクラウドにおけるCloudNativeのいまとこれから",
+    "abstract": "さくらインターネットが提供するパブリッククラウドサービス「さくらのクラウド」は、コンテナ実行によるアプリケーション基盤「AppRun」をはじめとして多くのマネージドサービスの開発を急ピッチで進めています。これらのマネージドサービスは、顧客がアプリケーションをよりスケーラブルに、よりシンプルに開発、運用できるようにすることを目的としており、我々はCloud Native Computingと同じ方向を向いていると信じています。\r\nこのキーノートでは、AppRunをはじめとしたマネージドサービス開発におけるこれまでの経緯と実装、これからの我々の更なる挑戦について共有し、今後のパブリッククラウドのありかたを議論する材料を提供したく思います。",
+    "speakers": [
+      {
+        "id": 1917,
+        "name": "Satoshi Tagomori"
+      }
+    ],
+    "dayId": 34,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T10:50:00.000+09:00",
+    "endTime": "2000-01-01T11:10:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Keynote",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/tagomoris/sakuranokuraudoniokerucloudnativenoimatokorekara",
+    "conferenceDayId": 34,
+    "conferenceDayDate": "2025-05-23",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2583,
+    "conferenceId": 13,
+    "trackId": 55,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2025/talks/2583/203/playlist.m3u8",
+    "title": "つくって壊して直して学ぶDB on Kubernetes -初夏の日の2025-",
+    "abstract": "ある日、DB管理者のカトウ君は上司から無茶ぶりを受けます。\r\n「Kubernetesに本番環境として利用できるようにPostgreSQLを立てておいてよ。データベース on Kubernetesって言うんでしょ？できるよね？」\r\nKubernetesにステートフルなワークロードが向かないというのは昔の話、カトウ君はOperatorを使ってデータベースを構築しました。しかし、カトウ君の元に開発者からのクレームや様々なトラブルが舞い込みます。\r\n「アプリケーションがDBに繋がりません！」\r\n「ノードが1台落ちたらDB全台死にました！」\r\n「テーブルをDropしちゃったのでバックアップから戻りませんか！」\r\nカトウ君は同じチームのDBソムリエ・コバさんとタッグを組んで、数々のトラブルに立ち向かいます。さて、二人はDB on Kubernetesを安定稼働に導くことはできるでしょうか。\r\nもちろん答えは1つではありません。聴衆の皆さんも、Kubernetesとデータベースの両面からトラブル解決に向けて対策を一緒に考えていきましょう。",
+    "speakers": [
+      {
+        "id": 1922,
+        "name": "Shinya Kato"
+      },
+      {
+        "id": 1921,
+        "name": "Takahiro Kobayashi"
+      }
+    ],
+    "dayId": 34,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T15:20:00.000+09:00",
+    "endTime": "2000-01-01T16:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Storage / Database",
+    "onAir": false,
+    "documentUrl": "https://www.slideshare.net/slideshow/database-on-kubernetes-postgresql-cnds2025-nttdata/279494353",
+    "conferenceDayId": 34,
+    "conferenceDayDate": "2025-05-23",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2586,
+    "conferenceId": 13,
+    "trackId": 55,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2025/talks/2586/190/playlist.m3u8",
+    "title": "クラウドデータ基盤で切り拓く沖縄DXの可能性",
+    "abstract": "沖縄でもデジタルトランスフォーメーション（DX）への関心が高まり、企業や自治体がデータを活用する動きが進んでいます。\r\n本セッションでは、クラウドデータ基盤の活用によってどのように沖縄のDXを加速できるのか、その可能性とクラウド移行へのアプローチなどを解説します。\r\n",
+    "speakers": [
+      {
+        "id": 1928,
+        "name": "Hayato Enokawa"
+      },
+      {
+        "id": 1924,
+        "name": "Nagamasa Ohama"
+      }
+    ],
+    "dayId": 34,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T10:30:00.000+09:00",
+    "endTime": "2000-01-01T10:50:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Keynote",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/enokawahayato/kurautotetaji-pan-teqie-rituo-kuchong-nawa-dxnoke-neng-xing",
+    "conferenceDayId": 34,
+    "conferenceDayDate": "2025-05-23",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2588,
+    "conferenceId": 13,
+    "trackId": 56,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2025/talks/2588/208/playlist.m3u8",
+    "title": "エッジ活用の最適解とは？ 新しいエッジ処理アーキテクチャ「Edge-as-a-Service」構想について",
+    "abstract": "エッジ活用の最適解とは？\r\n\r\n本セッションでは、Skupper・Knative・Kubernetes・GPU Operatorを活用し、MEC拠点をクラウドネイティブに進化させる「Edge-as-a-Service」構想をご紹介します。使うときだけ動き、拠点を越えてつながる―そんなシンプルで強いインフラの実現に向けて、拠点間通信、GPUの分散活用、サーバレス処理など最新のエッジアーキテクチャを解説します。\r\n\r\n🎯 こんな方におすすめ\r\n・エッジコンピューティング技術に興味がある方\r\n\r\n💡 セッションで得られること\r\n・“動くときだけ動く”、超効率アーキテクチャについて\r\n・GPUを複数拠点でシェアしながら低コスト・高性能を両立させる方法\r\n・拠点をまたぐスケーラブル＆セキュアなエッジAI設計の秘訣\r\n\r\n🔧 注目技術の役割\r\n・Skupper：VPN不要で拠点間をセキュアに接続＆GPUを複数拠点で共有\r\n・Knative：リクエスト時のみ自動起動＆ゼロスケール\r\n・Kubernetes：MECを含むサービスを一元管理\r\n・GPU Operator：GPUを自動管理、AI推論を即時実行可能に\r\n\r\n\r\n",
+    "speakers": [
+      {
+        "id": 1962,
+        "name": "Aoi Kamide"
+      },
+      {
+        "id": 1926,
+        "name": "Kakeru Shintani"
+      }
+    ],
+    "dayId": 34,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T17:20:00.000+09:00",
+    "endTime": "2000-01-01T18:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "IoT / Edge",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/kakerucom/etuzihuo-yong-nozui-shi-jie-toha-xin-siietuzichu-li-akitekutiya-edge-as-a-service-gou-xiang-nituite",
+    "conferenceDayId": 34,
+    "conferenceDayDate": "2025-05-23",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2590,
+    "conferenceId": 13,
+    "trackId": 55,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2025/talks/2590/209/playlist.m3u8",
+    "title": "オンプレからクラウドへ。大規模なAWS移行を支えたリアーキテクチャプロジェクト達",
+    "abstract": "🔷 概要\r\n弊社では、ここ数年で5つ以上のサービスをAWSへ移行しました。\r\nその背景には、創業当初から利用してきた共通DBの利用停止を推進したことがあります。\r\n共通DBの停止により、各サービスが独立して稼働できるようになったため、それぞれのサービスに適したアーキテクチャを選択できるようになりました。具体的には、モノリスなシステムから特定のドメインをサービスとして切り出し、共通管理画面を廃止するなどの取り組みを行いました。\r\nサービスの新規開発や統廃合を進める中で、様々な困難に直面し、それを乗り越えてきました。\r\n本日は、プロジェクト推進チームが解散した今だからこそお話できる、AWS移行プロジェクトの舞台裏についてご紹介します。\r\n\r\n🔷 目次\r\n1. はじめに、自己紹介、事業紹介\r\n2. プロジェクトの概要\r\n3. 新しく生まれたサービス - 顧問先管理サービス\r\n4. 役割を終えたサービス - 共通管理画面\r\n5. まとめ\r\n\r\n🔷 どんな人に向けた講演か\r\n・オンプレ運用からの脱却を検討する担当者\r\n・レガシー刷新や分割を考えているマネージャー\r\n・サービスごとのドメインを分割したい方\r\n\r\n🔷 この講演によって受講者がどんな情報を得られるか\r\n・クラウド移行に向けたリアーキテクチャ設計と実践的ノウハウ\r\n・技術負債と向き合いサービス改善する方法\r\n・システム全体を俯瞰する設計思考",
+    "speakers": [
+      {
+        "id": 1904,
+        "name": "Koichi Uchinishi"
+      }
+    ],
+    "dayId": 34,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T17:20:00.000+09:00",
+    "endTime": "2000-01-01T18:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Architecture Design",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 34,
+    "conferenceDayDate": "2025-05-23",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2596,
+    "conferenceId": 13,
+    "trackId": 57,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2025/talks/2596/207/playlist.m3u8",
+    "title": "開発も運用もビジネス部門も！クラウドで実現する「つらくない」統制とセキュリティ",
+    "abstract": "IT システムがビジネスや組織において重要な役割を果たすようになり、求められるコンプライアンスの水準も引き上がっています。近年ではクラウドを活用した開発と求められるコンプライアンスのギャップにつらい思いをされる担当者の方も多いのではないでしょうか。\r\n\r\n私たちが開発・提供する「バクラク」においても、企業の経済活動における情報を安心してお預けいただけるよう、様々な取り組みを通じて統制やセキュリティのレベルを引き上げています。この取り組みにおいては、開発生産性やオペレーションへの影響だけでなく、監査などコンプライアンス維持全体のコストを適切なものに保つことが重要です。私たちは、 GitHub, Microsoft Entra ID PIM や Bytebase を用いたワークフロー、自社開発のアカウント連携基盤、データ基盤による監査など、クラウドサービスをフルに活用しながら、この基盤をつくりあげています。\r\n\r\nこの発表では、開発生産性とコンプライアンスを両立し、加速していくための実践的な手法について、私たちの取り組みを題材にしながらご紹介します。",
+    "speakers": [
+      {
+        "id": 1934,
+        "name": "Hokuto Hoshi"
+      }
+    ],
+    "dayId": 34,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T17:20:00.000+09:00",
+    "endTime": "2000-01-01T18:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Security",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 34,
+    "conferenceDayDate": "2025-05-23",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2607,
+    "conferenceId": 13,
+    "trackId": 55,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2025/talks/2607/198/playlist.m3u8",
+    "title": "クラウドネイティブをRPGにたとえて解説！ ～パーティ構成から学ぶ Kubernetes・SRE・FinOpsの極意～",
+    "abstract": "クラウドネイティブの概念をRPG風の冒険に例えながら、コンテナ騎士団やKubernetes王国、SRE賢者が織り成す運用の物語を紹介します。\r\nモノリス城からの脱却や、Microservicesへの進化、CI/CD魔法によるリリース高速化のコツ、FinOps道化師が導くコスト最適化の秘訣など盛りだくさん！\r\nクイズや選択肢を交えたインタラクティブな進行の中で、明日から使えるクラウドネイティブ・SREのベストプラクティスをまとめて持ち帰っていただきます。",
+    "speakers": [
+      {
+        "id": 1897,
+        "name": "Keita Nakata"
+      }
+    ],
+    "dayId": 34,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:20:00.000+09:00",
+    "endTime": "2000-01-01T14:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Application / Development",
+    "onAir": false,
+    "documentUrl": "https://www.canva.com/design/DAGoMbsrsPQ/eCyZSHS6cRIWWuq21x0A7g/view?utm_content=DAGoMbsrsPQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h013ba7f125",
+    "conferenceDayId": 34,
+    "conferenceDayDate": "2025-05-23",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2625,
+    "conferenceId": 13,
+    "trackId": 57,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2025/talks/2625/196/playlist.m3u8",
+    "title": "熱々🔥のUDN🍜を喰らえ❗マルチテナントもVM統合も思いのまま❗新機能で切り拓くk8sネットワークの未来",
+    "abstract": "K8sネットワーキングに尋常ならぬ🔥Passion🔥をお持ちの皆様、お待たせしました❗\r\n\r\n本講演では、OVN-Kubernetes CNIプラグインの新機能「UDN（User-Defined Network）」を🍜情熱的🔥にご紹介します❗K8sネットワークの進化の中でなぜ新たにUDNが必要となったのか、その背景と合わせて基本機能や構成などを一緒にみていきましょう。\r\n\r\nUDNによりk8s Namespaceごとに独自のネットワークセグメントを定義可能となります。パブリックIaaSのようにテナント間で同じIPアドレスレンジが利用可能になるほか、KubeVirtでの同じIPアドレスを保持したままのVMライブマイグレーションや、PodとVM間でシームレスなネットワーク統合、外部ネットワークとのBGP連携などを実現します。講演ではこれら代表的なユースケースの紹介に加えて、UDNによってカスタムネットワークを作成し、ワークロードへ接続するデモもお届けします。\r\n\r\nUDNは情熱あふれるOSSコミュニティのもと日々進化中です。皆様と共に未来のK8sネットワーキングを想い描く場にしたいと考えています❗❗クラウドネイティブネットワーキングに対する🔥情熱の熱量🔥を、一緒に🍜UDN🍜へ注ぎ込んでみませんか❗❓",
+    "speakers": [
+      {
+        "id": 1957,
+        "name": "Masataka Tsukamoto"
+      }
+    ],
+    "dayId": 34,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:20:00.000+09:00",
+    "endTime": "2000-01-01T14:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Networking",
+    "onAir": false,
+    "documentUrl": "https://red.ht/CNDS2025_UDN",
+    "conferenceDayId": 34,
+    "conferenceDayDate": "2025-05-23",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2626,
+    "conferenceId": 13,
+    "trackId": 56,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2025/talks/2626/201/playlist.m3u8",
+    "title": "OTel meets Wasm: プラグイン機構としてのWebAssemblyから見る次世代のObservability",
+    "abstract": "(2025/05/23 Update) 当日の配信トラブルのため、冒頭1分の音声がない可能性があります。予めご了承ください。\r\nOpenTelemetry (OTel) Collectorは、テレメトリーデータの受信、処理、エクスポートを行うベンダー非依存の実装です。これにより、個別のエージェントを導入せずに、さまざまなサービスに対応できます。公式が提供するバイナリには、最低限の機能を持つ「core」と、コミュニティ提供の機能を多く含む「contrib」があります。しかし、セキュリティ上の観点から、「contrib」バイナリの直接使用は推奨されていません。一方で、特定のプラグインのみを含むCollectorを用意するには、専用ツールを用いたビルドパイプラインの構築が必要であり、負担が大きいという課題があります。\r\n本セッションでは、WebAssemblyを活用したプラグイン機構を利用し、手軽に必要最小限のOTel Collectorをデプロイする方法を探ります。まず、WebAssemblyを用いたプラグイン機構の実装方法について解説します。次に、PoCを通じて、実際に必要最低限の機能のみを有効化したバイナリをデプロイします。最後に、得られた利点と課題点に触れ、実環境への適用可能性を検討します。",
+    "speakers": [
+      {
+        "id": 1935,
+        "name": "Tsuzuki Tsuchiya"
+      },
+      {
+        "id": 1946,
+        "name": "Kotaro Inoue"
+      }
+    ],
+    "dayId": 34,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T15:20:00.000+09:00",
+    "endTime": "2000-01-01T16:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/lycorptech_jp/cnds2025-otel-meets-wasm",
+    "conferenceDayId": 34,
+    "conferenceDayDate": "2025-05-23",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2630,
+    "conferenceId": 13,
+    "trackId": 55,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2025/talks/2630/192/playlist.m3u8",
+    "title": "Standardizing CloudNative ML Computing Platforms",
+    "abstract": "ML / LLM 基盤で実行されるワークロードが要求するプラットフォーム要件は、従来のアプリケーションとは異なる独自の側面を持っています。データ処理・学習・推論といった各フェーズにおいて、異なるリソース管理やスケジューリング、オーケストレーションの工夫が必要となり、これらを効率的に実現するための基盤整備が求められています。Kubernetesをはじめとする OSS ツールは、こうした課題に対する有力な解決策として、多くのプラットフォームで活用されています。\r\n本セッションでは、これらの多様な要求を包括的に捉え、標準化された ML / LLM コンピューティング基盤の構築に向けた最新の取り組みをご紹介します。特に、Kubernetes WG Batch を中心とした OSS アップストリームの動向や、実際に Technical Lead として関わっているプロジェクトでの経験を交え、どのように標準化が推進され、アップストリームコミュニティが課題に取り組んでいるかをお伝えします。さらに、OSSコミュニティ内で所属企業の枠を超えてプロダクトを共に創り上げていくモチベーションやメリットについてもご紹介します。",
+    "speakers": [
+      {
+        "id": 1960,
+        "name": "Yuki Iwai"
+      }
+    ],
+    "dayId": 34,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T11:10:00.000+09:00",
+    "endTime": "2000-01-01T11:30:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Keynote",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/y_iwai/standardizing-cloud-native-ml-computing-platforms",
+    "conferenceDayId": 34,
+    "conferenceDayDate": "2025-05-23",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2631,
+    "conferenceId": 13,
+    "trackId": 55,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2025/talks/2631/200/playlist.m3u8",
+    "title": "Google のソフトウェア開発における生成 AI 活用とGoogle Cloud での実践",
+    "abstract": "生成 AI の登場によりソフトウェア開発の方法が大きく変わりつつありますが、Google においても非常に多岐にわたる部分で生成AIを活用しています。本セッションでは、Google におけるソフトウェア開発における生成 AI 活用事例をご紹介した後、ソフトウェア開発ライフサイクル全体を支援する Google Cloud の Gemini Code Assist を使った実践方法をご紹介します。",
+    "speakers": [
+      {
+        "id": 1965,
+        "name": "Yuki Iwanari"
+      }
+    ],
+    "dayId": 34,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:20:00.000+09:00",
+    "endTime": "2000-01-01T15:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "CI / CD",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 34,
+    "conferenceDayDate": "2025-05-23",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2632,
+    "conferenceId": 13,
+    "trackId": 55,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2025/talks/2632/195/playlist.m3u8",
+    "title": "スタートアップ創業期を支えるオブザーバビリティ基盤のこれまでとこれから",
+    "abstract": "newmo は2024年1月に創業したモビリティカンパニーです。グループ全体で保有するタクシー車両は1000台を越え、大阪府内のタクシー業者として3位の規模となりました。newmo は創業1年ながら多角的な事業に取り組んでいく中で、早期から Datadog の導入を決定し活用しています。\n\n本セッションでは、newmo が Datadog の導入を決めた背景や OpenTelemetry を活用した Datadog との統合、RUM の利用やモノレポでの開発におけるオブザーバビリティ担保への取り組みなどについて説明します。加えて、今後活用していきたい Datadog の機能についてもお話しします。\nセッションを通じて、これから Datadog の本格導入を検討しているスタートアップをはじめ、より次のステップの活用をしていきたい参加者への実践的な知見と具体的な活用事例を提供します。",
+    "speakers": [
+      {
+        "id": 1964,
+        "name": "Shota Iwami"
+      },
+      {
+        "id": 1963,
+        "name": "Kento Kimura"
+      }
+    ],
+    "dayId": 34,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T11:50:00.000+09:00",
+    "endTime": "2000-01-01T12:10:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Keynote",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 34,
+    "conferenceDayDate": "2025-05-23",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2633,
+    "conferenceId": 13,
+    "trackId": 55,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2025/talks/2633/194/playlist.m3u8",
+    "title": "Road to KubeCon Japan 2025",
+    "abstract": "このセッションでは、かつてクラウドネイティブ技術の後進国であった日本で、コミュニティリーダーたちが協力し、CNCFのフラッグシップイベントであるKubeCon を日本に招致するまでの小史と、皆さんにとってKubeCon Japanはどのような価値があるかを説明します。",
+    "speakers": [
+      {
+        "id": 1968,
+        "name": "Noriaki Fukuyasu"
+      }
+    ],
+    "dayId": 34,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T12:10:00.000+09:00",
+    "endTime": "2000-01-01T12:30:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Keynote",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 34,
+    "conferenceDayDate": "2025-05-23",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2634,
+    "conferenceId": 13,
+    "trackId": 55,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2025/talks/2634/193/playlist.m3u8",
+    "title": "Data Engineering と Cloud Native の今と未来",
+    "abstract": "Cloud Native の恩恵を最も享受してるエンジニアリングカテゴリが Data Engineering だと個人的には考えています。\nEnterprise ほどDXやData Drivenを求めるようになる中で、私達はどのような Data Engineering を提供するべきで、どのような課題が在り、どのように今後変わっていくのかお話します。",
+    "speakers": [
+      {
+        "id": 1966,
+        "name": "Yuta Hishinuma"
+      }
+    ],
+    "dayId": 34,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T11:30:00.000+09:00",
+    "endTime": "2000-01-01T11:50:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "上級者",
+    "talkCategory": "Keynote",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 34,
+    "conferenceDayDate": "2025-05-23",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2635,
+    "conferenceId": 13,
+    "trackId": 57,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2025/talks/2635/205/playlist.m3u8",
+    "title": "情熱と工夫で走り抜け！コミュニティをささえるObservability実践録",
+    "abstract": "Observabilityチームは2022年に発足し、現在まで活動してきました。\n限られたコストの中、どうやって運用を最適化していくか？本セッションでは、EKS→さくら→Mackerelと移り変わる監視・運用の変遷を軸に、情熱とともに走り抜けてきた現場のリアルをお届けします。Sentryの自前運用で直面した苦悩や、実際のイベント運用時のトラブル体験談も紹介。インフラに求める『本質的なオブザーバビリティ』とは？今後見据えるSLO運用やOpenTelemetryトレーシングの導入も含め、実践者の視点で情熱的に語ります。",
+    "speakers": [
+      {
+        "id": 1972,
+        "name": "Taisuke Okamoto"
+      },
+      {
+        "id": 1971,
+        "name": "Inoue Sachirou"
+      }
+    ],
+    "dayId": 34,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T16:20:00.000+09:00",
+    "endTime": "2000-01-01T17:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 34,
+    "conferenceDayDate": "2025-05-23",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2636,
+    "conferenceId": 13,
+    "trackId": 56,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2025/talks/2636/204/playlist.m3u8",
+    "title": "技術も運営も全部やる！クラウドネイティブハンズオンのウラ話",
+    "abstract": "CNDハンズオンチームが取り組んできた各種プロダクトの検証・活用を通じて見えてきた、「実際に何ができるのか」「どんなユースケースに適しているのか」、そして「最近のアップデート事情」までを一挙にご紹介します。ハンズオン活動の舞台裏や、現場で感じた課題・展望についてもお話しします。プロダクトを“使ってみた”視点だからこそ見える、リアルな情報をお届けする40分間。",
+    "speakers": [
+      {
+        "id": 1974,
+        "name": "Kohei Hayama"
+      },
+      {
+        "id": 1973,
+        "name": "Tatsuki Minami"
+      }
+    ],
+    "dayId": 34,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T16:20:00.000+09:00",
+    "endTime": "2000-01-01T17:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Application / Development",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/tatsukiminami/ji-shu-moyun-ying-moquan-bu-yaru-kuraudoneiteibuhanzuonnourahua",
+    "conferenceDayId": 34,
+    "conferenceDayDate": "2025-05-23",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2637,
+    "conferenceId": 13,
+    "trackId": 55,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2025/talks/2637/206/playlist.m3u8",
+    "title": "CloudNative Ligtning Talks 🔥",
+    "abstract": "#CNDS2025 では、各セッションの休憩時間ならびに午後のセッションの中で「当日LT」が開催されます。\n技術系コミュニティやカンファレンスの運営メンバー、実際のクラウドネイティブな仕事の中で情報共有したい方が、短い時間ではありますが、その魅力を存分に語っていただきます。\nぜひ、#CNDS2025 をきっかけにいろんなコミュニティを知っていただき、かつ情報共有の場として、\n一緒に勉強をする仲間を見つけていただければと思います。\n\n以下は、当日LT Third Action (5月23日 16:20-17:00 @TrackA)の抜粋となります。\n\n<strong>入社2年目でAIエージェント開発の最前線に放り出された俺の話を聞いてくれ</strong>\n登壇者: 栁　裕太\nコミュニティ: Jagu'e'r\nURL: <a href=\"https://jaguer.jp/\">https://jaguer.jp/</a>\n\n<strong>Grafana Foundation SDK を使った Grafana Dashboard as Code</strong>\n登壇者: 松井誠泰\nコミュニティ: vdaas\nURL: <a href=\"https://github.com/vdaas\">https://github.com/vdaas</a>\n\n<strong>Tailscaleで簡単にセキュアなk8s Private Clusterを建てる</strong>\n登壇者: 安藤 史将\nコミュニティ: Gaudiy\nURL: <a href=\"https://gaudiy.com/\">https://gaudiy.com/</a>\n\n<strong>HA K8s Clusterに不可欠だったControl Plane LoadBalancerを亡き者にする!? Cilium 1.18の🔥激アツ🔥新機能</strong>\n登壇者: 永見 拓人\n\n<strong>>6ヶ月でカットオーバー！ファンクション型 BtoB SaaS で実装したインフラレイヤーのセキュリティ</strong>\n登壇者: 寅野 理司\nコミュニティ: SHIFT EVOLVE\nURL: <a href=\"https://shiftevolve.connpass.com/\">https://shiftevolve.connpass.com/</a>\n\n<strong>terraform及びterragruntを利用したfeature flagの実現</strong>\n登壇者: 志田遼太郎\n\n各LTの詳細、及びその他の時間帯のLTについては<a href=\"https://cloudnativedays.jp/posts/cnds2025-lt-details\">https://cloudnativedays.jp/posts/cnds2025-lt-details</a>をご覧ください\n",
+    "speakers": [
+      {
+        "id": 1970,
+        "name": "Community LT"
+      }
+    ],
+    "dayId": 34,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T16:20:00.000+09:00",
+    "endTime": "2000-01-01T17:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "その他",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 34,
+    "conferenceDayDate": "2025-05-23",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2638,
+    "conferenceId": 13,
+    "trackId": 56,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2025/talks/2638/199/playlist.m3u8",
+    "title": "大規模PaaSにおける監視基盤の構築と効率化の道のり",
+    "abstract": "私たちのチームでは、100を超えるKubernetesから構成される社内向けのPlatform as a Serviceを運用しています。この運用において、利用者の増加に伴い大量のメトリクスが課題となりました。特に既存の監視基盤が耐えられなくなることが懸念されました。この課題を解決するために、私たちは様々な構成を試み、改善を行いました。\r\n本セッションでは、現状の構成に至るまでの運用者の課題と解決方法を説明します。そして、利用者増に耐えうるスケーラブルなメトリクス監視基盤の構築と効率的なメトリクス圧縮及び保存の実現方法について説明します。特に監視基盤や改善を行った際の知見、実際のアーキテクチャなどを用いながら説明を行います。",
+    "speakers": [
+      {
+        "id": 1967,
+        "name": "Takumi Kataoka"
+      }
+    ],
+    "dayId": 34,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:20:00.000+09:00",
+    "endTime": "2000-01-01T15:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/lycorptech_jp/building-and-optimizing-the-monitoring-infrastructure-in-large-scale-paas",
+    "conferenceDayId": 34,
+    "conferenceDayDate": "2025-05-23",
+    "presentationMethod": "現地登壇"
+  }
+]
