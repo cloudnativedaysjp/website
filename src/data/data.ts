@@ -18,6 +18,7 @@ const events = [
   'cnds2024',
   'cndw2024',
   'cnds2025',
+  'cndw2025',
 ]
 
 export const Conferences: Conference[] = events.map((eventName) => {
