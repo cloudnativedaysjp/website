@@ -65,7 +65,7 @@
     "stylelint-no-unsupported-browser-features": "^8.0.4",
     "stylelint-prettier": "^5.0.3",
     "stylelint-scss": "^6.11.1",
-    "svgo": "2.8.0"
+    "svgo": "4.0.0"
   },
   "nx": {
     "targets": {
