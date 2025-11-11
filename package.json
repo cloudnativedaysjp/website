@@ -28,7 +28,7 @@
     "astro": "^5.0.0",
     "katex": "^0.16.4",
     "libvips": "^0.0.2",
-    "mermaid": "^10.0.0",
+    "mermaid": "^11.0.0",
     "metascraper": "^5.46.7",
     "metascraper-description": "^5.46.5",
     "metascraper-image": "^5.46.5",
