@@ -16,7 +16,7 @@ import type { Conference } from '../types/conference'
 const latestPosts = await getPosts(3)
 ---
 
-<Layout title="CloudNative Days" description="CloudNative Days はコミュニティ、企業、技術者が一堂に会し、クラウドネイティブムーブメントを牽引することを目的としたテックカンファレンスです。" ogImage="/favicon.svg">
+<Layout title="CloudNative Days" description="CloudNative Days はコミュニティ、企業、技術者が一堂に会し、クラウドネイティブムーブメントを牽引することを目的としたテックカンファレンスです。" ogImage="/favicon.svg" isTopPage={true}>
   <main>
     <Hero title="CloudNative Days">
       <p class="mt-4 text-lg text-black">
@@ -32,6 +32,42 @@ const latestPosts = await getPosts(3)
         クラウドネイティブで、未来を共に創造しましょう。
       </p>
     </Hero>
+
+    <section class="py-24 bg-white/60 backdrop-blur-sm">
+      <div class="container mx-auto px-4">
+        <h2 class="text-black relative px-4 text-4xl font-bold mb-16 text-center">
+          最新のイベント
+        </h2>
+        <div class="relative">
+          <div class="flex flex-col gap-20">
+            {
+              Conferences?.filter(
+                (conference) => conference.status == 'registered',
+              ).map((conference, index) => {
+                const url = `https://event.cloudnativedays.jp/${conference.abbr}`
+                const eventDays = conference.conferenceDays
+                  .filter((day) => !day.internal)
+                  .map((day) => day.date)
+                  .join(',')
+                return (
+                  <a href={url} class="block group">
+                    <Event
+                      name={conference.name}
+                      days={eventDays}
+                      img={conference.image}
+                      theme={conference.theme}
+                      about={conference.about}
+                      align={index % 2 === 0 ? 'left' : 'right'}
+                    />
+                  </a>
+                )
+              })
+            }
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <section class="py-24 bg-white/60 backdrop-blur-sm">
       <div class="container mx-auto px-4">
         <h2 class="text-black relative px-4 text-4xl font-bold mb-16 text-center">
@@ -75,41 +111,6 @@ const latestPosts = await getPosts(3)
           <a href="/posts" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 hover:scale-105 transition-all duration-300">
             ブログ記事一覧を見る
           </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-24 bg-white/60 backdrop-blur-sm">
-      <div class="container mx-auto px-4">
-        <h2 class="text-black relative px-4 text-4xl font-bold mb-16 text-center">
-          最新のイベント
-        </h2>
-        <div class="relative">
-          <div class="flex flex-col gap-20">
-            {
-              Conferences?.filter(
-                (conference) => conference.status == 'registered',
-              ).map((conference, index) => {
-                const url = `https://event.cloudnativedays.jp/${conference.abbr}`
-                const eventDays = conference.conferenceDays
-                  .filter((day) => !day.internal)
-                  .map((day) => day.date)
-                  .join(',')
-                return (
-                  <a href={url} class="block group">
-                    <Event
-                      name={conference.name}
-                      days={eventDays}
-                      img={conference.image}
-                      theme={conference.theme}
-                      about={conference.about}
-                      align={index % 2 === 0 ? 'left' : 'right'}
-                    />
-                  </a>
-                )
-              })
-            }
-          </div>
         </div>
       </div>
     </section>

@@ -18,8 +18,8 @@ const { title, href } = Astro.props;
           {
             title
               ? href
-                ? <a href={href}><img src="/images/lp/cnd_logo_black_small.png" alt={title} class="h-24 md:h-32 mx-auto object-contain" /></a>
-                : <img src="/images/lp/cnd_logo_black_small.png" alt={title} class="h-24 md:h-32 mx-auto object-contain" />
+                ? <a href={href}><img src="/images/lp/cnd_logo_black_small.png" alt={title} class="h-24 md:h-32 mx-auto object-contain my-10" /></a>
+                : <img src="/images/lp/cnd_logo_black_small.png" alt={title} class="h-24 md:h-32 mx-auto object-contain my-10" />
               : ""
           }
           <slot />

@@ -7,9 +7,10 @@ export interface Props {
   description: string
   url?: URL | undefined
   ogImage: string
+  isTopPage?: boolean
 }
 
-const { title, description, url, ogImage } = Astro.props
+const { title, description, url, ogImage, isTopPage = false } = Astro.props
 ---
 
 <!DOCTYPE html>
@@ -50,18 +51,20 @@ const { title, description, url, ogImage } = Astro.props
     gtag('js', new Date())
     gtag('config', 'G-XDSEZ66VFX')
   </script>
-  <script>
-    const navbarWrapper = document.getElementById('navbar-wrapper');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
-        navbarWrapper?.classList.remove('opacity-0', 'pointer-events-none');
-      } else {
-        navbarWrapper?.classList.add('opacity-0', 'pointer-events-none');
-      }
-    });
+  <script define:vars={{ isTopPage }}>
+    if (isTopPage) {
+      const navbarWrapper = document.getElementById('navbar-wrapper');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+          navbarWrapper?.classList.remove('opacity-0', 'pointer-events-none');
+        } else {
+          navbarWrapper?.classList.add('opacity-0', 'pointer-events-none');
+        }
+      });
+    }
   </script>
   <body>
-    <div id="navbar-wrapper" class="fixed top-0 w-full z-50 transition-opacity duration-300 opacity-0 pointer-events-none">
+    <div id="navbar-wrapper" class={`fixed top-0 w-full z-50 transition-opacity duration-300 ${isTopPage ? 'opacity-0 pointer-events-none' : ''}`}>
       <Navbar
         links={[
           {

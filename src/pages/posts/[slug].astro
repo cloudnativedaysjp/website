@@ -105,13 +105,13 @@ if (post.FeaturedImage && post.FeaturedImage.Url) {
   url={new URL(`blog/${slug}`, Astro.site)}
   ogImage={ogImage}
 >
-  <Headline title={post.Title}>
-    <p class="mt-4 text-lg text-gray-300">
+  <Headline title="Blog">
+    <p class="mt-4 text-lg text-black">
       CloudNative Days実行委員会によるブログ
     </p>
   </Headline>
-  <div class="flex flex-wrap mx-auto justify-center pt-4 bg-white">
-    <main class="w-full lg:w-8/12 max-w-4xl lg:mx-20 mx-10 px-5">
+  <div class="flex flex-wrap mx-auto justify-center pt-4">
+    <main class="w-full lg:w-8/12 max-w-4xl lg:mx-20 mx-10 px-5 bg-white/60 backdrop-blur-sm rounded-xl p-8">
       <div class="leading-8">
         <div class="flex flex-col">
           <PostDate post={post} />
@@ -128,8 +128,8 @@ if (post.FeaturedImage && post.FeaturedImage.Url) {
       </footer>
     </main>
 
-    <div class="flex flex-wrap w-full lg:w-8/12 max-w-4xl lg:mx-20 mx-10 px-5">
-      <aside class="w-1/2 mt-10">
+    <div class="flex flex-wrap w-full lg:w-8/12 max-w-4xl lg:mx-20 mx-10 px-5 mt-10">
+      <aside class="w-full md:w-1/2 md:pr-4 bg-white/60 backdrop-blur-sm rounded-xl p-6 mb-6 md:mb-0">
         <BlogPostsLink
           heading="Posts in the same category"
           posts={postsHavingSameTag.filter(
@@ -138,7 +138,7 @@ if (post.FeaturedImage && post.FeaturedImage.Url) {
         />
         <BlogPostsLink heading="Recommended" posts={rankedPosts} />
       </aside>
-      <aside class="w-1/2 mt-10">
+      <aside class="w-full md:w-1/2 md:pl-4 bg-white/60 backdrop-blur-sm rounded-xl p-6">
         <BlogPostsLink heading="Latest posts" posts={recentPosts} />
         <BlogTagsLink heading="Categories" tags={tags} />
       </aside>
