@@ -26,3 +26,5 @@ out
 .next
 
 public/notion/*/
+.claude/settings.local.json
+.github/workflows/website.code-workspace
