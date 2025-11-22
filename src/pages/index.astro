@@ -14,65 +14,68 @@ import type { Conference } from '../types/conference'
 
 // 最新の3件のブログ記事を取得
 const latestPosts = await getPosts(3)
+
+// 最新のイベント（status == 'registered'）を取得
+const latestEvents = Conferences?.filter(
+  (conference) => conference.status == 'registered',
+) || []
 ---
 
-<Layout title="CloudNative Days" description="CloudNative Days はコミュニティ、企業、技術者が一堂に会し、クラウドネイティブムーブメントを牽引することを目的としたテックカンファレンスです。" ogImage="/favicon.svg">
+<Layout title="CloudNative Days" description="CloudNative Days はコミュニティ、企業、技術者が一堂に会し、クラウドネイティブムーブメントを牽引することを目的としたテックカンファレンスです。" ogImage="/favicon.svg" isTopPage={true}>
   <main>
     <Hero title="CloudNative Days">
-      <p class="mt-4 text-lg text-gray-300">
+      <p class="mt-4 text-lg text-black">
         CloudNative Days はコミュニティ、企業、技術者が一堂に会し、クラウドネイティブムーブメントを牽引することを目的としたテックカンファレンスです。
       </p>
-      <p class="mt-4 text-lg text-gray-300">
+      <p class="mt-4 text-lg text-black">
         最新の活用事例や先進的なアーキテクチャを学べるのはもちろん、ナレッジの共有やディスカッションの場を通じて登壇者と参加者、参加者同士の繋がりを深め、初心者から熟練者までが共に成長できる機会を提供します。
       </p>
-      <p class="mt-4 text-lg text-gray-300">
+      <p class="mt-4 text-lg text-black">
         皆様がクラウドネイティブ技術を適切に選択し、活用し、次のステップに進む手助けになることを願っています。
       </p>
-      <p class="mt-4 text-lg text-gray-300">
+      <p class="mt-4 text-lg text-black">
         クラウドネイティブで、未来を共に創造しましょう。
       </p>
     </Hero>
-    <section class="pb-10 pt-8 bg-gray-300">
-      <div class="container mx-auto px-4">
-        <h2 class="text-black relative px-4 text-4xl font-bold pb-6 text-center">
-          Upcoming Event
-        </h2>
-        <div class="relative">
-          <div class="grid grid-cols-1 gap-4">
-            {
-              Conferences?.filter(
-                (conference) => conference.status == 'registered',
-              ).map((conference) => {
-                const url = `https://event.cloudnativedays.jp/${conference.abbr}`
-                const eventDays = conference.conferenceDays
-                  .filter((day) => !day.internal)
-                  .map((day) => day.date)
-                  .join(',')
-                return (
-                  <>
-                    {/* カードデザインをブログと統一＆ホバー効果を強化 */}
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition-all duration-300 card-hover">
-                      <a href={url} class="block" />
+
+    {latestEvents.length > 0 && (
+      <section class="py-24 backdrop-blur-sm">
+        <div class="container mx-auto px-4">
+          <h2 class="text-black relative px-4 text-4xl font-bold mb-16 text-center">
+            最新のイベント
+          </h2>
+          <div class="relative">
+            <div class="flex flex-col gap-20">
+              {
+                latestEvents.map((conference, index) => {
+                  const url = `https://event.cloudnativedays.jp/${conference.abbr}`
+                  const eventDays = conference.conferenceDays
+                    .filter((day) => !day.internal)
+                    .map((day) => day.date)
+                    .join(',')
+                  return (
+                    <a href={url} class="block group">
                       <Event
-                        url={url}
                         name={conference.name}
                         days={eventDays}
                         img={conference.image}
+                        theme={conference.theme}
+                        about={conference.about}
+                        align={index % 2 === 0 ? 'left' : 'right'}
                       />
-                    </div>
-                  </>
-                )
-              })
-            }
+                    </a>
+                  )
+                })
+              }
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    )}
     
-    {/* 最新ブログエントリーセクション - カード形式に改良 */}
-    <section class="pb-10 bg-gray-300">
+    <section class="py-24">
       <div class="container mx-auto px-4">
-        <h2 class="text-black relative px-4 text-4xl font-bold pb-6 text-center">
+        <h2 class="text-black relative px-4 text-4xl font-bold mb-16 text-center">
           最新ブログ
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -117,38 +120,35 @@ const latestPosts = await getPosts(3)
       </div>
     </section>
     
-    <section class="pb-20 bg-gray-300">
+    <section class="py-24 ">
       <div class="container mx-auto px-4">
-        <h2 class="text-black relative px-4 text-4xl font-bold pb-6 text-center">
-          Past Events
+        <h2 class="text-black relative px-4 text-4xl font-bold mb-16 text-center">
+          過去のイベント
         </h2>
         <div class="relative">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="flex flex-col gap-20">
             {
               Conferences?.filter(
                 (conference) => conference.status == 'archived' || conference.status == 'migrated',
               )
                 .sort((first, second) => second.id - first.id)
-                .map((conference) => {
+                .map((conference, index) => {
                   const url = `/${conference.abbr}`
                   const eventDays = conference.conferenceDays
                     .filter((day) => !day.internal)
                     .map((day) => day.date)
                     .join(',')
                   return (
-                    <>
-                      {/* カードデザインをブログと統一＆ホバー効果を強化 */}
-                      <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition-all duration-300 card-hover">
-                        <a href={url} class="block">
-                          <Event
-                            url={url}
-                            name={conference.name}
-                            days={eventDays}
-                            img={conference.image}
-                          />
-                        </a>
-                      </div>
-                    </>
+                    <a href={url} class="block group">
+                      <Event
+                        name={conference.name}
+                        days={eventDays}
+                        img={conference.image}
+                        theme={conference.theme}
+                        about={conference.about}
+                        align={index % 2 === 0 ? 'left' : 'right'}
+                      />
+                    </a>
                   )
                 })
             }

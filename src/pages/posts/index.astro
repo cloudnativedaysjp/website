@@ -33,12 +33,12 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
   ogImage=""
 >
   <Headline title="Blog">
-    <p class="mt-4 text-lg text-gray-300">
+    <p class="mt-4 text-lg text-black">
       CloudNative Days実行委員会によるブログ
     </p>
   </Headline>
   <div class="px-8 flex flex-wrap gap-5 max-w-7xl md:justify-center md:mx-auto">
-    <main class="md:w-8/12 w-12/12">
+    <main class="md:w-8/12 w-12/12 bg-white/60 backdrop-blur-sm rounded-xl p-6">
       {
         posts.length === 0 ? (
           <NoContents contents={posts} />
@@ -65,7 +65,7 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
       </footer>
     </main>
 
-    <aside class="md:mt-6 md:ml-4 md:flex-auto w-12/12">
+    <aside class="md:mt-0 md:ml-4 md:flex-auto w-12/12 bg-white/60 backdrop-blur-sm rounded-xl p-6 h-fit">
       <BlogPostsLink heading="Recommended" posts={rankedPosts} />
       <BlogTagsLink heading="Categories" tags={tags} />
     </aside>

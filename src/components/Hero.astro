@@ -2,31 +2,25 @@
 export interface Props {
 	title?: string;
   href?: string;
+  logo?: string;
 }
-const { title, href } = Astro.props;
+const { title, href, logo } = Astro.props;
 ---
 <div
-  class="relative flex content-center items-center justify-center bg-gray-300"
-  style="min-height: 30vh"
+  class="relative flex content-center items-center justify-center bg-transparent overflow-hidden"
+  style="min-height: 40vh"
 >
-  <div
-    class="absolute top-0 w-full h-full bg-center bg-cover"
-    style={{
-      backgroundImage:
-        "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')",
-    }}
-  >
-    <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
-  </div>
-  <div class="container relative mx-auto">
+  {/* Global background is used now, so no local background elements needed */}
+
+  <div class="container relative mx-auto z-10">
     <div class="items-center flex flex-wrap">
       <div class="w-full lg:w-12/12 px-4 ml-auto mr-auto text-center">
         <div class="">
           {
             title
               ? href
-                ? <a href={href}><h1 class="text-white font-semibold text-5xl">{title}</h1></a>
-                : <h1 class="text-white font-semibold text-5xl">{title}</h1>
+                ? <a href={href}><img src={logo || "/images/lp/cnd_logo_color.png"} alt={title} class="h-24 md:h-32 mx-auto object-contain my-10" /></a>
+                : <img src={logo || "/images/lp/cnd_logo_color.png"} alt={title} class="h-24 md:h-32 mx-auto object-contain my-10" />
               : ""
           }
           <slot />

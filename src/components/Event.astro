@@ -2,38 +2,51 @@
 import { Image } from "astro:assets";
 
 export interface Props {
-  url: string;
   name: string;
   days: string;
   img: string;
+  theme?: string;
+  about?: string;
+  align?: 'left' | 'right';
 }
 
-const { url, name, days, img } = Astro.props;
+const { name, days, img, theme, about, align = 'left' } = Astro.props;
+
+const truncatedAbout = about ? (about.length > 100 ? about.substring(0, 100) + '...' : about) : '';
 ---
 
-<a href={url}>
-  <div class="lg:pt-12 pt-6 w-full px-4 text-center">
-    <div
-      class="relative flex flex-col min-w-0 break-words w-full mb-8"
-    >
-      <div class="px-4 py-5 flex-auto">
-        <div
-          class="h-12 ring-offset-base-100 ring-offset-2 items-center justify-center text-white inline-flex mb-4"
-        >
-          <Image
-            src={img}
-            class="h-12 w-auto object-cover object-center"
-            width={768}
-            height={400}
-            alt="Event trademark image"
-          />
+<div class={`flex flex-col lg:flex-row items-center gap-12 p-8 rounded-3xl transition-colors duration-300 group-hover:bg-gray-50 ${align === 'right' ? 'lg:flex-row-reverse' : ''}`}>
+    <div class="w-full lg:w-1/2">
+        <div class="relative aspect-video w-full overflow-hidden rounded-xl shadow-sm bg-white p-8 border border-gray-100">
+            <Image
+                src={img}
+                class="h-full w-full object-contain object-center transition-transform duration-700 hover:scale-105"
+                width={1024}
+                height={576}
+                alt={`${name} visual`}
+            />
         </div>
-        <h6 class="text-xl font-semibold">{name}</h6>
-        <div class="my-2 border-b-2 border-gray-300"></div>
-        <p class="mt-2 mb-4 text-gray-600">
-          {days}
-        </p>
-      </div>
     </div>
-  </div>
-</a>
+    <div class="w-full lg:w-1/2 flex flex-col justify-center">
+        <h3 class="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-2 leading-tight">{name}</h3>
+        {theme && <p class="text-xl text-gray-500 font-serif italic mb-6">{theme}</p>}
+        
+        <div class="w-20 h-2 bg-blue-600 mb-6"></div>
+        
+        <p class="text-xl text-gray-800 mb-6 flex items-center font-bold">
+            <span class="mr-3 text-2xl">📅</span>
+            {days}
+        </p>
+
+        {truncatedAbout && <p class="text-gray-600 mb-8 leading-relaxed">{truncatedAbout}</p>}
+
+        <div>
+            <span class="inline-flex items-center text-lg font-bold text-blue-600 hover:text-blue-800 transition-colors group cursor-pointer">
+                View Details
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+            </span>
+        </div>
+    </div>
+</div>

@@ -50,19 +50,9 @@ const ogImage = conference?.image || "/favicon.svg";
   <main>
     {
       talkExists && (
-        <div class="pb-20">
-        <Headline title={title}>
-          <p class="mt-4 text-lg text-gray-200 whitespace-pre-line">
-            {description}
-          </p>
-          <p class="mt-4 text-lg text-gray-300">
-            {talk?.speakers.map((speaker) => speaker.name).join(" / ")}
-          </p>
-        </Headline>
-        </div>
-        <div class="pt-6">
-          <div class="pt-12 mx-auto max-w-7xl px-4 text-center -mt-24">
-            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-4 rounded-lg border-2 border-gray-400">
+        <div class="pt-">
+          <div class="pt-12 mx-auto max-w-7xl px-4 text-center">
+            <div class="relative flex flex-col min-w-0 break-words bg-white/60 backdrop-blur-sm w-full mb-4 rounded-xl">
               <div class="px-4 py-5 flex-auto">
                 {path.extname(talk.videoId) == ".m3u8" ?
                   <div>
@@ -88,19 +78,27 @@ const ogImage = conference?.image || "/favicon.svg";
                 }
               </div>
             </div>
-              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 rounded-lg border-2 border-gray-400">
+              <div class="relative flex flex-col min-w-0 break-words bg-white/60 backdrop-blur-sm w-full mb-8 rounded-xl">
+                <div>
+                  <div class="py-4 px-6 text-left rounded-t-lgflex items-center">
+                    <h2 class="text-3xl font-bold">{title}</h2>
+                    <p class="mt-4 text-lg whitespace-pre-line">
+                      {description}
+                    </p>
+                  </div>
+                </div>
                 {speakersExists &&
                 <div>
-                  <div class="py-4 px-6 text-left bg-gray-200 rounded-t-lg border-b-2 border-gray-400 flex items-center">
-                    <Icon name="tabler:user" class="w-6 h-6 mr-1 text-gray-600" />
-                    <span>登壇者プロフィール</span>
-                  </div>
+                <hr class="mt-4 mx-6 border-t-1 border-gray-300" />
                 {speakers?.map((speaker) => {
                   return (
                     <div class="p-6">
                       <div class="flex flex-col items-start">
                         <div class="mr-16 mb-4 text-left">
-                          <p class="mr-6 font-bold text-2xl mb-2">{speaker.name}</p>
+                          <div class="flex items-center">
+                            <Icon name="tabler:user" class="w-6 h-6 mr-1 text-gray-600" />
+                            <span class="text-2xl font-bold">{speaker.name}</span>
+                          </div>
                           <p class="mr-6">{speaker.company}</p>
                           <p>{speaker.jobTitle}</p>
                         </div>
@@ -127,7 +125,6 @@ const ogImage = conference?.image || "/favicon.svg";
                           </div>
                         </div>
                       </div>
-                    <hr class="mt-4 pb-4 border-t-1 border-gray-300" />
                       <div class="mr-16 text-left">
                         <p>{speaker.profile}</p>
                       </div>

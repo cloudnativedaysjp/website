@@ -10,14 +10,13 @@ import NoContents from '../../../components/NoContents.astro'
 import PostDate from '../../../components/PostDate.astro'
 import PostTags from '../../../components/PostTags.astro'
 import PostTitle from '../../../components/PostTitle.astro'
-import PostFeaturedImage from '../../../components/PostFeaturedImage.astro'
 import PostExcerpt from '../../../components/PostExcerpt.astro'
 import ReadMoreLink from '../../../components/ReadMoreLink.astro'
 import Pagination from '../../../components/Pagination.astro'
 import BlogPostsLink from '../../../components/BlogPostsLink.astro'
 import BlogTagsLink from '../../../components/BlogTagsLink.astro'
 import styles from '../../../styles/blog.module.css'
-import Hero from '../../../components/Hero.astro'
+import Headline from '../../../components/Headline.astro'
 
 export async function getStaticPaths() {
   const numberOfPages = await getNumberOfPages()
@@ -39,40 +38,49 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
 ])
 ---
 
-<Layout title="CloudNative Days Blog">
-  <Hero title="Blog">
-    <p class="mt-4 text-lg text-gray-300">
-      <h2>{page}/{numberOfPages}</h2>
+<Layout
+  title="CloudNative Days Blog"
+  description="CloudNative Days実行委員会によるブログ"
+  ogImage=""
+>
+  <Headline title="Blog">
+    <p class="mt-4 text-lg text-black">
+      CloudNative Days実行委員会によるブログ (Page {page}/{numberOfPages})
     </p>
-  </Hero>
-  <div class="flex flex-wrap mx-10 md:mx-10 gap-5">
-    <main class="md:w-8/12 w-12/12">
+  </Headline>
+  <div class="px-8 flex flex-wrap gap-5 max-w-8xl md:justify-center md:mx-auto">
+    <main class="w-full lg:w-10/12 bg-white/60 backdrop-blur-sm rounded-xl p-6">
       {
         posts.length === 0 ? (
           <NoContents contents={posts} />
         ) : (
           posts.map((post) => (
-            <div class={styles.post} key={post.Slug}>
-              <PostDate post={post} />
-              <PostTags post={post} />
-              <PostTitle post={post} />
-              <PostFeaturedImage post={post} />
-              <PostExcerpt post={post} />
-              <ReadMoreLink post={post} />
+            <div class="py-6">
+              <div class={styles.post}>
+                <div class="mb-3">
+                  <PostDate post={post} />
+                  <PostTitle post={post} enableLink={true} />
+                  <div class="mb-2 border-b-2 border-gray-200" />
+                  <PostTags post={post} enableLink={true} />
+                </div>
+                <PostExcerpt post={post} />
+                <ReadMoreLink post={post} />
+              </div>
             </div>
           ))
         )
       }
 
-      <footer>
+      <footer class="flex justify-center items-center mt-5">
         <Pagination
           currentPage={parseInt(page, 10)}
           numberOfPages={numberOfPages}
+          tag=""
         />
       </footer>
     </main>
 
-    <aside class="md:flex-auto w-12/12">
+    <aside class="md:mt-0 md:ml-4 md:flex-auto w-12/12 bg-white/60 backdrop-blur-sm rounded-xl p-6 h-fit">
       <BlogPostsLink heading="Recommended" posts={rankedPosts} />
       <BlogTagsLink heading="Categories" tags={tags} />
     </aside>
