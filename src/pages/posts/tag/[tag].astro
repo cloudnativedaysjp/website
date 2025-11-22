@@ -11,7 +11,6 @@ import NoContents from '../../../components/NoContents.astro'
 import PostDate from '../../../components/PostDate.astro'
 import PostTags from '../../../components/PostTags.astro'
 import PostTitle from '../../../components/PostTitle.astro'
-import PostFeaturedImage from '../../../components/PostFeaturedImage.astro'
 import PostExcerpt from '../../../components/PostExcerpt.astro'
 import ReadMoreLink from '../../../components/ReadMoreLink.astro'
 import Pagination from '../../../components/Pagination.astro'
@@ -48,7 +47,7 @@ const currentTag = posts[0].Tags.find((t) => t.name === tag)
     </p>
   </Headline>
   <div class="px-8 flex flex-wrap gap-5 max-w-7xl md:justify-center md:mx-auto">
-    <main class="md:w-8/12 w-12/12">
+    <main class="md:w-8/12 w-12/12 bg-white/60 backdrop-blur-sm rounded-xl p-6">
       {
         posts.length === 0 ? (
           <NoContents contents={posts} />
@@ -58,11 +57,10 @@ const currentTag = posts[0].Tags.find((t) => t.name === tag)
               <div className={styles.post} key={post.Slug}>
                 <div class="mb-3">
                   <PostDate post={post} />
-                  <PostTitle post={post} />
+                  <PostTitle post={post} enableLink={true} />
                   <div class="mb-2 border-b-2 border-gray-200" />
-                  <PostTags post={post} />
+                  <PostTags post={post} enableLink={true} />
                 </div>
-                <PostFeaturedImage post={post} />
                 <PostExcerpt post={post} />
                 <ReadMoreLink post={post} />
               </div>
@@ -71,12 +69,12 @@ const currentTag = posts[0].Tags.find((t) => t.name === tag)
         )
       }
 
-      <footer>
+      <footer class="flex justify-center items-center mt-5">
         <Pagination tag={tag} currentPage={1} numberOfPages={numberOfPages} />
       </footer>
     </main>
 
-    <aside class="md:mt-6 md:ml-4 md:flex-auto w-12/12">
+    <aside class="md:mt-0 md:ml-4 md:flex-auto w-12/12 bg-white/60 backdrop-blur-sm rounded-xl p-6 h-fit">
       <BlogPostsLink heading="Recommended" posts={rankedPosts} />
       <BlogTagsLink heading="Categories" tags={tags} />
     </aside>
