@@ -7,9 +7,10 @@ export interface Props {
   description: string
   url?: URL | undefined
   ogImage: string
+  isTopPage?: boolean
 }
 
-const { title, description, url, ogImage } = Astro.props
+const { title, description, url, ogImage, isTopPage = false } = Astro.props
 ---
 
 <!DOCTYPE html>
@@ -50,19 +51,33 @@ const { title, description, url, ogImage } = Astro.props
     gtag('js', new Date())
     gtag('config', 'G-XDSEZ66VFX')
   </script>
+  <script define:vars={{ isTopPage }}>
+    if (isTopPage) {
+      const navbarWrapper = document.getElementById('navbar-wrapper');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+          navbarWrapper?.classList.remove('opacity-0', 'pointer-events-none');
+        } else {
+          navbarWrapper?.classList.add('opacity-0', 'pointer-events-none');
+        }
+      });
+    }
+  </script>
   <body>
-    <Navbar
-      links={[
-        {
-          href: '/posts',
-          text: 'Blog',
-        },
-        {
-          href: 'https://twitter.com/cloudnativedays',
-          icon: 'tabler:brand-twitter',
-        },
-      ]}
-    />
+    <div id="navbar-wrapper" class={`fixed top-0 w-full z-50 transition-opacity duration-300 ${isTopPage ? 'opacity-0 pointer-events-none' : ''}`}>
+      <Navbar
+        links={[
+          {
+            href: '/posts',
+            text: 'Blog',
+          },
+          {
+            href: 'https://twitter.com/cloudnativedays',
+            icon: 'tabler:brand-twitter',
+          },
+        ]}
+      />
+    </div>
     <slot />
 
     <hr class="border-gray-300" />
@@ -85,10 +100,18 @@ const { title, description, url, ogImage } = Astro.props
   }
   html {
     font-family: system-ui, sans-serif;
-    background-color: #f6f6f6;
   }
   code {
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
       DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   }
 </style>
+
+<div class="fixed inset-0 z-[-1]">
+  <div class="absolute inset-0 bg-white"></div>
+  <img
+    src="/images/background.jpg"
+    alt="Background"
+    class="absolute inset-0 w-full h-full object-cover opacity-20 blur-sm"
+  />
+</div>
