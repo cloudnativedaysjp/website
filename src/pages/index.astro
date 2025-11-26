@@ -24,18 +24,26 @@ const latestEvents = Conferences?.filter(
 <Layout title="CloudNative Days" description="CloudNative Days はコミュニティ、企業、技術者が一堂に会し、クラウドネイティブムーブメントを牽引することを目的としたテックカンファレンスです。" ogImage="/favicon.svg" isTopPage={true}>
   <main>
     <Hero title="CloudNative Days">
-      <p class="mt-4 text-lg text-black">
-        CloudNative Days はコミュニティ、企業、技術者が一堂に会し、クラウドネイティブムーブメントを牽引することを目的としたテックカンファレンスです。
-      </p>
-      <p class="mt-4 text-lg text-black">
-        最新の活用事例や先進的なアーキテクチャを学べるのはもちろん、ナレッジの共有やディスカッションの場を通じて登壇者と参加者、参加者同士の繋がりを深め、初心者から熟練者までが共に成長できる機会を提供します。
-      </p>
-      <p class="mt-4 text-lg text-black">
-        皆様がクラウドネイティブ技術を適切に選択し、活用し、次のステップに進む手助けになることを願っています。
-      </p>
-      <p class="mt-4 text-lg text-black">
-        クラウドネイティブで、未来を共に創造しましょう。
-      </p>
+      <div class="max-w-3xl mx-auto">
+        <p class="mt-4 text-xl text-black leading-relaxed">
+          CloudNative Days はコミュニティ、企業、技術者が一堂に会し、<br class="hidden md:inline" />
+          クラウドネイティブムーブメントを牽引することを目的とした<br class="hidden md:inline" />
+          テックカンファレンスです。
+        </p>
+        <p class="mt-4 text-xl text-black leading-relaxed">
+          最新の活用事例や先進的なアーキテクチャを学べるのはもちろん、<br class="hidden md:inline" />
+          ナレッジの共有やディスカッションの場を通じて<br class="hidden md:inline" />
+          登壇者と参加者、参加者同士の繋がりを深め、<br class="hidden md:inline" />
+          初心者から熟練者までが共に成長できる機会を提供します。
+        </p>
+        <p class="mt-4 text-xl text-black leading-relaxed">
+          皆様がクラウドネイティブ技術を適切に選択し、活用し、<br class="hidden md:inline" />
+          次のステップに進む手助けになることを願っています。
+        </p>
+        <p class="mt-6 text-xl text-black font-medium">
+          クラウドネイティブで、未来を共に創造しましょう。
+        </p>
+      </div>
     </Hero>
 
     {latestEvents.length > 0 && (
