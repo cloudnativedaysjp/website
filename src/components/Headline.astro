@@ -16,8 +16,8 @@ const { title, href } = Astro.props;
         <div class="">
           {
             href ? (
-              <a href={href}>
-                <h1 class="text-gray-900 font-semibold text-5xl">{title}</h1>
+              <a href={href} class="hover:text-blue-600 transition-colors">
+                <h1 class="text-gray-900 font-semibold text-5xl hover:text-blue-600">{title}</h1>
               </a>
             ) : (
               <h1 class="text-gray-900 font-semibold text-5xl">{title}</h1>
