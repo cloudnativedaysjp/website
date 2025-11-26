@@ -17,10 +17,10 @@ const truncatedAbout = about ? (about.length > 100 ? about.substring(0, 100) + '
 
 <div class={`flex flex-col lg:flex-row items-center gap-12 p-8 rounded-3xl transition-colors duration-300 group-hover:bg-gray-50 ${align === 'right' ? 'lg:flex-row-reverse' : ''}`}>
     <div class="w-full lg:w-1/2">
-        <div class="relative aspect-video w-full overflow-hidden rounded-xl shadow-sm bg-white p-8 border border-gray-100">
+        <div class="relative aspect-video w-full overflow-hidden rounded-xl shadow-sm bg-white p-8 border border-gray-100 flex items-center justify-center">
             <Image
                 src={img}
-                class="h-full w-full object-contain object-center transition-transform duration-700 hover:scale-105"
+                class="max-h-full max-w-full object-contain object-center transition-transform duration-700 hover:scale-105"
                 width={1024}
                 height={576}
                 alt={`${name} visual`}
