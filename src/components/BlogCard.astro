@@ -1,0 +1,78 @@
+---
+import type { Post } from '../lib/interfaces'
+import { filePath, getPostLink } from '../lib/blog-helpers'
+import PostDate from './PostDate.astro'
+import PostTags from './PostTags.astro'
+import PostExcerpt from './PostExcerpt.astro'
+
+export interface Props {
+  post: Post
+}
+
+const { post } = Astro.props
+
+let image = ''
+if (post.FeaturedImage && post.FeaturedImage.Url) {
+  if (import.meta.env.DEV) {
+    image = post.FeaturedImage.Url
+  } else {
+    image = filePath(new URL(post.FeaturedImage.Url))
+  }
+}
+
+const postLink = getPostLink(post.Slug)
+---
+
+<article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
+  <a href={postLink} class="block">
+    <div class="md:flex">
+      <!-- アイキャッチ画像 -->
+      <div class="md:w-48 lg:w-64 flex-shrink-0">
+        <div class="h-48 md:h-full overflow-hidden">
+          {image ? (
+            <img
+              src={image}
+              alt={post.Title}
+              class="w-full h-full object-cover"
+            />
+          ) : (
+            <div class="bg-gradient-to-br from-blue-500 to-purple-600 h-full flex items-center justify-center">
+              <span class="text-white text-4xl">
+                {post.Icon && post.Icon.Type === 'emoji' && 'Emoji' in post.Icon
+                  ? post.Icon.Emoji
+                  : '📝'}
+              </span>
+            </div>
+          )}
+        </div>
+      </div>
+
+      <!-- コンテンツ -->
+      <div class="p-5 flex flex-col justify-between flex-grow">
+        <div>
+          <div class="text-sm text-gray-500 mb-2">
+            <PostDate post={post} />
+          </div>
+          <h2 class="text-xl font-semibold mb-2 text-gray-800 line-clamp-2 group-hover:text-blue-600 transition-colors">
+            {post.Title}
+          </h2>
+          <div class="mb-3">
+            <PostTags post={post} enableLink={false} />
+          </div>
+          <div class="text-gray-600 text-sm line-clamp-2">
+            <PostExcerpt post={post} />
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</article>
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
