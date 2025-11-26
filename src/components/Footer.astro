@@ -1,113 +1,32 @@
 ---
-interface Link {
-  text?: string;
-  href?: string;
-  ariaLabel?: string;
-  icon?: string;
-}
-
-interface Links {
-  title?: string;
-  links: Array<Link>;
-}
-
-export interface Props {
-  links: Array<Links>;
-  secondaryLinks: Array<Link>;
-  socialLinks: Array<Link>;
-  footNote?: string;
-  theme?: string;
-}
-
 const currentYear = new Date().getFullYear();
 
-const footerData = {
-  links: [],
-  secondaryLinks: [
-    { text: "行動規範", href: "/CoC" },
-    { text: "プライバシーポリシー", href: "/privacy" },
-  ],
-};
+const footerLinks = [
+  { text: "CloudNative Daysの歩み", href: "/history" },
+  { text: "行動規範", href: "/CoC" },
+  { text: "プライバシーポリシー", href: "/privacy" },
+];
 ---
 
-<footer>
-  <div class="col-span-12 lg:col-span-8">
-    <div class="text-base text-muted pb-8 group">
-      {
-        footerData.secondaryLinks.map(({ text, href }) => (
-          <div>
-            <a
-              class="hover:underline transition duration-150 ease-in-out mr-2"
-              href={href}
-              set:html={text}
-            />
-          </div>
-        ))
-      }
+<footer class="py-8 px-6 md:px-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      {/* リンク */}
+      <nav class="flex flex-wrap gap-x-6 gap-y-2 justify-center md:justify-start">
+        {footerLinks.map(({ text, href }) => (
+          <a
+            href={href}
+            class="text-gray-500 hover:text-gray-700 transition-colors text-sm"
+          >
+            {text}
+          </a>
+        ))}
+      </nav>
+
+      {/* コピーライト */}
+      <p class="text-gray-400 text-sm text-center md:text-right">
+        &copy; {currentYear} CloudNative Days Committee
+      </p>
     </div>
-    <p class="mr-auto">
-      &copy; {currentYear} CloudNative Days Committee
-    </p>
   </div>
-
-  <p class="socials">
-    <a href="https://twitter.com/cloudnativedays"> Twitter</a>
-  </p>
 </footer>
-
-<style>
-  footer {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    margin-top: auto;
-    padding: 3rem 2rem 3rem;
-    text-align: center;
-    color: var(--gray-400);
-    font-size: var(--text-sm);
-  }
-
-  footer a {
-    color: var(--gray-400);
-    text-decoration: 1px solid underline transparent;
-    text-underline-offset: 0.25em;
-    transition: text-decoration-color var(--theme-transition);
-  }
-
-  footer a:hover,
-  footer a:focus {
-    text-decoration-color: currentColor;
-  }
-
-  .group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .socials {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  @media (min-width: 50em) {
-    footer {
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 2.5rem 5rem;
-    }
-
-    .group {
-      flex-direction: column;
-      gap: 1rem;
-      flex-wrap: wrap;
-      align-items: flex-start;
-    }
-
-    .socials {
-      justify-content: flex-end;
-    }
-  }
-</style>

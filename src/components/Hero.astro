@@ -19,8 +19,8 @@ const { title, href, logo } = Astro.props;
           {
             title
               ? href
-                ? <a href={href}><img src={logo || "/images/lp/cnd_logo_color.png"} alt={title} class="h-24 md:h-32 mx-auto object-contain my-10" /></a>
-                : <img src={logo || "/images/lp/cnd_logo_color.png"} alt={title} class="h-24 md:h-32 mx-auto object-contain my-10" />
+                ? <a href={href}><img src={logo || "/images/lp/cnd_logo_color.png"} alt={title} class="h-40 md:h-52 lg:h-64 mx-auto object-contain mt-40 mb-24" /></a>
+                : <img src={logo || "/images/lp/cnd_logo_color.png"} alt={title} class="h-40 md:h-52 lg:h-64 mx-auto object-contain mt-40 mb-24" />
               : ""
           }
           <slot />

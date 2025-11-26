@@ -6,7 +6,6 @@ import type { Conference } from '../types/conference'
 const events = [
   'cndt2020',
   'cndo2021',
-  'cndo2021',
   'cicd2021',
   'cndt2021',
   'o11y2022',

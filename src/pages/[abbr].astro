@@ -1,4 +1,5 @@
 ---
+import { Icon } from "astro-icon/components";
 import Hero from '../components/Hero.astro'
 import Talk from '../components/Talk.astro'
 import { Conferences } from '../data/data'
@@ -25,15 +26,162 @@ const ogImage = conference?.image || '/favicon.svg';
     {
       conferenceExists && (
         <>
+          {/* ナビゲーション */}
+          <nav class="pt-24 px-4 max-w-7xl mx-auto">
+            <a
+              href="/#events"
+              class="inline-flex items-center gap-2 text-gray-600 hover:text-indigo-600 transition-colors"
+            >
+              <Icon name="tabler:arrow-left" class="w-5 h-5" />
+              <span>イベント一覧に戻る</span>
+            </a>
+          </nav>
+
           <Hero title={conference.name} href={'/' + abbr} logo={conference.image}>
-            <p class="text-2xl text-black font-serif mb-6">{conference.theme}</p>
-            <p class="mt-4 text-lg text-black whitespace-pre-line">
-              {conference.conferenceDays
-                .filter((day) => !day.internal)
-                .map((day) => day.date)
-                .join(', ')}
+            <p class="text-2xl md:text-3xl lg:text-4xl text-gray-800 font-bold leading-tight tracking-tight">
+              {conference.theme}
             </p>
           </Hero>
+
+          {/* About セクション */}
+          {conference.about && (
+            <section class="pt-24 pb-12">
+              <div class="container mx-auto px-4">
+                <h2 class="text-black relative px-4 text-4xl font-bold mb-8 text-center">
+                  About
+                </h2>
+                <div class="max-w-5xl mx-auto">
+                  <p class="text-lg text-gray-700 whitespace-pre-line leading-relaxed">
+                    {conference.about}
+                  </p>
+                </div>
+              </div>
+            </section>
+          )}
+
+          {/* Event Details セクション */}
+          <section class="pt-8 pb-16 bg-gradient-to-b from-transparent to-gray-50/50">
+            <div class="container mx-auto px-4">
+              <h2 class="text-black relative px-4 text-4xl font-bold mb-12 text-center">
+                Event Details
+              </h2>
+              <div class="max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  {/* 開催日 */}
+                  {(() => {
+                    const publicDays = conference.conferenceDays
+                      .filter((day) => !day.internal)
+                      .map((day) => new Date(day.date))
+                      .sort((a, b) => a.getTime() - b.getTime());
+
+                    const formatDate = (date: Date) => {
+                      return `${date.getFullYear()}年${date.getMonth() + 1}月${date.getDate()}日`;
+                    };
+
+                    let dateDisplay = '';
+                    if (publicDays.length === 1) {
+                      dateDisplay = formatDate(publicDays[0]);
+                    } else if (publicDays.length === 2) {
+                      const d1 = publicDays[0];
+                      const d2 = publicDays[1];
+                      if (d1.getFullYear() === d2.getFullYear() && d1.getMonth() === d2.getMonth()) {
+                        dateDisplay = `${d1.getFullYear()}年${d1.getMonth() + 1}月${d1.getDate()}日 - ${d2.getDate()}日`;
+                      } else {
+                        dateDisplay = `${formatDate(d1)} - ${formatDate(d2)}`;
+                      }
+                    } else {
+                      dateDisplay = publicDays.map(formatDate).join(', ');
+                    }
+
+                    return (
+                      <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
+                        <div class="flex items-center gap-3 mb-3">
+                          <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center">
+                            <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                          </div>
+                          <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide">Date</h3>
+                        </div>
+                        <p class="text-lg font-bold text-gray-800">{dateDisplay}</p>
+                      </div>
+                    );
+                  })()}
+
+                  {/* 開催形式 */}
+                  {conference.format && (
+                    <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
+                      <div class="flex items-center gap-3 mb-3">
+                        <div class={`w-10 h-10 rounded-full flex items-center justify-center ${
+                          conference.format === 'hybrid' ? 'bg-purple-100' :
+                          conference.format === 'online' ? 'bg-blue-100' : 'bg-green-100'
+                        }`}>
+                          {conference.format === 'online' ? (
+                            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                          ) : conference.format === 'hybrid' ? (
+                            <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                            </svg>
+                          ) : (
+                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                          )}
+                        </div>
+                        <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide">Format</h3>
+                      </div>
+                      <p class={`text-lg font-bold capitalize ${
+                        conference.format === 'hybrid' ? 'text-purple-700' :
+                        conference.format === 'online' ? 'text-blue-700' : 'text-green-700'
+                      }`}>
+                        {conference.format === 'hybrid' ? 'Hybrid' :
+                         conference.format === 'online' ? 'Online' : 'Offline'}
+                      </p>
+                      <p class="text-sm text-gray-500 mt-1">
+                        {conference.format === 'hybrid' ? '現地 + オンライン配信' :
+                         conference.format === 'online' ? 'オンライン開催' : '現地開催'}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* 会場 */}
+                  {conference.venue && (
+                    <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
+                      <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-amber-100 flex items-center justify-center">
+                          <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                          </svg>
+                        </div>
+                        <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide">Venue</h3>
+                      </div>
+                      <p class="text-lg font-bold text-gray-800">{conference.venue}</p>
+                    </div>
+                  )}
+
+                  {/* 開催地 */}
+                  {conference.location && (
+                    <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100">
+                      <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-full bg-rose-100 flex items-center justify-center">
+                          <svg class="w-5 h-5 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                          </svg>
+                        </div>
+                        <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide">Location</h3>
+                      </div>
+                      <p class="text-lg font-bold text-gray-800">{conference.location}</p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </section>
+
           <section class="pb-20">
             <div class="container mx-auto px-4 pt-8">
               <h2 class="relative px-4 text-4xl font-bold text-center">
@@ -41,15 +189,14 @@ const ogImage = conference?.image || '/favicon.svg';
               </h2>
 
               <div
-                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-8"
-                style={{ autoRows: 'minmax(0, auto)' }}
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-8 items-stretch"
               >
                 {talks ? (
                   talks?.map((talk) => {
                     const url = `/${abbr}/talks/${talk.id}`
                     return (
-                      <div class="bg-white/60 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/80 transition-all duration-300">
-                        <div class="p-4">
+                      <div class="bg-white/60 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/80 transition-all duration-300 h-full flex items-center">
+                        <div class="px-6 py-4 w-full">
                           <Talk
                             id={talk.id}
                             abbr={abbr}
