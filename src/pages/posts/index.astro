@@ -3,6 +3,7 @@ import BlogCard from '../../components/BlogCard.astro'
 import BlogPostsLink from '../../components/BlogPostsLink.astro'
 import BlogTagsLink from '../../components/BlogTagsLink.astro'
 import Headline from '../../components/Headline.astro'
+import MascotPeek from '../../components/MascotPeek.astro'
 import NoContents from '../../components/NoContents.astro'
 import Pagination from '../../components/Pagination.astro'
 import Layout from '../../layouts/Layout.astro'
@@ -27,7 +28,7 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
   description="CloudNative Days実行委員会によるブログ"
   ogImage=""
 >
-  <Headline title="Blog">
+  <Headline title="Blog" showMascots={true}>
     <p class="mt-4 text-lg text-black">
       CloudNative Days実行委員会によるブログ
     </p>
@@ -58,4 +59,12 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
       </div>
     </aside>
   </div>
+
+  <!-- マスコットのひょっこり -->
+  <a href="/mascots">
+    <MascotPeek character="suu" position="left" />
+  </a>
+  <a href="/mascots">
+    <MascotPeek character="toge" position="right" />
+  </a>
 </Layout>

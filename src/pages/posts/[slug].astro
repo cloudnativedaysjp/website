@@ -23,6 +23,7 @@ import PostBody from '../../components/PostBody.astro'
 import PostRelativeLink from '../../components/PostRelativeLink.astro'
 import BlogPostsLink from '../../components/BlogPostsLink.astro'
 import BlogTagsLink from '../../components/BlogTagsLink.astro'
+import MascotPeek from '../../components/MascotPeek.astro'
 import styles from '../../styles/blog.module.css'
 import Layout from '../../layouts/Layout.astro'
 import Headline from '../../components/Headline.astro'
@@ -105,7 +106,7 @@ if (post.FeaturedImage && post.FeaturedImage.Url) {
   url={new URL(`blog/${slug}`, Astro.site)}
   ogImage={ogImage}
 >
-  <Headline title="Blog" href="/posts">
+  <Headline title="Blog" href="/posts" showMascots={true}>
     <p class="mt-4 text-lg text-black">
       CloudNative Days実行委員会によるブログ
     </p>
@@ -144,4 +145,12 @@ if (post.FeaturedImage && post.FeaturedImage.Url) {
       </aside>
     </div>
   </div>
+
+  <!-- マスコットのひょっこり -->
+  <a href="/mascots">
+    <MascotPeek character="suu" position="left" />
+  </a>
+  <a href="/mascots">
+    <MascotPeek character="toge" position="right" />
+  </a>
 </Layout>
