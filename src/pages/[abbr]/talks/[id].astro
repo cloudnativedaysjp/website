@@ -7,6 +7,7 @@ import { talkMap } from "../../../data/data";
 import { Conferences } from "../../../data/data";
 import Layout from "../../../layouts/Layout.astro";
 import type { Speaker } from "../../../types/speaker";
+import { getSlideEmbed } from "../../../lib/oembed";
 
 export async function getStaticPaths() {
   return [...talkMap.entries()].flatMap((a) => {
@@ -44,14 +45,27 @@ const conference = Conferences.find((conference) => conference.abbr == abbr);
 const title = talk?.title || "";
 const description = talk?.abstract || "";
 const ogImage = conference?.image || "/favicon.svg";
+
+// Get slide embed data if documentUrl exists
+const slideEmbed = talk?.documentUrl ? await getSlideEmbed(talk.documentUrl) : null;
 ---
 
 <Layout title={title} description={description} ogImage={ogImage}>
   <main>
     {
       talkExists && (
-        <div class="pt-">
-          <div class="pt-12 mx-auto max-w-7xl px-4 text-center">
+        <div>
+          <div class="pt-16 mx-auto max-w-4xl px-4">
+            {/* ナビゲーション */}
+            <nav class="mb-6">
+              <a
+                href={`/${abbr}#sessions`}
+                class="inline-flex items-center gap-2 text-gray-600 hover:text-indigo-600 transition-colors"
+              >
+                <Icon name="tabler:arrow-left" class="w-5 h-5" />
+                <span>{conference?.name || 'イベント'}のセッション一覧に戻る</span>
+              </a>
+            </nav>
             <div class="relative flex flex-col min-w-0 break-words bg-white/60 backdrop-blur-sm w-full mb-4 rounded-xl">
               <div class="px-4 py-5 flex-auto">
                 {path.extname(talk.videoId) == ".m3u8" ?
@@ -77,22 +91,66 @@ const ogImage = conference?.image || "/favicon.svg";
                   </div>
                 }
               </div>
+              {/* 資料セクション */}
+              {slideEmbed && (
+                <div class="mt-4">
+                  {slideEmbed.html ? (
+                    <div class="slide-embed-container">
+                      <div class="flex items-center justify-between mb-3 px-1">
+                        <div class="flex items-center gap-2">
+                          <Icon name="tabler:presentation" class="w-5 h-5 text-indigo-600" />
+                          <span class="font-bold text-gray-800">Slides</span>
+                          <span class="text-sm text-gray-500">({slideEmbed.provider})</span>
+                        </div>
+                        <a
+                          href={slideEmbed.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="flex items-center gap-1 text-sm text-indigo-600 hover:text-indigo-800 transition-colors"
+                        >
+                          <span>Open in new tab</span>
+                          <Icon name="tabler:external-link" class="w-4 h-4" />
+                        </a>
+                      </div>
+                      <div class="bg-white/60 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-200">
+                        <Fragment set:html={slideEmbed.html} />
+                      </div>
+                    </div>
+                  ) : (
+                    <a
+                      href={slideEmbed.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="flex items-center gap-3 p-4 bg-white/60 backdrop-blur-sm rounded-xl hover:bg-white/80 transition-all duration-300 border border-gray-200"
+                    >
+                      <div class="flex-shrink-0 w-12 h-12 rounded-lg bg-indigo-100 flex items-center justify-center">
+                        <Icon name="tabler:presentation" class="w-6 h-6 text-indigo-600" />
+                      </div>
+                      <div class="flex-grow text-left">
+                        <p class="font-bold text-gray-800">Slides</p>
+                        <p class="text-sm text-gray-500">{slideEmbed.provider}</p>
+                      </div>
+                      <Icon name="tabler:external-link" class="w-5 h-5 text-gray-400" />
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
               <div class="relative flex flex-col min-w-0 break-words bg-white/60 backdrop-blur-sm w-full mb-8 rounded-xl">
                 <div>
-                  <div class="py-4 px-6 text-left rounded-t-lgflex items-center">
+                  <div class="py-8 px-8 text-left">
                     <h2 class="text-3xl font-bold">{title}</h2>
-                    <p class="mt-4 text-lg whitespace-pre-line">
+                    <p class="mt-6 text-lg whitespace-pre-line leading-relaxed">
                       {description}
                     </p>
                   </div>
                 </div>
                 {speakersExists &&
                 <div>
-                <hr class="mt-4 mx-6 border-t-1 border-gray-300" />
+                <hr class="mx-8 border-t-1 border-gray-300" />
                 {speakers?.map((speaker) => {
                   return (
-                    <div class="p-6">
+                    <div class="p-8">
                       <div class="flex flex-col items-start">
                         <div class="mr-16 mb-4 text-left">
                           <div class="flex items-center">
@@ -105,22 +163,26 @@ const ogImage = conference?.image || "/favicon.svg";
                         <div class="mr-16 text-left">
                           <div class="flex flex-wrap">
                             {speaker.twitterId && (
-                              <div class="flex items-center mb-2">
-                                <Icon name="tabler:brand-twitter" class="w-5 h-5 mr-1 text-gray-800" />
-                                    <p class="mr-6 text-center">{speaker.twitterId}</p>
-                                  </div>
-                                )}
-                            {speaker.githubId && (
-                                <div class="flex items-center mb-2">
-                                  <Icon name="tabler:brand-github" class="w-5 h-5 mr-1 text-gray-800" />
-                                  <p class="mr-6 text-center">{speaker.githubId}</p>
-                                </div>
+                              <a
+                                href={`https://x.com/${speaker.twitterId}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="flex items-center mb-2 hover:text-indigo-600 transition-colors"
+                              >
+                                <Icon name="tabler:brand-x" class="w-5 h-5 mr-1 text-gray-800" />
+                                <p class="mr-6 text-center">{speaker.twitterId}</p>
+                              </a>
                             )}
-                            {talk.documentUrl && (
-                                <div class="flex items-center mb-2">
-                                  <Icon name="tabler:link" class="w-5 h-5 mr-1 text-gray-800" />
-                                  <a class="text-center" href={talk.documentUrl}>発表資料</a>
-                                </div>
+                            {speaker.githubId && (
+                              <a
+                                href={`https://github.com/${speaker.githubId}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="flex items-center mb-2 hover:text-indigo-600 transition-colors"
+                              >
+                                <Icon name="tabler:brand-github" class="w-5 h-5 mr-1 text-gray-800" />
+                                <p class="mr-6 text-center">{speaker.githubId}</p>
+                              </a>
                             )}
                           </div>
                         </div>
@@ -140,3 +202,12 @@ const ogImage = conference?.image || "/favicon.svg";
     }
   </main>
 </Layout>
+
+<style>
+  .slide-embed-container :global(iframe) {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: none;
+  }
+</style>
