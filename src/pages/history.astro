@@ -1,0 +1,409 @@
+---
+import { Icon } from "astro-icon/components";
+import Layout from "../layouts/Layout.astro";
+
+const title = "CloudNative Daysの歩み";
+const description = "Japan Container Daysから始まり、CloudNative Daysへと発展してきたイベントの歴史を振り返ります。";
+const ogImage = "/favicon.svg";
+
+// ロゴが存在するイベント一覧
+const eventsWithLogo = [
+  "cndw2025", "cnds2025", "cndw2024", "cnds2024",
+  "cndt2023", "cndf2023", "cicd2023",
+  "cndt2022", "cnsec2022", "o11y2022",
+  "cndt2021", "cicd2021", "cndo2021",
+  "cndt2020"
+];
+
+// イベント履歴データ（新しい順）
+const events = [
+  {
+    year: 2025,
+    items: [
+      {
+        name: "CloudNative Days Winter 2025",
+        abbr: "CNDW2025",
+        date: "2025年11月18日-19日",
+        venue: "有明セントラルタワーホール&カンファレンス",
+        location: "東京都江東区有明",
+        theme: "Scaling Together",
+        format: "hybrid",
+        hasArchive: true,
+        logo: "/images/assets/cndw2025.png",
+      },
+      {
+        name: "CloudNative Days Summer 2025",
+        abbr: "CNDS2025",
+        date: "2025年5月23日",
+        venue: "沖縄県立市町村自治会館",
+        location: "沖縄県那覇市",
+        theme: "Passion ~ CloudNativeに熱中する ~",
+        format: "hybrid",
+        hasArchive: true,
+        logo: "/images/assets/cnds2025.png",
+      },
+    ],
+  },
+  {
+    year: 2024,
+    items: [
+      {
+        name: "CloudNative Days Winter 2024",
+        abbr: "CNDW2024",
+        date: "2024年11月28日-29日",
+        venue: "有明セントラルタワーホール&カンファレンス",
+        location: "東京都江東区有明",
+        theme: "小さな一歩、大きな飛躍〜クラウドネイティブを継続する",
+        format: "hybrid",
+        hasArchive: true,
+        logo: "/images/assets/cndw2024.png",
+      },
+      {
+        name: "CloudNative Days Summer 2024",
+        abbr: "CNDS2024",
+        date: "2024年6月15日",
+        venue: "札幌コンベンションセンター",
+        location: "北海道札幌市",
+        theme: "Synergy 〜その先の、道へ。出会いと変化を紡ぐ場所〜",
+        format: "hybrid",
+        hasArchive: true,
+        logo: "/images/assets/cnds2024.png",
+      },
+    ],
+  },
+  {
+    year: 2023,
+    items: [
+      {
+        name: "CloudNative Days Tokyo 2023",
+        abbr: "CNDT2023",
+        date: "2023年12月11日-12日",
+        venue: "有明セントラルタワーホール&カンファレンス",
+        location: "東京都江東区有明",
+        theme: "+Native ともに飛び出せ！",
+        format: "hybrid",
+        hasArchive: true,
+        logo: "/images/assets/cndt2023.png",
+      },
+      {
+        name: "CloudNative Days Fukuoka 2023",
+        abbr: "CNDF2023",
+        date: "2023年8月3日",
+        venue: "博多国際展示場カンファレンスセンター",
+        location: "福岡県福岡市博多区",
+        theme: "Unlearning 〜クラウドの『べき』を外して、新たな世界と繋がろう",
+        format: "hybrid",
+        hasArchive: true,
+        logo: "/images/assets/cndf2023.png",
+      },
+      {
+        name: "CI/CD Conference 2023",
+        abbr: "CICD2023",
+        date: "2023年3月20日",
+        venue: "日比谷国際ビル コンファレンススクエア",
+        location: "東京都千代田区",
+        theme: "Continuous 〜ともに回す高速なアプリケーション開発ライフサイクル〜",
+        format: "hybrid",
+        hasArchive: true,
+        logo: "/images/assets/cicd2023.png",
+      },
+    ],
+  },
+  {
+    year: 2022,
+    items: [
+      {
+        name: "CloudNative Days Tokyo 2022",
+        abbr: "CNDT2022",
+        date: "2022年11月21日-22日",
+        venue: "有明セントラルタワーホール&カンファレンス",
+        location: "東京都江東区有明",
+        theme: "+Native 〜ともに広がるクラウドネイティブの世界〜",
+        format: "hybrid",
+        hasArchive: true,
+        logo: "/images/assets/cndt2022.png",
+      },
+      {
+        name: "CloudNative Security Conference 2022",
+        abbr: "CNSec2022",
+        date: "2022年8月5日",
+        venue: "オンライン",
+        location: "-",
+        theme: "Go Green〜ともに目指す持続可能なセキュリティ〜",
+        format: "online",
+        hasArchive: true,
+        logo: "/images/assets/cnsec2022.png",
+      },
+      {
+        name: "Observability Conference 2022",
+        abbr: "O11y2022",
+        date: "2022年3月11日",
+        venue: "オンライン",
+        location: "-",
+        theme: "Observe the Observability 〜知らないことを知り、見えていないものを見る〜",
+        format: "online",
+        hasArchive: true,
+        logo: "/images/assets/o11y2022.png",
+      },
+    ],
+  },
+  {
+    year: 2021,
+    items: [
+      {
+        name: "CloudNative Days Tokyo 2021",
+        abbr: "CNDT2021",
+        date: "2021年11月4日-5日",
+        venue: "オンライン",
+        location: "-",
+        theme: "+Native 〜ともに繋げるクラウドネイティブの世界〜",
+        format: "online",
+        hasArchive: true,
+        logo: "/images/assets/cndt2021.png",
+      },
+      {
+        name: "CI/CD Conference 2021",
+        abbr: "CICD2021",
+        date: "2021年9月3日",
+        venue: "オンライン",
+        location: "-",
+        theme: "Continuous 〜技術を知り、試し、取り入れる〜",
+        format: "online",
+        hasArchive: true,
+        logo: "/images/assets/cicd2021.png",
+      },
+      {
+        name: "CloudNative Days Spring 2021 Online",
+        abbr: "CNDO2021",
+        date: "2021年3月11日-12日",
+        venue: "オンライン",
+        location: "-",
+        theme: "ともに踏み出すCloudNative祭",
+        format: "online",
+        hasArchive: true,
+        logo: "/images/assets/cndo2021.png",
+      },
+    ],
+  },
+  {
+    year: 2020,
+    items: [
+      {
+        name: "CloudNative Days Tokyo 2020",
+        abbr: "CNDT2020",
+        date: "2020年9月8日-9日",
+        venue: "オンライン",
+        location: "-",
+        theme: "+Native 〜ともに創るクラウドネイティブの世界〜",
+        format: "online",
+        hasArchive: true,
+        logo: "/images/assets/cndt2020.png",
+      },
+    ],
+  },
+  {
+    year: 2019,
+    items: [
+      {
+        name: "CloudNative Days Kansai 2019",
+        abbr: "CNDK2019",
+        date: "2019年11月27日-28日",
+        venue: "コングレコンベンションセンター（グランフロント大阪 北館 B2F）",
+        location: "大阪府大阪市北区",
+        theme: "+Native",
+        format: "offline",
+        hasArchive: false,
+      },
+      {
+        name: "CloudNative Days Tokyo 2019",
+        abbr: "CNDT2019",
+        date: "2019年7月22日-23日",
+        venue: "虎ノ門ヒルズフォーラム",
+        location: "東京都港区虎ノ門",
+        theme: "+Native 〜クラウドからクラウドネイティブへ〜",
+        format: "offline",
+        hasArchive: false,
+        note: "OpenStack Days Tokyo 2019と共同開催",
+      },
+      {
+        name: "CloudNative Days Fukuoka 2019",
+        abbr: "CNDF2019",
+        date: "2019年4月15日-16日",
+        venue: "アクロス福岡 7F大会議室",
+        location: "福岡県福岡市中央区",
+        theme: "-",
+        format: "offline",
+        hasArchive: false,
+        note: "CloudNative Days初開催",
+      },
+    ],
+  },
+  {
+    year: 2018,
+    items: [
+      {
+        name: "Japan Container Days v18.12",
+        abbr: "JKD1812",
+        date: "2018年12月3日-5日",
+        venue: "御茶ノ水ソラシティカンファレンスセンター",
+        location: "東京都千代田区神田駿河台",
+        theme: "-",
+        format: "offline",
+        hasArchive: false,
+        note: "3日間に規模拡大",
+      },
+      {
+        name: "Japan Container Days v18.04",
+        abbr: "JKD1804",
+        date: "2018年4月19日",
+        venue: "ベルサール神田",
+        location: "東京都千代田区神田",
+        theme: "-",
+        format: "offline",
+        hasArchive: false,
+        note: "Japan Container Days初開催、CloudNative Daysの前身",
+      },
+    ],
+  },
+];
+
+const formatLabel = (format: string) => {
+  switch (format) {
+    case "hybrid":
+      return { text: "Hybrid", color: "bg-purple-100 text-purple-700" };
+    case "online":
+      return { text: "Online", color: "bg-blue-100 text-blue-700" };
+    case "offline":
+      return { text: "Offline", color: "bg-green-100 text-green-700" };
+    default:
+      return { text: format, color: "bg-gray-100 text-gray-700" };
+  }
+};
+---
+
+<Layout title={title} description={description} ogImage={ogImage}>
+  <main class="pt-20 pb-16">
+    <div class="max-w-4xl mx-auto px-4">
+      {/* ナビゲーション */}
+      <nav class="mb-8">
+        <a
+          href="/"
+          class="inline-flex items-center gap-2 text-gray-600 hover:text-indigo-600 transition-colors"
+        >
+          <Icon name="tabler:arrow-left" class="w-5 h-5" />
+          <span>トップページに戻る</span>
+        </a>
+      </nav>
+
+      {/* ヘッダー */}
+      <header class="text-center mb-12">
+        <div class="mb-6">
+          <img
+            src="/images/lp/cnd_logo_color.png"
+            alt="CloudNative Days"
+            class="h-24 md:h-32 mx-auto"
+          />
+        </div>
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">{title}</h1>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          2018年のJapan Container Daysから始まり、CloudNative Daysへと発展。
+          コンテナ技術からクラウドネイティブ全般へと領域を広げながら、
+          日本のクラウドネイティブコミュニティとともに歩んできました。
+        </p>
+      </header>
+
+      {/* 注意書き */}
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-12">
+        <div class="flex items-start gap-3">
+          <Icon name="tabler:info-circle" class="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" />
+          <p class="text-sm text-amber-800">
+            2019年以前のイベントは、オンライン/ハイブリッド開催へ移行する前の現地開催イベントのため、
+            セッション動画等のWebアーカイブは残っていません。
+          </p>
+        </div>
+      </div>
+
+      {/* タイムライン */}
+      <div class="space-y-12">
+        {events.map((yearGroup) => (
+          <section>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+              <span class="bg-indigo-600 text-white px-4 py-1 rounded-full text-lg">
+                {yearGroup.year}
+              </span>
+            </h2>
+            <div class="space-y-4">
+              {yearGroup.items.map((event) => {
+                const formatInfo = formatLabel(event.format);
+                const cardContent = (
+                  <div class="flex flex-col md:flex-row md:items-center gap-4">
+                    {/* イベントロゴ（あれば表示） */}
+                    {event.logo && (
+                      <div class="flex-shrink-0 md:w-48 flex items-center justify-center">
+                        <img
+                          src={event.logo}
+                          alt={`${event.name} ロゴ`}
+                          class="w-full h-auto max-h-24 object-contain"
+                        />
+                      </div>
+                    )}
+
+                    <div class="flex-grow">
+                      <div class="flex flex-wrap items-center gap-2 mb-2">
+                        <h3 class="text-xl font-bold text-gray-900">{event.name}</h3>
+                        <span class="text-sm font-mono text-gray-500">#{event.abbr}</span>
+                        <span class={`text-xs px-2 py-0.5 rounded-full ${formatInfo.color}`}>
+                          {formatInfo.text}
+                        </span>
+                      </div>
+
+                      {event.theme && event.theme !== "-" && (
+                        <p class="text-indigo-600 font-medium mb-3">"{event.theme}"</p>
+                      )}
+
+                      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-600">
+                        <div class="flex items-center gap-2">
+                          <Icon name="tabler:calendar" class="w-4 h-4 text-gray-400" />
+                          <span>{event.date}</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <Icon name="tabler:map-pin" class="w-4 h-4 text-gray-400" />
+                          <span>{event.venue}</span>
+                        </div>
+                      </div>
+
+                      {event.note && (
+                        <p class="mt-2 text-sm text-gray-500 italic">{event.note}</p>
+                      )}
+                    </div>
+                  </div>
+                );
+
+                return event.hasArchive ? (
+                  <a
+                    href={`/${event.abbr.toLowerCase()}`}
+                    class="block bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-gray-200 hover:shadow-lg hover:border-indigo-300 transition-all cursor-pointer"
+                  >
+                    {cardContent}
+                  </a>
+                ) : (
+                  <div class="bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-gray-200 opacity-75">
+                    {cardContent}
+                  </div>
+                );
+              })}
+            </div>
+          </section>
+        ))}
+      </div>
+
+      {/* フッター説明 */}
+      <div class="mt-16 text-center">
+        <p class="text-gray-500 text-sm">
+          CloudNative Daysは、クラウドネイティブ技術に関心を持つすべての人々のために、
+          コミュニティ主導で開催されているカンファレンスです。
+        </p>
+      </div>
+    </div>
+  </main>
+</Layout>
