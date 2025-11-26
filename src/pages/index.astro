@@ -8,6 +8,7 @@ import PostFeaturedImage from '../components/PostFeaturedImage.astro'
 import PostTitle from '../components/PostTitle.astro'
 import { Conferences } from '../data/data'
 import Layout from '../layouts/Layout.astro'
+import MascotPeek from '../components/MascotPeek.astro'
 import { getPostLink } from '../lib/blog-helpers'
 import { getPosts } from '../lib/notion/client'
 import type { Conference } from '../types/conference'
@@ -169,6 +170,11 @@ const latestEvents = Conferences?.filter(
         </div>
       </div>
     </section>
+
+    <!-- マスコットのひょっこり -->
+    <a href="/mascots">
+      <MascotPeek character="toge" position="right" />
+    </a>
   </main>
 </Layout>
 

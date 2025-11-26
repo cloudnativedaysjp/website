@@ -1,0 +1,100 @@
+---
+import { Icon } from "astro-icon/components";
+import Layout from '../layouts/Layout.astro'
+import Mascot from '../components/Mascot.astro'
+---
+
+<Layout
+  title="マスコット紹介 | CloudNative Days"
+  description="CloudNative Daysの公式マスコットキャラクター「スーちゃん」と「トゲくん」をご紹介します"
+  ogImage="/images/mascots/suu-face.png"
+>
+  <main class="pt-24 pb-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      {/* ナビゲーション */}
+      <nav class="mb-8">
+        <a
+          href="/"
+          class="inline-flex items-center gap-2 text-gray-600 hover:text-indigo-600 transition-colors"
+        >
+          <Icon name="tabler:arrow-left" class="w-5 h-5" />
+          <span>トップページに戻る</span>
+        </a>
+      </nav>
+
+      <h1 class="text-3xl md:text-4xl font-bold text-center text-black mb-4">
+        マスコット紹介
+      </h1>
+      <p class="text-center text-gray-700 mb-12">
+        CloudNative Days の公式マスコットキャラクターをご紹介します
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+        <!-- スーちゃん -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+          <div class="flex justify-center mb-6">
+            <Mascot character="suu" variant="1" size="lg" />
+          </div>
+          <h2 class="text-2xl font-bold text-center text-gray-800 mb-2">
+            スーちゃん
+          </h2>
+          <p class="text-center text-sm text-gray-500 mb-4">
+            可愛さの化身
+          </p>
+          <div class="space-y-3 text-gray-600">
+            <p>
+              日本最大級のクラウドネイティブ・テックカンファレンスであるCloudNative Daysのあたりでウロウロしている猫。
+            </p>
+            <p>
+              模様がワイルドに移動するけど本人はあまり気にしてない。
+            </p>
+          </div>
+          <div class="flex justify-center gap-4 mt-6">
+            <Mascot character="suu" variant="face" size="sm" />
+            <Mascot character="suu" variant="face-2" size="sm" />
+          </div>
+        </div>
+
+        <!-- トゲくん -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+          <div class="flex justify-center mb-6">
+            <Mascot character="toge" variant="1" size="lg" />
+          </div>
+          <h2 class="text-2xl font-bold text-center text-gray-800 mb-2">
+            トゲくん
+          </h2>
+          <p class="text-center text-sm text-gray-500 mb-4">
+            癒やしの権化
+          </p>
+          <div class="space-y-3 text-gray-600">
+            <p>
+              日本最大級のクラウドネイティブ・テックカンファレンスであるCloudNative Daysのあたりでウロウロしている猫。
+            </p>
+            <p>
+              しっぽがScaleしちゃったけど本人はあまり気にしてない。
+            </p>
+          </div>
+          <div class="flex justify-center gap-4 mt-6">
+            <Mascot character="toge" variant="face" size="sm" />
+            <Mascot character="toge" variant="face-2" size="sm" />
+          </div>
+        </div>
+      </div>
+
+      <!-- 一緒の画像 -->
+      <div class="mt-12 text-center">
+        <h3 class="text-xl font-bold text-gray-800 mb-6">
+          スートゲ
+        </h3>
+        <div class="flex items-end justify-center gap-4 md:gap-8">
+          <Mascot character="suu" variant="2" size="lg" />
+          <Mascot character="toge" variant="2" size="lg" />
+        </div>
+        <p class="text-gray-600 mt-4 text-sm">
+          二匹合わせて「スートゲ」と呼ばれています
+        </p>
+      </div>
+
+    </div>
+  </main>
+</Layout>
