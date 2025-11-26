@@ -21,6 +21,7 @@ import PostTags from '../../components/PostTags.astro'
 import PostTitle from '../../components/PostTitle.astro'
 import PostBody from '../../components/PostBody.astro'
 import PostRelativeLink from '../../components/PostRelativeLink.astro'
+import ShareButton from '../../components/ShareButton.astro'
 import BlogPostsLink from '../../components/BlogPostsLink.astro'
 import BlogTagsLink from '../../components/BlogTagsLink.astro'
 import styles from '../../styles/blog.module.css'
@@ -122,6 +123,13 @@ if (post.FeaturedImage && post.FeaturedImage.Url) {
           </div>
         </div>
         <PostBody blocks={blocks} />
+
+        <div class="mt-8 pt-6 border-t border-gray-200">
+          <ShareButton
+            title={post.Title}
+            url={new URL(getPostLink(post.Slug), Astro.site).toString()}
+          />
+        </div>
       </div>
       <footer>
         <PostRelativeLink prevPost={prevPost} nextPost={nextPost} />
