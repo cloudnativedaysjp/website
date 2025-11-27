@@ -8,16 +8,10 @@ import {
 } from '../../../../../lib/notion/client.ts'
 import Layout from '../../../../../layouts/Layout.astro'
 import NoContents from '../../../../../components/NoContents.astro'
-import PostDate from '../../../../../components/PostDate.astro'
-import PostTags from '../../../../../components/PostTags.astro'
-import PostTitle from '../../../../../components/PostTitle.astro'
-import PostExcerpt from '../../../../../components/PostExcerpt.astro'
-import ReadMoreLink from '../../../../../components/ReadMoreLink.astro'
 import Pagination from '../../../../../components/Pagination.astro'
 import BlogPostsLink from '../../../../../components/BlogPostsLink.astro'
 import BlogTagsLink from '../../../../../components/BlogTagsLink.astro'
-import styles from '../../../../../styles/blog.module.css'
-import '../../../../../styles/notion-color.css'
+import BlogCard from '../../../../../components/BlogCard.astro'
 import Headline from '../../../../../components/Headline.astro'
 
 export async function getStaticPaths() {
@@ -46,8 +40,6 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
   getAllTags(),
   getNumberOfPagesByTag(tag),
 ])
-
-const currentTag = posts[0].Tags.find((t) => t.name === tag)
 ---
 
 <Layout
@@ -60,30 +52,21 @@ const currentTag = posts[0].Tags.find((t) => t.name === tag)
       タグ: {tag} (Page {page}/{numberOfPages})
     </p>
   </Headline>
-  <div class="px-8 flex flex-wrap gap-5 max-w-7xl md:justify-center md:mx-auto">
-    <main class="md:w-8/12 w-12/12 bg-white/60 backdrop-blur-sm rounded-xl p-6">
+  <div class="px-4 md:px-8 flex flex-col lg:flex-row gap-6 max-w-7xl mx-auto">
+    <main class="flex-1">
       {
         posts.length === 0 ? (
           <NoContents contents={posts} />
         ) : (
-          posts.map((post) => (
-            <div class="py-6">
-              <div class={styles.post}>
-                <div class="mb-3">
-                  <PostDate post={post} />
-                  <PostTitle post={post} enableLink={true} />
-                  <div class="mb-2 border-b-2 border-gray-200" />
-                  <PostTags post={post} enableLink={true} />
-                </div>
-                <PostExcerpt post={post} />
-                <ReadMoreLink post={post} />
-              </div>
-            </div>
-          ))
+          <div class="space-y-6">
+            {posts.map((post) => (
+              <BlogCard post={post} />
+            ))}
+          </div>
         )
       }
 
-      <footer class="flex justify-center items-center mt-5">
+      <footer class="flex justify-center items-center mt-8 mb-8">
         <Pagination
           tag={tag}
           currentPage={parseInt(page, 10)}
@@ -92,9 +75,11 @@ const currentTag = posts[0].Tags.find((t) => t.name === tag)
       </footer>
     </main>
 
-    <aside class="md:mt-0 md:ml-4 md:flex-auto w-12/12 bg-white/60 backdrop-blur-sm rounded-xl p-6 h-fit">
-      <BlogPostsLink heading="Recommended" posts={rankedPosts} />
-      <BlogTagsLink heading="Categories" tags={tags} />
+    <aside class="lg:w-80 flex-shrink-0">
+      <div class="bg-white/80 backdrop-blur-sm rounded-xl p-6 sticky top-24">
+        <BlogPostsLink heading="Recommended" posts={rankedPosts} />
+        <BlogTagsLink heading="Categories" tags={tags} />
+      </div>
     </aside>
   </div>
 </Layout>
