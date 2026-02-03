@@ -64,7 +64,14 @@ const { title, description, url, ogImage, isTopPage = false } = Astro.props
     }
   </script>
   <body>
-    <div id="navbar-wrapper" class={`fixed top-0 w-full z-50 transition-opacity duration-300 ${isTopPage ? 'opacity-0 pointer-events-none' : ''}`}>
+    {!isTopPage && (
+      <div class="fixed top-0 w-full z-50 bg-gradient-to-r from-sky-600 to-blue-700 text-white text-center py-2 px-4">
+        <a href="https://kaigi.cloudnativedays.jp/" class="hover:underline">
+          <span class="font-bold">クラウドネイティブ会議</span> プロポーザル受付中！(3/1 〆)　一般参加申し込みも受付中　詳しくはこちら →
+        </a>
+      </div>
+    )}
+    <div id="navbar-wrapper" class={`fixed w-full z-40 transition-opacity duration-300 ${isTopPage ? 'top-0 opacity-0 pointer-events-none' : 'top-10'}`}>
       <Navbar
         links={[
           {
