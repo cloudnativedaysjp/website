@@ -1,0 +1,32 @@
+---
+export interface Props {
+  character: 'suu' | 'toge';
+  variant?: '1' | '2' | 'face' | 'face-2';
+  size?: 'sm' | 'md' | 'lg';
+  className?: string;
+}
+
+const { character, variant = '1', size = 'md', className = '' } = Astro.props;
+
+const sizeClasses = {
+  sm: 'w-16 h-16',
+  md: 'w-24 h-24 md:w-32 md:h-32',
+  lg: 'w-32 h-32 md:w-48 md:h-48'
+};
+
+const imagePath = variant === 'face'
+  ? `/images/mascots/${character}-face.png`
+  : variant === 'face-2'
+  ? `/images/mascots/${character}-face-2.png`
+  : `/images/mascots/${character}-${variant}.png`;
+
+const altText = character === 'suu' ? 'スーちゃん' : 'トゲくん';
+---
+
+<div class={`mascot transition-transform duration-300 hover:scale-105 ${sizeClasses[size]} ${className}`}>
+  <img
+    src={imagePath}
+    alt={altText}
+    class="w-full h-full object-contain"
+  />
+</div>

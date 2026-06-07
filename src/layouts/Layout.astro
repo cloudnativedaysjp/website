@@ -7,9 +7,10 @@ export interface Props {
   description: string
   url?: URL | undefined
   ogImage: string
+  isTopPage?: boolean
 }
 
-const { title, description, url, ogImage } = Astro.props
+const { title, description, url, ogImage, isTopPage = false } = Astro.props
 ---
 
 <!DOCTYPE html>
@@ -50,23 +51,40 @@ const { title, description, url, ogImage } = Astro.props
     gtag('js', new Date())
     gtag('config', 'G-XDSEZ66VFX')
   </script>
+  <script define:vars={{ isTopPage }}>
+    if (isTopPage) {
+      const navbarWrapper = document.getElementById('navbar-wrapper');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+          navbarWrapper?.classList.remove('opacity-0', 'pointer-events-none');
+        } else {
+          navbarWrapper?.classList.add('opacity-0', 'pointer-events-none');
+        }
+      });
+    }
+  </script>
   <body>
-    <Navbar
-      links={[
-        {
-          href: '/#about',
-          text: 'About',
-        },
-        {
-          href: '/posts',
-          text: 'Blog',
-        },
-        {
-          href: 'https://twitter.com/cloudnativedays',
-          icon: 'tabler:brand-twitter',
-        },
-      ]}
-    />
+    {!isTopPage && (
+      <div class="fixed top-0 w-full z-50 bg-gradient-to-r from-sky-600 to-blue-700 text-white text-center py-2 px-4">
+        <a href="https://kaigi.cloudnativedays.jp/" class="hover:underline">
+          <span class="font-bold">クラウドネイティブ会議</span> プロポーザル受付中！(3/1 〆)　一般参加申し込みも受付中　詳しくはこちら →
+        </a>
+      </div>
+    )}
+    <div id="navbar-wrapper" class={`fixed w-full z-40 transition-opacity duration-300 ${isTopPage ? 'top-0 opacity-0 pointer-events-none' : 'top-10'}`}>
+      <Navbar
+        links={[
+          {
+            href: '/posts',
+            text: 'Blog',
+          },
+          {
+            href: 'https://twitter.com/cloudnativedays',
+            icon: 'tabler:brand-x',
+          },
+        ]}
+      />
+    </div>
     <slot />
 
     <hr class="border-gray-300" />
@@ -89,10 +107,18 @@ const { title, description, url, ogImage } = Astro.props
   }
   html {
     font-family: system-ui, sans-serif;
-    background-color: #f6f6f6;
   }
   code {
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
       DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   }
 </style>
+
+<div class="fixed inset-0 z-[-1]">
+  <div class="absolute inset-0 bg-white"></div>
+  <img
+    src="/images/background.jpg"
+    alt="Background"
+    class="absolute inset-0 w-full h-full object-cover opacity-20 blur-sm"
+  />
+</div>

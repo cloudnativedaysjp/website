@@ -1,1 +1,491 @@
-[]
+[
+  {
+    "id": 2243,
+    "conferenceId": 11,
+    "trackId": 49,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2024/talks/2243/132/playlist.m3u8",
+    "title": "テレメトリーシグナルの相関、してますか？第一原理からのデバッグを支える計装",
+    "abstract": "オブザーバビリティを獲得するとなったとき、テレメトリーシグナルを保存・可視化するバックエンドが注目されがちですが、同様にシグナルを取得するための計装も重要です。昨今のPrometheusやOpenTelemetryの普及により計装そのものの重要性は認知されるようになってきましたが、一方でシグナルの相関はまだあまり多く語られていないように思います。本セッションでは、テレメトリーシグナルの相関について解説し、「第一原理からのデバッグ」という考え方を踏まえながら、それがトラブルシューティングの際にどのように役立つのかを解説します。またテレメトリーシグナルの相関がオブザーバビリティバックエンドでどのように可視化されるのか、実例も踏まえて紹介します。",
+    "speakers": [
+      {
+        "id": 1682,
+        "name": "Yoshi Yamaguchi"
+      }
+    ],
+    "dayId": 31,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T15:20:00.000+09:00",
+    "endTime": "2000-01-01T16:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/ymotongpoo/do-you-utilize-telemetry-correlations",
+    "conferenceDayId": 31,
+    "conferenceDayDate": "2024-06-15",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2249,
+    "conferenceId": 11,
+    "trackId": 50,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2024/talks/2249/138/playlist.m3u8",
+    "title": "変化と挑戦：NoSQLとNewSQL、Serverless Databaseの技術革新とマルチテナンシーの秘密",
+    "abstract": "データベース技術の変遷として、RDBMSから始まり、その後、KVS/NoSQLといったスケーラビリティに強いデータベースが生まれます。\r\nそして、誕生したのがNewSQLと呼ばれるデータベースです。Googleが提供しているCloud Spannerの論文が公開されたことをきっかけにOSSとして登場したのがTiDB/YugabyteDB/CockroachDBと呼ばれるデータベースになります。\r\n本セッションでは、データベースの世界の進化を深ぼることを目的に、NoSQLからはAWSのDynamoDBをNewSQLからはTiDB(TiDB Serverless)に焦点をおきお話ししていきます。\r\n\r\nDynamoDBは、その設計思想とともに、マルチテナンシーを実現するための技術革新を背景に、圧倒的なスケーラビリティとパフォーマンスを提供しているNoSQLデータベースです。\r\n一方、PingCAPによって開発されたTiDBは、NewSQLデータベースとし、高い耐久性、可用性、パフォーマンスを提供するデータベースとして、Serverlessの形態でも提供されています。\r\n\r\nデータベースの歴史を振り返ると、NoSQL、特にDynamoDBの進化は本当に面白く10年の間の中で様々な改善が施されてきました。そして、NewSQL。TiDB/YugabyteDB/CockroachDBの登場により、分散型データベースの可能性が一層広がったと思っています。\r\nこのセッションでは、DynamoDBとTiDB(Serverless)の技術的特徴に焦点を当て、マルチテナンシーを実現するための技術、データベースそのものの仕組みなどなどを深く掘り下げます。これらのサービスがどのようにして業界に新たな可能性を切り開いてきたのかを解き明かしていくセッションにできれば幸いです。",
+    "speakers": [
+      {
+        "id": 1695,
+        "name": "Yoshitaka Koitabashi"
+      }
+    ],
+    "dayId": 31,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T17:20:00.000+09:00",
+    "endTime": "2000-01-01T18:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "上級者",
+    "talkCategory": "Storage / Database",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/yoshiitaka/serverless-database",
+    "conferenceDayId": 31,
+    "conferenceDayDate": "2024-06-15",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2254,
+    "conferenceId": 11,
+    "trackId": 48,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2024/talks/2254/126/playlist.m3u8",
+    "title": "地域密着型組織が挑む！北海道全域で利用される宅配システムのクラウドネイティブ化",
+    "abstract": "生活協同組合コープさっぽろは、組合員の方々との「つながり」を大切にしています。\r\n\r\n宅配事業では46万世帯へ商品をお届けするため、注文用のWebサイト・モバイルアプリを提供し、日々更新を行っています。\r\n\r\nさらなる利便性向上と事業拡大を目指し、3年前からフロントエンド（Web、モバイルアプリ）・バックエンド・インフラの刷新を続けてきました。その過程で、オンプレミス環境からの脱却、インスタンスからコンテナ・サーバレスへの変遷を遂げてきました。\r\n\r\n本セッションでは、地域密着型のレガシー組織がどのようにクラウドネイティブへ向かっているか、その挑戦についてお話ししたいと思います。",
+    "speakers": [
+      {
+        "id": 1701,
+        "name": "Takuya Kihara / Yutaka Ogasawara"
+      }
+    ],
+    "dayId": 31,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:20:00.000+09:00",
+    "endTime": "2000-01-01T14:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Architecture Design",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/coopsapporo/cloudnative-days-summer-2024-bei-hai-dao-quan-yu-deli-yong-sareruzhai-pei-sisutemunokuraudoneiteibuhua",
+    "conferenceDayId": 31,
+    "conferenceDayDate": "2024-06-15",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2261,
+    "conferenceId": 11,
+    "trackId": 48,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2024/talks/2261/140/playlist.m3u8",
+    "title": "クラウドネイティブ化は本当に必要なのか？ 移行パターンと成功のポイント",
+    "abstract": "クラウドリフトを完了し 、IaaS を中心に開発しているシステムにとって、次のステップはクラウドネイティブ化です。しかし、多くの方が「本当に必要なのか」「どのように移行すべきか」「成功するには何が必要か」などの悩みを抱えているんじゃないでしょうか。\r\n\r\nそんな方に向けて、本セッションで以下のようなトピックをお届けします。\r\n・なぜクラウドネイティブ化が必要なのか（DORA から分かるクラウドリフトのみとクラウドネイティブの比較）\r\n・移行パターン（メリデメとユースケースで比較するリファクタとリビルド）\r\n・成功ポイント（DORA metrics による DevOps とビジネス成果の紐づけ）\r\n・クラウドネイティブ化例（サーバレス化、疎結合アーキテクチャ化、ゼロトラスト化、etc.）",
+    "speakers": [
+      {
+        "id": 1707,
+        "name": "Takumi Mizuno"
+      }
+    ],
+    "dayId": 31,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T15:20:00.000+09:00",
+    "endTime": "2000-01-01T16:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Application / Development",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/cloudace/kuraudo-neiteibuhua-ha-ben-dang-nibi-yao-nanoka-yi-xing-patantocheng-gong-nopointo",
+    "conferenceDayId": 31,
+    "conferenceDayDate": "2024-06-15",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2274,
+    "conferenceId": 11,
+    "trackId": 50,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2024/talks/2274/127/playlist.m3u8",
+    "title": "OpenFeature と自動生成を活用した、フィーチャーフラグの宣言的集約管理",
+    "abstract": "近年、トランクベース開発やAB テスト、カナリアリリースへの利用などでフィーチャーフラグを活用するケースが増えてきました。また、フィーチャーフラグAPIの標準化を目指す OpenFeature から先日ついに Web SDK v1 がリリースされるなど、徐々にその熱の高まりを感じます。しかしながら、OpenFeature を採用した開発事例はまだ少なく、活用方法などの知見が不足していると感じています。\r\n\r\n本セッションではフィーチャーフラグの種類分けや OpenFeature の概要から、具体的な実装にいたるまでを詳しく解説します。さらに今回、自動生成を活用することによってアプリケーションコードとリモート間でのフラグ情報の集約管理を実現したため、その方法についてもお話しします。セッションを通じてフィーチャーフラグの導入イメージに加えて、できるだけ疲弊せずにこれらを運用していくためのアイデアを得ることができます。",
+    "speakers": [
+      {
+        "id": 1692,
+        "name": "Shota Iwami"
+      }
+    ],
+    "dayId": 31,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:20:00.000+09:00",
+    "endTime": "2000-01-01T14:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/biwashi/cloudnative-days-summer-2024-declarative-aggregated-management-of-feature-flags-using-openfeature-and-auto-generation",
+    "conferenceDayId": 31,
+    "conferenceDayDate": "2024-06-15",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2275,
+    "conferenceId": 11,
+    "trackId": 50,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2024/talks/2275/131/playlist.m3u8",
+    "title": "生成AI向け機械学習クラスタ構築のレシピ　北海道石狩編",
+    "abstract": "LLMを含む生成AIモデル学習の競争が激化しており、高い計算能力を持つクラスタを早く構築し使い勝手よく提供することがより重要になっています。生成AIのモデル学習向けにさらなる計算リソースを得るため、我々はさくらインターネット石狩データセンターのNVIDIA H100 GPUベアメタルサーバサービスを用いてKubernetesクラスタを構築しています。本発表ではこの新たな生成AI向け機械学習クラスタをどのように短期間で構築したのか、設計思想や構成から具体的なテクニックまで我々のこれまでのオンプレミス機械学習クラスタの構築と運用の経験を織りまぜながらお話しします。",
+    "speakers": [
+      {
+        "id": 1721,
+        "name": "Sho Shimizu / Yuichiro Ueno"
+      }
+    ],
+    "dayId": 31,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T15:20:00.000+09:00",
+    "endTime": "2000-01-01T16:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "ML / HPC",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/pfn/20240615-cloudnativedayssummer-pfn",
+    "conferenceDayId": 31,
+    "conferenceDayDate": "2024-06-15",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2281,
+    "conferenceId": 11,
+    "trackId": 49,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2024/talks/2281/128/playlist.m3u8",
+    "title": "デプロイ・QA・Four keys を自動化×見える化する freee の統合デリバリー基盤",
+    "abstract": "freee ではデプロイ/ QA/ Four Keys の自動化と可視化を担う内製アプリを作っています。個別の要素を自動化や管理しているソフトウェアは色々ありますが、このアプリは GitHub・ArgoCD・Jira・Slack を紐付け全ての情報を一箇所に集約することで 「デプロイ時にPR作成者ごとの動作確認を通知・可視化」、「デプロイと障害情報の紐付けとラベリング」などを実現しています。デリバリーパフォーマンス向上のかゆいところに手が届くアプリのアーキテクチャと効果についてお話します。",
+    "speakers": [
+      {
+        "id": 1729,
+        "name": "Akito Fujihara"
+      }
+    ],
+    "dayId": 31,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:20:00.000+09:00",
+    "endTime": "2000-01-01T14:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "CI / CD",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/akito0922/depuroiqafour-keys-wozi-dong-hua-xjian-eruhua-suru-freee-notong-he-deribariji-pan",
+    "conferenceDayId": 31,
+    "conferenceDayDate": "2024-06-15",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2324,
+    "conferenceId": 11,
+    "trackId": 48,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2024/talks/2324/142/playlist.m3u8",
+    "title": "マイクロサービス基盤にフルマネージドサービスではなくKubernetesを選択する理由",
+    "abstract": "Kubernetes は機能性と拡張性の高さから多くのマイクロサービス基盤として利用されていますが、その複雑性やアップデート頻度の高さから運用の難しさが課題となっています。\r\n\r\n運用コストを低く抑える基盤の選択肢として Amazon ECS や Google Cloud Run といったフルマネージドサービスの利用が挙げられますが、ウォンテッドリー株式会社では Kubernetes (EKS) のメンテナンスコストを受け入れ運用し続ける意思決定をしています。\r\n\r\n本セッションでは2016年から本番環境で Kubernetes を運用しているウォンテッドリーでの例を元に、マイクロサービス基盤の選定基準と運用コストの受け入れ方法ついてお伝えします。\r\n\r\n- フルマネージドサービスに対する Kubernetes のメリット\r\n- Kubernetes を利用して開発者の生産性を上げるための取り組み\r\n- Kubernetes アップデートを継続的に行う仕組み\r\n\r\n",
+    "speakers": [
+      {
+        "id": 1728,
+        "name": "Atsushi Tanaka"
+      }
+    ],
+    "dayId": 31,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T17:20:00.000+09:00",
+    "endTime": "2000-01-01T18:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Microservices / Services Mesh",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/bgpat/why-use-kubernetes-as-microservice-infrastructure-maikurosahisuji-pan-nihurumanesitosahisutehanakukuberneteswoxuan-ze-suruli-you",
+    "conferenceDayId": 31,
+    "conferenceDayDate": "2024-06-15",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2327,
+    "conferenceId": 11,
+    "trackId": 49,
+    "videoPlatform": null,
+    "videoId": "",
+    "title": "定量データと定性評価を用いた技術戦略の組織的実践",
+    "abstract": "プロダクト開発では、技術戦略の策定と実施が極めて重要です。これはビジネスの目標、プロダクトの品質、システムの信頼性、そして組織の能力を最大限に引き出す計画を立てることを意味します。スタディサプリ小中高のプロダクト開発チームでは、現場のメンバーが主導する形で、現状の把握、課題の評価、そして計画の策定を行っています。この過程で、技術的な課題を定量的にも定性的にも評価し、技術とビジネスの成長をバランス良く進める方法を模索しています。\r\n\r\n本セッションでは、スタディサプリの技術戦略グループによる具体的な実践事例を通じて、技術課題やシステムに関する定量データの Cloud Native な手法による取得・可視化の方法、定性データの収集・評価のアプローチについて紹介します。さらに、これらの評価結果をどのようにプロダクト組織全体の技術課題解決とビジネス・プロダクトの計画に統合していくか、組織としての実践的な取り組みを具体例を交えて説明します。\r\n\r\n技術戦略の策定と実践に興味があるプロダクト開発チームや組織にヒントを持ち帰ってもらえると幸いです。\r\n",
+    "speakers": [
+      {
+        "id": 1761,
+        "name": "Takeshi Kondo"
+      }
+    ],
+    "dayId": 31,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T17:20:00.000+09:00",
+    "endTime": "2000-01-01T18:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "組織論",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/chaspy/systematic-implementation-of-technology-strategies-using-quantitative-data-and-qualitative-evaluation",
+    "conferenceDayId": 31,
+    "conferenceDayDate": "2024-06-15",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2330,
+    "conferenceId": 11,
+    "trackId": 48,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2024/talks/2330/137/playlist.m3u8",
+    "title": "次世代のクラウドネイティブ基盤、Wasmの今と未来",
+    "abstract": "コンテナの次の仮想化環境と期待されているWebAssembly(Wasm)をご存知ですか？\r\n本セッションではWasmの基礎的な仕様や特性から始まり、現状どのような開発者体験が提供されているか、そして将来的にWasmが目指す世界までを概観します。「Wasmって最近よく聞くけど何が嬉しいの？何ができるの？」と議論できる土台になれたらと思っています。",
+    "speakers": [
+      {
+        "id": 1768,
+        "name": "Soichiro UEDA/Ai NOZAKI"
+      }
+    ],
+    "dayId": 31,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T11:10:00.000+09:00",
+    "endTime": "2000-01-01T11:30:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Keynote",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/ainozaki/cnds2024",
+    "conferenceDayId": 31,
+    "conferenceDayDate": "2024-06-15",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2331,
+    "conferenceId": 11,
+    "trackId": 48,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2024/talks/2331/139/playlist.m3u8",
+    "title": "エンドツーエンドの可視性を実現するクエスト",
+    "abstract": "クラウド技術の導入が進むにつれ、そのエコシステムは複雑化し、管理も難しくなっています。本セッションでは、変化し続けるクラウド環境を効果的にモニタリングし、管理するためのオブザーバービリティの実践方法について解説します。\r\nまた、インフラ、アプリ、ユーザーを横断するオブザーバビリティの重要要素を探りながら、セキュリティを維持しコストをコントロールする方法についても紹介します。",
+    "speakers": [
+      {
+        "id": 1769,
+        "name": "Taiji Hagino"
+      }
+    ],
+    "dayId": 31,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T11:30:00.000+09:00",
+    "endTime": "2000-01-01T11:50:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Keynote",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 31,
+    "conferenceDayDate": "2024-06-15",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2332,
+    "conferenceId": 11,
+    "trackId": 48,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2024/talks/2332/130/playlist.m3u8",
+    "title": "Service Weaver で始めるモジュラー モノリス、そしてマイクロサービスへ",
+    "abstract": "モジュラー モノリスは、マイクロ サービスのメリットとモノリスのメリットを兼ね備えたアーキテクチャ パターンです。Service Weaver は、モジュラー モノリスを構築するためのオープンソース ツールであり、コードの依存関係を管理し、サービス間の通信を容易にする機能を提供します。本セッションでは、Service Weaver を使ってモジュラー モノリスを構築し、段階的にマイクロ サービスに移行していく方法を紹介します。",
+    "speakers": [
+      {
+        "id": 1767,
+        "name": "Takayuki Yorikane"
+      }
+    ],
+    "dayId": 31,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:20:00.000+09:00",
+    "endTime": "2000-01-01T15:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Microservices / Services Mesh",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 31,
+    "conferenceDayDate": "2024-06-15",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2333,
+    "conferenceId": 11,
+    "trackId": 48,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2024/talks/2333/134/playlist.m3u8",
+    "title": "クラウドネイティブな省エネサービスの内製開発で、BizDevOpsを実現する",
+    "abstract": "北海道ガスでは、業務用のお客さま向けの省エネサービス「Mys3」（ミース）を提供しています。従来、当社におけるシステム開発は外注することがほとんどでした。しかし、この事例では内製開発に挑戦し、クラウドネイティブ技術を活用することで、BizDevOpsを実現しています。プロダクトの開発を通して感じたクラウドネイティブのメリットや、クラウドネイティブの考え方を導入することで起きた変化について、まったくの初心者だった私たちが概念検証からサービスローンチするまでにいたった流れを踏まえてお話しします。",
+    "speakers": [
+      {
+        "id": 1770,
+        "name": "Genki Ogasawara"
+      }
+    ],
+    "dayId": 31,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T10:30:00.000+09:00",
+    "endTime": "2000-01-01T10:50:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Keynote",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/genkiogasawara/achieving-bizdevops-in-in-house-development-of-cloud-native-energy-saving-services",
+    "conferenceDayId": 31,
+    "conferenceDayDate": "2024-06-15",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2334,
+    "conferenceId": 11,
+    "trackId": 48,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2024/talks/2334/135/playlist.m3u8",
+    "title": "リードタイム、コストを最適化しながら回復性を求めるクラウドネイティブ戦略",
+    "abstract": "酪農IoTスタートアップであるエゾウィンでは、クラウドネイティブ技術を活用し、リードタイムとコストを最適化しつつ、障害時にもシステム全体のダウンタイムを防ぎ、データのロストを回避できる回復性を持つシステムを目指しています。\r\n\r\n弊社では、大規模農家向けの動態管理サービスを中心に事業を進めており、専用IoTデバイスとWebアプリケーションを使って、現場の課題を解決しています。\r\nそこでは高いパフォーマンスもそうですが、回復性も非常に重要な要素だと考えております。\r\nサーバーレスを中心としたクラウドネイティブ戦略により、酪農IoTシステムのリードタイム・コストを最適化しつつ、回復性を追求する弊社の取り組み事例をご紹介します。",
+    "speakers": [
+      {
+        "id": 1771,
+        "name": "Shigeru Okuyama"
+      }
+    ],
+    "dayId": 31,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T10:50:00.000+09:00",
+    "endTime": "2000-01-01T11:10:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Keynote",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/sgrokym/ridotaimu-kosutowozui-shi-hua-sinagara-hui-fu-xing-woqiu-merukuraudoneiteibuzhan-lue-number-cnds2024",
+    "conferenceDayId": 31,
+    "conferenceDayDate": "2024-06-15",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2335,
+    "conferenceId": 11,
+    "trackId": 49,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2024/talks/2335/129/playlist.m3u8",
+    "title": "組織をまたいで実践するオブザーバビリティの勘所",
+    "abstract": "オブザーバビリティという概念は広く普及しつつあり、実際に取り組んでいる方も増えてきました。あるシステムで獲得したオブザーバビリティを他のシステムに展開していきたいという方もいるのではないでしょうか。プラットフォームチームを構成して取り組むケースもあるでしょう。\r\n複数の組織やチームが連携する環境において、組織横断的にオブザーバビリティに取り組んでいく上では、さまざまな課題や考慮すべきことがあります。使いやすく手軽にオブザーバビリティを実現できることが引き続き重要である一方、利用するツールの標準化を試みたり、構成管理やライセンス管理などにも取り組んでいく必要があるはずです。\r\n本セッションでは、組織横断的にオブザーバビリティを広げていく上で考慮すべき点について議論していきます。また、その取り組みを成功させる上での重要なポイントについて検討していきます。",
+    "speakers": [
+      {
+        "id": 1773,
+        "name": "Kentaro Nakagami"
+      }
+    ],
+    "dayId": 31,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:20:00.000+09:00",
+    "endTime": "2000-01-01T15:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "onAir": false,
+    "documentUrl": "https://speakerdeck.com/knakagami/cnds2024-zu-zhi-womataideshi-jian-suruobuzababiriteinokan-suo",
+    "conferenceDayId": 31,
+    "conferenceDayDate": "2024-06-15",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2336,
+    "conferenceId": 11,
+    "trackId": 48,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2024/talks/2336/141/playlist.m3u8",
+    "title": "クラウドネイティブにおけるセキュアなソフトウェア・サプライ・チェーンの考え方とベストプラクティス",
+    "abstract": "ソフトウェア・サプライ・チェーン攻撃は、ソフトウェア開発のプロセス自体が侵害され、その結果、重大なセキュリティインシデントが生じてしまいます。\r\nクラウドネイティブは顧客に迅速な価値を提供できる反面、開発プロセスは複雑で、どのようにセキュリティ対策をすべきかが課題になっています。\r\n本セッションでは改めて上記の課題について整理し、弊社のアプリケーション・セキュリティ・テスト・プラットフォームであるPolarisを用いた解決策を紹介します。",
+    "speakers": [
+      {
+        "id": 1772,
+        "name": "Tatsuya Hanayama"
+      }
+    ],
+    "dayId": 31,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T16:20:00.000+09:00",
+    "endTime": "2000-01-01T17:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Security",
+    "onAir": false,
+    "documentUrl": "https://www.slideshare.net/slideshow/pdf-ddd0/269694812",
+    "conferenceDayId": 31,
+    "conferenceDayDate": "2024-06-15",
+    "presentationMethod": "現地登壇"
+  },
+  {
+    "id": 2337,
+    "conferenceId": 11,
+    "trackId": 50,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2024/talks/2337/2337_master.m3u8",
+    "title": "Cloud Native なサービスを高速実装し、GitHub Action で効率的且つセキュアに運用する秘策をお見せします。",
+    "abstract": "Cloud Native なサービスを開発して運用しようと考えた場合、いかにして生産性高くモジュールを実装させ、諸工程を自動化すべく CICD 環境を構築して、セキュア且つガバナンスを効かせるべく API Gateway を導入する等、多くの検討ポイントが挙がってきます。本セッションでは Salesforce/MuleSoft だからこそお見せできるこれらの検討ポイントをクリアする Dev にも Ops にも効果的なサンプルパターンをデモを交えてご紹介いたします。",
+    "speakers": [
+      {
+        "id": 1774,
+        "name": "Yoshihiro Mitsutomi"
+      }
+    ],
+    "dayId": 31,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:20:00.000+09:00",
+    "endTime": "2000-01-01T15:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "CI / CD",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 31,
+    "conferenceDayDate": "2024-06-15",
+    "presentationMethod": "事前収録"
+  },
+  {
+    "id": 2339,
+    "conferenceId": 11,
+    "trackId": 49,
+    "videoPlatform": null,
+    "videoId": "https://d3pun3ptcv21q4.cloudfront.net/mediapackage/cnds2024/talks/2339/2339_master.m3u8",
+    "title": "厳格なセキュリティ要件に対応するためのクラウドセキュリティ戦略",
+    "abstract": "主に Google Cloud 、Kubernetes を利用されている方または、今後利用することを検討されている方向けにクラウドセキュリティサービスを駆使して、厳格化する現代のセキュリティ要件に対応するための戦略を詳しく解説します。",
+    "speakers": [
+      {
+        "id": 1776,
+        "name": "Ryotaro Matsushima / Makoto Mase"
+      }
+    ],
+    "dayId": 31,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T16:20:00.000+09:00",
+    "endTime": "2000-01-01T17:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Security",
+    "onAir": false,
+    "documentUrl": "",
+    "conferenceDayId": 31,
+    "conferenceDayDate": "2024-06-15",
+    "presentationMethod": "事前収録"
+  }
+]
+
+
+

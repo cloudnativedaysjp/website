@@ -1,0 +1,50 @@
+---
+import { Icon } from "astro-icon/components";
+import Layout from '../layouts/Layout.astro'
+import MascotPeek from '../components/MascotPeek.astro'
+---
+
+<Layout
+  title="404 - Page Not Found | CloudNative Days"
+  description="お探しのページが見つかりませんでした"
+  ogImage="/images/hero.png"
+>
+  <main class="flex flex-col items-center justify-center min-h-[70vh] px-4 pt-20 md:pt-8 text-center">
+    <h1 class="text-6xl md:text-8xl font-bold text-black mb-4">
+      404
+    </h1>
+
+    <div class="flex items-center justify-center gap-12 md:gap-20 mb-6">
+      <div class="transform -rotate-6">
+        <div class="w-48 h-48 md:w-72 md:h-72 lg:w-80 lg:h-80">
+          <img src="/images/mascots/suu-face-2.png" alt="スーちゃん" class="w-full h-full object-contain" />
+        </div>
+      </div>
+      <div class="transform rotate-6">
+        <div class="w-48 h-48 md:w-72 md:h-72 lg:w-80 lg:h-80">
+          <img src="/images/mascots/toge-face-2.png" alt="トゲくん" class="w-full h-full object-contain" />
+        </div>
+      </div>
+    </div>
+
+    <p class="text-xl md:text-2xl text-gray-700 mb-2">
+      Page Not Found
+    </p>
+
+    <p class="text-gray-600 mb-8 max-w-md">
+      お探しのページは見つかりませんでした。<br />
+      URLが正しいかご確認ください。
+    </p>
+
+    <a
+      href="/"
+      class="inline-flex items-center gap-2 text-gray-600 hover:text-indigo-600 transition-colors"
+    >
+      <Icon name="tabler:arrow-left" class="w-5 h-5" />
+      <span>トップページに戻る</span>
+    </a>
+  </main>
+
+  <MascotPeek character="suu" position="left" />
+  <MascotPeek character="toge" position="right" />
+</Layout>
