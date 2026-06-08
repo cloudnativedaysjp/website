@@ -1,15 +1,15 @@
 import fs, { createWriteStream } from 'node:fs'
 import { pipeline } from 'node:stream'
 import { promisify } from 'node:util'
-import fetch, { Response, AbortError } from 'node-fetch'
+import { Client } from '@notionhq/client'
+import type { Response } from 'node-fetch'
+import fetch, { AbortError } from 'node-fetch'
 import {
   NOTION_API_SECRET,
   DATABASE_ID,
   NUMBER_OF_POSTS_PER_PAGE,
   REQUEST_TIMEOUT_MS,
 } from '../../server-constants'
-import type * as responses from './responses'
-import type * as requestParams from './request-params'
 import type {
   Database,
   Post,
@@ -50,8 +50,8 @@ import type {
   Mention,
   Reference,
 } from '../interfaces'
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-import { Client } from '@notionhq/client'
+import type * as requestParams from './request-params'
+import type * as responses from './responses'
 
 const client = new Client({
   auth: NOTION_API_SECRET,

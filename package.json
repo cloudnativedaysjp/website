@@ -14,7 +14,7 @@
     "cache:fetch": "node scripts/blog-contents-cache.cjs",
     "cache:purge": "nx reset && rm -f tmp/*",
     "_fetch-notion-blocks": "node scripts/retrieve-block-children.cjs",
-    "lint": "prettier --write '**/*.{js,jsx,ts,tsx}' && eslint --fix './**/*.{js,jsx,ts,tsx}' --config .eslintrc.cjs && eslint '*/**/*.{js,ts}' --quiet --fix --config .eslintrc.cjs"
+    "lint": "prettier --write '**/*.{js,jsx,ts,tsx}' && eslint --fix './**/*.{js,jsx,ts,tsx}' && eslint '*/**/*.{js,ts}' --quiet --fix"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.0.0",
@@ -53,9 +53,10 @@
     "astro-compress": "^2.0.15",
     "astro-icon": "^1.1.5",
     "cli-progress": "^3.11.2",
-    "eslint": "^8.57.1",
-    "eslint-plugin-astro": "^1.3.1",
-    "eslint-plugin-import": "^2.31.0",
+    "eslint": "^10.0.0",
+    "eslint-plugin-astro": "^1.7.0",
+    "eslint-plugin-import-x": "^4.16.2",
+    "globals": "^17.0.0",
     "nx": "22.7.5",
     "postcss-html": "^1.8.0",
     "prettier": "^3.5.2",

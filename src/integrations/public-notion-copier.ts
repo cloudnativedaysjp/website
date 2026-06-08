@@ -1,5 +1,5 @@
-import fs from 'node:fs'
 import { execSync } from 'child_process'
+import fs from 'node:fs'
 import type { AstroIntegration } from 'astro'
 
 export default (): AstroIntegration => ({
