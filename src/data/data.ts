@@ -1,7 +1,7 @@
 import fs from 'fs'
-import type { Talk } from '../types/talk'
-import type { Speaker } from '../types/speaker'
 import type { Conference } from '../types/conference'
+import type { Speaker } from '../types/speaker'
+import type { Talk } from '../types/talk'
 
 const events = [
   'cndt2020',
