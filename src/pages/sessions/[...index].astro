@@ -1,0 +1,319 @@
+---
+// Session list. Ported from kaigi.cloudnativedays.jp
+// (src/pages/sessions/index.astro), adapted to the single-conference model:
+// kaigi's conference filter (cndays/pek/sre/sponsor) collapses into a simple
+// sponsor-vs-CFP category filter here, and day filter buttons are generated
+// from timetable-config's `days` array instead of being hardcoded. Restyled
+// to the current site idiom (white/backdrop-blur cards, indigo accent)
+// instead of kaigi's washi/sumi palette. Uses a rest param ([...index]) so it
+// matches exactly '/sessions' while still participating in FEATURES-gated
+// static path generation, matching /timetable/[...index].astro.
+import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon/components'
+import Layout from '../../layouts/Layout.astro'
+import { FEATURES } from '../../features'
+import { days, trackRoomMap } from '../../lib/dreamkast/timetable-config'
+import { getTimetableData } from '../../lib/dreamkast/timetable'
+import { getSpeakerAvatar } from '../../lib/dreamkast/assets'
+import type { TimetableTalk } from '../../lib/dreamkast/schema'
+
+export function getStaticPaths() {
+  return FEATURES.sessions ? [{ params: { index: undefined } }] : []
+}
+
+const timetables = await getTimetableData()
+
+type FlatTalk = TimetableTalk & { daySlug: string }
+
+const allTalks: FlatTalk[] = timetables.flatMap((timetable, i) =>
+  timetable.slots.flatMap((slot) =>
+    slot.kind === 'talks'
+      ? slot.talks.map((talk) => ({ ...talk, daySlug: days[i].slug }))
+      : [],
+  ),
+)
+
+const dayLabelBySlug = new Map(days.map((d) => [d.slug, d.label]))
+---
+
+<Layout
+  title="セッション一覧 | CloudNative Days Winter 2026"
+  description="CloudNative Days Winter 2026のセッション一覧。日程・カテゴリで絞り込んで検索できます。"
+  ogImage="/favicon.svg"
+>
+  <main class="pt-24 pb-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <nav class="mb-8">
+        <a
+          href="/"
+          class="inline-flex items-center gap-2 text-gray-600 hover:text-indigo-600 transition-colors"
+        >
+          <Icon name="tabler:arrow-left" class="w-5 h-5" />
+          <span>トップページに戻る</span>
+        </a>
+      </nav>
+
+      <h1 class="text-3xl md:text-4xl font-bold text-center text-black mb-8">
+        セッション一覧
+      </h1>
+
+      <div class="mb-10 flex flex-col items-center gap-5">
+        <!-- Day filters -->
+        <div class="flex flex-wrap justify-center gap-0 border-b border-gray-200">
+          <button
+            data-filter="day"
+            data-value="all"
+            class="day-filter-btn filter-btn px-5 py-2 text-sm font-bold text-gray-900 border-b-2 border-blue-600 -mb-px transition-colors"
+          >
+            全日程
+          </button>
+          {
+            days.map((d) => (
+              <button
+                data-filter="day"
+                data-value={d.slug}
+                class="day-filter-btn filter-btn px-5 py-2 text-sm font-bold text-gray-400 border-b-2 border-transparent -mb-px hover:text-gray-700 transition-colors"
+              >
+                {d.label}
+              </button>
+            ))
+          }
+        </div>
+
+        <!-- Category filters -->
+        <div class="flex flex-wrap justify-center items-center">
+          <button
+            data-filter="category"
+            data-value="all"
+            class="category-filter-btn filter-btn px-3 py-1 text-xs text-gray-900 font-bold transition-colors"
+          >
+            すべて
+          </button>
+          <span class="text-gray-300 text-xs select-none">｜</span>
+          <button
+            data-filter="category"
+            data-value="cfp"
+            class="category-filter-btn filter-btn px-3 py-1 text-xs text-gray-400 hover:text-gray-700 transition-colors"
+          >
+            公募セッション
+          </button>
+          <span class="text-gray-300 text-xs select-none">｜</span>
+          <button
+            data-filter="category"
+            data-value="sponsor"
+            class="category-filter-btn filter-btn px-3 py-1 text-xs text-gray-400 hover:text-gray-700 transition-colors"
+          >
+            スポンサーセッション
+          </button>
+        </div>
+      </div>
+
+      <div id="session-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {
+          allTalks.map((talk) => (
+            <a
+              href={`/sessions/${talk.id}`}
+              class="session-card group flex flex-col h-full bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 p-5"
+              data-day={talk.daySlug}
+              data-track={talk.trackName}
+              data-is-sponsor={talk.sponsorName ? 'true' : 'false'}
+              aria-label={`${talk.title}。スピーカー: ${talk.speakers.map((s) => s.name).join('、')}`}
+            >
+              <div class="flex flex-wrap items-center gap-x-3 gap-y-1 mb-3" aria-hidden="true">
+                <span class="text-xs text-gray-500">
+                  {dayLabelBySlug.get(talk.daySlug)}
+                </span>
+                <span class="text-xs font-mono text-gray-500">
+                  {talk.startTime.substring(11, 16)} - {talk.endTime.substring(11, 16)}
+                </span>
+              </div>
+
+              <div class="flex flex-wrap gap-1.5 mb-3" aria-hidden="true">
+                {talk.sponsorName ? (
+                  <span class="px-2 py-0.5 text-xs font-bold bg-amber-500 text-white rounded">
+                    スポンサー
+                  </span>
+                ) : (
+                  <span class="px-2 py-0.5 text-xs font-bold bg-indigo-600 text-white rounded">
+                    公募
+                  </span>
+                )}
+                {talk.isKeynote && (
+                  <span class="px-2 py-0.5 text-xs font-bold border border-indigo-600 text-indigo-600 rounded">
+                    キーノート
+                  </span>
+                )}
+                {talk.category && (
+                  <span class="px-2 py-0.5 text-xs font-medium bg-indigo-50 text-indigo-700 rounded">
+                    {talk.category}
+                  </span>
+                )}
+                {talk.difficulty && (
+                  <span class="px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700 border border-gray-200 rounded">
+                    {talk.difficulty}
+                  </span>
+                )}
+              </div>
+
+              <h2 class="text-base md:text-lg font-bold text-gray-900 leading-snug mb-2" aria-hidden="true">
+                {talk.title}
+              </h2>
+
+              <p class="text-sm text-gray-600 line-clamp-3 mb-4">
+                {talk.abstract || '説明がありません'}
+              </p>
+
+              <div class="flex flex-col gap-2 mt-auto pt-3 border-t border-gray-100">
+                {talk.speakers.map((speaker) => {
+                  const avatar = speaker.localAssetPath
+                    ? getSpeakerAvatar(speaker.localAssetPath)
+                    : undefined
+                  return (
+                    <div class="flex items-center gap-2" aria-hidden="true">
+                      {avatar ? (
+                        <Image
+                          src={avatar}
+                          alt=""
+                          width={32}
+                          height={32}
+                          format="webp"
+                          loading="lazy"
+                          class="w-8 h-8 rounded-full object-cover shrink-0 ring-1 ring-gray-100"
+                        />
+                      ) : (
+                        <div class="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center shrink-0">
+                          <Icon name="tabler:user" class="w-4 h-4 text-gray-400" />
+                        </div>
+                      )}
+                      <div class="min-w-0">
+                        <div class="text-sm font-medium text-gray-800 truncate">{speaker.name}</div>
+                        {speaker.company && (
+                          <div class="text-xs text-gray-500 truncate">{speaker.company}</div>
+                        )}
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+
+              <div class="mt-3 text-xs text-gray-400" aria-hidden="true">
+                {trackRoomMap[talk.trackName] ?? talk.trackName}
+              </div>
+            </a>
+          ))
+        }
+      </div>
+      <div id="no-results" class="hidden text-center py-12 text-gray-500">
+        該当するセッションが見つかりませんでした。
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<script>
+  function initFilters() {
+    const urlParams = new URLSearchParams(window.location.search)
+    let currentDayFilter = urlParams.get('day') || 'all'
+    let currentCategoryFilter = urlParams.get('category') || 'all'
+
+    const cards = document.querySelectorAll('.session-card')
+    const noResults = document.getElementById('no-results')
+    const filterBtns = document.querySelectorAll('.filter-btn')
+
+    function applyFilters() {
+      let visibleCount = 0
+
+      cards.forEach((card) => {
+        const htmlElement = card as HTMLElement
+        const day = htmlElement.dataset.day
+        const isSponsor = htmlElement.dataset.isSponsor === 'true'
+
+        const matchDay = currentDayFilter === 'all' || currentDayFilter === day
+        let matchCategory = false
+
+        if (currentCategoryFilter === 'all') {
+          matchCategory = true
+        } else if (currentCategoryFilter === 'sponsor') {
+          matchCategory = isSponsor
+        } else {
+          matchCategory = !isSponsor
+        }
+
+        if (matchDay && matchCategory) {
+          htmlElement.style.display = ''
+          visibleCount++
+        } else {
+          htmlElement.style.display = 'none'
+        }
+      })
+
+      if (noResults instanceof HTMLElement) {
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none'
+      }
+
+      // Update URL without reloading
+      const newUrl = new URL(window.location.href)
+      if (currentDayFilter === 'all') newUrl.searchParams.delete('day')
+      else newUrl.searchParams.set('day', currentDayFilter)
+
+      if (currentCategoryFilter === 'all') newUrl.searchParams.delete('category')
+      else newUrl.searchParams.set('category', currentCategoryFilter)
+
+      window.history.replaceState({}, '', newUrl)
+
+      // Update active button styles
+      filterBtns.forEach((btn) => {
+        const htmlBtn = btn as HTMLElement
+        const filterType = htmlBtn.dataset.filter
+        const value = htmlBtn.dataset.value
+        const isActive =
+          (filterType === 'day' && value === currentDayFilter) ||
+          (filterType === 'category' && value === currentCategoryFilter)
+
+        const isDay = filterType === 'day'
+
+        if (isDay) {
+          if (isActive) {
+            htmlBtn.classList.remove('text-gray-400', 'border-transparent', 'hover:text-gray-700')
+            htmlBtn.classList.add('text-gray-900', 'border-blue-600')
+          } else {
+            htmlBtn.classList.remove('text-gray-900', 'border-blue-600')
+            htmlBtn.classList.add('text-gray-400', 'border-transparent', 'hover:text-gray-700')
+          }
+        } else {
+          if (isActive) {
+            htmlBtn.classList.remove('text-gray-400', 'hover:text-gray-700')
+            htmlBtn.classList.add('text-gray-900', 'font-bold')
+          } else {
+            htmlBtn.classList.remove('text-gray-900', 'font-bold')
+            htmlBtn.classList.add('text-gray-400', 'hover:text-gray-700')
+          }
+        }
+      })
+    }
+
+    // Set initial active states
+    applyFilters()
+
+    // Add event listeners to buttons
+    filterBtns.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        const htmlBtn = e.currentTarget as HTMLElement
+        const filterType = htmlBtn.dataset.filter
+        const value = htmlBtn.dataset.value
+
+        if (filterType === 'day') {
+          currentDayFilter = value || 'all'
+        } else if (filterType === 'category') {
+          currentCategoryFilter = value || 'all'
+        }
+
+        applyFilters()
+      })
+    })
+  }
+
+  // Run on initial load and view transitions
+  initFilters()
+  document.addEventListener('astro:after-swap', initFilters)
+</script>

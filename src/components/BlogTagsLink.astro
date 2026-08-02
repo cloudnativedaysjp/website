@@ -12,16 +12,19 @@ export interface Props {
 const { heading, tags } = Astro.props;
 ---
 
-<div class="blog-tags-link">
-  <div class="text-xl text-gray-800">{heading}</div>
+<div class="blog-tags-link mb-6">
+  <div class="text-xl text-gray-800 mb-2">{heading}</div>
   {
     tags.length === 0 ? (
       <NoContents contents={tags} />
     ) : (
-      <ul>
+      <ul class="flex flex-wrap gap-2">
         {tags.map((tag: SelectProperty) => (
           <li>
-            <a href={getTagLink(tag.name)} class={`tag ${tag.color}`}>
+            <a
+              href={getTagLink(tag.name)}
+              class={`tag ${tag.color} inline-block rounded-md px-2 py-0.5 text-sm`}
+            >
               {tag.name}
             </a>
           </li>
@@ -30,37 +33,3 @@ const { heading, tags } = Astro.props;
     )
   }
 </div>
-
-<style>
-  .blog-tags-link {
-  }
-  .blog-tags-link h3 {
-    margin: 0;
-    padding-left: 0.4rem;
-    color: #777;
-    font-size: 0.95rem;
-  }
-  .blog-tags-link ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 0.3rem;
-    margin-block-end: 1rem;
-  }
-  .blog-tags-link ul li {
-    position: relative;
-    font-size: 1rem;
-    padding: 0.4rem;
-    line-height: 1.2rem;
-
-    font-size: 0.9rem;
-    gap: 6px;
-  }
-  .blog-tags-link ul li a {
-    min-width: 0;
-    border-radius: 3px;
-    padding: 2px 6px;
-    line-height: 1.2;
-    color: rgb(50, 48, 44);
-    background: rgba(227, 226, 224, 0.5);
-  }
-</style>

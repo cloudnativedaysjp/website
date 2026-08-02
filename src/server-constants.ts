@@ -19,3 +19,14 @@ export const ENABLE_LIGHTBOX = import.meta.env.ENABLE_LIGHTBOX
 export const PUBLIC_SITE_TITLE = 'CloudNative Days'
 export const PUBLIC_SITE_DESCRIPTION =
   '日本最大のCloud Native技術の祭典 CloudNative DaysのWebサイトです'
+
+export const EVENT_ABBR =
+  import.meta.env.EVENT_ABBR || process.env.EVENT_ABBR || 'cndw2026'
+export const DREAMKAST_API_BASE =
+  import.meta.env.DREAMKAST_API_BASE ||
+  process.env.DREAMKAST_API_BASE ||
+  'https://event.cloudnativedays.jp/api/v1'
+export const DREAMKAST_DATA_DIR =
+  import.meta.env.DREAMKAST_DATA_DIR ||
+  process.env.DREAMKAST_DATA_DIR ||
+  'src/data/dreamkast'

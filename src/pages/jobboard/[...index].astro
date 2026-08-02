@@ -1,0 +1,183 @@
+---
+// Jobboard index. Ported from kaigi.cloudnativedays.jp
+// (src/pages/jobboard/index.astro): joins jobboard entries to sponsors by
+// id, groups by the sponsor's primary tier (via the shared
+// groupSponsorsByType/getPrimarySponsorType helpers instead of
+// reimplementing the tier lookup as kaigi did), and renders each
+// description through marked + shiki. Visual design (washi palette, brush
+// SVG tier headings, BudouX) intentionally dropped in favor of the current
+// site idiom (white/backdrop-blur cards, indigo accent, Sponsors.astro-style
+// tier headings). Uses a rest param ([...index]) so it matches exactly
+// '/jobboard' while still participating in FEATURES-gated static path
+// generation, matching /timetable/[...index].astro and /sessions/[...index].astro.
+import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon/components'
+import { marked } from 'marked'
+import { createHighlighter } from 'shiki'
+import Layout from '../../layouts/Layout.astro'
+import { FEATURES } from '../../features'
+import { getJobboardEntries, getSponsors } from '../../lib/dreamkast/client'
+import { getSponsorLogo } from '../../lib/dreamkast/assets'
+import { sponsorTypeOrder, sponsorTypeLabel } from '../../lib/dreamkast/schema'
+import type { JobboardEntry, SponsorWithLocalAssetPath } from '../../lib/dreamkast/schema'
+
+export function getStaticPaths() {
+  return FEATURES.jobboard ? [{ params: { index: undefined } }] : []
+}
+
+// --- Markdown rendering: marked + shiki, module scope so the highlighter is
+// created once per build, not per page render. ---
+const highlighter = await createHighlighter({
+  themes: ['github-dark'],
+  langs: ['go', 'javascript', 'typescript', 'bash', 'json', 'yaml', 'python', 'text'],
+})
+
+const renderer = new marked.Renderer()
+
+renderer.code = (token) => {
+  const { text, lang } = token
+  const language = lang && highlighter.getLoadedLanguages().includes(lang) ? lang : 'text'
+  return highlighter.codeToHtml(text, { lang: language, theme: 'github-dark' })
+}
+
+renderer.link = (token) => {
+  return `<a href="${token.href}" target="_blank" rel="noopener noreferrer" class="text-blue-600 underline hover:no-underline break-all">${token.text}</a>`
+}
+
+marked.use({ renderer })
+
+async function renderDescription(text: string) {
+  // Wrap bare URLs in angle brackets so they're correctly parsed as
+  // autolinks, especially when they end with an underscore or are
+  // surrounded by Japanese punctuation/parentheses.
+  const processedText = text.replace(
+    /(?<!<)(https?:\/\/[a-zA-Z0-9\-./_%&?=#:@!+*,;]+)/g,
+    '<$1>',
+  )
+  return await marked.parse(processedText, { async: true, breaks: true })
+}
+
+// --- Join jobboard entries to sponsors, dropping entries whose sponsor id
+// is unknown (kaigi behavior), then group by primary tier. ---
+const [jobboardEntries, sponsors] = await Promise.all([getJobboardEntries(), getSponsors()])
+
+const sponsorById = new Map(sponsors.map((s) => [s.id, s]))
+
+type JobWithSponsor = {
+  entry: JobboardEntry
+  sponsor: SponsorWithLocalAssetPath
+}
+
+const jobsWithSponsors: JobWithSponsor[] = jobboardEntries
+  .map((entry) => {
+    const sponsor = sponsorById.get(entry.id)
+    return sponsor ? { entry, sponsor } : undefined
+  })
+  .filter((job): job is JobWithSponsor => job !== undefined)
+
+const renderedDescriptions = new Map(
+  await Promise.all(
+    jobsWithSponsors.map(
+      async ({ entry }) => [entry.id, await renderDescription(entry.description)] as const,
+    ),
+  ),
+)
+
+const groupedJobs = sponsorTypeOrder
+  .map((type) => ({
+    type,
+    jobs: jobsWithSponsors.filter(({ sponsor }) => {
+      const primaryType =
+        sponsorTypeOrder.find((t) => sponsor.sponsorType.includes(t)) ?? sponsor.sponsorType[0]
+      return primaryType === type
+    }),
+  }))
+  .filter(({ jobs }) => jobs.length > 0)
+
+const title = 'ジョブボード | CloudNative Days Winter 2026'
+const description = 'CloudNative Days Winter 2026 ジョブボード。協賛企業の求人情報を掲載しています。'
+---
+
+<Layout title={title} description={description} ogImage="/favicon.svg">
+  <main class="pt-24 pb-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <nav class="mb-8">
+        <a
+          href="/"
+          class="inline-flex items-center gap-2 text-gray-600 hover:text-indigo-600 transition-colors"
+        >
+          <Icon name="tabler:arrow-left" class="w-5 h-5" />
+          <span>トップページに戻る</span>
+        </a>
+      </nav>
+
+      <h1 class="text-3xl md:text-4xl font-bold text-center text-black mb-4">
+        ジョブボード
+      </h1>
+      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        協賛企業の求人情報をご紹介します。気になる企業があれば、ロゴまたは企業名からリンク先をご確認ください。
+      </p>
+
+      {
+        groupedJobs.length === 0 ? (
+          <p class="text-center text-gray-500 py-16">求人情報は準備中です。</p>
+        ) : (
+          <div class="flex flex-col gap-16">
+            {groupedJobs.map(({ type, jobs }) => (
+              <div>
+                <div class="flex justify-center mb-8">
+                  <h2 class="text-2xl font-bold text-center border-b-2 border-indigo-600 pb-2 text-gray-800">
+                    {sponsorTypeLabel[type]}
+                  </h2>
+                </div>
+                <div class="flex flex-col gap-6">
+                  {jobs.map(({ entry, sponsor }) => {
+                    const logo = getSponsorLogo(sponsor.localAssetPath)
+                    return (
+                      <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-sm border border-gray-100">
+                        <div class="flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start">
+                          <a
+                            href={sponsor.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="w-full md:w-48 h-28 shrink-0 flex items-center justify-center bg-white p-4 rounded-xl border border-gray-100"
+                          >
+                            {logo ? (
+                              <Image
+                                src={logo}
+                                alt={sponsor.name}
+                                class="max-w-full max-h-full object-contain"
+                              />
+                            ) : (
+                              <span class="text-center text-gray-700 font-medium">
+                                {sponsor.name}
+                              </span>
+                            )}
+                          </a>
+                          <div class="w-full flex flex-col">
+                            <a
+                              href={sponsor.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              class="text-xl font-bold text-gray-900 mb-3 pb-3 border-b border-gray-100 hover:text-indigo-600 transition-colors"
+                            >
+                              {sponsor.name}
+                            </a>
+                            <div
+                              class="prose prose-sm max-w-none"
+                              set:html={renderedDescriptions.get(entry.id)}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+            ))}
+          </div>
+        )
+      }
+    </div>
+  </main>
+</Layout>

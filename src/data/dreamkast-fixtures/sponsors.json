@@ -1,0 +1,509 @@
+[
+  {
+    "id": 333,
+    "eventAbbr": "cnk",
+    "name": "株式会社SHIFT",
+    "abbr": "",
+    "url": "https://www.shiftinc.jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/b7bf7cd7f8f64099d3d2b620339b9c13.png",
+    "sponsorType": [
+      "Diamond",
+      "Booth"
+    ],
+    "localAssetPath": "333.png"
+  },
+  {
+    "id": 334,
+    "eventAbbr": "cnk",
+    "name": "グラファナラボ日本合同会社",
+    "abbr": "",
+    "url": "https://grafana.com/ja/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/62f3372fb560c7e2365a3fd09e77d897.svg",
+    "sponsorType": [
+      "Diamond",
+      "Booth",
+      "CM"
+    ],
+    "localAssetPath": "334.svg"
+  },
+  {
+    "id": 335,
+    "eventAbbr": "cnk",
+    "name": "株式会社スリーシェイク",
+    "abbr": "",
+    "url": "https://3-shake.com/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/07ead5c67b9d996e8798ffbe572fe48b.svg",
+    "sponsorType": [
+      "Booth"
+    ],
+    "localAssetPath": "335.svg"
+  },
+  {
+    "id": 336,
+    "eventAbbr": "cnk",
+    "name": "Sysdig Japan合同会社",
+    "abbr": "",
+    "url": "https://www.sysdig.com/jp",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/1dd8677578b654e59af7ba4bd2656f21.png",
+    "sponsorType": [
+      "Booth"
+    ],
+    "localAssetPath": "336.png"
+  },
+  {
+    "id": 337,
+    "eventAbbr": "cnk",
+    "name": "KINTOテクノロジーズ株式会社",
+    "abbr": "",
+    "url": "https://www.kinto-technologies.com/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/ce16948fcceba77931a2002a082509ab.png",
+    "sponsorType": [
+      "Gold",
+      "Booth"
+    ],
+    "localAssetPath": "337.png"
+  },
+  {
+    "id": 338,
+    "eventAbbr": "cnk",
+    "name": "Datadog Japan 合同会社",
+    "abbr": "",
+    "url": "https://www.datadoghq.com/ja/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/b1d4e6a8bfcb0ee390d85a47edabc1e1.png",
+    "sponsorType": [
+      "Diamond"
+    ],
+    "localAssetPath": "338.png"
+  },
+  {
+    "id": 339,
+    "eventAbbr": "cnk",
+    "name": "さくらインターネット株式会社",
+    "abbr": "",
+    "url": "https://www.sakura.ad.jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/486bcc34d173f15c22cfd75bf2ae0930.png",
+    "sponsorType": [
+      "Booth",
+      "Tool"
+    ],
+    "localAssetPath": "339.png"
+  },
+  {
+    "id": 340,
+    "eventAbbr": "cnk",
+    "name": "株式会社メルカリ",
+    "abbr": "",
+    "url": "https://about.mercari.com/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/98c00a739a5aa0b542e505d669d2acc5.png",
+    "sponsorType": [
+      "Booth"
+    ],
+    "localAssetPath": "340.png"
+  },
+  {
+    "id": 341,
+    "eventAbbr": "cnk",
+    "name": "株式会社ギフティ",
+    "abbr": "",
+    "url": "https://giftee.co.jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/efd84cac5fe813b9a75f560913571b5e.svg",
+    "sponsorType": [
+      "Party"
+    ],
+    "localAssetPath": "341.svg"
+  },
+  {
+    "id": 342,
+    "eventAbbr": "cnk",
+    "name": "グーグル・クラウド・ジャパン合同会社",
+    "abbr": "",
+    "url": "https://cloud.google.com/?hl=ja",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/c46b218cb617d0ecbdb4d703bfb4dc59.svg",
+    "sponsorType": [
+      "Diamond"
+    ],
+    "localAssetPath": "342.svg"
+  },
+  {
+    "id": 343,
+    "eventAbbr": "cnk",
+    "name": "テックワールド",
+    "abbr": "",
+    "url": "https://www.techworld-career.com/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/61d4e6ef10dc36c2e29f0ea86ea22478.png",
+    "sponsorType": [
+      "Media"
+    ],
+    "localAssetPath": "343.png"
+  },
+  {
+    "id": 344,
+    "eventAbbr": "cnk",
+    "name": "株式会社フライル",
+    "abbr": "",
+    "url": "https://recruit.flyle.io/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/ba4d16f243ab67441ebcb57adee37e1b.png",
+    "sponsorType": [
+      "Gold"
+    ],
+    "localAssetPath": "344.png"
+  },
+  {
+    "id": 345,
+    "eventAbbr": "cnk",
+    "name": " レック・テクノロジー・コンサルティング株式会社",
+    "abbr": "",
+    "url": "https://www.reqtc.com/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/1f3103f649f13c32702ed0f90b35ad22.png",
+    "sponsorType": [
+      "Gold"
+    ],
+    "localAssetPath": "345.png"
+  },
+  {
+    "id": 346,
+    "eventAbbr": "cnk",
+    "name": "株式会社スタジオプレーリー",
+    "abbr": "",
+    "url": "https://prairie.cards/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/89bcf3cd23d1be940c45aced1dcf08ae.png",
+    "sponsorType": [
+      "Tool"
+    ],
+    "localAssetPath": "346.png"
+  },
+  {
+    "id": 347,
+    "eventAbbr": "cnk",
+    "name": "gigmatch",
+    "abbr": "",
+    "url": "https://gigmatch.jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/98a472652f573e5eb45f9db3ee6b6f34.svg",
+    "sponsorType": [
+      "Logo"
+    ],
+    "localAssetPath": "347.svg"
+  },
+  {
+    "id": 348,
+    "eventAbbr": "cnk",
+    "name": "株式会社サイバーセキュリティクラウド",
+    "abbr": "",
+    "url": "https://www.cscloud.co.jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/789d8071d1acbabdf7141fd2a879e5bd.svg",
+    "sponsorType": [
+      "Booth"
+    ],
+    "localAssetPath": "348.svg"
+  },
+  {
+    "id": 349,
+    "eventAbbr": "cnk",
+    "name": "DASA Japan",
+    "abbr": "",
+    "url": "https://japan.devopsagileskills.org/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/6aa522f1f5c9d3752ab698b99b9ac209.png",
+    "sponsorType": [
+      "Booth"
+    ],
+    "localAssetPath": "349.png"
+  },
+  {
+    "id": 351,
+    "eventAbbr": "cnk",
+    "name": "株式会社エーピーコミュニケーションズ",
+    "abbr": "",
+    "url": "https://www.ap-com.co.jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/3d522a7671cd66e0bc16fcfa38ff8501.png",
+    "sponsorType": [
+      "Diamond",
+      "Booth"
+    ],
+    "localAssetPath": "351.png"
+  },
+  {
+    "id": 352,
+    "eventAbbr": "cnk",
+    "name": "WAKE Career ",
+    "abbr": "",
+    "url": "https://wake-career.jp/academy?utm_source=conference&utm_medium=link&utm_campaign=cloud-native-kaigi",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/f14ff7207cb437ed42238aab60f6d3d8.svg",
+    "sponsorType": [
+      "Booth"
+    ],
+    "localAssetPath": "352.svg"
+  },
+  {
+    "id": 353,
+    "eventAbbr": "cnk",
+    "name": "ファインディ株式会社",
+    "abbr": "",
+    "url": "https://jp.findy-team.io/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/3a858d131c371de7d773c0db5e1eb1c2.png",
+    "sponsorType": [
+      "Diamond",
+      "Booth"
+    ],
+    "localAssetPath": "353.png"
+  },
+  {
+    "id": 354,
+    "eventAbbr": "cnk",
+    "name": "エムスリー株式会社",
+    "abbr": "",
+    "url": "https://jobs.m3.com/engineer/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/e77250aa8c24394820c8df3dbaaaf0df.png",
+    "sponsorType": [
+      "CM"
+    ],
+    "localAssetPath": "354.png"
+  },
+  {
+    "id": 355,
+    "eventAbbr": "cnk",
+    "name": "キャディ株式会社",
+    "abbr": "",
+    "url": "https://recruit.caddi.tech/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/41e57501365f52df85106df9d99c4be9.svg",
+    "sponsorType": [
+      "Booth"
+    ],
+    "localAssetPath": "355.svg"
+  },
+  {
+    "id": 356,
+    "eventAbbr": "cnk",
+    "name": "フリー株式会社",
+    "abbr": "",
+    "url": "https://www.freee.co.jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/915e76f6a2e3290d8be2b6a76e40e924.png",
+    "sponsorType": [
+      "Booth",
+      "CM"
+    ],
+    "localAssetPath": "356.png"
+  },
+  {
+    "id": 357,
+    "eventAbbr": "cnk",
+    "name": "株式会社エーアイセキュリティラボ",
+    "abbr": "",
+    "url": "https://www.aeyescan.jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/12a918e7591066b3fe7c7d948c25a27f.svg",
+    "sponsorType": [
+      "Diamond",
+      "Booth"
+    ],
+    "localAssetPath": "357.svg"
+  },
+  {
+    "id": 358,
+    "eventAbbr": "cnk",
+    "name": "株式会社はてな",
+    "abbr": "",
+    "url": "https://ja.mackerel.io/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/4ef3373799aa94738e43551dc29af5b5.svg",
+    "sponsorType": [
+      "Tool"
+    ],
+    "localAssetPath": "358.svg"
+  },
+  {
+    "id": 359,
+    "eventAbbr": "cnk",
+    "name": "KDDIアジャイル開発センター株式会社",
+    "abbr": "",
+    "url": "https://kddi-agile.com/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/9e3b863934956eca987fd91f486440be.png",
+    "sponsorType": [
+      "Booth"
+    ],
+    "localAssetPath": "359.png"
+  },
+  {
+    "id": 360,
+    "eventAbbr": "cnk",
+    "name": "株式会社 日立製作所",
+    "abbr": "",
+    "url": "https://www.hitachi.com/ja-jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/7dd0632a328569bca94268c5ba53e211.png",
+    "sponsorType": [
+      "Gold",
+      "Booth"
+    ],
+    "localAssetPath": "360.png"
+  },
+  {
+    "id": 361,
+    "eventAbbr": "cnk",
+    "name": "株式会社フィックスターズ",
+    "abbr": "フィックスターズ",
+    "url": "https://www.fixstars.com/ja",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/e30a72c53889fddd8c3be91fe03f0b98.svg",
+    "sponsorType": [
+      "Diamond"
+    ],
+    "localAssetPath": "361.svg"
+  },
+  {
+    "id": 363,
+    "eventAbbr": "cnk",
+    "name": "APRESIA Systems",
+    "abbr": "",
+    "url": "https://www.apresiasystems.co.jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/b9d0a396e1458c8e514efb1d9c2c4b7c.svg",
+    "sponsorType": [
+      "Booth"
+    ],
+    "localAssetPath": "363.svg"
+  },
+  {
+    "id": 364,
+    "eventAbbr": "cnk",
+    "name": "株式会社Topotal",
+    "abbr": "",
+    "url": "https://topotal.com/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/a1d63f4ffa4cefc342538e170c271f4a.svg",
+    "sponsorType": [
+      "Booth"
+    ],
+    "localAssetPath": "364.svg"
+  },
+  {
+    "id": 365,
+    "eventAbbr": "cnk",
+    "name": "株式会社アンチパターン",
+    "abbr": "",
+    "url": "https://clouddriver.net/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/12fc9ee76ff977729725d88206cb38f8.png",
+    "sponsorType": [
+      "Booth"
+    ],
+    "localAssetPath": "365.png"
+  },
+  {
+    "id": 366,
+    "eventAbbr": "cnk",
+    "name": "Okta Japan株式会社",
+    "abbr": "Okta Japan",
+    "url": "https://auth0.com/jp",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/110e5732e45ceb21bfbe9db7579cea52.png",
+    "sponsorType": [
+      "Gold",
+      "Booth"
+    ],
+    "localAssetPath": "366.png"
+  },
+  {
+    "id": 367,
+    "eventAbbr": "cnk",
+    "name": "株式会社SIGQ",
+    "abbr": "SIGQ",
+    "url": "https://incidentlake.com/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/da56653ab3754c25b80a9ba014846e60.png",
+    "sponsorType": [
+      "Gold",
+      "Booth"
+    ],
+    "localAssetPath": "367.png"
+  },
+  {
+    "id": 368,
+    "eventAbbr": "cnk",
+    "name": "レッドハット株式会社",
+    "abbr": "レッドハット",
+    "url": "https://www.redhat.com/ja/explore/now-on-redhat",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/fd08faca00b94d527aa12d09ab04b90a.png",
+    "sponsorType": [
+      "Diamond",
+      "Booth"
+    ],
+    "localAssetPath": "368.png"
+  },
+  {
+    "id": 369,
+    "eventAbbr": "cnk",
+    "name": "PagerDuty株式会社",
+    "abbr": "PagerDuty",
+    "url": "https://www.pagerduty.co.jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/b4a7029fb67a943306efaf23d0e242fc.png",
+    "sponsorType": [
+      "Diamond",
+      "Booth"
+    ],
+    "localAssetPath": "369.png"
+  },
+  {
+    "id": 370,
+    "eventAbbr": "cnk",
+    "name": "株式会社スタメン",
+    "abbr": "",
+    "url": "https://stmn.co.jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/90b25bf140608f277e4d2625fd6c6af5.png",
+    "sponsorType": [
+      "Booth",
+      "Party"
+    ],
+    "localAssetPath": "370.png"
+  },
+  {
+    "id": 371,
+    "eventAbbr": "cnk",
+    "name": "テックリブ株式会社",
+    "abbr": "",
+    "url": "https://techlib.co.jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/bc817451d0d7b284ed03e876c8c76708.jpg",
+    "sponsorType": [
+      "Booth"
+    ],
+    "localAssetPath": "371.jpg"
+  },
+  {
+    "id": 372,
+    "eventAbbr": "cnk",
+    "name": "レバレジーズ株式会社",
+    "abbr": "",
+    "url": "https://freelance.levtech.jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/e22b3b4c288190b5afb17e97cde0ec3b.png",
+    "sponsorType": [
+      "Media"
+    ],
+    "localAssetPath": "372.png"
+  },
+  {
+    "id": 373,
+    "eventAbbr": "cnk",
+    "name": "Cloud Native Computing Foundation",
+    "abbr": "",
+    "url": "https://www.cncf.io/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/1db45465321f377929cae58fda71e6d0.svg",
+    "sponsorType": [
+      "Support"
+    ],
+    "localAssetPath": "373.svg"
+  },
+  {
+    "id": 374,
+    "eventAbbr": "cnk",
+    "name": "株式会社インフォクラフト",
+    "abbr": "",
+    "url": "https://www.infocraft.co.jp",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/4bed26ab4bd37f4512cb05530f1959ce.png",
+    "sponsorType": [
+      "Tool"
+    ],
+    "localAssetPath": "374.png"
+  },
+  {
+    "id": 375,
+    "eventAbbr": "cnk",
+    "name": "F5ネットワークスジャパン合同会社",
+    "abbr": "",
+    "url": "https://www.f5.com/ja_jp",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/184e594e705a77a223fd575f926e301a.png",
+    "sponsorType": [
+      "Booth"
+    ],
+    "localAssetPath": "375.png"
+  }
+]

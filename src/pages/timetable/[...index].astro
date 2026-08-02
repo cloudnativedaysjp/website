@@ -1,0 +1,69 @@
+---
+// /timetable index. Renders Day 1's content directly (same building blocks
+// as [day].astro: Layout, DayTimetable, getTimetableData, days config) rather
+// than redirecting to /timetable/day1 — the site deploys as a static S3 +
+// CloudFront bucket with no server-side redirect capability, so a client-side
+// or meta-refresh redirect would be the only alternative and is worse UX.
+// Uses a rest param ([...index]) so it matches exactly '/timetable' while
+// still participating in FEATURES-gated static path generation.
+import { Icon } from 'astro-icon/components'
+import Layout from '../../layouts/Layout.astro'
+import DayTimetable from '../../components/DayTimetable.astro'
+import { FEATURES } from '../../features'
+import { days } from '../../lib/dreamkast/timetable-config'
+import { getTimetableData } from '../../lib/dreamkast/timetable'
+
+export function getStaticPaths() {
+  return FEATURES.timetable ? [{ params: { index: undefined } }] : []
+}
+
+const timetables = await getTimetableData()
+const currentDay = timetables[0]
+const day = days[0].slug
+---
+
+<Layout
+  title={`${currentDay.label} タイムテーブル | CloudNative Days Winter 2026`}
+  description={`CloudNative Days Winter 2026 ${currentDay.label}のタイムテーブル。全セッションの時間・トラック割り当てを確認できます。`}
+  ogImage="/favicon.svg"
+>
+  <main class="pt-24 pb-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <nav class="mb-8">
+        <a
+          href="/"
+          class="inline-flex items-center gap-2 text-gray-600 hover:text-indigo-600 transition-colors"
+        >
+          <Icon name="tabler:arrow-left" class="w-5 h-5" />
+          <span>トップページに戻る</span>
+        </a>
+      </nav>
+
+      <h1 class="text-3xl md:text-4xl font-bold text-center text-black mb-8">
+        タイムテーブル
+      </h1>
+
+      <div class="mb-8 flex justify-center">
+        <div class="inline-flex border-b border-gray-200">
+          {
+            days.map((d) => (
+              <a
+                href={`/timetable/${d.slug}`}
+                class:list={[
+                  '-mb-px px-6 py-3 text-base font-bold transition-colors border-b-2',
+                  d.slug === day
+                    ? 'border-blue-600 font-bold text-gray-900'
+                    : 'border-transparent text-gray-500 hover:text-gray-800',
+                ]}
+              >
+                {d.label}
+              </a>
+            ))
+          }
+        </div>
+      </div>
+
+      <DayTimetable timetable={currentDay} />
+    </div>
+  </main>
+</Layout>

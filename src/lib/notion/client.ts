@@ -55,10 +55,15 @@ import type * as responses from './responses'
 
 const client = new Client({
   auth: NOTION_API_SECRET,
+  // Notion SDK's bundled node-fetch@2 throws "Premature close" when
+  // decompressing gzip responses on newer Node.js versions; use the
+  // runtime's native fetch instead.
+  fetch: globalThis.fetch,
 })
 
 let postsCache: Post[] | null = null
 let dbCache: Database | null = null
+const blocksCache: Map<string, Block[]> = new Map()
 
 export async function getAllPosts(): Promise<Post[]> {
   if (postsCache !== null) {
@@ -209,6 +214,11 @@ export async function getNumberOfPagesByTag(tagName: string): Promise<number> {
 }
 
 export async function getAllBlocksByBlockId(blockId: string): Promise<Block[]> {
+  const cached = blocksCache.get(blockId)
+  if (cached !== undefined) {
+    return cached
+  }
+
   let results: responses.BlockObject[] = []
 
   if (fs.existsSync(`tmp/${blockId}.json`)) {
@@ -290,6 +300,8 @@ export async function getAllBlocksByBlockId(blockId: string): Promise<Block[]> {
       block.Callout.Children = await getAllBlocksByBlockId(block.Id)
     }
   }
+
+  blocksCache.set(blockId, allBlocks)
 
   return allBlocks
 }

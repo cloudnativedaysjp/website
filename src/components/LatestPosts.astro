@@ -1,0 +1,124 @@
+---
+import PostDate from './PostDate.astro'
+import PostExcerpt from './PostExcerpt.astro'
+import PostFeaturedImage from './PostFeaturedImage.astro'
+import { getPostLink } from '../lib/blog-helpers'
+import { getPosts } from '../lib/notion/client'
+
+// 最新の3件のブログ記事を取得（1件を大きく、残り2件を積み重ねて表示）
+const posts = await getPosts(3)
+const [featuredPost, ...secondaryPosts] = posts
+---
+
+<section class="py-24">
+  <div class="container mx-auto px-4">
+    <h2 class="text-black relative px-4 text-4xl font-bold mb-16 text-center">
+      最新ブログ
+    </h2>
+    {
+      posts.length === 0 ? (
+        <p class="text-center text-gray-500">ブログ記事を準備中です。</p>
+      ) : (
+        <div class="max-w-5xl mx-auto grid gap-6 lg:grid-cols-[minmax(0,1.3fr)_minmax(19rem,0.9fr)] lg:gap-8">
+          <a
+            href={getPostLink(featuredPost.Slug)}
+            class="flex flex-col bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition-all duration-300 card-hover"
+          >
+            <div class="relative h-64 md:h-80 overflow-hidden">
+              {featuredPost.FeaturedImage ? (
+                <PostFeaturedImage post={featuredPost} />
+              ) : (
+                <div class="bg-gradient-to-r from-blue-500 to-purple-600 h-full flex items-center justify-center">
+                  <span class="text-white text-6xl">
+                    {featuredPost.Icon &&
+                    featuredPost.Icon.Type === 'emoji' &&
+                    'Emoji' in featuredPost.Icon
+                      ? featuredPost.Icon.Emoji
+                      : '📝'}
+                  </span>
+                </div>
+              )}
+            </div>
+            <div class="p-6 flex-1 flex flex-col">
+              <div class="text-sm text-gray-500 mb-2">
+                <PostDate post={featuredPost} />
+              </div>
+              <h3 class="text-2xl font-semibold mb-3 text-gray-800 line-clamp-2">
+                {featuredPost.Title}
+              </h3>
+              <div class="text-gray-600 line-clamp-3">
+                <PostExcerpt post={featuredPost} />
+              </div>
+            </div>
+          </a>
+
+          <div class="flex flex-col gap-6">
+            {secondaryPosts.map((post) => (
+              <a
+                href={getPostLink(post.Slug)}
+                class="flex flex-1 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:scale-[1.02] transition-all duration-300 card-hover"
+              >
+                <div class="relative w-32 shrink-0 overflow-hidden">
+                  {post.FeaturedImage ? (
+                    <PostFeaturedImage post={post} />
+                  ) : (
+                    <div class="bg-gradient-to-r from-blue-500 to-purple-600 h-full flex items-center justify-center">
+                      <span class="text-white text-2xl">
+                        {post.Icon && post.Icon.Type === 'emoji' && 'Emoji' in post.Icon
+                          ? post.Icon.Emoji
+                          : '📝'}
+                      </span>
+                    </div>
+                  )}
+                </div>
+                <div class="p-4 flex-1 min-w-0 flex flex-col justify-center">
+                  <div class="text-xs text-gray-500 mb-1">
+                    <PostDate post={post} />
+                  </div>
+                  <h3 class="text-base font-semibold text-gray-800 line-clamp-2">
+                    {post.Title}
+                  </h3>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      )
+    }
+    <div class="mt-8 text-center">
+      <a
+        href="/posts"
+        class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 hover:scale-105 transition-all duration-300"
+      >
+        ブログ記事一覧を見る
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* line-clampユーティリティクラス */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* カスタムのホバーエフェクト強化 */
+  .card-hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-hover:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+  }
+</style>
