@@ -73,20 +73,8 @@ const navLinks = [
     gtag('js', new Date())
     gtag('config', 'G-XDSEZ66VFX')
   </script>
-  <script define:vars={{ isTopPage }}>
-    if (isTopPage) {
-      const navbarWrapper = document.getElementById('navbar-wrapper');
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) {
-          navbarWrapper?.classList.remove('opacity-0', 'pointer-events-none');
-        } else {
-          navbarWrapper?.classList.add('opacity-0', 'pointer-events-none');
-        }
-      });
-    }
-  </script>
   <body>
-    <div id="navbar-wrapper" class={`fixed w-full z-40 transition-opacity duration-300 ${isTopPage ? 'top-0 opacity-0 pointer-events-none' : 'top-0'}`}>
+    <div id="navbar-wrapper" class="fixed top-0 w-full z-40">
       <Navbar links={navLinks} />
     </div>
     <slot />
