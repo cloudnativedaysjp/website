@@ -1,12 +1,18 @@
 ---
+import { FEATURES } from "../features";
+
 const currentYear = new Date().getFullYear();
 
 const footerLinks = [
+  FEATURES.timetable && { text: "タイムテーブル", href: "/timetable/day1" },
+  FEATURES.sessions && { text: "セッション", href: "/sessions" },
+  FEATURES.sponsors && { text: "スポンサー", href: "/#sponsors" },
+  FEATURES.jobboard && { text: "ジョブボード", href: "/jobboard" },
   { text: "CloudNative Daysの歩み", href: "/history" },
   { text: "マスコット紹介", href: "/mascots" },
   { text: "行動規範", href: "/CoC" },
   { text: "プライバシーポリシー", href: "/privacy" },
-];
+].filter(Boolean);
 ---
 
 <footer class="py-8 px-6 md:px-12">
