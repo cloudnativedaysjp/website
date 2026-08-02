@@ -33,6 +33,20 @@
 | `CUSTOM_DOMAIN`         | カスタムドメイン (例: `cloudnativedays.jp`)    | 任意             |
 | `BASE_PATH`             | サブディレクトリパス (例: `/docs/`)            | 任意             |
 
+スポンサー・タイムテーブル・セッション・ジョブボード機能（デフォルトOFF）を利用する場合は以下も参照してください:
+
+| 変数名               | 説明                                                    | デフォルト                                 |
+| --------------------- | ------------------------------------------------------- | -------------------------------------------- |
+| `ENABLE_SPONSORS`     | スポンサーセクションを有効化 (`true`/`1`/`yes`/`on`)    | 無効                                        |
+| `ENABLE_TIMETABLE`    | タイムテーブルページを有効化                            | 無効                                        |
+| `ENABLE_SESSIONS`     | セッションページを有効化                                | 無効                                        |
+| `ENABLE_JOBBOARD`     | ジョブボードページを有効化                              | 無効                                        |
+| `EVENT_ABBR`          | データ取得対象イベントの略称 (`update:data` 用)        | `cndw2026`                                  |
+| `DREAMKAST_API_BASE`  | Dreamkast APIのベースURL (`update:data` 用)             | `https://event.cloudnativedays.jp/api/v1`   |
+| `DREAMKAST_DATA_DIR`  | スナップショットJSONの読み込み先ディレクトリ            | `src/data/dreamkast`                        |
+
+詳細は [AGENTS.md](./AGENTS.md) の「機能フラグ」「Dreamkastデータ層」を参照してください。
+
 ### セットアップ
 
 ```bash
@@ -55,25 +69,44 @@ src/
 ├── data/           # 静的データ
 │   ├── events/     # イベント情報 (JSON)
 │   ├── speakers/   # スピーカー情報 (JSON)
-│   └── talks/      # トーク情報 (JSON)
+│   ├── talks/      # トーク情報 (JSON)
+│   ├── dreamkast/           # Dreamkastスナップショット (本番データ、update:dataで生成)
+│   └── dreamkast-fixtures/  # 検証用テストデータ (cnk由来、本番データ投入後に削除予定)
 ├── lib/            # ユーティリティ・Notion API連携
+│   └── dreamkast/  # スポンサー/タイムテーブル/セッション/ジョブボードのデータ層
+├── features.ts     # 機能フラグ (sponsors/timetable/sessions/jobboard)
 ├── types/          # TypeScript 型定義
 └── styles/         # グローバルスタイル
 ```
 
 ## 🧞 Commands
 
-| Command                 | Action                                 |
-| ----------------------- | -------------------------------------- |
-| `npm install`           | 依存関係のインストール                 |
-| `npm run dev`           | 開発サーバーの起動                     |
-| `npm run build`         | 本番用ビルド (`./dist/` に出力)        |
-| `npm run build:cached`  | キャッシュ取得後にビルド               |
-| `npm run preview`       | ビルド結果のプレビュー                 |
-| `npm run format`        | Prettier でコードフォーマット          |
-| `npm run lint`          | ESLint + Prettier でコードチェック     |
-| `npm run cache:fetch`   | Notion からブログキャッシュを取得      |
-| `npm run cache:purge`   | キャッシュのクリア                     |
+| Command                 | Action                                                          |
+| ----------------------- | ----------------------------------------------------------------- |
+| `npm install`           | 依存関係のインストール                                            |
+| `npm run dev`           | 開発サーバーの起動                                                |
+| `npm run build`         | 本番用ビルド (`./dist/` に出力)                                   |
+| `npm run preview`       | ビルド結果のプレビュー                                            |
+| `npm run format`        | Prettier でコードフォーマット                                     |
+| `npm run lint`          | ESLint + Prettier でコードチェック                                |
+| `npm run update:data`   | Dreamkast APIから `src/data/dreamkast/` のスナップショットを更新（要ネットワーク・APIトークン、ローカル実行） |
+
+## 🚩 機能フラグとDreamkastデータ
+
+スポンサー・タイムテーブル・セッション・ジョブボードは `src/features.ts` の `FEATURES` によりデフォルトOFFの機能フラグで制御されています（`ENABLE_SPONSORS`/`ENABLE_TIMETABLE`/`ENABLE_SESSIONS`/`ENABLE_JOBBOARD`）。有効化するとページ生成・ナビゲーションリンク・トップページのセクションが表示されます。
+
+データは `src/lib/dreamkast/` がビルド時に `src/data/dreamkast/`（`DREAMKAST_DATA_DIR` で変更可）配下のJSONスナップショットを読むだけで、Dreamkast APIを直接叩きません。本番データが未投入のため、動作確認には代わりにcnk（kaigi.cloudnativedays.jp）由来のテストデータ `src/data/dreamkast-fixtures/` を使えます:
+
+```bash
+ENABLE_SPONSORS=true ENABLE_TIMETABLE=true ENABLE_SESSIONS=true ENABLE_JOBBOARD=true \
+  DREAMKAST_DATA_DIR=src/data/dreamkast-fixtures npm run build
+```
+
+本番データは `npm run update:data` で取得したのちコミットし、タグデプロイします。ジョブボードのみ `src/data/dreamkast/jobboard.json` を手動作成（`sponsors.json` のIDとひも付け）する必要があります。詳細は [AGENTS.md](./AGENTS.md) を参照してください。
+
+## 📰 ブログの検索・RSS
+
+`/posts` では MiniSearch を使ったクライアントサイド検索（`src/pages/posts/search-index.json.ts` が生成する検索インデックスを利用）が利用できます。また `/rss.xml` でRSSフィードを配信しています。旧来のページネーションは廃止し、全件表示に変更しています。
 
 ## 🚢 デプロイ
 
