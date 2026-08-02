@@ -55,6 +55,10 @@ import type * as responses from './responses'
 
 const client = new Client({
   auth: NOTION_API_SECRET,
+  // Notion SDK's bundled node-fetch@2 throws "Premature close" when
+  // decompressing gzip responses on newer Node.js versions; use the
+  // runtime's native fetch instead.
+  fetch: globalThis.fetch,
 })
 
 let postsCache: Post[] | null = null
