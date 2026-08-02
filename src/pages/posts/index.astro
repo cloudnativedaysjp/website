@@ -5,21 +5,13 @@ import BlogTagsLink from '../../components/BlogTagsLink.astro'
 import Headline from '../../components/Headline.astro'
 import MascotPeek from '../../components/MascotPeek.astro'
 import NoContents from '../../components/NoContents.astro'
-import Pagination from '../../components/Pagination.astro'
 import Layout from '../../layouts/Layout.astro'
-import {
-  getPosts,
-  getRankedPosts,
-  getAllTags,
-  getNumberOfPages,
-} from '../../lib/notion/client'
-import { NUMBER_OF_POSTS_PER_PAGE } from '../../server-constants'
+import { getAllPosts, getRankedPosts, getAllTags } from '../../lib/notion/client'
 
-const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
-  getPosts(NUMBER_OF_POSTS_PER_PAGE),
+const [posts, rankedPosts, tags] = await Promise.all([
+  getAllPosts(),
   getRankedPosts(),
   getAllTags(),
-  getNumberOfPages(),
 ])
 ---
 
@@ -35,21 +27,36 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
   </Headline>
   <div class="px-4 md:px-8 flex flex-col lg:flex-row gap-6 max-w-7xl mx-auto">
     <main class="flex-1">
+      <div class="mb-6">
+        <label for="blog-search" class="sr-only">記事を検索</label>
+        <input
+          id="blog-search"
+          type="search"
+          inputmode="search"
+          autocomplete="off"
+          placeholder="記事を検索…"
+          class="w-full border-b border-gray-200 bg-transparent py-2 text-base text-gray-900 outline-none transition-colors placeholder:text-gray-400 focus:border-blue-600"
+        />
+        <p id="blog-search-status" class="mt-2 text-sm text-gray-500">
+          {posts.length}件の記事
+        </p>
+      </div>
       {
         posts.length === 0 ? (
           <NoContents contents={posts} />
         ) : (
-          <div class="space-y-6">
+          <ul id="blog-post-list" class="space-y-6">
             {posts.map((post) => (
-              <BlogCard post={post} />
+              <li class="blog-post-item" data-slug={post.Slug}>
+                <BlogCard post={post} />
+              </li>
             ))}
-          </div>
+          </ul>
         )
       }
-
-      <footer class="flex justify-center items-center mt-8 mb-8">
-        <Pagination currentPage={1} numberOfPages={numberOfPages} tag="" />
-      </footer>
+      <p id="blog-no-results" class="hidden py-12 text-center text-gray-500">
+        該当する記事が見つかりませんでした。
+      </p>
     </main>
 
     <aside class="lg:w-80 flex-shrink-0">
@@ -68,3 +75,116 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
     <MascotPeek character="toge" position="right" />
   </a>
 </Layout>
+
+<script>
+  import MiniSearch from 'minisearch'
+  import { tokenize, type BlogSearchDocument } from '../../lib/search-utils'
+
+  function initBlogSearch() {
+    const input = document.getElementById('blog-search') as HTMLInputElement | null
+    const status = document.getElementById('blog-search-status')
+    const noResults = document.getElementById('blog-no-results')
+    const items = Array.from(
+      document.querySelectorAll<HTMLLIElement>('.blog-post-item'),
+    )
+    if (!input || items.length === 0) return
+
+    const totalCount = items.length
+    const defaultOrder = new Map(items.map((item, index) => [item.dataset.slug ?? '', index]))
+    const searchParams = new URLSearchParams(window.location.search)
+    const initialQuery = searchParams.get('q') ?? ''
+    let miniSearch: MiniSearch<BlogSearchDocument> | null = null
+    let indexReady = false
+
+    async function loadIndex() {
+      if (indexReady) return
+
+      if (status) {
+        status.textContent = '検索インデックスを読み込み中…'
+      }
+
+      const response = await fetch('/posts/search-index.json')
+      if (!response.ok) {
+        if (status) {
+          status.textContent = '検索インデックスを読み込めませんでした。'
+        }
+        return
+      }
+
+      const payload = await response.json()
+      miniSearch = new MiniSearch({
+        idField: 'slug',
+        fields: ['title', 'description', 'content'],
+        storeFields: ['slug', 'title', 'description', 'pubDate'],
+        tokenize,
+        searchOptions: {
+          boost: {
+            title: 3,
+            description: 2,
+            content: 1,
+          },
+        },
+      })
+
+      miniSearch.addAll(payload)
+      indexReady = true
+    }
+
+    function updateUrl(query: string) {
+      const nextUrl = new URL(window.location.href)
+      if (query) nextUrl.searchParams.set('q', query)
+      else nextUrl.searchParams.delete('q')
+      window.history.replaceState({}, '', nextUrl)
+    }
+
+    function resetOrder() {
+      for (const item of items) {
+        item.hidden = false
+        item.style.order = String(defaultOrder.get(item.dataset.slug ?? '') ?? 0)
+      }
+    }
+
+    function applySearch(query: string) {
+      if (!indexReady || !miniSearch) return
+
+      const normalizedQuery = query.trim()
+
+      updateUrl(normalizedQuery)
+
+      if (!normalizedQuery) {
+        resetOrder()
+        if (status) status.textContent = `${totalCount}件の記事`
+        if (noResults) noResults.classList.add('hidden')
+        return
+      }
+
+      const ranked = miniSearch.search(normalizedQuery)
+      const visibleSlugs = new Set(ranked.map((doc) => doc.slug))
+      const resultOrder = new Map(ranked.map((doc, index) => [doc.slug, index]))
+
+      for (const item of items) {
+        const slug = item.dataset.slug ?? ''
+        const shouldShow = visibleSlugs.has(slug)
+        item.hidden = !shouldShow
+        item.style.order = shouldShow
+          ? String(resultOrder.get(slug) ?? 0)
+          : String(items.length + 1)
+      }
+
+      if (status) {
+        status.textContent = `${ranked.length}件ヒット`
+      }
+      if (noResults) {
+        noResults.classList.toggle('hidden', ranked.length !== 0)
+      }
+    }
+
+    input.value = initialQuery
+    input.addEventListener('input', () => applySearch(input.value))
+
+    loadIndex().then(() => applySearch(input.value))
+  }
+
+  initBlogSearch()
+  document.addEventListener('astro:after-swap', initBlogSearch)
+</script>

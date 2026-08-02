@@ -1,15 +1,12 @@
 ---
 import type { SelectProperty } from '../../../lib/interfaces'
-import { NUMBER_OF_POSTS_PER_PAGE } from '../../../server-constants'
 import {
   getPostsByTag,
   getRankedPosts,
   getAllTags,
-  getNumberOfPagesByTag,
 } from '../../../lib/notion/client'
 import Layout from '../../../layouts/Layout.astro'
 import NoContents from '../../../components/NoContents.astro'
-import Pagination from '../../../components/Pagination.astro'
 import BlogPostsLink from '../../../components/BlogPostsLink.astro'
 import BlogTagsLink from '../../../components/BlogTagsLink.astro'
 import BlogCard from '../../../components/BlogCard.astro'
@@ -22,11 +19,10 @@ export async function getStaticPaths() {
 
 const { tag } = Astro.params
 
-const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
-  getPostsByTag(tag, NUMBER_OF_POSTS_PER_PAGE),
+const [posts, rankedPosts, tags] = await Promise.all([
+  getPostsByTag(tag, Number.MAX_SAFE_INTEGER),
   getRankedPosts(),
   getAllTags(),
-  getNumberOfPagesByTag(tag),
 ])
 ---
 
@@ -53,10 +49,6 @@ const [posts, rankedPosts, tags, numberOfPages] = await Promise.all([
           </div>
         )
       }
-
-      <footer class="flex justify-center items-center mt-8 mb-8">
-        <Pagination tag={tag} currentPage={1} numberOfPages={numberOfPages} />
-      </footer>
     </main>
 
     <aside class="lg:w-80 flex-shrink-0">

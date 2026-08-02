@@ -3,11 +3,9 @@ import * as interfaces from '../../lib/interfaces'
 import {
   getPosts,
   getAllPosts,
-  getRankedPosts,
   getPostBySlug,
-  getPostsByTag,
-  getBlock,
   getAllTags,
+  getBlock,
   getAllBlocksByBlockId,
   downloadFile,
 } from '../../lib/notion/client'
@@ -21,12 +19,11 @@ import PostTags from '../../components/PostTags.astro'
 import PostTitle from '../../components/PostTitle.astro'
 import PostBody from '../../components/PostBody.astro'
 import PostRelativeLink from '../../components/PostRelativeLink.astro'
-import BlogPostsLink from '../../components/BlogPostsLink.astro'
 import BlogTagsLink from '../../components/BlogTagsLink.astro'
 import MascotPeek from '../../components/MascotPeek.astro'
-import styles from '../../styles/blog.module.css'
 import Layout from '../../layouts/Layout.astro'
 import Headline from '../../components/Headline.astro'
+import { PUBLIC_SITE_TITLE } from '../../server-constants'
 
 export async function getStaticPaths() {
   const posts = await getAllPosts()
@@ -42,15 +39,12 @@ if (!post) {
   throw new Error('Post not found. slug: ${slug}')
 }
 
-const [blocks, allPosts, rankedPosts, recentPosts, tags, postsHavingSameTag] =
-  await Promise.all([
-    getAllBlocksByBlockId(post.PageId),
-    getAllPosts(),
-    getRankedPosts(),
-    getPosts(5),
-    getAllTags(),
-    getPostsByTag(post.Tags[0]?.name, 6),
-  ])
+const [blocks, allPosts, recentPosts, tags] = await Promise.all([
+  getAllBlocksByBlockId(post.PageId),
+  getAllPosts(),
+  getPosts(5),
+  getAllTags(),
+])
 
 const fileAtacchedBlocks = extractTargetBlocks('image', blocks)
   .concat(extractTargetBlocks('file', blocks))
@@ -98,6 +92,53 @@ if (post.FeaturedImage && post.FeaturedImage.Url) {
     Astro.site,
   ).toString()
 }
+
+const sidebarPosts = recentPosts
+  .filter((p: interfaces.Post) => p.Slug !== post.Slug)
+  .slice(0, 5)
+  .map((p: interfaces.Post) => {
+    let thumbnail = ''
+    if (p.FeaturedImage && p.FeaturedImage.Url) {
+      thumbnail = import.meta.env.DEV
+        ? p.FeaturedImage.Url
+        : filePath(new URL(p.FeaturedImage.Url))
+    }
+    return { post: p, thumbnail }
+  })
+
+const postUrl = new URL(getPostLink(slug), Astro.site).toString()
+const blogIndexUrl = new URL('/posts', Astro.site).toString()
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Blog', item: blogIndexUrl },
+    { '@type': 'ListItem', position: 2, name: post.Title, item: postUrl },
+  ],
+}
+
+const blogPostingSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.Title,
+  description: post.Excerpt,
+  datePublished: post.Date,
+  ...(ogImage ? { image: ogImage } : {}),
+  url: postUrl,
+  author: {
+    '@type': 'Organization',
+    name: PUBLIC_SITE_TITLE,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'CloudNative Days実行委員会',
+    logo: {
+      '@type': 'ImageObject',
+      url: new URL('/favicon.svg', Astro.site).toString(),
+    },
+  },
+}
 ---
 
 <Layout
@@ -106,42 +147,95 @@ if (post.FeaturedImage && post.FeaturedImage.Url) {
   url={new URL(`blog/${slug}`, Astro.site)}
   ogImage={ogImage}
 >
+  <script
+    type="application/ld+json"
+    is:inline
+    set:html={JSON.stringify(breadcrumbSchema)}
+  />
+  <script
+    type="application/ld+json"
+    is:inline
+    set:html={JSON.stringify(blogPostingSchema)}
+  />
   <Headline title="Blog" href="/posts" showMascots={true}>
     <p class="mt-4 text-lg text-black">
       CloudNative Days実行委員会によるブログ
     </p>
   </Headline>
-  <div class="flex flex-wrap mx-auto justify-center pt-4">
-    <main class="w-full lg:w-10/12 max-w-6xl lg:mx-20 mx-4 px-5 bg-white/60 backdrop-blur-sm rounded-xl p-8">
-      <div class="leading-8">
-        <div class="flex flex-col">
-          <PostDate post={post} />
-          <div class="mb-2 border-b-2 border-gray-200"></div>
-          <PostTitle post={post} enableLink={true} />
-          <div class="mt-4">
-            <PostTags post={post} enableLink={true} />
+  <div class="px-4 md:px-8 pt-4 pb-16 max-w-6xl mx-auto">
+    <div class="flex flex-col lg:flex-row gap-10">
+      <main class="flex-1 min-w-0 bg-white/60 backdrop-blur-sm rounded-xl p-8">
+        <div class="leading-8">
+          <div class="flex flex-col">
+            <PostDate post={post} />
+            <div class="mb-2 border-b-2 border-gray-200"></div>
+            <PostTitle post={post} enableLink={true} />
+            <div class="mt-4">
+              <PostTags post={post} enableLink={true} />
+            </div>
           </div>
+          <PostBody blocks={blocks} />
         </div>
-        <PostBody blocks={blocks} />
-      </div>
-      <footer>
-        <PostRelativeLink prevPost={prevPost} nextPost={nextPost} />
-      </footer>
-    </main>
+        <footer>
+          <PostRelativeLink prevPost={prevPost} nextPost={nextPost} />
+        </footer>
+      </main>
 
-    <div class="flex flex-wrap w-full lg:w-10/12 max-w-6xl lg:mx-20 mx-4 px-5 mt-10">
-      <aside class="w-full md:w-1/2 md:pr-4 bg-white/60 backdrop-blur-sm rounded-xl p-6 mb-6 md:mb-0">
-        <BlogPostsLink
-          heading="Posts in the same category"
-          posts={postsHavingSameTag.filter(
-            (p: interfaces.Post) => p.Slug !== post.Slug,
-          )}
-        />
-        <BlogPostsLink heading="Recommended" posts={rankedPosts} />
-      </aside>
-      <aside class="w-full md:w-1/2 md:pl-4 bg-white/60 backdrop-blur-sm rounded-xl p-6">
-        <BlogPostsLink heading="Latest posts" posts={recentPosts} />
-        <BlogTagsLink heading="Categories" tags={tags} />
+      <aside class="lg:w-72 shrink-0">
+        <div class="lg:sticky lg:top-28 bg-white/80 backdrop-blur-sm rounded-xl p-6">
+          <form action="/posts" method="get" class="mb-6">
+            <label for="sidebar-search" class="sr-only">記事を検索</label>
+            <input
+              type="search"
+              name="q"
+              id="sidebar-search"
+              placeholder="記事を検索…"
+              class="w-full border-b border-gray-200 bg-transparent py-2 text-sm text-gray-900 outline-none transition-colors placeholder:text-gray-400 focus:border-blue-600"
+            />
+          </form>
+
+          <div class="text-xl text-gray-800 mb-2">最新の投稿</div>
+          <ul class="space-y-3 mb-6">
+            {
+              sidebarPosts.map(({ post: p, thumbnail }) => (
+                <li>
+                  <a
+                    href={getPostLink(p.Slug)}
+                    class="group flex gap-3 items-start -mx-2 rounded-lg p-2 transition-colors hover:bg-gray-100"
+                  >
+                    {thumbnail ? (
+                      <img
+                        src={thumbnail}
+                        alt={p.Title}
+                        class="w-16 h-16 shrink-0 rounded-md object-cover"
+                      />
+                    ) : (
+                      <div class="w-16 h-16 shrink-0 rounded-md bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-xl">
+                        {p.Icon && p.Icon.Type === 'emoji' && 'Emoji' in p.Icon
+                          ? p.Icon.Emoji
+                          : '📝'}
+                      </div>
+                    )}
+                    <div class="flex-1 min-w-0">
+                      <p class="text-sm font-semibold text-gray-800 leading-snug line-clamp-2 group-hover:text-blue-600 transition-colors">
+                        {p.Title}
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+
+          <BlogTagsLink heading="タグ" tags={tags} />
+
+          <a
+            href="/posts"
+            class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors"
+          >
+            すべての投稿を見る →
+          </a>
+        </div>
       </aside>
     </div>
   </div>
