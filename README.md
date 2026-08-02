@@ -95,6 +95,20 @@ src/
 
 スポンサー・タイムテーブル・セッション・ジョブボードは `src/features.ts` の `FEATURES` によりデフォルトOFFの機能フラグで制御されています（`ENABLE_SPONSORS`/`ENABLE_TIMETABLE`/`ENABLE_SESSIONS`/`ENABLE_JOBBOARD`）。有効化するとページ生成・ナビゲーションリンク・トップページのセクションが表示されます。
 
+### 機能のオン/オフ切り替え
+
+- **一時的に有効化**（ローカル確認・Vercelプレビューなど）: 環境変数を設定してビルド/起動します。値は `true`/`1`/`yes`/`on` のいずれか。
+
+  ```bash
+  ENABLE_SPONSORS=true npm run dev
+  ```
+
+  Vercel等のホスティングでは、プロジェクトの環境変数設定に同名の変数を追加して再デプロイしてください。
+
+- **恒久的に有効化**（本番公開時）: `src/features.ts` の該当フラグのデフォルト値を `false` から `true` に変更してコミットします。デプロイ環境の環境変数設定に依存しなくなるため、正式公開はこちらを推奨します。
+
+- **無効化**: 設定した環境変数を削除する（または `src/features.ts` のデフォルト値を `false` に戻す）だけです。無効化された機能はページ自体が生成されず、ナビゲーション・フッターのリンクとトップページのセクションも表示されません。
+
 データは `src/lib/dreamkast/` がビルド時に `src/data/dreamkast/`（`DREAMKAST_DATA_DIR` で変更可）配下のJSONスナップショットを読むだけで、Dreamkast APIを直接叩きません。本番データが未投入のため、動作確認には代わりにcnk（kaigi.cloudnativedays.jp）由来のテストデータ `src/data/dreamkast-fixtures/` を使えます:
 
 ```bash
