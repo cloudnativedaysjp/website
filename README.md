@@ -18,7 +18,7 @@
 
 ### Prerequisites
 
-- Node.js v18以上
+- Node.js v24（[mise](https://mise.jdx.dev/) を利用する場合、リポジトリルートで `mise install` を実行すると `mise.toml` のバージョンが導入されます）
 - npm
 
 ### 環境変数
