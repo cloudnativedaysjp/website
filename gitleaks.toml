@@ -1,0 +1,15 @@
+# gitleaks設定
+# デフォルトルールを継承しつつ、このリポジトリ固有の誤検知を除外する
+title = "cloudnativedaysjp/website gitleaks config"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "誤検知しやすいファイル・パスを除外"
+paths = [
+  '''package-lock\.json''',
+  '''(^|/)node_modules/''',
+  '''(^|/)dist/''',
+  '''(^|/)\.astro/''',
+]

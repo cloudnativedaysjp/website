@@ -1,0 +1,14 @@
+# lefthook設定
+# セットアップ: mise install && npx lefthook install
+# (mise.toml で lefthook / gitleaks を管理しています)
+
+pre-commit:
+  parallel: true
+  commands:
+    gitleaks:
+      # ステージされた差分にシークレットが含まれていないかチェックし、含まれていればコミットをブロックする
+      run: gitleaks protect --staged --redact --config gitleaks.toml -v
+    lint-staged:
+      glob: '*.{js,jsx,ts,tsx,astro}'
+      run: npx prettier --write {staged_files} && npx eslint --fix {staged_files}
+      stage_fixed: true

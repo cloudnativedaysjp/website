@@ -129,6 +129,9 @@ npm run preview      # ビルド結果プレビュー
 npm run lint         # コードチェック（ESLint + Prettier）
 npm run format       # コードフォーマット
 npm run update:data  # Dreamkast APIから src/data/dreamkast/ のスナップショットJSONを更新（要ネットワーク・APIトークン）
+
+mise install                  # mise.toml に記載のツール(Node.js, lefthook, gitleaks)を導入
+mise x -- lefthook install    # pre-commit フック(gitleaksによるシークレット検知 + lint-staged)を有効化
 ```
 
 ## 機能フラグ

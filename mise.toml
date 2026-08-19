@@ -1,2 +1,4 @@
 [tools]
 node = "24"
+lefthook = "latest"
+gitleaks = "latest"
