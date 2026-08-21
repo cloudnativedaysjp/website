@@ -18,8 +18,22 @@
 
 ### Prerequisites
 
-- Node.js v18以上
+- Node.js v24（[mise](https://mise.jdx.dev/) を利用する場合、リポジトリルートで `mise install` を実行すると `mise.toml` に定義されたツール一式が導入されます）
 - npm
+
+### 開発ツールのセットアップ（mise）
+
+このリポジトリでは [mise](https://mise.jdx.dev/) で開発ツールのバージョンを管理しています。
+
+```bash
+mise install       # mise.toml に記載のツール(Node.js, lefthook, gitleaks)を導入
+mise x -- lefthook install  # git hooks (pre-commit) を有効化
+```
+
+pre-commit フックでは以下を実行します:
+
+- **[gitleaks](https://github.com/gitleaks/gitleaks)**: ステージされた変更にシークレット（APIキー等）が含まれていないかチェックし、検出された場合はコミットをブロックします
+- **lint-staged**: ステージされたJS/TS/Astroファイルに対して `prettier` / `eslint --fix` を実行します
 
 ### 環境変数
 
