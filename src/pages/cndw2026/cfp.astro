@@ -1,6 +1,8 @@
 ---
 import { Icon } from 'astro-icon/components'
 import Layout from '../../layouts/Layout.astro'
+
+const linkClass = 'text-indigo-700 underline underline-offset-2 hover:text-indigo-900 transition-colors'
 ---
 
 <Layout
@@ -85,18 +87,18 @@ import Layout from '../../layouts/Layout.astro'
         <section class="mt-12 pt-10 border-t border-gray-200">
           <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-5">CloudNative Days Winter 2025（昨年度東京開催）のセッションの一例</h2>
           <ul class="list-disc pl-6 space-y-2">
-            <li>『ゼルダの伝説　ティアーズ オブ ザ キングダム』の開発を支えたクラウド環境</li>
-            <li>もしもオンプレな勇者がクラウドのダンジョンに挑んだら——“クラウドネイティブな発想”で価値が覚醒</li>
-            <li>あらゆる AI ワークロードを Cloud Native に</li>
-            <li>老舗SaaS運用の舞台裏～AWS EoL対応地獄から「主導権」を奪還するまでの道のりと教訓～</li>
-            <li>100クラスター規模のマルチテナント環境を支える OpenTelemetry Collector 実践と移行～ログ・メトリクス仕様の最前線～</li>
-            <li>Progressive Deliveryで支える！スケールする衛星コンステレーションの地上システム運用</li>
-            <li>クラウドネイティブ時代の開発プロセス再設計 ― 速さと品質を両立するには</li>
-            <li>アラートだけでここまで分析できるの？AI Agentで切り開くアラート対応の新時代</li>
-            <li>LLM時代のDevOps：プロンプトのバージョン管理からモデルのデプロイまで</li>
-            <li>Kubernetes Controller をシャーディングでスケールアウトしよう！</li>
-            <li>Crossplane導入で拓くKubernetesプラットフォーム開発の新たな可能性</li>
-            <li>オブザーバビリティの哲学</li>
+            <li><a href="/cndw2025/talks/2694" class={linkClass} target="_blank">『ゼルダの伝説　ティアーズ オブ ザ キングダム』の開発を支えたクラウド環境</a></li>
+            <li><a href="/cndw2025/talks/2770" class={linkClass} target="_blank">もしもオンプレな勇者がクラウドのダンジョンに挑んだら——“クラウドネイティブな発想”で価値が覚醒</a></li>
+            <li><a href="/cndw2025/talks/2772" class={linkClass} target="_blank">あらゆる AI ワークロードを Cloud Native に</a></li>
+            <li><a href="/cndw2025/talks/2685" class={linkClass} target="_blank">老舗SaaS運用の舞台裏～AWS EoL対応地獄から「主導権」を奪還するまでの道のりと教訓～</a></li>
+            <li><a href="/cndw2025/talks/2680" class={linkClass} target="_blank">100クラスター規模のマルチテナント環境を支える OpenTelemetry Collector 実践と移行～ログ・メトリクス仕様の最前線～</a></li>
+            <li><a href="/cndw2025/talks/2721" class={linkClass} target="_blank">Progressive Deliveryで支える！スケールする衛星コンステレーションの地上システム運用</a></li>
+            <li><a href="/cndw2025/talks/2738" class={linkClass} target="_blank">クラウドネイティブ時代の開発プロセス再設計 ― 速さと品質を両立するには</a></li>
+            <li><a href="/cndw2025/talks/2683" class={linkClass} target="_blank">アラートだけでここまで分析できるの？AI Agentで切り開くアラート対応の新時代</a></li>
+            <li><a href="/cndw2025/talks/2758" class={linkClass} target="_blank">LLM時代のDevOps：プロンプトのバージョン管理からモデルのデプロイまで</a></li>
+            <li><a href="/cndw2025/talks/2689" class={linkClass} target="_blank">Kubernetes Controller をシャーディングでスケールアウトしよう！</a></li>
+            <li><a href="/cndw2025/talks/2698" class={linkClass} target="_blank">Crossplane導入で拓くKubernetesプラットフォーム開発の新たな可能性</a></li>
+            <li><a href="/cndw2025/talks/2769" class={linkClass} target="_blank">オブザーバビリティの哲学</a></li>
           </ul>
         </section>
 
@@ -104,7 +106,7 @@ import Layout from '../../layouts/Layout.astro'
           <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-5">CFPレビュープロンプト</h2>
           <div class="space-y-4">
             <p>
-              CFPレビュープロンプトを公開しています。CloudNative Daysが選考会でよく重視している選考軸についてチェックできるようになっているため、必要に応じてご活用ください。
+              <a href="https://github.com/cloudnativedaysjp/cnd-cfp-prompts" class={linkClass} target="_blank">CFPレビュープロンプト</a>を公開しています。CloudNative Daysが選考会でよく重視している選考軸についてチェックできるようになっているため、必要に応じてご活用ください。
             </p>
             <p>
               ※今回試験的な取り組みのため、必ずしもこの通りに修正した結果が良くなるとは限りません。参考程度に利用してください。
@@ -114,8 +116,8 @@ import Layout from '../../layouts/Layout.astro'
             </p>
           </div>
           <ul class="list-disc pl-6 space-y-2 mt-4">
-            <li>CloudNative Days Winter 2025（東京開催）</li>
-            <li>CloudNative Days Summer 2025（沖縄開催）</li>
+            <li><a href="/cndw2025" class={linkClass} target="_blank">CloudNative Days Winter 2025（東京開催）</a></li>
+            <li><a href="/cnds2025" class={linkClass} target="_blank">CloudNative Days Summer 2025（沖縄開催）</a></li>
           </ul>
         </section>
 
@@ -161,7 +163,8 @@ import Layout from '../../layouts/Layout.astro'
             <section>
               <h3 class="text-xl font-bold text-gray-900 mb-3">CFPの選考はどのように行われますか？</h3>
               <p>
-                CNDW2026実行委員会による投票、X(Twitter)での反響を参考に絞り込みした上で、全体のバランスや多様性を考慮したディスカッションにより決定されます。詳細な選考方法については、こちらのブログをご参照ください。
+                CNDW2026実行委員会による投票、X(Twitter)での反響を参考に絞り込みした上で、全体のバランスや多様性を考慮したディスカッションにより決定されます。
+                詳細な選考方法については、<a href="https://cloudnativedays.medium.com/v18-12%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%83%97%E3%83%AD%E3%83%9D%E3%83%BC%E3%82%B6%E3%83%AB%E9%81%B8%E5%AE%9A%E3%83%95%E3%83%AD%E3%83%BC%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6-97c134b237a3" class={linkClass} target="_blank">こちらのブログ</a>をご参照ください。
               </p>
             </section>
 
@@ -185,7 +188,7 @@ import Layout from '../../layouts/Layout.astro'
             <section>
               <h3 class="text-xl font-bold text-gray-900 mb-3">選考の基準として重視される項目はなんですか？</h3>
               <p>
-                記入欄に、採択への影響度を三段階で表示しています。記載された★マークが多いほど、考慮される度合いが高いです。
+                エントリーフォームの入力項目に、採択への影響度を三段階で表示しています。記載された★マークが多いほど、考慮される度合いが高いです。
               </p>
             </section>
 
@@ -202,7 +205,7 @@ import Layout from '../../layouts/Layout.astro'
           <a
             href="https://event.cloudnativedays.jp/cndw2026/speakers/guidance"
             target="_blank"
-            rel="noopener noreferrer"
+          
             class="inline-flex items-center justify-center px-12 py-5 bg-indigo-600 text-white text-xl md:text-2xl font-bold rounded-xl hover:bg-indigo-700 hover:scale-105 transition-all duration-300 shadow-lg"
           >
             CFPに応募する
