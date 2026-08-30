@@ -17,12 +17,15 @@ const AI_CRAWLERS = [
 export const GET: APIRoute = ({ site }) => {
   const sitemapUrl = new URL('sitemap-index.xml', site).toString()
 
+  const llmsTxtUrl = new URL('llms.txt', site).toString()
+
   const lines = [
     'User-agent: *',
     'Allow: /',
     '',
     ...AI_CRAWLERS.flatMap((agent) => [`User-agent: ${agent}`, 'Allow: /', '']),
     `Sitemap: ${sitemapUrl}`,
+    `# LLM向けサイト情報: ${llmsTxtUrl}`,
   ]
 
   return new Response(lines.join('\n'), {
