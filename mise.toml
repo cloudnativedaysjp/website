@@ -1,4 +1,4 @@
 [tools]
-node = "24"
+node = "v24.20.0"
 lefthook = "latest"
 gitleaks = "latest"
