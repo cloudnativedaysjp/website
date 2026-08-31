@@ -64,6 +64,11 @@ const client = new Client({
 let postsCache: Post[] | null = null
 let dbCache: Database | null = null
 const blocksCache: Map<string, Block[]> = new Map()
+let notionFetchError = false
+
+export function hasNotionFetchError(): boolean {
+  return notionFetchError
+}
 
 export async function getAllPosts(): Promise<Post[]> {
   if (postsCache !== null) {
@@ -97,25 +102,32 @@ export async function getAllPosts(): Promise<Post[]> {
     page_size: 100,
   }
 
-  let results: responses.PageObject[] = []
-  while (true) {
-    const res = (await client.databases.query(
-      params as any, // eslint-disable-line @typescript-eslint/no-explicit-any
-    )) as responses.QueryDatabaseResponse
+  try {
+    let results: responses.PageObject[] = []
+    while (true) {
+      const res = (await client.databases.query(
+        params as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+      )) as responses.QueryDatabaseResponse
 
-    results = results.concat(res.results)
+      results = results.concat(res.results)
 
-    if (!res.has_more) {
-      break
+      if (!res.has_more) {
+        break
+      }
+
+      params['start_cursor'] = res.next_cursor as string
     }
 
-    params['start_cursor'] = res.next_cursor as string
+    postsCache = results
+      .filter((pageObject) => _validPageObject(pageObject))
+      .map((pageObject) => _buildPost(pageObject))
+    return postsCache
+  } catch (err) {
+    console.error('[notion] Failed to fetch posts:', err)
+    notionFetchError = true
+    postsCache = []
+    return postsCache
   }
-
-  postsCache = results
-    .filter((pageObject) => _validPageObject(pageObject))
-    .map((pageObject) => _buildPost(pageObject))
-  return postsCache
 }
 
 export async function getPosts(pageSize = 10): Promise<Post[]> {

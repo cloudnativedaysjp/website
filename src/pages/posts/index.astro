@@ -6,13 +6,19 @@ import Headline from '../../components/Headline.astro'
 import MascotPeek from '../../components/MascotPeek.astro'
 import NoContents from '../../components/NoContents.astro'
 import Layout from '../../layouts/Layout.astro'
-import { getAllPosts, getRankedPosts, getAllTags } from '../../lib/notion/client'
+import {
+  getAllPosts,
+  getRankedPosts,
+  getAllTags,
+  hasNotionFetchError,
+} from '../../lib/notion/client'
 
 const [posts, rankedPosts, tags] = await Promise.all([
   getAllPosts(),
   getRankedPosts(),
   getAllTags(),
 ])
+const fetchError = hasNotionFetchError()
 ---
 
 <Layout
@@ -27,36 +33,49 @@ const [posts, rankedPosts, tags] = await Promise.all([
   </Headline>
   <div class="px-4 md:px-8 flex flex-col lg:flex-row gap-6 max-w-7xl mx-auto">
     <main class="flex-1">
-      <div class="mb-6">
-        <label for="blog-search" class="sr-only">記事を検索</label>
-        <input
-          id="blog-search"
-          type="search"
-          inputmode="search"
-          autocomplete="off"
-          placeholder="記事を検索…"
-          class="w-full border-b border-gray-200 bg-transparent py-2 text-base text-gray-900 outline-none transition-colors placeholder:text-gray-400 focus:border-blue-600"
-        />
-        <p id="blog-search-status" class="mt-2 text-sm text-gray-500">
-          {posts.length}件の記事
-        </p>
-      </div>
       {
-        posts.length === 0 ? (
-          <NoContents contents={posts} />
+        fetchError ? (
+          <p class="py-12 text-center text-gray-500">
+            申し訳ございません。一時的なエラーのためブログを表示できません。
+          </p>
         ) : (
-          <ul id="blog-post-list" class="space-y-6">
-            {posts.map((post) => (
-              <li class="blog-post-item" data-slug={post.Slug}>
-                <BlogCard post={post} />
-              </li>
-            ))}
-          </ul>
+          <>
+            <div class="mb-6">
+              <label for="blog-search" class="sr-only">
+                記事を検索
+              </label>
+              <input
+                id="blog-search"
+                type="search"
+                inputmode="search"
+                autocomplete="off"
+                placeholder="記事を検索…"
+                class="w-full border-b border-gray-200 bg-transparent py-2 text-base text-gray-900 outline-none transition-colors placeholder:text-gray-400 focus:border-blue-600"
+              />
+              <p id="blog-search-status" class="mt-2 text-sm text-gray-500">
+                {posts.length}件の記事
+              </p>
+            </div>
+            {posts.length === 0 ? (
+              <NoContents contents={posts} />
+            ) : (
+              <ul id="blog-post-list" class="space-y-6">
+                {posts.map((post) => (
+                  <li class="blog-post-item" data-slug={post.Slug}>
+                    <BlogCard post={post} />
+                  </li>
+                ))}
+              </ul>
+            )}
+            <p
+              id="blog-no-results"
+              class="hidden py-12 text-center text-gray-500"
+            >
+              該当する記事が見つかりませんでした。
+            </p>
+          </>
         )
       }
-      <p id="blog-no-results" class="hidden py-12 text-center text-gray-500">
-        該当する記事が見つかりませんでした。
-      </p>
     </main>
 
     <aside class="lg:w-80 flex-shrink-0">
@@ -81,7 +100,9 @@ const [posts, rankedPosts, tags] = await Promise.all([
   import { tokenize, type BlogSearchDocument } from '../../lib/search-utils'
 
   function initBlogSearch() {
-    const input = document.getElementById('blog-search') as HTMLInputElement | null
+    const input = document.getElementById(
+      'blog-search',
+    ) as HTMLInputElement | null
     const status = document.getElementById('blog-search-status')
     const noResults = document.getElementById('blog-no-results')
     const items = Array.from(
@@ -90,7 +111,9 @@ const [posts, rankedPosts, tags] = await Promise.all([
     if (!input || items.length === 0) return
 
     const totalCount = items.length
-    const defaultOrder = new Map(items.map((item, index) => [item.dataset.slug ?? '', index]))
+    const defaultOrder = new Map(
+      items.map((item, index) => [item.dataset.slug ?? '', index]),
+    )
     const searchParams = new URLSearchParams(window.location.search)
     const initialQuery = searchParams.get('q') ?? ''
     let miniSearch: MiniSearch<BlogSearchDocument> | null = null
@@ -140,7 +163,9 @@ const [posts, rankedPosts, tags] = await Promise.all([
     function resetOrder() {
       for (const item of items) {
         item.hidden = false
-        item.style.order = String(defaultOrder.get(item.dataset.slug ?? '') ?? 0)
+        item.style.order = String(
+          defaultOrder.get(item.dataset.slug ?? '') ?? 0,
+        )
       }
     }
 

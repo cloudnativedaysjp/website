@@ -1,12 +1,13 @@
 ---
+import { getPostLink } from '../lib/blog-helpers'
+import { getPosts, hasNotionFetchError } from '../lib/notion/client'
 import PostDate from './PostDate.astro'
 import PostExcerpt from './PostExcerpt.astro'
 import PostFeaturedImage from './PostFeaturedImage.astro'
-import { getPostLink } from '../lib/blog-helpers'
-import { getPosts } from '../lib/notion/client'
 
 // 最新の3件のブログ記事を取得（1件を大きく、残り2件を積み重ねて表示）
 const posts = await getPosts(3)
+const fetchError = hasNotionFetchError()
 const [featuredPost, ...secondaryPosts] = posts
 ---
 
@@ -16,7 +17,11 @@ const [featuredPost, ...secondaryPosts] = posts
       最新ブログ
     </h2>
     {
-      posts.length === 0 ? (
+      fetchError ? (
+        <p class="text-center text-gray-500">
+          申し訳ございません。一時的なエラーのためブログを表示できません。
+        </p>
+      ) : posts.length === 0 ? (
         <p class="text-center text-gray-500">ブログ記事を準備中です。</p>
       ) : (
         <div class="max-w-5xl mx-auto grid gap-6 lg:grid-cols-[minmax(0,1.3fr)_minmax(19rem,0.9fr)] lg:gap-8">
@@ -64,7 +69,9 @@ const [featuredPost, ...secondaryPosts] = posts
                   ) : (
                     <div class="bg-gradient-to-r from-blue-500 to-purple-600 h-full flex items-center justify-center">
                       <span class="text-white text-2xl">
-                        {post.Icon && post.Icon.Type === 'emoji' && 'Emoji' in post.Icon
+                        {post.Icon &&
+                        post.Icon.Type === 'emoji' &&
+                        'Emoji' in post.Icon
                           ? post.Icon.Emoji
                           : '📝'}
                       </span>
@@ -114,11 +121,15 @@ const [featuredPost, ...secondaryPosts] = posts
 
   /* カスタムのホバーエフェクト強化 */
   .card-hover {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.1);
   }
 
   .card-hover:hover {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    box-shadow:
+      0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 8px 10px -6px rgba(0, 0, 0, 0.1);
     transform: translateY(-4px);
   }
 </style>
