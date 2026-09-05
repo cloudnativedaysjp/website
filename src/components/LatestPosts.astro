@@ -1,13 +1,12 @@
 ---
 import { getPostLink } from '../lib/blog-helpers'
-import { getPosts, hasNotionFetchError } from '../lib/notion/client'
+import { getPosts } from '../lib/notion/client'
 import PostDate from './PostDate.astro'
 import PostExcerpt from './PostExcerpt.astro'
 import PostFeaturedImage from './PostFeaturedImage.astro'
 
 // 最新の3件のブログ記事を取得（1件を大きく、残り2件を積み重ねて表示）
 const posts = await getPosts(3)
-const fetchError = hasNotionFetchError()
 const [featuredPost, ...secondaryPosts] = posts
 ---
 
@@ -17,11 +16,7 @@ const [featuredPost, ...secondaryPosts] = posts
       最新ブログ
     </h2>
     {
-      fetchError ? (
-        <p class="text-center text-gray-500">
-          申し訳ございません。一時的なエラーのためブログを表示できません。
-        </p>
-      ) : posts.length === 0 ? (
+      posts.length === 0 ? (
         <p class="text-center text-gray-500">ブログ記事を準備中です。</p>
       ) : (
         <div class="max-w-5xl mx-auto grid gap-6 lg:grid-cols-[minmax(0,1.3fr)_minmax(19rem,0.9fr)] lg:gap-8">

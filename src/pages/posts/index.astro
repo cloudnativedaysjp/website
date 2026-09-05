@@ -10,7 +10,6 @@ import {
   getAllPosts,
   getRankedPosts,
   getAllTags,
-  hasNotionFetchError,
 } from '../../lib/notion/client'
 
 const [posts, rankedPosts, tags] = await Promise.all([
@@ -18,7 +17,6 @@ const [posts, rankedPosts, tags] = await Promise.all([
   getRankedPosts(),
   getAllTags(),
 ])
-const fetchError = hasNotionFetchError()
 ---
 
 <Layout
@@ -34,10 +32,8 @@ const fetchError = hasNotionFetchError()
   <div class="px-4 md:px-8 flex flex-col lg:flex-row gap-6 max-w-7xl mx-auto">
     <main class="flex-1">
       {
-        fetchError ? (
-          <p class="py-12 text-center text-gray-500">
-            申し訳ございません。一時的なエラーのためブログを表示できません。
-          </p>
+        posts.length === 0 ? (
+          <NoContents contents={posts} />
         ) : (
           <>
             <div class="mb-6">
@@ -56,17 +52,13 @@ const fetchError = hasNotionFetchError()
                 {posts.length}件の記事
               </p>
             </div>
-            {posts.length === 0 ? (
-              <NoContents contents={posts} />
-            ) : (
-              <ul id="blog-post-list" class="space-y-6">
-                {posts.map((post) => (
-                  <li class="blog-post-item" data-slug={post.Slug}>
-                    <BlogCard post={post} />
-                  </li>
-                ))}
-              </ul>
-            )}
+            <ul id="blog-post-list" class="space-y-6">
+              {posts.map((post) => (
+                <li class="blog-post-item" data-slug={post.Slug}>
+                  <BlogCard post={post} />
+                </li>
+              ))}
+            </ul>
             <p
               id="blog-no-results"
               class="hidden py-12 text-center text-gray-500"

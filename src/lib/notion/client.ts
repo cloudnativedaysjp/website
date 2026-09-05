@@ -9,6 +9,7 @@ import {
   DATABASE_ID,
   NUMBER_OF_POSTS_PER_PAGE,
   REQUEST_TIMEOUT_MS,
+  USE_DUMMY_POSTS,
 } from '../../server-constants'
 import type {
   Database,
@@ -50,6 +51,7 @@ import type {
   Mention,
   Reference,
 } from '../interfaces'
+import { DUMMY_POSTS, DUMMY_BLOCKS_BY_PAGE_ID } from './dummy-data'
 import type * as requestParams from './request-params'
 import type * as responses from './responses'
 
@@ -64,15 +66,15 @@ const client = new Client({
 let postsCache: Post[] | null = null
 let dbCache: Database | null = null
 const blocksCache: Map<string, Block[]> = new Map()
-let notionFetchError = false
-
-export function hasNotionFetchError(): boolean {
-  return notionFetchError
-}
 
 export async function getAllPosts(): Promise<Post[]> {
   if (postsCache !== null) {
     return Promise.resolve(postsCache)
+  }
+
+  if (USE_DUMMY_POSTS) {
+    postsCache = DUMMY_POSTS
+    return postsCache
   }
 
   const params: requestParams.QueryDatabase = {
@@ -102,32 +104,25 @@ export async function getAllPosts(): Promise<Post[]> {
     page_size: 100,
   }
 
-  try {
-    let results: responses.PageObject[] = []
-    while (true) {
-      const res = (await client.databases.query(
-        params as any, // eslint-disable-line @typescript-eslint/no-explicit-any
-      )) as responses.QueryDatabaseResponse
+  let results: responses.PageObject[] = []
+  while (true) {
+    const res = (await client.databases.query(
+      params as any, // eslint-disable-line @typescript-eslint/no-explicit-any
+    )) as responses.QueryDatabaseResponse
 
-      results = results.concat(res.results)
+    results = results.concat(res.results)
 
-      if (!res.has_more) {
-        break
-      }
-
-      params['start_cursor'] = res.next_cursor as string
+    if (!res.has_more) {
+      break
     }
 
-    postsCache = results
-      .filter((pageObject) => _validPageObject(pageObject))
-      .map((pageObject) => _buildPost(pageObject))
-    return postsCache
-  } catch (err) {
-    console.error('[notion] Failed to fetch posts:', err)
-    notionFetchError = true
-    postsCache = []
-    return postsCache
+    params['start_cursor'] = res.next_cursor as string
   }
+
+  postsCache = results
+    .filter((pageObject) => _validPageObject(pageObject))
+    .map((pageObject) => _buildPost(pageObject))
+  return postsCache
 }
 
 export async function getPosts(pageSize = 10): Promise<Post[]> {
@@ -229,6 +224,12 @@ export async function getAllBlocksByBlockId(blockId: string): Promise<Block[]> {
   const cached = blocksCache.get(blockId)
   if (cached !== undefined) {
     return cached
+  }
+
+  if (USE_DUMMY_POSTS) {
+    const dummyBlocks = DUMMY_BLOCKS_BY_PAGE_ID[blockId] ?? []
+    blocksCache.set(blockId, dummyBlocks)
+    return dummyBlocks
   }
 
   let results: responses.BlockObject[] = []
