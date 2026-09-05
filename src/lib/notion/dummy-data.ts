@@ -1,6 +1,3 @@
-// USE_DUMMY_POSTS=true (ローカル開発時の既定値) の場合に、Notion APIへ
-// アクセスせずに表示するダミーの記事・本文データ。
-// ブログ関連のUI/機能をNotionの認証情報なしで確認するためのもの。
 import type { Block, Post } from '../interfaces'
 
 const richText = (content: string) => ({
