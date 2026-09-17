@@ -66,6 +66,12 @@ let dbCache: Database | null = null
 const blocksCache: Map<string, Block[]> = new Map()
 
 export async function getAllPosts(): Promise<Post[]> {
+  // https://github.com/cloudnativedaysjp/website/pull/457 マージまでの500エラー回避
+  if (!NOTION_API_SECRET || !DATABASE_ID) {
+    postsCache = []
+    return postsCache
+  }
+
   if (postsCache !== null) {
     return Promise.resolve(postsCache)
   }

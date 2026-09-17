@@ -3,6 +3,7 @@ import Event from '../components/Event.astro'
 import Hero from '../components/Hero.astro'
 import LatestPosts from '../components/LatestPosts.astro'
 import Sponsors from '../components/Sponsors.astro'
+import StaffSection from '../components/StaffSection.astro'
 import { Conferences } from '../data/data'
 import Layout from '../layouts/Layout.astro'
 import MascotPeek from '../components/MascotPeek.astro'
@@ -93,6 +94,7 @@ import { FEATURES } from '../features'
 
     {FEATURES.sponsors && <Sponsors />}
 
+    <StaffSection />
 
     <section class="py-24 ">
       <div class="container mx-auto px-4">
