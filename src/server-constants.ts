@@ -1,7 +1,14 @@
+import { parseBooleanEnv } from './lib/utils'
+
 export const NOTION_API_SECRET =
   import.meta.env.NOTION_API_SECRET || process.env.NOTION_API_SECRET || ''
 export const DATABASE_ID =
   import.meta.env.DATABASE_ID || process.env.DATABASE_ID || ''
+
+export const USE_DUMMY_POSTS = parseBooleanEnv(
+  import.meta.env.USE_DUMMY_POSTS || process.env.USE_DUMMY_POSTS,
+  true,
+)
 
 export const CUSTOM_DOMAIN =
   import.meta.env.CUSTOM_DOMAIN || process.env.CUSTOM_DOMAIN || '' // <- Set your costom domain if you have. e.g. alpacat.com

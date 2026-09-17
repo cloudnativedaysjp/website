@@ -43,9 +43,12 @@ pre-commit フックでは以下を実行します:
 | ----------------------- | ---------------------------------------------- | ---------------- |
 | `NOTION_API_SECRET`     | Notion API シークレットキー                    | ブログ機能使用時 |
 | `DATABASE_ID`           | Notion データベース ID                         | ブログ機能使用時 |
+| `USE_DUMMY_POSTS`       | `true`でNotionへアクセスせずダミー記事を表示（既定値`true`。本番ビルドは`false`を指定） | 任意 |
 | `PUBLIC_GA_TRACKING_ID` | Google Analytics トラッキング ID               | 任意             |
 | `CUSTOM_DOMAIN`         | カスタムドメイン (例: `cloudnativedays.jp`)    | 任意             |
 | `BASE_PATH`             | サブディレクトリパス (例: `/docs/`)            | 任意             |
+
+`USE_DUMMY_POSTS`はデフォルトで有効なため、`NOTION_API_SECRET`/`DATABASE_ID`未設定でもローカルの`npm run dev`/`npm run build`はダミー記事で正常に動作します。Notionへの実アクセスを試す場合は`USE_DUMMY_POSTS=false`を指定してください（本番ビルドはCI側で常に`false`を指定しており、Notion取得に失敗した場合はビルド自体が失敗します）。
 
 スポンサー・タイムテーブル・セッション・ジョブボード機能（デフォルトOFF）を利用する場合は以下も参照してください:
 

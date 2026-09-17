@@ -201,7 +201,7 @@ ENABLE_SPONSORS=true ENABLE_TIMETABLE=true ENABLE_SESSIONS=true ENABLE_JOBBOARD=
 
 ## 注意点
 
-- **環境変数**: ブログ機能には `NOTION_API_SECRET` と `DATABASE_ID` が必要。Dreamkast連携の各機能フラグ・環境変数は上記「機能フラグ」「Dreamkastデータ層」を参照
+- **環境変数**: ブログ機能には `NOTION_API_SECRET` と `DATABASE_ID` が必要。`USE_DUMMY_POSTS`（既定値`true`）が有効な間はNotionにアクセスせずダミー記事を表示するため、ローカル開発ではこれらの未設定でも動作する。本番ビルドはCI側で`USE_DUMMY_POSTS=false`を指定しており、Notion取得失敗時はビルド自体が失敗する。Dreamkast連携の各機能フラグ・環境変数は上記「機能フラグ」「Dreamkastデータ層」を参照
 - **画像**: イベントロゴは `/public/images/assets/` に配置
 - **ビルド確認**: 変更後は `npm run build` でビルドエラーがないか確認
 - **型チェック**: 新しいデータ追加時は型定義と整合性を確認
