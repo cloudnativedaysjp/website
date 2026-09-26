@@ -1,5 +1,6 @@
 import mdx from '@astrojs/mdx'
 import partytown from '@astrojs/partytown'
+import sitemap from '@astrojs/sitemap'
 import tailwind from '@astrojs/tailwind'
 import { defineConfig } from 'astro/config'
 import icon from 'astro-icon'
@@ -43,6 +44,7 @@ export default defineConfig({
         tabler: ["*"]
       }
     }),
+    sitemap(),
   ],
   site: getSite(),
 })
