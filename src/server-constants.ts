@@ -7,7 +7,7 @@ export const DATABASE_ID =
 
 export const USE_DUMMY_POSTS = parseBooleanEnv(
   import.meta.env.USE_DUMMY_POSTS || process.env.USE_DUMMY_POSTS,
-  true,
+  false,
 )
 
 export const CUSTOM_DOMAIN =
