@@ -1,5 +1,7 @@
 ---
+import { Image } from "astro:assets";
 import { getStaffMembers } from "../lib/dreamkast/client";
+import { getStaffImage } from "../lib/staff/assets";
 
 const staffMembers = await getStaffMembers();
 ---
@@ -14,6 +16,7 @@ const staffMembers = await getStaffMembers();
     <div class="flex flex-wrap justify-center gap-6 md:gap-8">
       {
         staffMembers.map((staff) => {
+          const image = staff.image ? getStaffImage(staff.image) : undefined;
           const Tag = staff.url ? "a" : "div";
           const linkProps = staff.url
             ? {
@@ -30,13 +33,15 @@ const staffMembers = await getStaffMembers();
               title={staff.name}
               class="block h-20 w-20 overflow-hidden rounded-full border border-gray-200 bg-gray-100 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-xl sm:h-24 sm:w-24 lg:h-28 lg:w-28"
             >
-              {staff.image && (
-                <img
-                  src={staff.image}
+              {image && (
+                <Image
+                  src={image}
                   alt={staff.name}
+                  width={112}
+                  height={112}
+                  format="webp"
                   class="h-full w-full object-cover"
                   loading="lazy"
-                  decoding="async"
                 />
               )}
             </Tag>
