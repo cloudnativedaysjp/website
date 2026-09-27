@@ -1,7 +1,7 @@
 import type { APIRoute } from 'astro'
 import { Conferences } from '../data/data'
 import { FEATURES } from '../features'
-import { PUBLIC_SITE_TITLE, PUBLIC_SITE_DESCRIPTION } from '../server-constants'
+import { PUBLIC_SITE_DESCRIPTION, PUBLIC_SITE_TITLE } from '../server-constants'
 
 export const GET: APIRoute = ({ site }) => {
   const siteUrl = (path: string) => new URL(path, site).toString()
@@ -56,7 +56,7 @@ export const GET: APIRoute = ({ site }) => {
     '- 各イベントの詳細（会場、日程、Code of Conduct、プライバシーポリシー等）は個別のイベントページを参照してください。',
   ]
 
-  return new Response(lines.join('\n'), {
+  return new Response('\uFEFF' + lines.join('\n'), {
     headers: { 'Content-Type': 'text/markdown; charset=utf-8' },
   })
 }
