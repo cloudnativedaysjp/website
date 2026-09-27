@@ -143,6 +143,16 @@ export const JobboardEntrySchema = z.object({
 
 export type JobboardEntry = z.infer<typeof JobboardEntrySchema>
 
+// --- Staff ---
+
+export const StaffMemberSchema = z.object({
+  name: z.string(),
+  image: z.string().nullable(),
+  url: z.string().url().nullable(),
+})
+
+export type StaffMember = z.infer<typeof StaffMemberSchema>
+
 // --- App-level timetable types (builder itself is Phase 3) ---
 
 export interface TimetableTalk {

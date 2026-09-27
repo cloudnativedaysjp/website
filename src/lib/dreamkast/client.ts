@@ -17,6 +17,7 @@ import {
   SpeakerSchema,
   SpeakerWithLocalAssetPathSchema,
   JobboardEntrySchema,
+  StaffMemberSchema,
   type Sponsor,
   type SponsorWithLocalAssetPath,
   type Talk,
@@ -24,6 +25,7 @@ import {
   type Speaker,
   type SpeakerWithLocalAssetPath,
   type JobboardEntry,
+  type StaffMember,
 } from './schema'
 import { downloadImage } from './image-downloader'
 import {
@@ -64,6 +66,9 @@ export const getSpeakers = (): Promise<SpeakerWithLocalAssetPath[]> =>
 
 export const getJobboardEntries = (): Promise<JobboardEntry[]> =>
   readSnapshot('jobboard.json', z.array(JobboardEntrySchema))
+
+export const getStaffMembers = (): Promise<StaffMember[]> =>
+  readSnapshot('staff.json', z.array(StaffMemberSchema))
 
 // --- API path (scripts/update-data.ts only) ---
 
