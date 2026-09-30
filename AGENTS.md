@@ -145,7 +145,7 @@ mise x -- lefthook install    # pre-commit フック(gitleaksによるシーク�
 | `FEATURES.sessions`  | `ENABLE_SESSIONS`  | `/sessions/*` ページ                      |
 | `FEATURES.jobboard`  | `ENABLE_JOBBOARD`  | `/jobboard` ページ                        |
 
-環境変数には `true`/`1`/`yes`/`on`（大文字小文字・前後空白は無視）のいずれかを指定するとONになる。各フラグは以下の3面を制御する:
+環境変数には `true`/`1`/`yes`/`on`（大文字小文字・前後空白は無視）のいずれかを指定するとONになる。Dreamkastとは無関係だが、連携コミュニティページも `FEATURES.community`（`ENABLE_COMMUNITY`、`/community/*`）で同様に制御している（後述「連携コミュニティ」）。各フラグは以下の3面を制御する:
 
 1. 該当ページの `getStaticPaths`（OFF時は空配列を返しページ自体を生成しない）
 2. `Layout.astro`（Navbar）と `Footer.astro` のリンク表示
@@ -185,6 +185,33 @@ ENABLE_SPONSORS=true ENABLE_TIMETABLE=true ENABLE_SESSIONS=true ENABLE_JOBBOARD=
 ### ジョブボード
 
 `src/data/dreamkast/jobboard.json` は実データ・手動管理で、`[{ id: <スポンサーID>, description: <markdown> }]` の配列形式で作成する。`id` は `sponsors.json` のスポンサーIDと一致させる必要があり、一致しないエントリはジョブボードに表示されない。
+
+## 連携コミュニティ
+
+`/community`（一覧）と `/community/{id}`（詳細）で連携コミュニティのロゴと紹介を掲載する（kaigi.cloudnativedays.jp の `/community` を移植）。Dreamkastとは無関係の手動管理データで、`FEATURES.community`（`ENABLE_COMMUNITY`）がOFFの間はページもリンク（Navbar/Footer）も生成されない。
+
+- **掲載情報**: `src/data/community.json` を編集する。形式はCNK（kaigi.cloudnativedays.jp）の `src/data/community.json` と互換で、エントリをそのままコピーできる
+- **ロゴ**: `src/assets/community/` に画像（png/jpg/jpeg/webp/svg）を置き、`logo` にファイル名を指定する（ロゴなしは `""`）。存在しないファイル名を指定するとビルドエラーになる
+- **スキーマ・読み込み**: `src/lib/community.ts`
+
+```json
+{
+  "corporate": [
+    {
+      "id": "example-community",
+      "name": "Example Community",
+      "logo": "example-community.png",
+      "description": "紹介文（改行は \\n。1行目が詳細ページの meta description になる）",
+      "url": "https://example.com/"
+    }
+  ],
+  "technical": []
+}
+```
+
+- `corporate` = 企業コミュニティ、`technical` = 技術コミュニティ（空のカテゴリは見出しごと非表示）
+- `id` はURLパスに使う（英小文字・数字・ハイフンのみ、全体で一意）
+- `url` は任意（CNKにはない拡張フィールド）。指定すると詳細ページに「コミュニティサイトを見る」ボタンが出る
 
 ## ブログ
 
