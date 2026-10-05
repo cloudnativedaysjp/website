@@ -38,7 +38,7 @@ const { links = [] } = Astro.props;
         <div
           class="w-full  flex flex-row lg:w-auto lg:block "
         >
-          <ul class="flex gap-4">
+          <ul class="flex flex-wrap gap-x-4">
             {links.map(({ ariaLabel, href, text, icon }) => (
               <li>
                 <a
