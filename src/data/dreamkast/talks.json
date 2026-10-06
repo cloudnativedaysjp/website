@@ -1,0 +1,1026 @@
+[
+  {
+    "id": 3160,
+    "conferenceId": 16,
+    "trackId": 66,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "実測データからサービスの成長余力を測る。負荷シナリオ・テストデータ・限界値の設計",
+    "abstract": "「事業計画が想定する成長を、今のシステムは受け止められるのか」\r\n\r\nこの問いに向き合うため、決済サービスで負荷テストに取り組みました。難しかったのは負荷をかけることよりも、その前後にある意思決定です。\r\n\r\n数百あるAPIを本番トラフィックの「量」と「重さ」から30本強に絞り込む。本番とのデータ量・分布の違いを調べ、「◯年後相当」のテストデータを準備する。エラー率・レイテンシ・DB CPUから限界を測り、req/sを「ユーザー何万人分か」へ翻訳して事業計画と突き合わせる。\r\n\r\n本セッションでは、シナリオ導出、テストデータ準備、限界測定、事業へのレポーティングまで、実測データをもとに負荷テストを設計した取り組みを紹介します。\r\n\r\nまた、分析・データ検証・コード生成・結果整理など各工程でAIを活用し、増えた情報や選択肢をどう意思決定につなげたかについても触れます。\r\n\r\n「何req/s耐えた」で終わらせず、サービスの成長余力を測るための負荷テストの考え方を持ち帰っていただければと思います。",
+    "speakers": [
+      {
+        "id": 2330,
+        "name": "Kazato Hiei"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T17:20:00.000+09:00",
+    "endTime": "2000-01-01T17:50:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 6,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3164,
+    "conferenceId": 16,
+    "trackId": 67,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "信頼性を犠牲にせず、PR マージからデプロイまで人の介入を完全にゼロにするまでの道のり",
+    "abstract": "カウシェでは、この1年でマージされるPRの数が10倍以上になりました。以前はリリースごとに、リリース内容や依存関係の確認、可否の判断、動作確認、リリース後の監視を人が行っていました。短い期間に積まれる変更が増えるほど、1回のリリースにのる変更も依存も増え、何が入っていて何と一緒に出してよいのかを、人が把握しきれなくなっていきました。\r\n\r\nこの発表では、PRのマージからデプロイまでを完全に自動化するためにやったことを話します。ただ自動化するだけでは、プロダクト開発メンバーは安心してリリースを任せられません。どうすれば安心して任せられるのか。そのために行ってきたことを順に紹介します。\r\n\r\nまずデプロイとリリースを分けました。デプロイは振る舞いを変えないコードを本番に出すこと、リリースは機能を公開することと定義し直しました。この分離を起点に、トランクベース開発への移行、サービス横断で使えるfeature flagシステムの構築、SLI/SLOの制定と運用、ロールアウト条件の定義、カナリアリリースの自動化、と積み重ねてきました。それぞれが何を解決し、どこまで人の判断を置き換えたのかを解説します。",
+    "speakers": [
+      {
+        "id": 2333,
+        "name": "Kenta Takahashi"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:10:00.000+09:00",
+    "endTime": "2000-01-01T13:40:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "CI / CD",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 2,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3169,
+    "conferenceId": 16,
+    "trackId": 65,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "あなたのPodの裏側でLinuxカーネルは何をしているか 〜 Kubernetesから使えるイマドキのカーネル機能",
+    "abstract": "Kubernetesでリソースの設定をすると、その裏では必ずLinuxカーネルの機能が動いています。CloudNative技術が進化する裏側でカーネル技術も進化しています。本セッションではKubernetesの解説ではなく、その裏側で働いているカーネル機能そのものに焦点を当てます。\r\n\r\n取り上げるのは、リソース逼迫を\"体感時間\"として可視化するPSI（Pressure Stall Information）、cgroup v2で実現するメモリ保護の仕組み、CPUスロットリングの内部処理とそれがサービス品質に与える影響、そしてrootlessコンテナの実現で必要だったピースのひとつであったID mapped mountです。\r\n\r\nいずれも比較的最近Kubernetesに入った、あるいは今まさに使えるようになりつつあるカーネル機能です。機能を説明しながら、「Kubernetesの設定が、実際にはLinuxカーネルの何を動かしているのか」の概要を眺め、裏側の仕組みを知ることの重要性をお話します。",
+    "speakers": [
+      {
+        "id": 2338,
+        "name": "KATOH Yasufumi"
+      }
+    ],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:50:00.000+09:00",
+    "endTime": "2000-01-01T15:20:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "その他",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 3,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3171,
+    "conferenceId": 16,
+    "trackId": 68,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "CVSS 9.8を含むCVE4件、Fluentdメンテナが経験した脆弱性対応の舞台裏",
+    "abstract": "2026年6月、私たちはFluentd v1.19.3でCVSS 9.8のRCEを含む4件の脆弱性を修正し、CVEを公開しました。本セッションはその対応にあたったOSSメンテナの一次体験談です。\r\n\r\n始まりは、同じ脆弱性が示し合わせたように複数の報告者から同時期に届いたことでした。修正中にも報告が届き、トリアージはリリース当日まで続きました。GitHubでCVE IDを取得しアドバイザリを公開しても、記録はcve.orgやNVDに3週間反映されませんでした。GitHub Advisory DatabaseとDependabotは即日動くのに、NVDを参照するスキャナやSBOMツールは脆弱性を認識できない。自社の脆弱性管理がどちらを見ているかで、気づく時期が3週間ずれるという現実です。\r\n\r\n報告の受付から修正、採番、開示調整、データベース反映まで、実際に直面した課題を紹介します。設定依存の脆弱性に対し、バージョンだけで判定するスキャナを補うため設定診断ツールを新たに開発した判断と設計も共有します。自社への影響と優先順位を判断する観点と、報告者としてメンテナの検証を助ける伝え方を持ち帰れます。",
+    "speakers": [
+      {
+        "id": 2342,
+        "name": "Shizuo Fujita"
+      }
+    ],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:50:00.000+09:00",
+    "endTime": "2000-01-01T15:20:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Security",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 3,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3173,
+    "conferenceId": 16,
+    "trackId": 67,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "AIエージェントの「テストは通るのに本番で壊れる」を減らす ― 過程・環境・時間を測る評価手法",
+    "abstract": "AIエージェントを本番に出すと、「テストは高評価なのに本番ではうまくいかない」「テストは通るのに実利用と乖離している」「『確認しました』と報告するが実際は何もしていない」といった、結果出力だけを見る評価では捉えられない不確実性に直面します。\r\n\r\n本セッションでは、模範解答との一致に偏りがちな評価を「過程・環境・評価者・時間」の4軸に広げ、エージェントの評価手法を紹介します。\r\n・ツール呼び出しログへの時相論理アサーション（削除前にバックアップ等）と無駄な手順の検出\r\n・Predictive Test Selectionと途中状態からの分岐再実行による、遅く高いテストの削減\r\n・LLM-as-Judgeに「主張ではなく証拠」を判定させる設計とHuman-in-the-loop\r\n・テスト自体の陳腐化（模擬と実環境のズレ、モデル更新等）の定量的な検知\r\n\r\nこうした課題に対し、AIエージェント開発をDevOpsするためのテスト・評価手法について、失敗例を含めて共有します。",
+    "speakers": [
+      {
+        "id": 2343,
+        "name": "Yusuke Shibui"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T17:20:00.000+09:00",
+    "endTime": "2000-01-01T17:50:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "CI / CD",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 6,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3174,
+    "conferenceId": 16,
+    "trackId": 67,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "Runtime Contextから見る脆弱性",
+    "abstract": "コンテナイメージを脆弱性スキャンすると、多数の脆弱性が検出されることがあります。しかし、スキャン結果だけでは、その脆弱なパッケージが実際のワークロードで利用されているのかまでは分かりません。\r\n\r\nでは、「脆弱性スキャンの結果から見えない情報を、どう補えばよいのでしょうか？」\r\n\r\n本セッションでは、CNCF Incubating ProjectのKubescapeを題材に、脆弱性情報へRuntime Contextを加えるアプローチを紹介します。KubescapeのVulnerability Relevancyでは、eBPFで観測したファイルアクセスやプロセス実行とSBOMを結びつけ、実行時の利用状況から脆弱性との関連性を評価します。さらに、Runtime Threat Detection機能では、観測した振る舞いをプロファイル化し、通常とは異なるプロセス実行やファイルアクセスなどを検知します。\r\n\r\nKubescapeの仕組みを通して、脆弱性という静的な情報に実行時の振る舞いを重ね、Runtime Contextから脆弱性の見方を考えましょう。",
+    "speakers": [
+      {
+        "id": 2344,
+        "name": "Yoshitaka Fujii"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:50:00.000+09:00",
+    "endTime": "2000-01-01T15:20:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Security",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 3,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3177,
+    "conferenceId": 16,
+    "trackId": 68,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "量子コンピュータを Grafana で監視する — 9割の普通の監視と1割の難しい監視",
+    "abstract": "量子コンピュータの監視、と聞くと特殊な仕組みを想像するかもしれません。しかしクラウドから使う分には、その大半はごく普通の Web サービスの監視で成り立っています。\r\n\r\n本講演ではまず、量子コンピュータを説明します。心臓部である QPU（量子チップ）は、回路を実行して測定することしかできず、メモリもストレージも持ちません。冷凍機・制御装置・古典コンピュータが揃って初めて計算機として動きます。つまり本当に「量子」なのは QPU だけで、だからこそ監視の大半は普通の仕組みで足ります。\r\n\r\n大阪大学 QIQB の OQTOPUS では、投げられたジョブが AWS の API やコンテナを通り、オンプレの実行サーバーと制御装置を経て、絶対零度近くまで冷やされたチップに届きます。この流れを OpenTelemetry と Grafana で一気通貫に可視化した事例を、デモを交えて紹介します。\r\n\r\n監視の9割は既存の仕組みで押さえられます。残る1割──QPU の健全性の監視は、まだ研究の途上です。難しい話はしません。量子は初耳という方も、その監視に興味がある方も、気軽にお越しください。",
+    "speakers": [
+      {
+        "id": 2347,
+        "name": "BIN MATSUI"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:50:00.000+09:00",
+    "endTime": "2000-01-01T15:20:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 3,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3180,
+    "conferenceId": 16,
+    "trackId": 65,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "ノードが消える前提で設計する! Karpenterで金融システムを止めないためのノウハウ大全",
+    "abstract": "Karpenterによる自動管理で、Kubernetesのワーカーノードは不要になれば消えるものへと変わりました。24時間365日止められない金融システムにとって、この前提は可用性の考え方の見直しを迫るものでした。\r\n\r\n本セッションでは、複数のシステムが相乗りする金融機関の共通基盤に、KarpenterのAWSマネージドサービスであるEKS Auto Modeを導入し、ワーカーノードを約50%削減した事例をお話しします。ノードが入れ替わる際に処理中のリクエストをどう守るか、冗長性をどこまで崩してよいかを、Podの停止を何秒待たせるかという値の決め方とあわせて紹介します。さらに、これらの設定を担当者任せにせずリリース時に自動でチェックする仕組みと、その仕組み自体がKubernetesのバージョンアップで前提から崩れた経験から、ガードレールは作って終わりではないという話もお伝えします。\r\n\r\nKarpenterやスポットインスタンスの活用を検討しているものの可用性への影響が気になって踏み出せない方、共通基盤の品質を担保する立場の方に聞いて頂きたいです。",
+    "speakers": [
+      {
+        "id": 2352,
+        "name": "Daiki Takasao"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T17:20:00.000+09:00",
+    "endTime": "2000-01-01T17:50:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Architecture Design",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 6,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3182,
+    "conferenceId": 16,
+    "trackId": 67,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "SBOM生成ツールで2026 Minimum Elementsはどこまで満たせるのか",
+    "abstract": "ソフトウェアサプライチェーンの可視化や脆弱性管理のため、SBOMの活用が広がっています。SyftやTrivyを使えばSBOM自体は簡単に生成できますが、それだけで十分なのでしょうか。\r\n\r\n米国のCISAが策定した 2026 Minimum Elements for a Software Bill of Materialsでは、コンポーネント名やバージョン、依存関係だけでなく、SBOMの生成コンテキスト、署名など、SBOM生成ツールだけでは満たせない要素も求められています。さらに、要素を埋めるための情報がない場合は、SBOM生成者にとって不明なのか、意図的に秘匿にしているのかの明示も求められています。\r\n\r\n本セッションでは、2026 Minimum Elementsの各要件と照らし合わせながら、SyftやTrivyなどの実際のSBOM生成ツールでどこまで自動生成できるのかを検証します。その上で、満たせない要素をCI/CDや署名、メタデータ補完で埋める実装例を示し、自動化できる範囲と、人による補完や判断が必要な範囲を整理します。",
+    "speakers": [
+      {
+        "id": 2354,
+        "name": "Kenta Goto"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T16:30:00.000+09:00",
+    "endTime": "2000-01-01T17:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Security",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 5,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3185,
+    "conferenceId": 16,
+    "trackId": 67,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "Kubernetes, Agones, WebRTC, GPU で作るクラウドゲーミング基盤を本番運用に乗せるまで",
+    "abstract": "私たちはPCゲームをスマホで遊べるサービス『viviON GAMES』を2026年にリリースしました。このサービスの裏側にはGPUノードで構成されたKubernetesクラスターが複数あり、マルチクラウドで運用しています。\r\n\r\n本セッションでは、クラウドゲーミングという国内では珍しい技術基盤をKubernetesクラスターでどのように実現したか、そしてチームでどのように本番運用に乗せたかを解説します。\r\n\r\nリアルタイムに映像を配信するWebRTCをKubernetesで動かす技術、ステートフルなワークロードのスケール戦略、マルチクラウドの差異を吸収するための技術的な工夫を紹介します。また、担当者が一人しかいない状態からどのように複雑な基盤を属人化させずチームで運用できるようにし、サービスローンチを迎えたかをお話します。\r\n\r\nこのセッションにより、GPU・リアルタイム通信・ステートフル性を扱うための設計と、その複雑な基盤を属人化させずチームで運用する方法をお持ち帰りいただけます。",
+    "speakers": [
+      {
+        "id": 2351,
+        "name": "Hiroki Awata"
+      }
+    ],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:10:00.000+09:00",
+    "endTime": "2000-01-01T13:40:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Application / Development",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 2,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3188,
+    "conferenceId": 16,
+    "trackId": 68,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "Terraform 0 to 100：100個以上のリポジトリを常に最新にし続けるための自動化",
+    "abstract": "2018年の未IaC状態から少しずつ全社展開を進め、現在は100以上のTerraformリポジトリ（AWS/Google Cloud等）を運用しています\r\n\r\nリポジトリが増えると色々と問題点も出てきます。\r\n\r\n例えばTerraformで使ってるproviderをDependabotで毎月バージョンアップするとしても、リポジトリが100個あれば100個のパッチが作られます。Drift状態でマージしてapplyすると事故の原因になるので自動マージを入れるのも容易ではありません。\r\nまた、既存ツールだとTerraform本体のバージョンアップができなかったので自分でツールを作る必要がありました。\r\n\r\n本トークではリポジトリの数が増えていく各フェーズ（0→1→10→50→100の各フェーズ）においてどのような問題にぶつかったのかと、それを解決するために作ってきた様々な仕組みやツールの話をします。\r\n\r\n今回紹介するツールは社内ツールだけではなくOSSとしても公開しているため、Terraformの運用に苦しんでる人が明日から導入して実践することができます。",
+    "speakers": [
+      {
+        "id": 2358,
+        "name": "Go Sueyoshi"
+      }
+    ],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T16:30:00.000+09:00",
+    "endTime": "2000-01-01T17:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "CI / CD",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 5,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3193,
+    "conferenceId": 16,
+    "trackId": 65,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "その修正で本当に速くなったのか？k6とOpenTelemetryで確かめる性能改善",
+    "abstract": "開発側では「速くなった」と報告した修正が、運用側の試験では「まだ遅い」と評価されたら、何を確かめればよいでしょうか。\r\n\r\n本セッションでは、k6で負荷をかけ、OpenTelemetryで遅い処理を調べ、修正の効果を再試験で確かめる一連の手順を解説します。同時に処理できる件数を制限したHTTP APIを題材に、開発と運用で試験条件と観測データをそろえます。\r\n\r\n応答を待ってから次のリクエストを送る試験では、処理が遅くなると送信頻度も下がります。修正の前後で負荷が変わってしまうと、応答時間の差を修正の効果とは判断できません。そこで一定の頻度で送る試験と比較し、想定した負荷を実際にかけられたかを確認します。\r\n\r\n次に、アプリ内の待機時間と呼び出し先の処理時間から修正箇所を絞ります。制限を緩めた後は、呼び出し先に要求が集中して別の待ち時間やエラーを生んでいないかも調べます。同じ条件で再試験し、応答時間とエラーの割合から変更を評価します。\r\n\r\n最後に、改善しなかった結果も含めて試験条件と調査記録を共有し、開発と運用が同じデータから性能変更を判断する手順を示します。",
+    "speakers": [
+      {
+        "id": 2365,
+        "name": "Yoshi Yamaguchi"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:10:00.000+09:00",
+    "endTime": "2000-01-01T13:40:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 2,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3195,
+    "conferenceId": 16,
+    "trackId": 65,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "coming soon",
+    "abstract": "coming soon",
+    "speakers": [
+      {
+        "id": 2350,
+        "name": "Kazuma Abe"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T11:30:00.000+09:00",
+    "endTime": "2000-01-01T11:50:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Security",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 1,
+    "allowShowingVideo": false,
+    "sponsor": {
+      "id": 378,
+      "name": "株式会社エーアイセキュリティラボ"
+    }
+  },
+  {
+    "id": 3197,
+    "conferenceId": 16,
+    "trackId": 67,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "社内アプリ基盤「Quartz」による、非エンジニアとAIに本番デプロイを任せても壊れないプラットフォームの設計",
+    "abstract": "非エンジニアにAIでどこまで任せられるかは、AIの賢さではなく、致命的な失敗を起こさないプラットフォームの有無で決まります。TOKIUMでは全社員にClaude Codeを配布し、非エンジニアも業務改善アプリを作り始めました。しかし成果物の多くは個人利用にとどまりました。公開時の認証・機密情報・脆弱性・コスト・保守責任を組織として担保する経路が無かったためです。そこで、これらを担保しつつ、チャットのみで社内アプリの作成・プレビュー・本番デプロイまで完結する基盤「Quartz」を開発しました。核はプラットフォーム層とアプリ層の分離です。SSOの強制、シークレット・脆弱性走査、予算超過時の自動停止は管理者だけが触れるプラットフォーム層に置き、利用者とAIが触れるのはアプリ層だけに絞ります。危険な操作はその実行環境に存在せず、権限や状態もアプリ単位に閉じるため、失敗の影響はアプリ1個に留まります。本セッションでは、この分離をどんな設計で実現したのか、利用者とAIに解放する部分と管理者が握る部分の切り分け、その境界を越えられないようにした仕組みを、社内AI導入やIDPを検討する方へ共有します。",
+    "speakers": [
+      {
+        "id": 2367,
+        "name": "Shun Kittaka"
+      }
+    ],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:50:00.000+09:00",
+    "endTime": "2000-01-01T15:20:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Architecture Design",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 3,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3198,
+    "conferenceId": 16,
+    "trackId": 66,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "DevSecOps、その前に。「何をどこまで守る？」から始めるセキュリティアーキテクチャ",
+    "abstract": "セキュリティ人材が不足する中、複雑化・分散化するCloud Nativeなシステムを守るために、DevSecOpsは重要なアプローチです。しかしDevSecOpsを進めるとき、開発者の「セキュリティへの苦手意識」が壁になります。\r\n\r\nでは、「セキュリティが苦手」な人がどこでつまずいているか、想像できるでしょうか。とある組織で、セキュリティに苦手意識を持つ当事者に、その「苦手」のDomain Expertとして開発へ参加してもらい、トレーニングを作りました。そこで見えてきたのは、問題は必ずしもセキュリティ知識の不足ではない、ということでした。用語や対策を知っていても、それを自分たちのアーキテクチャに結びつけ、「何を、どこまで守るか」を判断できない。必要だったのは、知識を実際の設計に適用し、判断する力でした。\r\n\r\n本セッションでは、「セキュリティアレルギー克服」を目指し、セキュリティを専門としない開発者でも基礎的な脅威モデリングができるようにする設計演習を、ツール頼りにならないDevSecOpsの始め方としてご紹介します。",
+    "speakers": [
+      {
+        "id": 2368,
+        "name": "Sachiko Kijima"
+      }
+    ],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:50:00.000+09:00",
+    "endTime": "2000-01-01T15:20:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Architecture Design",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 3,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3202,
+    "conferenceId": 16,
+    "trackId": 65,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "40以上のマイクロサービスを支えるKubernetes JITアクセス — 160以上の恒久RoleBindingを削減",
+    "abstract": "40以上のマイクロサービスが利用するGKE/EKSクラスタに、必要な人へ必要な時間だけKubernetes権限を付与するJIT（Just-in-Time）アクセスを導入し、開発チーム管理の恒久RoleBindingを160以上削減しました。\r\n\r\nしかし、正規の申請・承認フローだけでは、承認ステップの欠落、承認済み処理の再実行、GitOps経由の直接作成という3つの迂回経路が残りました。\r\n\r\n具体的には、GitHub Environments/Actionsで承認・付与し、Kyvernoで期限切れのRoleBindingを削除します。Kubernetes側では、人へのRoleBindingで参照できるClusterRoleをPlatformチーム提供のものに限定し、RoleBindingの作成主体も制限しています。\r\n\r\n講演では、3つの迂回経路をGitHubとKubernetesの両側でどう塞いだか、その設計判断と、期限付き例外を設けて30チームへ段階的に移行した過程を共有します。正規経路の外側まで安全に設計する観点を持ち帰れます。",
+    "speakers": [
+      {
+        "id": 2372,
+        "name": "Koichi Shimada"
+      }
+    ],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:10:00.000+09:00",
+    "endTime": "2000-01-01T13:40:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Security",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 2,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3208,
+    "conferenceId": 16,
+    "trackId": 66,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "セキュリティチームはどのコンテナイメージの脆弱性対応を優先すべきか 〜CISA新指針とSCCで作る脆弱性トリアージ〜",
+    "abstract": "セキュリティチームは社内で開発されている膨大な量のコンテナイメージの脆弱性対応に優先度付けをし、開発チームに対して修正を依頼する必要があります。CVE件数は年々増加しており、従来型のCVSSスコアに依存した優先度付けでは、対応件数が膨大になり、本来やるべき開発が行えなくなる問題が発生してしまいます。一方で、必要な脆弱性対応は行わなければいけません。\r\n\r\n米CISAは2026年6月、新指令BOD 26-04で脆弱性対応の優先順位付け手法を刷新しました。本セッションでは、この指針を参考に実装したコンテナイメージの脆弱性トリアージの仕組みを、特に以下の点に絞って紹介します。\r\n\r\n- KubernetesのマニフェストをAIに辿らせたイメージの外部公開判定\r\n- 脆弱性情報（EPSS・悪用状況・CVSSなど）を基にした対応優先度付け\r\n- 開発チームが対応しやすいレポートの自動生成\r\n\r\n本セッションは、セキュリティチームだけでなく、日々脆弱性対応に追われる開発チームの方にとっても参考になる発表になると思います。",
+    "speakers": [
+      {
+        "id": 2378,
+        "name": "Takuya Sawada"
+      }
+    ],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T16:30:00.000+09:00",
+    "endTime": "2000-01-01T17:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Security",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 5,
+    "allowShowingVideo": false,
+    "sponsor": null
+  },
+  {
+    "id": 3210,
+    "conferenceId": 16,
+    "trackId": 66,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "動的アクセス制御の最適解を探して　〜 IaC の自動生成と OPA で実現するスケーラブルな権限管理基盤〜",
+    "abstract": "パブリッククラウドにおける IAM の権限管理は、従来の RBAC からダイナミックで精緻な ABAC へと要件が高度化しています。しかし ABAC は大量のポリシーや適用条件を生み出し、宣言的な IaC（Infrastructure as Code）の表現力だけでは複雑な認可ロジックを管理しきれず、結果として可読性の低下やレビューの限界といった運用上の課題があります。\r\n本セッションでは弊社のデータ分析基盤のアクセス制御を題材に、この課題にどう立ち向かったのかについてご紹介します。データ基盤はテーブルごと、カラム別、行別などかなり精緻な制御が必要になります。これに対し 私たちが導き出した答えは「Terraform で複雑なロジックを表現する」ことをやめる設計です。利用者はシンプルに YAML を記述し、そこから IaC を自動生成して「人間による Terraform のコードレビューをなくす」という割り切りを行いました。そしてその代償としての統制リスクを、OPA (Open Policy Agent / Rego) のガードレールによって保証するという具体的なアーキテクチャを交えて設計",
+    "speakers": [
+      {
+        "id": 2380,
+        "name": "Yosuke Hojo"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:50:00.000+09:00",
+    "endTime": "2000-01-01T15:20:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Architecture Design",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 3,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3212,
+    "conferenceId": 16,
+    "trackId": 68,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "列指向でオブザーバビリティをどう変えるか ーOpenTelemetry Arrow から バックエンドストレージまでー",
+    "abstract": "オブザーバビリティのためにテレメトリーを収集すると、ネットワーク帯域やCPU、メモリなどのリソースを消費します。テレメトリーが増えれば、観測対象のアプリケーションだけでなく、そのデータを収集・転送・処理する基盤への負荷も無視できません。\r\n\r\nでは、この問題に「データの持ち方」から向き合ってみませんか？\r\n\r\n本セッションでは、OpenTelemetry Arrowを軸に、列指向データがテレメトリー・パイプラインにもたらす変化を考えます。OpenTelemetryで標準的に使われている通信方式「OpenTelemetry Protocol（OTLP）」でも、データをバッチでまとめて送ることはできます。では、バッチの「中身」を列指向で持つと何が変わるのでしょうか。実際の本番事例では、ネットワーク帯域を30〜70%削減した結果も報告されています。簡単なコード例を交え、その違いを紐解きます。\r\n\r\nさらにバックエンドの列指向データベースにも目を向け、収集から保存までオブザーバビリティをどこまで変えられるのかを考えます。",
+    "speakers": [
+      {
+        "id": 2382,
+        "name": "Yoshitake Asano"
+      }
+    ],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:10:00.000+09:00",
+    "endTime": "2000-01-01T13:40:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 2,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3213,
+    "conferenceId": 16,
+    "trackId": 66,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "AWS DevOps Agentの構造から読み解く、運用AIエージェントの設計原則",
+    "abstract": "AIエージェントを使った運用を設計する際、まず考えたいのは何と接続し、いつ動かし、どう制御するかです。\r\n\r\n障害対応では、メトリクスやログだけでなく、クラウド上のリソース、過去の障害情報、ソースコード、デプロイ、CI/CDなど、複数の情報を組み合わせて原因を調査します。また、安全な範囲で調査や操作を実行する仕組みも必要です。\r\n\r\n本セッションでは、AWS DevOps Agentを題材に、運用AIエージェントの設計を8つの観点で捉え直します。接続先環境、テレメトリ、ナレッジ、ソースコード、CI/CD、チャットツール、トリガー、ガードレールを整理し、MCPやA2Aなどの接続方法も取り上げます。\r\n\r\n私は約5年間AWS CDKを使い、AWSアーキテクチャを再利用可能な形にしてきました。今回はその延長として、これら8つの要素を組み合わせた運用AIエージェントのリファレンスアーキテクチャを考え、AWS CDKで自社環境に持ち帰って試せる形として実装・紹介します。",
+    "speakers": [
+      {
+        "id": 2355,
+        "name": "Tomoki Sato"
+      }
+    ],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T17:20:00.000+09:00",
+    "endTime": "2000-01-01T17:50:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 6,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3216,
+    "conferenceId": 16,
+    "trackId": 67,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "そのイメージ、どのCIが作った？Artifact Attestationsで来歴を固定する",
+    "abstract": "そのイメージは本当に共通のCIで作られたのでしょうか。GitHub Artifact Attestationsで証明できます。ただし解説の多くはcosignと公開ログが前提で、privateリポジトリでは署名基盤が変わります。署名はGitHub運用のSigstoreインスタンスが行い、Rekorを通りません。失うのは第三者による監査で、個々の検証は成立します。\r\n\r\nAWSアカウントを分けた4環境のKubernetes基盤に、この前提で来歴検証を実装します。ビルドを共通Reusable Workflowへ寄せると、実行元を示すjob_workflow_refがその一本に固定されます。署名証明書とIAM信頼ポリシーの両方がこの値を参照するため、共通CIを通らないビルドはレジストリへpushできません。統制の本体は権限設計で、署名はその裏づけです。\r\n\r\nCIの統制と成果物の来歴証明を設計する方に、IAM条件の書き方、ビルド時・環境昇格時・Pod起動時の三段検証、SHA pinを一箇所だけやめた判断を、その根拠ごとお話しします。",
+    "speakers": [
+      {
+        "id": 2384,
+        "name": "Chikahisa Mikata"
+      }
+    ],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T16:30:00.000+09:00",
+    "endTime": "2000-01-01T17:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Security",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 5,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3219,
+    "conferenceId": 16,
+    "trackId": 67,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "持続可能なKubernetes：ジェイテクトは、廃棄予定のワークステーションからクラウドネイティブに踏み出した",
+    "abstract": "IT企業ではないにもかかわらず、トヨタグループの製造業であるジェイテクトでは、社内で開発するアプリケーションが増え続けています。しかし、それらを動かすサーバーはIT部門から提供されなかったため、エンジニアのチームが自ら、廃棄予定のCAD用ワークステーションを再利用して本番のKubernetesクラスターを構築しました。マシンは古いため、故障は想定内です。それでも、Kubernetesによって高可用性を確保し、アプリケーションを止めずに動かし続けています。このオンプレミスクラスターでの実証が、全社向けの複数のアプリケーションでAWS EKSを採用し、Kubernetesを大規模に活用するきっかけとなりました。本セッションでは、製造業のジェイテクトがクラウドネイティブ技術に踏み出した経緯を、再利用ハードウェアの小さなクラスターから全社規模のKubernetesへ広げた道のりとしてお話しします。ハイパースケーラーのリソースがなくても始められること、IT企業でなくてもクラウドネイティブを活用できることをお伝えします。",
+    "speakers": [
+      {
+        "id": 2377,
+        "name": "Maxime Moreillon"
+      }
+    ],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T17:20:00.000+09:00",
+    "endTime": "2000-01-01T17:50:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Architecture Design",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 6,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3220,
+    "conferenceId": 16,
+    "trackId": 65,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "待つ、諦める、やり直す。LLM非同期処理の回復性設計 〜不確実性を前提に考えた生成AI評価システム〜",
+    "abstract": "LLMの処理は、いつ終わるのか、必ず成功するのかをアプリケーション側から予測しにくいものです。\r\n本講演では、SMCCで内製開発したAI生成テキストの品質・不適切表現評価システムを題材に、不確実なLLMをシステムに組み込むための「待つ・諦める・やり直す」非同期設計の考え方を紹介します\r\n\r\nPoCではS3＋Lambda＋Bedrockによる非同期構成を採用し、評価結果をS3へ出力してポーリングで完了を確認していました。\r\n一方で、処理に失敗した場合や一定時間結果が生成されない場合は、ユーザーが再実行するという割り切った運用となる課題がありました。\r\n\r\n本番化では、変更頻度の高い評価用プロンプト管理をECS（FastAPI）へ、実行時間が読みにくいBedrock評価処理をLambdaへ分け、一定時間は待つ、結果がなければ失敗とみなす、必要に応じて自動再実行する、という振る舞いをアプリケーション側に取り込みました。\r\n\r\n本セッションでは、この実例をもとに、待機時間、失敗判定、再実行単位、リトライ上限、ユーザーへ戻す条件をどう決めるかを、LLM非同期処理の設計指針として解説します。",
+    "speakers": [
+      {
+        "id": 2386,
+        "name": "Kota Fukuchi"
+      }
+    ],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T16:30:00.000+09:00",
+    "endTime": "2000-01-01T17:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Architecture Design",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 5,
+    "allowShowingVideo": false,
+    "sponsor": null
+  },
+  {
+    "id": 3223,
+    "conferenceId": 16,
+    "trackId": 65,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "全社AI活用を「止めずに守る」— MCPプロキシとOpenTelemetryで作るAIガバナンス基盤",
+    "abstract": "Claude Teamを全社導入し利用者が会社全体へ広がる中、AI活用を推進しつつ「誰がどのように使っているか」「業務SaaSにAIから安全に触らせるには」といったガバナンスの課題を抱えていました。この課題に対し、AWSマネージドサービスとTerraformを使って構築した2つの基盤を、設計判断の背景や実装過程で詰まった点などを含めて共有します。\r\n(1) Claude CodeのOpenTelemetryテレメトリ基盤：CloudWatch LogsのOTLPエンドポイントに直結し、プロンプト本文は許可リスト方式で落として監査用/分析用ロググループを分離\r\n(2) 社内MCPプロキシ：共通マシンユーザーではなく操作者ごとの3-legged OAuthでSaaSのMCPを叩かせ、監査ログ・破壊的ツールのフィルタ・Auth0 M2M連携を実装\r\n\r\n対象はAI活用を組織に広げたいがガバナンスに悩むSREやコーポレートエンジニア。運用工数を最小限に抑えることができるAWSマネージドサービス中心でガバナンスを整えるための実践的なヒントをお伝えします。",
+    "speakers": [
+      {
+        "id": 2389,
+        "name": "Keigo Aoki"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T16:30:00.000+09:00",
+    "endTime": "2000-01-01T17:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Architecture Design",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 5,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3224,
+    "conferenceId": 16,
+    "trackId": 66,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "OWASP AI Agentic Top10に準拠するクラウドネイティブなガードレールの実践",
+    "abstract": "AIコーディングエージェントは、指示していないコマンドを平然と実行します。プロンプトインジェクションが刺さると、読み込んだ文書やWebページの指示がPod内の正規MCPツールを乗っ取ります。これはOWASP Top 10 for Agentic Applications の Goal Hijack（ASI01）・Tool Misuse（ASI02）そのものですが、監視は、何も見なかったことになります。\r\n\r\nこのセッションでは暴走をデモしたうえで、OWASPの脅威分類に沿ってガードレールを設計します。ツールの最小権限設計、NetworkPolicyのegress制御、Admission Controllerでの事前検証、そしてCNCF Graduatedの Falco と eBPF をDaemonSetで動かすランタイム検知――プロセス・ファイル・ネットワークの実挙動から暴走を止めます。OpenTelemetryのトレースで原因リクエストまでひも解きます。マニフェスト例とOSSデモ一式を持ち帰り試して欲しいです。",
+    "speakers": [
+      {
+        "id": 2390,
+        "name": "Keita Higaki"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:10:00.000+09:00",
+    "endTime": "2000-01-01T13:40:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Security",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 2,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3229,
+    "conferenceId": 16,
+    "trackId": 65,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "チームが育つから、基盤はスケールする — EKS/GKEで増え続けるプロダクトを支える組織設計",
+    "abstract": "3年前、モノタロウにコンテナ基盤はありませんでした。4名で始めた基盤は、いまEKS / GKE上で100に迫るプロダクトを載せ、なお増え続けています。一方でチームは6名。耐えているのではなく、運用の大半を自動化し、時間の多くをプラットフォームの改善に使えています。\r\n\r\nこれを可能にしたのは増員ではなく、チームが育ったことでした。任せられる領域が増えるほど、人は運用を回す側から自動化する側に回れる。空いた時間が次の改善を生み、プロダクトの成長を支える。プラットフォームの成長速度は人の成長速度で決まる——これが3年間の実感です。\r\n\r\n本セッションでは、人とチームを育てるために実践してきたことを、考え方とセットでお話しします。たとえば次のような打ち手です。\r\n\r\n・コミュニケーションのパスを増やす\r\n・全員に発言機会をつくる\r\n・権限と責任をセットで渡す\r\n・ビジョンで目線を合わせる\r\n\r\n少人数で広い責任範囲を持つプラットフォーム／SREチームのリーダー、これからマネジメントに関わる方が対象です。明日から試せる打ち手と、それがなぜ効くのかを持ち帰れます。",
+    "speakers": [
+      {
+        "id": 2394,
+        "name": "Tadatsugu Kusumoto"
+      }
+    ],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T17:20:00.000+09:00",
+    "endTime": "2000-01-01T17:50:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "組織論",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 6,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3236,
+    "conferenceId": 16,
+    "trackId": 68,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "Lambda MicroVMsでCI実行環境を\"使い捨てる\" — OSSサプライチェーン攻撃からどうアプリCIに導入する",
+    "abstract": "生成AIやOSS寄稿の増加でCIに流れ込むコードの信頼度は下がる一方、GitHub-hosted runnerでの任意コード実行は依然としてセキュリティ課題です。実際、2025年のNx「s1ngularity」事件や、自己増殖型のnpm「Shai-Hulud」ワームは、`npm install`のpostinstall>フックを悪用してCI環境の認証情報を窃取しました。本セッションでは、2026年に登場したAWS Lambda MicroVMs(Firecracker microVMをLambda上で直接制御できる新機能。)を使い、PRごとに使い捨てのmicroVMで依存関係インストールからテストまでを隔離実行し、マルウェアが混入したパッケージをnpm\r\ninstallしても外部への情報持ち出しやリリースをさせない仕組みを紹介します。オーケストレーションにLambda Durable Functio使うことで運用コストを最小化する構成です。\r\n際に手を動かして初めてぶつかった判断ポイントと、その根拠を話します。",
+    "speakers": [
+      {
+        "id": 2399,
+        "name": "Soushi Hiruta"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T16:30:00.000+09:00",
+    "endTime": "2000-01-01T17:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "CI / CD",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 5,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3251,
+    "conferenceId": 16,
+    "trackId": 68,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": " ローカルLLMに閉じずに機密データを扱う — Confidential Computing 入門と導入",
+    "abstract": "「機密だからフロンティアモデルには入れられない」。その代替として選ばれるローカルLLMが守っているのは、実はネットワーク境界だけです。クラウドでは運用者は信頼できる存在として扱われてきましたが、Confidential Computingはこの前提を外し、運用する側からも内容を参照できないアプリケーション実行環境を実現します。\r\n\r\n前半はAMD SEV-SNPやNVIDIA Confidential Computingを題材に、ハードウェアが保証する範囲と、起動イメージの正当性や鍵の受け取りなどソフトウェアが補う部分を整理します。後半は、機密データを扱うAIプロダクトへ実際に載せる際に採用した構成と、そこで直面した難しさを紹介します。ハードウェアの制約、更新や運用の手順、開発とテストのやり方まで、載せてみて初めて分かることを扱います。\r\n\r\n機密データを扱う基盤の設計者や、Confidential Computingが自分の設計にどう関わるか見極めたい方が対象です。予備知識は不要で、保護の粒度の選び方と、導入前に確認すべき制約を持ち帰れます。",
+    "speakers": [
+      {
+        "id": 2412,
+        "name": "Takumi Hiraoka"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:10:00.000+09:00",
+    "endTime": "2000-01-01T13:40:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Security",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 2,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3252,
+    "conferenceId": 16,
+    "trackId": 65,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "GKEでつくるAgent Platformのアーキテクチャと、OpenTelemetryによる可観測性設計",
+    "abstract": "AIエージェントを本番でどう安全に動かすかが、基盤の新しい課題です。エージェントはマイクロサービスでもバッチでもない\"第三のワークロード\"です。信頼できない生成コードを実行し、状態を持ち、放置すればループでコストを溶かします。本セッションではこの事故を検証環境で意図的に再現し、なぜ構造的に起きるのかを示した上で、基盤の設計領域を「実行隔離・権限・ネットワーク境界・状態・可観測性と継続的評価」の5つに整理し、2つを深掘りします。(1)実行隔離: Agent Sandbox(gVisor)とwarm pool前後の起動レイテンシ実測。(2)可観測性と継続的評価: OpenTelemetryのGenAI規約による計装、暴走を検知して止めるシグナル設計、本番会話からライブ評価データを作りLLM-as-a-Judgeで「ユーザーの不満」を採点するダッシュボード設計まで。GKEは実装例、土台はコミュニティ標準です。対象はエージェントのPoCを本番基盤に育てたいプラットフォームエンジニア/SRE。5領域の設計チェックリスト、隔離と暴走対策の実測データ、継続的評価ループの設計パターンを持ち帰れます\r\n\r\n",
+    "speakers": [
+      {
+        "id": 2413,
+        "name": "Tayzar"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:50:00.000+09:00",
+    "endTime": "2000-01-01T15:20:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Architecture Design",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 3,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3265,
+    "conferenceId": 16,
+    "trackId": 68,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "OCI Artifact による自動運転タクシーに向けた OTA 基盤の構築",
+    "abstract": "自動運転タクシーは「デポ (Depot)」と呼ばれる拠点をベースに運用し、事業を拡大するほど各地のデポに分散した車両が増加します。そのため、各デポの車両へ OS を含めて同じ環境を届ける OTA (Over The Air) が欠かせません。\r\n車載コンピューターの OS は bootc などのクラウドネイティブな OS 更新の仕組みとは前提が合わない一方、ベンダーが提供する A/B 方式の更新の仕組みを備えています。\r\n本セッションでは、Web のコンテナイメージ配布や Git を起点に配布する考え方を OCI Artifact で取り入れ、開発車両を対象に OTA 基盤を検証している取り組みをお話しします。\r\n\r\n- 車載 OS の更新の仕組みと、OS ごと更新する理由\r\n- OS イメージを OCI Artifact として署名し、Self-host したレジストリから配る構成\r\n- デポ間における replication と配布の設計\r\n- オフライン環境における署名の検証",
+    "speakers": [
+      {
+        "id": 2422,
+        "name": "Shota Iwami"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T17:20:00.000+09:00",
+    "endTime": "2000-01-01T17:50:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "IoT / Edge",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 6,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3266,
+    "conferenceId": 16,
+    "trackId": 66,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "全てを疑え！非自明な挙動と異常系から考える堅牢なカスタムコントローラ開発入門",
+    "abstract": "Kubernetes を中心とした分散システムのエコシステムでは、カスタムコントローラーやReconcileと呼ばれる設計パターンを用いることで、結果整合で健全なシステムを実現しています。\r\n\r\ncontroller-runtime や Kubebuilder 等のライブラリや開発フレームワーク、それらの解説の登場によってカスタムコントローラーの開発のハードルは低くなっている一方、依然としてプロダクショングレードの堅牢なカスタムコントローラーを開発するハードルは高いことが現状です。\r\n\r\n本セッションでは、LINEヤフーで数千Kubernetes Cluster を誇るKubernetes as a Service 基盤の運用を通して得た知見を元に、\r\n実運用でコントローラーの堅牢性を脅かす異常系や、確率を裏切りAIも見落としてしまう様な非自明な挙動のパターンや実例を紹介します。\r\n\r\nエンジニア自らで考え、疑い、開発の審美眼を備えることで、日本のKubernetesコミュニティでカスタムコントローラーの開発を盛り上げていきましょう！",
+    "speakers": [
+      {
+        "id": 2421,
+        "name": "Shotaro Gotanda"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T16:30:00.000+09:00",
+    "endTime": "2000-01-01T17:00:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Application / Development",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 5,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3269,
+    "conferenceId": 16,
+    "trackId": 66,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "Platform Engineering をベースとした Agentic Software Factory の実践",
+    "abstract": "Agentic Software Factory という考え方は、AI エージェントの普及に伴い台頭してきている、SDLC の各工程を AI エージェントが担うソフトウェア開発のあり方です。\r\nAI エージェントが安定して成果を出すには、再利用できる共通基盤を整える必要があり、Platform Engineering の考え方が活きてきます。\r\n本セッションでは、発表者の組織で運用している Agentic Software Factory を題材に、以下のような内容をお話しします。\r\n\r\n- SDLC の各工程に沿った AI エージェントの設計\r\n- Human in the loop における AI エージェントと人間の役割分担\r\n- 共通基盤を AI エージェントに認識させるためのソフトウェアカタログの構築\r\n- 各工程におけるドキュメンテーション\r\n- Agentic Software Factory による Platform 自体の開発\r\n- GitHub Actions とコーディングエージェントを用いた Agentic Software Factory の実践例",
+    "speakers": [
+      {
+        "id": 2418,
+        "name": "Yuki Ito"
+      }
+    ],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T13:10:00.000+09:00",
+    "endTime": "2000-01-01T13:40:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Application / Development",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 2,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3271,
+    "conferenceId": 16,
+    "trackId": 68,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "数行の変更でDockerビルドを最大91%高速化～GitLab CIの実行基盤を社内40リポジトリに展開するまで～",
+    "abstract": "クラウド上のコンテナ基盤への移行や活用が進む中、社内の全リポジトリで「キャッシュを最大限利用した高速なビルド」と「サプライチェーン攻撃を意識した安全なビルド環境」を両立できていますか。\r\n\r\n私たちの社内では、キャッシュ未設定や特権コンテナを用いた安全でないビルドが過半数を占めていたほか、レジストリキャッシュを導入した大規模なアプリケーションでも、数GBに及ぶキャッシュの転送・展開自体に時間がかかるなど、多くの課題を抱えていました。\r\n\r\n本セッションでは、ローカルにキャッシュを永続化したGitLab Runnerを構築し、Docker Bakeを起点とするGitLab CI/CD componentとして社内パッケージを配布した取り組みを紹介します。各チームはCI定義を数行変更するだけで手軽に導入でき、ビルド時間を中央値65%・最大91%短縮、全社約40リポジトリへの展開を達成しました。\r\n\r\nまた、実際に各チームにオプトインで使ってもらうためのインターフェース設計や、共用CI基盤でのコンテナセキュリティ・キャッシュ汚染対策など、実践する上で直面した設計の工夫と苦労についてもお話しします。",
+    "speakers": [
+      {
+        "id": 2402,
+        "name": "Noboru Tohda"
+      }
+    ],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T17:20:00.000+09:00",
+    "endTime": "2000-01-01T17:50:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "CI / CD",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 6,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3276,
+    "conferenceId": 16,
+    "trackId": 65,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "Agentic AIの本番適用で見えてくる認可の課題とagentgateway",
+    "abstract": "Agentic AIの活用はPoCの段階を超え、本番システムへの適用が進みつつあります。PoC段階では個別に検証されていたAIエージェントも、本番環境では他のAIエージェントや業務システムと連携しながら、重要なデータや機能へアクセスするようになります。そのため、AIエージェントが誰の権限で行動し、どのような操作を許可されるのかを適切に制御する「認可」が重要な課題となります。\r\n本セッションでは、AIエージェントがツールや他のエージェントと連携するためのプロトコルとして広く利用されているMCP（Model Context Protocol）やA2A（Agent2Agent）における認可の要件や最新動向をご紹介します。\r\nさらに後半では、認可機能を各AIエージェントやツールへ個別実装しないためのアプローチとして、ゲートウェイアーキテクチャと、その実装の一つであるAgentic AI Foundationのオープンソースプロジェクト agentgatewayをご紹介します。認可を中心とした視点から、Agentic AIを本番環境で活用するために求められる基盤アーキテクチャの方向性を展望します。",
+    "speakers": [
+      {
+        "id": 2430,
+        "name": "Yoshiyuki Tabata"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T10:30:00.000+09:00",
+    "endTime": "2000-01-01T10:50:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Security",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 1,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3278,
+    "conferenceId": 16,
+    "trackId": 65,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "Kubernetes Schedulingの最前線から見る景色",
+    "abstract": "Kubernetesに5年以上コントリビュートし続け、現在はKubernetes SIG-SchedulingのLeadとして開発をリードしています。AIの話題で持ちきりの今日ですが、Kubernetesも例に漏れず大きく影響を受けており、AI/MLワークロード向けの機能が数多く導入されています。KubeConでも、KubernetesをいかにAI向けに活用するかというテーマが大きな割合を占めるようになりました。DRA（Dynamic Resource Allocation）をはじめ、直近ではWorkload-aware Schedulingが実装され始めるなど、Kubernetes Schedulerもこの大きな流れの中心にいます。Workload-aware Scheduling周辺の機能開発は非常にスピードが速く、数週間目を離すと置いていかれるほど変化が激しい領域です。本セッションでは、Workload-aware Schedulingをはじめとする新機能の解説と、それに伴う「Pod schedulingからWorkload schedulingへ」という根本的な概念の遷移につい",
+    "speakers": [
+      {
+        "id": 2435,
+        "name": "Kensei Nakada"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T11:10:00.000+09:00",
+    "endTime": "2000-01-01T11:30:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "ML / HPC",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 1,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3280,
+    "conferenceId": 16,
+    "trackId": 65,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "応答性と地域を越えた交流を両立する──ホロライブドリームスのマルチリージョン設計",
+    "abstract": "通常のゲーム操作は近くのリージョンで快適に、フレンド交流やプライベートルームでのマルチプレイは地域を越えて。「ホロライブドリームス」で、この要件を両立するデータ配置とKubernetesによるマルチゲーム基盤の設計を解説します。\r\n前半では、通常処理をユーザーが近いリージョンのRegiona APIlに閉じ、共有データを日本に配置したGlobal APIで扱う構成を紹介します。データの鮮度と書き込みの許容遅延を整理し、非同期・同期の部分失敗や複数DB更新の複雑さを避ける一方、地域間通信の遅延をどこで受け入れたかを説明します。\r\n後半では、世界中のプレイヤーが一緒に遊ぶためのAgones・Open Matchを使ったマルチゲーム基盤の紹介と、安全性とメンテナンス性を考慮したマルチリージョンGKEクラスタ構成を紹介します。\r\n複数地域にサービスを提供するバックエンドエンジニア・SREに向けて、遅延・鮮度・実装の複雑さからデータ配置を判断する視点と、規模が大きくなる中で運用の複雑さを抑えるための考え方を共有します。",
+    "speakers": [
+      {
+        "id": 2439,
+        "name": "Masaya Matsuda"
+      },
+      {
+        "id": 2437,
+        "name": "Takuya Yanase"
+      }
+    ],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T10:30:00.000+09:00",
+    "endTime": "2000-01-01T10:50:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Application / Development",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 1,
+    "allowShowingVideo": false,
+    "sponsor": null
+  },
+  {
+    "id": 3281,
+    "conferenceId": 16,
+    "trackId": 65,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "分散データベースをKubenetes上でどう動かすか？Operatorによる運用とテナント分離の実現",
+    "abstract": "株式会社プレイドの「KARTE」では、毎日20億行以上のデータが挿入され、累計8PBに及ぶデータを扱っています。一般的なデータベースでは、コスト・性能面が厳しく、弊社ではKARTEのドメインに特化した独自の分散DB「mila」を開発しています。\r\n\r\nmilaはGKE（Google Kubernetes Engine）上で動作しており、多数のコンポーネントとクラウドサービスが複雑に協調する構成となっています。また、テナント間のデータの混在や権限事故を防ぐため、インフラ層での強固なテナント分離を実現しています。\r\n\r\n本セッションでは、この複雑なシステムの構成を統一的に管理・運用するために、Kubernetesのモデルをどのように整理し、Operatorとして実装したのか、その実践的な設計とアプローチについて解説します。また、それらを通して大規模な基盤システムをKubernetesベースで構築・運用する意義についてお話しします。",
+    "speakers": [
+      {
+        "id": 2438,
+        "name": "Sota Sato"
+      }
+    ],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T10:50:00.000+09:00",
+    "endTime": "2000-01-01T11:10:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Architecture Design",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 1,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3282,
+    "conferenceId": 16,
+    "trackId": 65,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "LLMを「動かす」から「みんなで使う」へ — Agent Routerで作るマルチテナント推論基盤",
+    "abstract": "LLMを組織の中で活用するには、単にモデルを動かすだけでは十分ではありません。複数のチームやユースケースにLLMを提供するには、認証・アクセス制御、テナントごとの利用量管理、モデルへのルーティングなど、LLMを「サービス」として提供するための仕組みが必要になります。\r\n\r\n本セッションでは、LINEヤフーにおけるLLM Inference Serviceを題材に、なぜLLMをSelf-hostingするのか、なぜMulti-tenancyが必要なのか、そしてなぜAI Gatewayが必要になるのかを紹介します。特に、EnvoyをベースとしたAgent Router（旧 Envoy AI Gateway）を活用し、複数のテナントから共通のLLM Inference Serviceを利用できるようにするアーキテクチャを解説します。\r\n\r\nさらに、実際の設計・開発・運用を通じて見えてきた課題や、LLMを組織の中で提供するためにどのような責務をどこに持たせるべきかといった設計上の考え方についても紹介します。",
+    "speakers": [
+      {
+        "id": 2433,
+        "name": "Shingo Omura"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T10:50:00.000+09:00",
+    "endTime": "2000-01-01T11:10:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "その他",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 1,
+    "allowShowingVideo": true,
+    "sponsor": null
+  },
+  {
+    "id": 3283,
+    "conferenceId": 16,
+    "trackId": 65,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "AIインファレンスの運用を支えるAkamai LKE-EとApp Platform",
+    "abstract": "KubernetesでAIインファレンス（推論）を運用する、またはこれから始めるインフラ／プラットフォームエンジニア向けの講演です。GPUの有効活用、モデルとアプリのCI/CD、AI Gatewayの3つの観点で運用フェーズの課題と対応を整理し、Akamai Cloud上でLKE EnterpriseとApp Platformを使った、OSS中心の構成例と事例を紹介します。",
+    "speakers": [
+      {
+        "id": 2440,
+        "name": "Yuko Mori"
+      }
+    ],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T11:30:00.000+09:00",
+    "endTime": "2000-01-01T11:50:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 1,
+    "allowShowingVideo": true,
+    "sponsor": {
+      "id": 383,
+      "name": "アカマイ・テクノロジーズ合同会社"
+    }
+  }
+]
