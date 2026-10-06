@@ -78,7 +78,7 @@
     "name": "アカマイ・テクノロジーズ合同会社",
     "abbr": "",
     "url": "https://www.akamai.com/ja/cloud",
-    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/d1a2807e94f32c12a1b18c5d175d3920.png",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/be8b062f0e46ef7cea0b0531f690b472.png",
     "sponsorType": [
       "Diamond",
       "Booth"
@@ -109,6 +109,18 @@
       "Booth"
     ],
     "localAssetPath": "387.png"
+  },
+  {
+    "id": 388,
+    "eventAbbr": "cndw2026",
+    "name": "株式会社VARIETAS",
+    "abbr": "",
+    "url": "https://varietas.co.jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/579e52c6f7263b9a17d7b6d322a019cf.png",
+    "sponsorType": [
+      "Gold"
+    ],
+    "localAssetPath": "388.png"
   },
   {
     "id": 389,
