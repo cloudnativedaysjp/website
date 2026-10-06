@@ -1,10 +1,12 @@
 ---
 // Partner community list. Ported from kaigi.cloudnativedays.jp
 // (src/pages/community/index.astro), restyled to the current site idiom.
-// Always built (not FEATURES-gated); shows a placeholder while
-// src/data/community.json is empty.
+// Uses a rest param ([...index]) so it matches exactly '/community' while
+// still participating in FEATURES-gated static path generation, matching
+// /jobboard/[...index].astro.
 import { Icon } from 'astro-icon/components'
 import CommunityCard from '../../components/CommunityCard.astro'
+import { FEATURES } from '../../features'
 import Layout from '../../layouts/Layout.astro'
 import {
   communityTypeOrder,
@@ -12,6 +14,10 @@ import {
   getCommunityData,
   getCommunityLogo,
 } from '../../lib/community'
+
+export function getStaticPaths() {
+  return FEATURES.community ? [{ params: { index: undefined } }] : []
+}
 
 const communityData = getCommunityData()
 const groups = communityTypeOrder

@@ -145,7 +145,7 @@ mise x -- lefthook install    # pre-commit フック(gitleaksによるシーク�
 | `FEATURES.sessions`  | `ENABLE_SESSIONS`  | `/sessions/*` ページ                      |
 | `FEATURES.jobboard`  | `ENABLE_JOBBOARD`  | `/jobboard` ページ                        |
 
-環境変数には `true`/`1`/`yes`/`on`（大文字小文字・前後空白は無視）のいずれかを指定するとONになる。各フラグは以下の3面を制御する:
+環境変数には `true`/`1`/`yes`/`on`（大文字小文字・前後空白は無視）のいずれかを指定するとONになる。Dreamkastとは無関係だが、連携コミュニティページも `FEATURES.community`（`ENABLE_COMMUNITY`、`/community/*`）で同様に制御している（後述「連携コミュニティ」）。各フラグは以下の3面を制御する:
 
 1. 該当ページの `getStaticPaths`（OFF時は空配列を返しページ自体を生成しない）
 2. `Layout.astro`（Navbar）と `Footer.astro` のリンク表示
@@ -188,7 +188,7 @@ ENABLE_SPONSORS=true ENABLE_TIMETABLE=true ENABLE_SESSIONS=true ENABLE_JOBBOARD=
 
 ## 連携コミュニティ
 
-`/community`（一覧）と `/community/{id}`（詳細）で連携コミュニティのロゴと紹介を掲載する（kaigi.cloudnativedays.jp の `/community` を移植）。Dreamkastとは無関係の手動管理データで、機能フラグはなく、ページとNavbar/Footerのリンクは常に生成される（データが空の間は一覧ページに「準備中」と表示）。
+`/community`（一覧）と `/community/{id}`（詳細）で連携コミュニティのロゴと紹介を掲載する（kaigi.cloudnativedays.jp の `/community` を移植）。Dreamkastとは無関係の手動管理データで、`FEATURES.community`（`ENABLE_COMMUNITY`）がOFFの間はページもリンク（Navbar/Footer）も生成されない。
 
 - **掲載情報**: `src/data/community.json` を編集する。形式はCNK（kaigi.cloudnativedays.jp）の `src/data/community.json` と互換で、エントリをそのままコピーできる
 - **ロゴ**: `src/assets/community/` に画像（png/jpg/jpeg/webp/svg）を置き、`logo` にファイル名を指定する（ロゴなしは `""`）。存在しないファイル名を指定するとビルドエラーになる

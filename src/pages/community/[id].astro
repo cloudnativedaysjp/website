@@ -5,6 +5,7 @@
 // has no communityId property). Restyled to the current site idiom.
 import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets'
+import { FEATURES } from '../../features'
 import Layout from '../../layouts/Layout.astro'
 import {
   communityTypeOrder,
@@ -16,6 +17,8 @@ import {
 } from '../../lib/community'
 
 export function getStaticPaths() {
+  if (!FEATURES.community) return []
+
   const communityData = getCommunityData()
   return communityTypeOrder.flatMap((type) =>
     communityData[type].map((community) => ({
