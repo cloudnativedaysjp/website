@@ -120,9 +120,11 @@ const eventSchema = {
                   スポンサー
                 </span>
               ) : (
-                <span class="px-2 py-0.5 text-xs font-bold bg-indigo-600 text-white rounded">
-                  公募
-                </span>
+                !talk.isKeynote && (
+                  <span class="px-2 py-0.5 text-xs font-bold bg-indigo-600 text-white rounded">
+                    公募
+                  </span>
+                )
               )
             }
             {
