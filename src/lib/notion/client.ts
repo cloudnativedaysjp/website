@@ -9,6 +9,7 @@ import {
   DATABASE_ID,
   NUMBER_OF_POSTS_PER_PAGE,
   REQUEST_TIMEOUT_MS,
+  USE_DUMMY_POSTS,
 } from '../../server-constants'
 import type {
   Database,
@@ -50,6 +51,7 @@ import type {
   Mention,
   Reference,
 } from '../interfaces'
+import { DUMMY_POSTS, DUMMY_BLOCKS_BY_PAGE_ID } from './dummy-data'
 import type * as requestParams from './request-params'
 import type * as responses from './responses'
 
@@ -68,6 +70,11 @@ const blocksCache: Map<string, Block[]> = new Map()
 export async function getAllPosts(): Promise<Post[]> {
   if (postsCache !== null) {
     return Promise.resolve(postsCache)
+  }
+
+  if (USE_DUMMY_POSTS) {
+    postsCache = DUMMY_POSTS
+    return postsCache
   }
 
   const params: requestParams.QueryDatabase = {
@@ -217,6 +224,12 @@ export async function getAllBlocksByBlockId(blockId: string): Promise<Block[]> {
   const cached = blocksCache.get(blockId)
   if (cached !== undefined) {
     return cached
+  }
+
+  if (USE_DUMMY_POSTS) {
+    const dummyBlocks = DUMMY_BLOCKS_BY_PAGE_ID[blockId] ?? []
+    blocksCache.set(blockId, dummyBlocks)
+    return dummyBlocks
   }
 
   let results: responses.BlockObject[] = []
