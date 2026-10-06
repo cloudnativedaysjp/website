@@ -31,64 +31,54 @@ export interface TimetableDayConfig {
   trackDisplayNames: Record<string, string>
 }
 
-// TODO(CNDW2026): 休憩枠なしの仮テンプレート。CFP/スポンサーセッションが交互に
-// 並ぶkaigiの構成をそのまま流用している（本番のスロット割りに合わせて要更新）。
+// 実データ（Dreamkast talks）の開始時刻に合わせたスロット。talkは開始時刻のHH:MM完全一致で
+// スロットに入る。4枠目（15:20〜16:30付近）は現時点でトーク未登録のため定義していない。
+// TODO(CNDW2026): オープニング/ランチ/休憩/懇親会/クロージングの時刻は未確定のため未定義。
 const slotTemplatesBodyCommon: SlotTemplate[] = [
-  { startTime: '11:10', endTime: '11:40', type: 'cfp' },
-  { startTime: '12:00', endTime: '12:30', type: 'sponsor' },
-  { startTime: '12:50', endTime: '13:20', type: 'cfp' },
-  { startTime: '13:40', endTime: '14:10', type: 'sponsor' },
-  { startTime: '14:30', endTime: '15:00', type: 'cfp' },
-  { startTime: '15:20', endTime: '15:50', type: 'sponsor' },
-  { startTime: '16:10', endTime: '16:40', type: 'cfp' },
-  { startTime: '17:00', endTime: '17:30', type: 'cfp' },
-  { startTime: '17:40', endTime: '18:10', type: 'cfp' },
+  { startTime: '13:10', endTime: '13:40', type: 'cfp' },
+  { startTime: '14:50', endTime: '15:20', type: 'cfp' },
+  { startTime: '16:30', endTime: '17:00', type: 'cfp' },
+  { startTime: '17:20', endTime: '17:50', type: 'cfp' },
 ]
 
-// TODO(CNDW2026): Day 1 のオープニング/キーノート枠・懇親会時刻は仮。
 const slotTemplatesDay1: SlotTemplate[] = [
-  { startTime: '10:00', endTime: '10:10', type: 'opening' },
-  { startTime: '10:10', endTime: '10:40', type: 'keynote' },
-  { startTime: '10:40', endTime: '11:00', type: 'keynote' },
-  ...slotTemplatesBodyCommon,
-  { startTime: '18:40', endTime: '20:30', type: 'party' },
-]
-
-// TODO(CNDW2026): Day 2 のオープニング/キーノート枠・クロージング時刻は仮。
-const slotTemplatesDay2: SlotTemplate[] = [
-  { startTime: '10:00', endTime: '10:10', type: 'opening' },
-  { startTime: '10:10', endTime: '10:30', type: 'keynote' },
   { startTime: '10:30', endTime: '10:50', type: 'keynote' },
+  { startTime: '10:50', endTime: '11:10', type: 'keynote' },
+  { startTime: '11:10', endTime: '11:30', type: 'keynote' },
+  { startTime: '11:30', endTime: '11:50', type: 'sponsor' },
   ...slotTemplatesBodyCommon,
-  { startTime: '18:20', endTime: '18:50', type: 'closing' },
 ]
 
-// TODO(CNDW2026): トラック表示名は仮。実データのトラック名確定後に更新。
-const trackDisplayNamesDay1: Record<string, string> = {
-  'Track A': 'Track A',
-  'Track B': 'Track B',
-  'Track C': 'Track C',
-}
+const slotTemplatesDay2: SlotTemplate[] = [
+  { startTime: '10:30', endTime: '10:50', type: 'keynote' },
+  { startTime: '10:50', endTime: '11:10', type: 'keynote' },
+  { startTime: '11:50', endTime: '12:20', type: 'sponsor' },
+  ...slotTemplatesBodyCommon,
+]
 
-const trackDisplayNamesDay2: Record<string, string> = {
-  'Track A': 'Track A',
-  'Track B': 'Track B',
-  'Track C': 'Track C',
+// APIのトラック名（"A"〜"D"）をキーにする。
+// TODO(CNDW2026): 表示名・会場名は仮。
+const trackDisplayNames: Record<string, string> = {
+  A: 'Track A',
+  B: 'Track B',
+  C: 'Track C',
+  D: 'Track D',
 }
+const trackDisplayNamesDay1 = trackDisplayNames
+const trackDisplayNamesDay2 = trackDisplayNames
 
 export const days: TimetableDayConfig[] = [
   {
     slug: 'day1',
-    // TODO(CNDW2026): 日付はfixtures検証用の仮値。実データ確定後に更新。
-    date: '2026-05-14',
-    label: 'Day 1（5月14日・仮）',
+    date: '2026-11-18',
+    label: 'Day 1（11月18日）',
     slotTemplates: slotTemplatesDay1,
     trackDisplayNames: trackDisplayNamesDay1,
   },
   {
     slug: 'day2',
-    date: '2026-05-15',
-    label: 'Day 2（5月15日・仮）',
+    date: '2026-11-19',
+    label: 'Day 2（11月19日）',
     slotTemplates: slotTemplatesDay2,
     trackDisplayNames: trackDisplayNamesDay2,
   },
@@ -96,9 +86,10 @@ export const days: TimetableDayConfig[] = [
 
 // TODO(CNDW2026): 会場（部屋）名は仮。実データ確定後に更新。
 export const trackRoomMap: Record<string, string> = {
-  'Track A': '会場A',
-  'Track B': '会場B',
-  'Track C': '会場C',
+  A: '会場A',
+  B: '会場B',
+  C: '会場C',
+  D: '会場D',
 }
 
 export const eventLabels: Record<string, string> = {
