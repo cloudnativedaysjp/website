@@ -1,0 +1,125 @@
+[
+  {
+    "id": 376,
+    "eventAbbr": "cndw2026",
+    "name": "株式会社ハイヤールー",
+    "abbr": "",
+    "url": "https://hireroo.io/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/eeb9e89907a865b6101eab6b0977141c.png",
+    "sponsorType": [
+      "Diamond",
+      "Booth"
+    ],
+    "localAssetPath": "376.png"
+  },
+  {
+    "id": 377,
+    "eventAbbr": "cndw2026",
+    "name": "株式会社構造計画研究所",
+    "abbr": "",
+    "url": "https://sendgrid.kke.co.jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/ed6dc0dd1aaf1fbba48109e527fe0153.png",
+    "sponsorType": [
+      "Booth"
+    ],
+    "localAssetPath": "377.png"
+  },
+  {
+    "id": 378,
+    "eventAbbr": "cndw2026",
+    "name": "株式会社エーアイセキュリティラボ",
+    "abbr": "",
+    "url": "https://www.aeyescan.jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/6057ecd5265141b06b009e2ae53ca6b7.png",
+    "sponsorType": [
+      "Diamond"
+    ],
+    "localAssetPath": "378.png"
+  },
+  {
+    "id": 379,
+    "eventAbbr": "cndw2026",
+    "name": "レッドハット株式会社",
+    "abbr": "",
+    "url": "https://www.redhat.com/ja/technologies/cloud-computing/openshift",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/da63d47c567c7721fea71a7ba591ad65.png",
+    "sponsorType": [
+      "Diamond"
+    ],
+    "localAssetPath": "379.png"
+  },
+  {
+    "id": 381,
+    "eventAbbr": "cndw2026",
+    "name": "株式会社はてな",
+    "abbr": "",
+    "url": "https://ja.mackerel.io/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/01c8e4616f6bf0b39863001df6a9afdc.svg",
+    "sponsorType": [
+      "Gold"
+    ],
+    "localAssetPath": "381.svg"
+  },
+  {
+    "id": 382,
+    "eventAbbr": "cndw2026",
+    "name": "株式会社スリーシェイク",
+    "abbr": "",
+    "url": "https://3-shake.com/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/8e94dbded646a772bd1090ce564482c7.svg",
+    "sponsorType": [
+      "Booth"
+    ],
+    "localAssetPath": "382.svg"
+  },
+  {
+    "id": 383,
+    "eventAbbr": "cndw2026",
+    "name": "アカマイ・テクノロジーズ合同会社",
+    "abbr": "",
+    "url": "https://www.akamai.com/ja/cloud",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/d1a2807e94f32c12a1b18c5d175d3920.png",
+    "sponsorType": [
+      "Diamond",
+      "Booth"
+    ],
+    "localAssetPath": "383.png"
+  },
+  {
+    "id": 385,
+    "eventAbbr": "cndw2026",
+    "name": "グラファナラボ日本合同会社",
+    "abbr": "",
+    "url": "https://grafana.com/ja/ ",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/d374c10e4d122160d409e2320c5534dd.png",
+    "sponsorType": [
+      "Gold",
+      "Booth"
+    ],
+    "localAssetPath": "385.png"
+  },
+  {
+    "id": 387,
+    "eventAbbr": "cndw2026",
+    "name": "株式会社シャインソフト",
+    "abbr": "",
+    "url": "https://shinesoft.co.jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/eec0663d937f5e48525e2c9270c1b36c.png",
+    "sponsorType": [
+      "Booth"
+    ],
+    "localAssetPath": "387.png"
+  },
+  {
+    "id": 389,
+    "eventAbbr": "cndw2026",
+    "name": "エフォディオジャパン合同会社",
+    "abbr": "",
+    "url": "https://www.effodio.com/jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/1bc53a5fe13d7bfec6fb5e674892588c.svg",
+    "sponsorType": [
+      "Booth"
+    ],
+    "localAssetPath": "389.svg"
+  }
+]
