@@ -36,7 +36,9 @@ export interface TimetableDayConfig {
 // TODO(CNDW2026): オープニング/ランチ/休憩/懇親会/クロージングの時刻は未確定のため未定義。
 const slotTemplatesBodyCommon: SlotTemplate[] = [
   { startTime: '13:10', endTime: '13:40', type: 'cfp' },
+  { startTime: '14:00', endTime: '14:30', type: 'sponsor' },
   { startTime: '14:50', endTime: '15:20', type: 'cfp' },
+  { startTime: '15:40', endTime: '16:10', type: 'sponsor' },
   { startTime: '16:30', endTime: '17:00', type: 'cfp' },
   { startTime: '17:20', endTime: '17:50', type: 'cfp' },
 ]
@@ -46,13 +48,16 @@ const slotTemplatesDay1: SlotTemplate[] = [
   { startTime: '10:50', endTime: '11:10', type: 'keynote' },
   { startTime: '11:10', endTime: '11:30', type: 'keynote' },
   { startTime: '11:30', endTime: '11:50', type: 'sponsor' },
+  { startTime: '11:50', endTime: '12:10', type: 'sponsor' },
   ...slotTemplatesBodyCommon,
 ]
 
 const slotTemplatesDay2: SlotTemplate[] = [
   { startTime: '10:30', endTime: '10:50', type: 'keynote' },
   { startTime: '10:50', endTime: '11:10', type: 'keynote' },
-  { startTime: '11:50', endTime: '12:20', type: 'sponsor' },
+  { startTime: '11:10', endTime: '11:30', type: 'sponsor' },
+  { startTime: '11:30', endTime: '11:50', type: 'sponsor' },
+  { startTime: '11:50', endTime: '12:10', type: 'sponsor' },
   ...slotTemplatesBodyCommon,
 ]
 
@@ -86,10 +91,10 @@ export const days: TimetableDayConfig[] = [
 
 // TODO(CNDW2026): 会場（部屋）名は仮。実データ確定後に更新。
 export const trackRoomMap: Record<string, string> = {
-  A: '会場A',
-  B: '会場B',
-  C: '会場C',
-  D: '会場D',
+  A: 'Room1',
+  B: 'Room2',
+  C: 'Boardroom',
+  D: 'Room6',
 }
 
 export const eventLabels: Record<string, string> = {
