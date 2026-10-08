@@ -1,0 +1,82 @@
+---
+// Partner community list. Ported from kaigi.cloudnativedays.jp
+// (src/pages/community/index.astro), restyled to the current site idiom.
+// Uses a rest param ([...index]) so it matches exactly '/community' while
+// still participating in FEATURES-gated static path generation, matching
+// /jobboard/[...index].astro.
+import { Icon } from 'astro-icon/components'
+import CommunityCard from '../../components/CommunityCard.astro'
+import { FEATURES } from '../../features'
+import Layout from '../../layouts/Layout.astro'
+import {
+  communityTypeOrder,
+  communityTypeLabel,
+  getCommunityData,
+  getCommunityLogo,
+} from '../../lib/community'
+
+export function getStaticPaths() {
+  return FEATURES.community ? [{ params: { index: undefined } }] : []
+}
+
+const communityData = getCommunityData()
+const groups = communityTypeOrder
+  .map((type) => ({ type, communities: communityData[type] }))
+  .filter(({ communities }) => communities.length > 0)
+
+const title = '連携コミュニティ | CloudNative Days'
+const description =
+  'CloudNative Days と連携するコミュニティの一覧です。企業コミュニティ・技術コミュニティの詳細をご覧いただけます。'
+---
+
+<Layout title={title} description={description} ogImage="/favicon.svg">
+  <main class="pt-24 pb-16 px-4">
+    <div class="max-w-5xl mx-auto">
+      <nav class="mb-8">
+        <a
+          href="/"
+          class="inline-flex items-center gap-2 text-gray-600 hover:text-indigo-600 transition-colors"
+        >
+          <Icon name="tabler:arrow-left" class="w-5 h-5" />
+          <span>トップページに戻る</span>
+        </a>
+      </nav>
+
+      <h1 class="text-3xl md:text-4xl font-bold text-center text-black mb-4">
+        連携コミュニティ
+      </h1>
+      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        CloudNative Days は、多くのコミュニティと連携して開催しています。
+      </p>
+
+      {
+        groups.length === 0 ? (
+          <p class="text-center text-gray-500 py-16">
+            連携コミュニティは準備中です。
+          </p>
+        ) : (
+          <div class="flex flex-col gap-16">
+            {groups.map(({ type, communities }) => (
+              <section>
+                <div class="flex justify-center mb-8">
+                  <h2 class="text-2xl font-bold text-center border-b-2 border-indigo-600 pb-2 text-gray-800">
+                    {communityTypeLabel[type]}
+                  </h2>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
+                  {communities.map((community) => (
+                    <CommunityCard
+                      href={`/community/${community.id}`}
+                      name={community.name}
+                      logo={getCommunityLogo(community.logo)}
+                    />
+                  ))}
+                </div>
+              </section>
+            ))}
+          </div>
+        )
+      }
+    </div>
+  </main>
+</Layout>

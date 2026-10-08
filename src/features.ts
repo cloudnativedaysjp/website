@@ -17,5 +17,9 @@ export const FEATURES = {
     import.meta.env.ENABLE_JOBBOARD || process.env.ENABLE_JOBBOARD,
     false,
   ),
+  community: parseFlag(
+    import.meta.env.ENABLE_COMMUNITY || process.env.ENABLE_COMMUNITY,
+    false,
+  ),
   blog: true,
 } as const

@@ -1,0 +1,36 @@
+---
+// Logo card for the /community grid. Ported from kaigi.cloudnativedays.jp
+// (src/components/Community.astro), restyled to the current site idiom.
+import type { ImageMetadata } from 'astro'
+import { Image } from 'astro:assets'
+
+interface Props {
+  href: string
+  name: string
+  logo: ImageMetadata | null
+}
+
+const { href, name, logo } = Astro.props
+---
+
+<a
+  href={href}
+  class="group h-full flex flex-col items-center justify-center gap-3 bg-white/80 backdrop-blur-sm rounded-2xl p-5 shadow-sm border border-gray-100 hover:border-indigo-300 hover:shadow-md transition"
+>
+  {
+    logo && (
+      <div class="w-20 h-20 flex items-center justify-center">
+        <Image
+          src={logo}
+          alt={`${name} ロゴ`}
+          class="max-w-full max-h-full object-contain"
+        />
+      </div>
+    )
+  }
+  <h3
+    class="text-xs sm:text-sm font-bold text-center text-gray-800 leading-snug group-hover:text-indigo-600 transition-colors"
+  >
+    {name}
+  </h3>
+</a>
