@@ -143,6 +143,16 @@
     "localAssetPath": "2358.png"
   },
   {
+    "id": 2364,
+    "name": "Mikio Fujita",
+    "company": "株式会社はてな",
+    "jobTitle": "Webアプリケーションエンジニア",
+    "profile": "株式会社はてなの Web アプリケーションエンジニア。\r\n\r\n2018年に新卒入社以来GigaViewer・カクヨム・ジャンプルーキー！等の開発・運用に従事し、2026年からオブザーバビリティプラットフォーム Mackerel の開発チームに所属する。",
+    "githubId": "benevolent0505",
+    "twitterId": "benevolent0505",
+    "avatarUrl": "dummy.png"
+  },
+  {
     "id": 2365,
     "name": "Yoshi Yamaguchi",
     "company": "Grafana Labs",

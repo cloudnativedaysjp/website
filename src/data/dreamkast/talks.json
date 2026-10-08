@@ -861,6 +861,35 @@
     "sponsor": null
   },
   {
+    "id": 3275,
+    "conferenceId": 16,
+    "trackId": 67,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "AI時代に問い直す「プロダクションミーティング」の価値 〜チームでサービスの信頼性を高める取り組み〜",
+    "abstract": "「プロダクションミーティング」とは、GoogleのSRE本にあるチームでサービスを安定運用させるための定期的なミーティングです。\r\n\r\nはてなの開発チームでは「PWG (Performance Working Group)」の名前で安定運用を目的としたミーティングを行っています。\r\nPWGではMackerelのダッシュボードやAPM機能を用い、サービスのパフォーマンスやシステムの変化が共有されています。これによって以下のような効果を得られています。\r\n\r\n- パフォーマンスの変化や問題を早期に気づき、障害を未然に防ぐ\r\n- インフラエンジニアがアプリケーションの変化を把握できる\r\n- 開発エンジニアもインフラやパフォーマンスについての感度や理解が高まる\r\n\r\n一方昨今のAI Agentの登場により、パフォーマンスの変化を調べさせ問題を修正する・直近のアプリケーションの変化をまとめさせる、といったことをAIが出来る状況になりつつあります。\r\nこのような時代にエンジニアは何を目的に集まって話すのでしょうか？\r\n\r\nこの発表では、はてなの「プロダクションミーティング」の取り組みを紹介し、AIにより起こった変化と残り",
+    "speakers": [
+      {
+        "id": 2364,
+        "name": "Mikio Fujita"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:00:00.000+09:00",
+    "endTime": "2000-01-01T14:30:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "組織論",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 3,
+    "allowShowingVideo": true,
+    "sponsor": {
+      "id": 381,
+      "name": "株式会社はてな"
+    }
+  },
+  {
     "id": 3276,
     "conferenceId": 16,
     "trackId": 65,
@@ -1021,6 +1050,30 @@
     "sponsor": {
       "id": 383,
       "name": "アカマイ・テクノロジーズ合同会社"
+    }
+  },
+  {
+    "id": 3284,
+    "conferenceId": 16,
+    "trackId": 68,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "株式会社フライル（仮）",
+    "abstract": "仮",
+    "speakers": [],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:00:00.000+09:00",
+    "endTime": "2000-01-01T14:30:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "その他",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 3,
+    "allowShowingVideo": false,
+    "sponsor": {
+      "id": 390,
+      "name": "株式会社フライル"
     }
   }
 ]
