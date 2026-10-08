@@ -16,8 +16,7 @@ import { sponsorTypeLabel, type SponsorType } from '../lib/dreamkast/schema'
 const sponsors = await getSponsors()
 const sponsorGroups = groupSponsorsByType(sponsors)
 
-// Ladder: Diamond largest -> Logo/Media/Tool smallest, grid columns widen as
-// tier size shrinks so more sponsors fit per row.
+// Ladder: Diamond largest -> Logo/Media/Tool smallest.
 const logoSizeClass: Record<SponsorType, string> = {
   Support: 'h-20 md:h-28',
   Diamond: 'h-20 md:h-28',
@@ -31,17 +30,20 @@ const logoSizeClass: Record<SponsorType, string> = {
   Tool: 'h-8 md:h-12',
 }
 
-const gridColsClass: Record<SponsorType, string> = {
-  Support: 'grid-cols-1 md:grid-cols-2',
-  Diamond: 'grid-cols-1 md:grid-cols-2',
-  Platinum: 'grid-cols-2 md:grid-cols-3',
-  Gold: 'grid-cols-2 md:grid-cols-3',
-  Booth: 'grid-cols-2 md:grid-cols-4',
-  Party: 'grid-cols-2 md:grid-cols-4',
-  CM: 'grid-cols-2 md:grid-cols-4',
-  Logo: 'grid-cols-2 md:grid-cols-4 lg:grid-cols-6',
-  Media: 'grid-cols-2 md:grid-cols-4 lg:grid-cols-6',
-  Tool: 'grid-cols-2 md:grid-cols-4 lg:grid-cols-6',
+// Cards are fixed-width flex items (width = column share minus gap) inside a
+// centered flex-wrap container, so a short last row stays centered instead of
+// hugging the left edge like it would in a CSS grid. Gap is 1rem / md:1.5rem.
+const cardWidthClass: Record<SponsorType, string> = {
+  Support: 'w-full md:w-[calc(50%-0.75rem)]',
+  Diamond: 'w-full md:w-[calc(50%-0.75rem)]',
+  Platinum: 'w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1rem)]',
+  Gold: 'w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1rem)]',
+  Booth: 'w-[calc(50%-0.5rem)] md:w-[calc(25%-1.125rem)]',
+  Party: 'w-[calc(50%-0.5rem)] md:w-[calc(25%-1.125rem)]',
+  CM: 'w-[calc(50%-0.5rem)] md:w-[calc(25%-1.125rem)]',
+  Logo: 'w-[calc(50%-0.5rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(16.666%-1.25rem)]',
+  Media: 'w-[calc(50%-0.5rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(16.666%-1.25rem)]',
+  Tool: 'w-[calc(50%-0.5rem)] md:w-[calc(25%-1.125rem)] lg:w-[calc(16.666%-1.25rem)]',
 }
 ---
 
@@ -59,7 +61,7 @@ const gridColsClass: Record<SponsorType, string> = {
                 {sponsorTypeLabel[type]}
               </h3>
             </div>
-            <div class={`grid ${gridColsClass[type]} gap-6`}>
+            <div class="flex flex-wrap justify-center gap-4 md:gap-6">
               {typeSponsors.map((sponsor) => {
                 const logo = getSponsorLogo(sponsor.localAssetPath)
                 return (
@@ -67,7 +69,7 @@ const gridColsClass: Record<SponsorType, string> = {
                     href={sponsor.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100 flex items-center justify-center p-6"
+                    class={`${cardWidthClass[type]} bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100 flex items-center justify-center p-6`}
                   >
                     {logo ? (
                       <Image
