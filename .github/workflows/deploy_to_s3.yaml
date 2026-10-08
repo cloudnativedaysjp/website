@@ -53,10 +53,10 @@ jobs:
           NOTION_API_SECRET: ${{ secrets.NOTION_API_SECRET }}
           DATABASE_ID: ${{ secrets.DATABASE_ID }}
           USE_DUMMY_POSTS: 'false'
-          ENABLE_SPONSORS: 'false'
-          ENABLE_TIMETABLE: 'false'
-          ENABLE_SESSIONS: 'false'
-          ENABLE_JOBBOARD: 'false'
+          ENABLE_SPONSORS: 'true'
+          ENABLE_TIMETABLE: 'true'
+          ENABLE_SESSIONS: 'true'
+          ENABLE_JOBBOARD: 'true'
       - name: Deploy to S3
         run: aws s3 sync ./dist/ s3://${{ secrets.BUCKET_ID }}
       - name: Create CloudFront invalidation
