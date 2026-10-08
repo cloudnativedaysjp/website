@@ -588,14 +588,14 @@
         "name": "Kota Fukuchi"
       }
     ],
-    "dayId": 40,
+    "dayId": 39,
     "showOnTimetable": true,
     "startTime": "2000-01-01T16:30:00.000+09:00",
     "endTime": "2000-01-01T17:00:00.000+09:00",
     "talkDuration": 0,
     "talkDifficulty": "初級者",
     "talkCategory": "Architecture Design",
-    "conferenceDayDate": "2026-11-19",
+    "conferenceDayDate": "2026-11-18",
     "slotNum": 5,
     "allowShowingVideo": false,
     "sponsor": null
@@ -614,14 +614,14 @@
         "name": "Keigo Aoki"
       }
     ],
-    "dayId": 39,
+    "dayId": 40,
     "showOnTimetable": true,
     "startTime": "2000-01-01T16:30:00.000+09:00",
     "endTime": "2000-01-01T17:00:00.000+09:00",
     "talkDuration": 0,
     "talkDifficulty": "中級者",
     "talkCategory": "Architecture Design",
-    "conferenceDayDate": "2026-11-18",
+    "conferenceDayDate": "2026-11-19",
     "slotNum": 5,
     "allowShowingVideo": true,
     "sponsor": null

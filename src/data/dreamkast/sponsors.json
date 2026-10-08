@@ -5,7 +5,7 @@
     "name": "株式会社ハイヤールー",
     "abbr": "",
     "url": "https://hireroo.io/",
-    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/eeb9e89907a865b6101eab6b0977141c.png",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/147528a8ecd4ebf8fd9fd84ef1834d5c.png",
     "sponsorType": [
       "Diamond",
       "Booth"
@@ -32,7 +32,8 @@
     "url": "https://www.aeyescan.jp/",
     "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/6057ecd5265141b06b009e2ae53ca6b7.png",
     "sponsorType": [
-      "Diamond"
+      "Diamond",
+      "Booth"
     ],
     "localAssetPath": "378.png"
   },
@@ -47,6 +48,18 @@
       "Diamond"
     ],
     "localAssetPath": "379.png"
+  },
+  {
+    "id": 380,
+    "eventAbbr": "cndw2026",
+    "name": "Sansan株式会社",
+    "abbr": "",
+    "url": "https://jp.corp-sansan.com/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/576460a810206a37feaa08418777df46.png",
+    "sponsorType": [
+      "Party"
+    ],
+    "localAssetPath": "380.png"
   },
   {
     "id": 381,
@@ -86,6 +99,19 @@
     "localAssetPath": "383.png"
   },
   {
+    "id": 384,
+    "eventAbbr": "cndw2026",
+    "name": "さくらインターネット株式会社",
+    "abbr": "",
+    "url": "https://www.sakura.ad.jp/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/bc0a331ed0cfa7c9b41ed430adf905d4.png",
+    "sponsorType": [
+      "Platinum",
+      "Booth"
+    ],
+    "localAssetPath": "384.png"
+  },
+  {
     "id": 385,
     "eventAbbr": "cndw2026",
     "name": "グラファナラボ日本合同会社",
@@ -97,6 +123,19 @@
       "Booth"
     ],
     "localAssetPath": "385.png"
+  },
+  {
+    "id": 386,
+    "eventAbbr": "cndw2026",
+    "name": "Okta Japan株式会社",
+    "abbr": "",
+    "url": "https://auth0.com/jp",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/d46200362563ac6d6f1f320462f8768b.png",
+    "sponsorType": [
+      "Gold",
+      "Booth"
+    ],
+    "localAssetPath": "386.png"
   },
   {
     "id": 387,
@@ -133,5 +172,29 @@
       "Booth"
     ],
     "localAssetPath": "389.svg"
+  },
+  {
+    "id": 390,
+    "eventAbbr": "cndw2026",
+    "name": "株式会社フライル",
+    "abbr": "",
+    "url": "https://recruit.flyle.io/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/c5ca3af2b925834eb3420045cc8fd13b.png",
+    "sponsorType": [
+      "Platinum"
+    ],
+    "localAssetPath": "390.png"
+  },
+  {
+    "id": 392,
+    "eventAbbr": "cndw2026",
+    "name": "Datadog Japan 合同会社",
+    "abbr": "",
+    "url": "https://www.datadoghq.com/ja/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/d9c87f5a89fc1eb449ee35261b117869.png",
+    "sponsorType": [
+      "Diamond"
+    ],
+    "localAssetPath": "392.png"
   }
 ]
