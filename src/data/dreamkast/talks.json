@@ -922,7 +922,7 @@
     "videoPlatform": "",
     "videoId": "",
     "title": "Kubernetes Schedulingの最前線から見る景色",
-    "abstract": "Kubernetesに5年以上コントリビュートし続け、現在はKubernetes SIG-SchedulingのLeadとして開発をリードしています。AIの話題で持ちきりの今日ですが、Kubernetesも例に漏れず大きく影響を受けており、AI/MLワークロード向けの機能が数多く導入されています。KubeConでも、KubernetesをいかにAI向けに活用するかというテーマが大きな割合を占めるようになりました。DRA（Dynamic Resource Allocation）をはじめ、直近ではWorkload-aware Schedulingが実装され始めるなど、Kubernetes Schedulerもこの大きな流れの中心にいます。Workload-aware Scheduling周辺の機能開発は非常にスピードが速く、数週間目を離すと置いていかれるほど変化が激しい領域です。本セッションでは、Workload-aware Schedulingをはじめとする新機能の解説と、それに伴う「Pod schedulingからWorkload schedulingへ」という根本的な概念の遷移につい",
+    "abstract": "Kubernetesに5年以上コントリビュートし続け、現在Kubernetes SIG-SchedulingのLeadとして開発をリードしています。AIの話題で持ちきりの今日ですが、Kubernetesも例に漏れずAI/MLワークロード向けの機能が数多く導入されています。DRAをはじめ、直近ではWorkload-aware Schedulingが実装され始めるなど、Kubernetes Schedulerもこの大きな流れの中心にいます。本セッションでは、それらWorkload-aware Schedulingをはじめとする大きな新機能の解説と、それに伴う「Pod schedulingからWorkload schedulingへ」という根本的な概念の遷移について解説します。また、SIG Leadとして普段どのように開発をリードしているかなど、日本語で語られることが少ないSIG Leadとしての責務などについても触れる予定です。",
     "speakers": [
       {
         "id": 2435,
@@ -1074,6 +1074,30 @@
     "sponsor": {
       "id": 390,
       "name": "株式会社フライル"
+    }
+  },
+  {
+    "id": 3285,
+    "conferenceId": 16,
+    "trackId": 65,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "OTelで計測し、個人から組織へ広げるAI協働力",
+    "abstract": "AIエージェントの利用ログを集めても、何を評価し、どこを改善すべきかが分からなければ、組織の成果にはつながりません。AI活用を個人の工夫にとどめず、組織として生産性とセキュリティを継続的に高めるには、実務での使われ方を捉え、評価と改善を繰り返す仕組みが必要です。\r\n\r\nハイヤールーは、累計118万件を超えるスキル評価で培った知見をもとに、開発者とAIエージェントの協働を実務ログから計測・評価してきました。個人と組織のAI活用ログをOpenTelemetry（OTel）形式で収集し、多数の評価項目に基づいて可視化しています。その結果をもとに、トークン消費の効率化、ガードレールの整備、繰り返し使う手順の組織共通Skills化、エージェントに必要なコンテキストを提供する仕組みづくりを進めています。\r\n\r\n本講演では、HireRoo Skill Assessmentでの取り組みをもとに、OTelで収集したログをどの指標で評価し、改善につなげるかを紹介します。個人の実践を組織共通の仕組みに変え、生産性とセキュリティの両面でAI活用を改善し続けるための考え方と具体例をお伝えします。",
+    "speakers": [],
+    "dayId": 40,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T11:10:00.000+09:00",
+    "endTime": "2000-01-01T11:30:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "conferenceDayDate": "2026-11-19",
+    "slotNum": 1,
+    "allowShowingVideo": true,
+    "sponsor": {
+      "id": 376,
+      "name": "株式会社ハイヤールー"
     }
   }
 ]
