@@ -7,7 +7,8 @@
     "profile": "ソーシャルゲーム、Webメディアの開発運用を経て2026年2月に株式会社Kyashにジョイン。SREをしています。カンファレンス等の登壇を随時行なってます。\r\n",
     "githubId": "",
     "twitterId": "zosokh",
-    "avatarUrl": "dummy.png"
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/9ad4c720747886c3bcd45d4e0cad7bf9.jpeg",
+    "localAssetPath": "2330.jpeg"
   },
   {
     "id": 2333,
@@ -23,7 +24,7 @@
   {
     "id": 2338,
     "name": "KATOH Yasufumi",
-    "company": "株式会社IDCフロンティア",
+    "company": "lxc-jp project",
     "jobTitle": "なし",
     "profile": "2009年頃にLinuxカーネルのcgroup機能に興味を持って以来、Linuxのコンテナ関連の最新情報を追っかけたり、コンテナの勉強会を開いたりしてコンテナ関連の技術を趣味で追っています。英語力のない自分用にLXCのmanページを日本語訳していたところ、あっさり本家にマージされてしまい、それ以来日本語訳のパッチを送り続けています。他にPlamo Linuxという国産distroのメンテナをやっています。本職は情報セキュリティをやっています。",
     "githubId": "tenforward",
@@ -56,7 +57,7 @@
   {
     "id": 2344,
     "name": "Yoshitaka Fujii",
-    "company": "サイボウズ株式会社",
+    "company": "TBD",
     "jobTitle": "ソフトウェアエンジニア",
     "profile": "TBD",
     "githubId": "",
@@ -140,6 +141,16 @@
     "twitterId": "sue445",
     "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/de780aebfdac8dc83a715e91605464eb.png",
     "localAssetPath": "2358.png"
+  },
+  {
+    "id": 2364,
+    "name": "Mikio Fujita",
+    "company": "株式会社はてな",
+    "jobTitle": "Webアプリケーションエンジニア",
+    "profile": "株式会社はてなの Web アプリケーションエンジニア。\r\n\r\n2018年に新卒入社以来GigaViewer・カクヨム・ジャンプルーキー！等の開発・運用に従事し、2026年からオブザーバビリティプラットフォーム Mackerel の開発チームに所属する。",
+    "githubId": "benevolent0505",
+    "twitterId": "benevolent0505",
+    "avatarUrl": "dummy.png"
   },
   {
     "id": 2365,
