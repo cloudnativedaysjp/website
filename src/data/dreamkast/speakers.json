@@ -409,7 +409,7 @@
     "name": "Takuya Yanase",
     "company": "株式会社QualiArts",
     "jobTitle": "バックエンドエンジニア",
-    "profile": "株式会社サイバーエージェント\r\n入社から現在まで8つのプロダクト開発に従事。\r\n現在は株式会社サイバーエージェント子会社のQualiArtsにてバックエンドリーダーを務める。",
+    "profile": "株式会社サイバーエージェント入社から現在まで8つのプロダクト開発に従事。\r\n現在は株式会社サイバーエージェント子会社のQualiArtsにてバックエンドリーダーを務める。",
     "githubId": "",
     "twitterId": "",
     "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/358786c1798102a4e0d761fa2c665f3c.png",
@@ -422,7 +422,7 @@
     "jobTitle": "データベースエンジニア",
     "profile": "[経歴]\r\n2025年4月に株式会社プレイドに新卒で入社し、内製DBの開発に従事。データベースエンジンのコア開発、DBをホスティングするKubenetesの運用、ストリーミングパイプラインの開発を担当",
     "githubId": "SotaSato-stst",
-    "twitterId": "4MtbW31Qb98053",
+    "twitterId": "sotasatostst",
     "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/5a946ae1bf19bd40b77495014f73a6c6.jpg",
     "localAssetPath": "2438.jpg"
   },
@@ -434,7 +434,8 @@
     "profile": "社内横断のSRE組織に所属し、メディア系サービスやソーシャルゲームサービスへのSRE支援に従事。",
     "githubId": "",
     "twitterId": "",
-    "avatarUrl": "dummy.png"
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/4e0311e077f2037ab3f80a117e11b22d.png",
+    "localAssetPath": "2439.png"
   },
   {
     "id": 2440,
@@ -445,5 +446,16 @@
     "githubId": "",
     "twitterId": "ykmori",
     "avatarUrl": "dummy.png"
+  },
+  {
+    "id": 2444,
+    "name": "Harunobu Kameda",
+    "company": "さくらインターネット",
+    "jobTitle": "ソリューション本部長 兼 エバンジェリスト",
+    "profile": "兵庫県伊丹市出身、米国州立南イリノイ大学卒業。認証系独立ASP、 動画・音楽配信システム構築、決済代行事業者、外資クラウドエバンジェリスト数社を経て現職。",
+    "githubId": "",
+    "twitterId": "kameoncloud",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/8e8601f3d5673044b747ba40bf043aa0.jpg",
+    "localAssetPath": "2444.jpg"
   }
 ]
