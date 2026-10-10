@@ -317,8 +317,8 @@
     "trackId": 65,
     "videoPlatform": "",
     "videoId": "",
-    "title": "coming soon",
-    "abstract": "coming soon",
+    "title": "開発組織は「開発する組織」から卒業する \"価値提供する組織\"に必要な自律的セキュリティ思考",
+    "abstract": "AI駆動開発が一般化し、開発組織の役割は「開発そのもの」から「価値提供」に広がりつつあります。それは、開発の前工程にある\"課題の発見\"だけでなく、後工程にある\"安心・安全なサービス提供\"も含む役割定義と言えるでしょう。\n本セッションでは、開発組織が自律的にリリース前・運用中の脆弱性診断を実施する体制をととのえ、製品のことを最もよく知るチームが安全を担保する、新しい開発組織の形を考えていきます。",
     "speakers": [
       {
         "id": 2350,
@@ -1127,6 +1127,30 @@
     "sponsor": {
       "id": 384,
       "name": "さくらインターネット株式会社"
+    }
+  },
+  {
+    "id": 3287,
+    "conferenceId": 16,
+    "trackId": 65,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "Organization Engineer への転換：局所最適を抜け出し、全体最適を実現する",
+    "abstract": "LLMの台頭で開発は安く速くなった一方、機能単位の局所最適が加速し、企業が実現したいビジョンとのずれが目立つようになりました。今、エンジニアに求められるのは、担当プロダクトの改善から、組織全体を捉えた価値の実現へと視野を広げることです。Product EngineerからOrganization Engineerへ。その転換に何が必要か、AIとどう働くかを、システム思考に基づき、事例を交えて紹介します。",
+    "speakers": [],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T15:40:00.000+09:00",
+    "endTime": "2000-01-01T16:10:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "組織論",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 4,
+    "allowShowingVideo": true,
+    "sponsor": {
+      "id": 388,
+      "name": "株式会社VARIETAS"
     }
   }
 ]
