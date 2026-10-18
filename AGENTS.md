@@ -186,6 +186,12 @@ ENABLE_SPONSORS=true ENABLE_TIMETABLE=true ENABLE_SESSIONS=true ENABLE_JOBBOARD=
 
 `src/data/dreamkast/jobboard.json` は実データ・手動管理で、`[{ id: <スポンサーID>, description: <markdown> }]` の配列形式で作成する。`id` は `sponsors.json` のスポンサーIDと一致させる必要があり、一致しないエントリはジョブボードに表示されない。
 
+## ハンズオン
+
+`/handson` で実行委員有志提供のハンズオンを紹介する（kaigi.cloudnativedays.jp の `/handson` を移植）。機能フラグはなく、ページとNavbar/Footerのリンクは常に生成される。
+
+掲載内容は `src/pages/handson/index.astro` の frontmatter に直書きしている。`TODO(CNDW2026)` の箇所（開催概要・申し込み状態・キャンセル時の連絡先）は確定後に更新する。申し込み状態 `registration` は `{ status: 'upcoming' }`（準備中）→ `{ status: 'open', url }`（申し込みボタン表示）→ `{ status: 'closed' }`（募集終了）と切り替える。
+
 ## ブログ
 
 - **検索**: MiniSearchを使用したクライアント検索。`src/pages/posts/search-index.json.ts` がビルド時に検索インデックスを生成し、`/posts` の検索ボックスから利用する
