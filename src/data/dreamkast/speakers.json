@@ -372,6 +372,17 @@
     "localAssetPath": "2422.jpeg"
   },
   {
+    "id": 2423,
+    "name": "Daizen Ikehara",
+    "company": "Auth0",
+    "jobTitle": "プリンシパルデベロッパーアドボケイト",
+    "profile": ".NETエンジニアとしてキャリアをスタートさせた後、UIコンポーネントベンダーやクラウドコミュニケーションプラットフォームベンダーにおいて様々なロールを歴任。2023年3月よりOktaに参画し、Auth0の開発者リレーションを担当。趣味はゲームと長距離散歩。X (Twitter): @Neri78",
+    "githubId": "neri78",
+    "twitterId": "neri78",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/17cef7574c8135a006557c6fc59d3110.jpeg",
+    "localAssetPath": "2423.jpeg"
+  },
+  {
     "id": 2430,
     "name": "Yoshiyuki Tabata",
     "company": "株式会社 日立製作所",
@@ -420,7 +431,7 @@
     "name": "Sota Sato",
     "company": "株式会社プレイド",
     "jobTitle": "データベースエンジニア",
-    "profile": "[経歴]\r\n2025年4月に株式会社プレイドに新卒で入社し、内製DBの開発に従事。データベースエンジンのコア開発、DBをホスティングするKubenetesの運用、ストリーミングパイプラインの開発を担当",
+    "profile": "[経歴]\r\n2025年4月に株式会社プレイドに新卒で入社し、内製データベース「mila」の開発に従事。データベースエンジンのコア開発、milaをホスティングするKubenetesの運用、ストリーミングパイプラインの開発を担当",
     "githubId": "SotaSato-stst",
     "twitterId": "sotasatostst",
     "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/5a946ae1bf19bd40b77495014f73a6c6.jpg",
@@ -448,6 +459,26 @@
     "avatarUrl": "dummy.png"
   },
   {
+    "id": 2442,
+    "name": "Fumiaki Kanayama",
+    "company": "レッドハット株式会社",
+    "jobTitle": "Associate Principal Consultant",
+    "profile": "(To Be Described)",
+    "githubId": "",
+    "twitterId": "",
+    "avatarUrl": "dummy.png"
+  },
+  {
+    "id": 2443,
+    "name": "Koya Matsuda",
+    "company": "HCL Japan",
+    "jobTitle": "テクニカルリード",
+    "profile": "通信事業者向けシステム開発に従事し、Javaを用いたWebアプリケーション開発やAWSを利用したシステム開発・移行を経験。現在はテクニカルリードとして設計や開発チームの技術支援を行いながら、アプリケーションの実装や検証にも携わっている。",
+    "githubId": "",
+    "twitterId": "",
+    "avatarUrl": "dummy.png"
+  },
+  {
     "id": 2444,
     "name": "Harunobu Kameda",
     "company": "さくらインターネット",
@@ -457,5 +488,16 @@
     "twitterId": "kameoncloud",
     "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/8e8601f3d5673044b747ba40bf043aa0.jpg",
     "localAssetPath": "2444.jpg"
+  },
+  {
+    "id": 2446,
+    "name": "Naoya Yoshizawa",
+    "company": "株式会社フライル",
+    "jobTitle": "エンジニア",
+    "profile": "Software Engineer Yahoo(6年) → Gunosy(7年) → Flyle パフォーマンス改善エンジニア 釣りが好き",
+    "githubId": "azihsoyn",
+    "twitterId": "azihsoyn",
+    "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/0cb092655f36cafc9bffb3f1b0c5bdd6.jpeg",
+    "localAssetPath": "2446.jpeg"
   }
 ]

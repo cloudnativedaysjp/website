@@ -978,7 +978,7 @@
     "videoPlatform": "",
     "videoId": "",
     "title": "分散データベースをKubernetes上でどう動かすか？Operatorによる運用とテナント分離の実現",
-    "abstract": "株式会社プレイドの「KARTE」では、毎日20億行以上のデータが挿入され、累計8PBに及ぶデータを扱っています。一般的なデータベースでは、コスト・性能面が厳しく、弊社ではKARTEのドメインに特化した独自の分散DB「mila」を開発しています。\r\n\r\nmilaはGKE（Google Kubernetes Engine）上で動作しており、多数のコンポーネントとクラウドサービスが複雑に協調する構成となっています。また、テナント間のデータの混在や権限事故を防ぐため、インフラ層での強固なテナント分離を実現しています。\r\n\r\n本セッションでは、この複雑なシステムの構成を統一的に管理・運用するために、Kubernetesのモデルをどのように整理し、Operatorとして実装したのか、その実践的な設計とアプローチについて解説します。また、それらを通して大規模な基盤システムをKubernetesベースで構築・運用する意義についてお話しします。",
+    "abstract": "株式会社プレイドの「KARTE」では、毎日20億行以上のデータが挿入され、累計8PBに及ぶデータを扱っています。一般的なデータベースでは、コスト・性能面が厳しく、弊社ではKARTEのドメインに特化した独自の分散データベース「mila」を開発しています。\r\n\r\nmilaはGKE（Google Kubernetes Engine）上で動作しており、多数のコンポーネントとクラウドサービスが複雑に協調する構成となっています。また、テナント間のデータの混在や権限事故を防ぐため、インフラ層での強固なテナント分離を実現しています。\r\n\r\n本セッションでは、この複雑なシステムの構成を統一的に管理・運用するために、Kubernetesのモデルをどのように整理し、Operatorとして実装したのか、その実践的な設計とアプローチについて解説します。また、それらを通して大規模な基盤システムをKubernetesベースで構築・運用する意義についてお話しします。",
     "speakers": [
       {
         "id": 2438,
@@ -1058,19 +1058,24 @@
     "trackId": 68,
     "videoPlatform": "",
     "videoId": "",
-    "title": "株式会社フライル（仮）",
-    "abstract": "仮",
-    "speakers": [],
+    "title": "高速開発を止めずに性能を上げる Flyle のシステム刷新と改善の歴史",
+    "abstract": "フライルは2020年から顧客の声を扱うプロダクトFlyleを開発してきました。2024年には事業の転換にあわせてAIネイティブなプロダクトとして新しいシステムを作り始め、いまは新旧2つのシステムを抱えながら機能開発と性能改善を続けています。\n\n本セッションではFlyleの性能改善の取り組みをいままで・現状・これからの3つに分けてお話しします。旧システムで起きた性能問題とその対処、新しいシステムの設計でそれらをどう解消しようとしたか、開発が速くなるなかで起きた問題への向き合い方、性能をチームの目標に入れて運用してみて見えた課題、これからの進め方を紹介します。",
+    "speakers": [
+      {
+        "id": 2446,
+        "name": "Naoya Yoshizawa"
+      }
+    ],
     "dayId": 39,
     "showOnTimetable": true,
     "startTime": "2000-01-01T14:00:00.000+09:00",
     "endTime": "2000-01-01T14:30:00.000+09:00",
     "talkDuration": 0,
     "talkDifficulty": "初級者",
-    "talkCategory": "その他",
+    "talkCategory": "Application / Development",
     "conferenceDayDate": "2026-11-18",
     "slotNum": 3,
-    "allowShowingVideo": false,
+    "allowShowingVideo": true,
     "sponsor": {
       "id": 390,
       "name": "株式会社フライル"
@@ -1151,6 +1156,92 @@
     "sponsor": {
       "id": 388,
       "name": "株式会社VARIETAS"
+    }
+  },
+  {
+    "id": 3288,
+    "conferenceId": 16,
+    "trackId": 65,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "稼働20年のエンタープライズシステムにAI駆動開発を導入する～KDDI設備更改の挑戦と現在地～",
+    "abstract": "KDDIでは、20年近く稼働してきたエンタープライズシステムの設備更改にAI駆動開発を導入しました。つぎはぎを重ねたプログラムを従来手法で刷新すれば、工期・工数ともに膨らみ、競争の激しい通信業界では戦えない――その危機感から、既存システムに精通したHCL社、AI駆動開発に知見を持つRed Hat社とワンチーム体制を組み、新たな開発手法に踏み出しました。本講演では、基幹系ならではの難しさに向き合う開発現場から、商用リリースに向けたAI駆動開発の現在地をご紹介します。",
+    "speakers": [
+      {
+        "id": 2443,
+        "name": "Koya Matsuda"
+      },
+      {
+        "id": 2442,
+        "name": "Fumiaki Kanayama"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T11:50:00.000+09:00",
+    "endTime": "2000-01-01T12:10:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "初級者",
+    "talkCategory": "Application / Development",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 1,
+    "allowShowingVideo": true,
+    "sponsor": {
+      "id": 379,
+      "name": "レッドハット株式会社"
+    }
+  },
+  {
+    "id": 3289,
+    "conferenceId": 16,
+    "trackId": 65,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "観測し、確かめ、改善する - Grafana AssistantのAIエージェント開発での実践",
+    "abstract": "AIエージェントの最も厄介な失敗は、明らかな誤りではなく、表面上はもっともらしく見える答えです。しかも、正確性・コスト・応答時間は、互いにトレードオフの関係にあります。そのため、エージェントの挙動を観測し、確かめ続ける必要があります。Grafana Labsは、性質の異なる複数のタスクを担うGrafana Assistantの開発で、2つの観測を組み合わせてきました。1つは、実際のタスクと成功の基準を「シナリオ」として事前に用意する、オフラインの観測です。社内フレームワーク「llmspec」のグレーダーに加え、解決済みの実際の障害を使うアリーナなど、タスクに合わせて評価方法を変えています。もう1つは、実環境での、オンラインの観測です。エージェントの会話や実行を記録して観測する仕組みは、Agent Observabilityという新しいサービスにもつながっています。AIエージェントを本番に載せたいSRE・プラットフォームエンジニアに向けて、Assistantの事例から、観測して改善する実践と学びを紹介します。",
+    "speakers": [],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T14:00:00.000+09:00",
+    "endTime": "2000-01-01T14:30:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Operation / Monitoring / Logging",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 3,
+    "allowShowingVideo": true,
+    "sponsor": {
+      "id": 385,
+      "name": "グラファナラボ日本合同会社"
+    }
+  },
+  {
+    "id": 3290,
+    "conferenceId": 16,
+    "trackId": 68,
+    "videoPlatform": "",
+    "videoId": "",
+    "title": "システムプロンプト依存からの脱却: AIエージェントを守る意図ベースの認可とは",
+    "abstract": "AIエージェントを実用的なものにしようとすればするほど、APIやデータベースへの過剰なアクセス権（特権）を渡さざるを得ないというジレンマに直面します。RAGから自律的なエージェントシステムへの移行において、「悪意ある操作はしないでください」というシステムプロンプトに頼る設計は通用しません。また、ユーザー権限の安全な継承、マルチエージェント間の認可制御といった難題にも取り組まなければいけません。これらの課題を解決するためには、プロンプトエンジニアリングではなく、認可の主体を単なる「静的なユーザー権限」から「動的なエージェントの意図（Intent）ベース」へとシフトするアーキテクチャ設計が必要になります。\r\n\r\n本セッションでは、AIエージェントを構築する開発者を対象として、「エージェントは何を意図していたのか」、さらには「ユーザーはエージェントに何を実行させようとしていたのか」という意図 (intent) をどのようにエージェントの認可に応用するかについてCNCFプロジェクトであるOpenFGA (https://openfga.dev/)を用いた実装例とともに紹介します。",
+    "speakers": [
+      {
+        "id": 2423,
+        "name": "Daizen Ikehara"
+      }
+    ],
+    "dayId": 39,
+    "showOnTimetable": true,
+    "startTime": "2000-01-01T15:40:00.000+09:00",
+    "endTime": "2000-01-01T16:10:00.000+09:00",
+    "talkDuration": 0,
+    "talkDifficulty": "中級者",
+    "talkCategory": "Security",
+    "conferenceDayDate": "2026-11-18",
+    "slotNum": 4,
+    "allowShowingVideo": true,
+    "sponsor": {
+      "id": 386,
+      "name": "Okta Japan株式会社"
     }
   }
 ]

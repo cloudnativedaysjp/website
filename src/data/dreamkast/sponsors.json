@@ -196,5 +196,17 @@
       "Diamond"
     ],
     "localAssetPath": "392.png"
+  },
+  {
+    "id": 395,
+    "eventAbbr": "cndw2026",
+    "name": "株式会社シーディーネットワークス・ジャパン",
+    "abbr": "",
+    "url": "https://www.cdnetworks.com/ja/",
+    "logo_url": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/sponsor_attachment/7711bb08fdb0a795e4dab00b2571d808.svg",
+    "sponsorType": [
+      "Booth"
+    ],
+    "localAssetPath": "395.svg"
   }
 ]
