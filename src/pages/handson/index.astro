@@ -6,11 +6,19 @@ import { Icon } from 'astro-icon/components'
 import { marked } from 'marked'
 import Layout from '../../layouts/Layout.astro'
 
-// TODO(CNDW2026): 日時・定員・場所は開催概要確定後に更新。
 const eventDetails = [
-  { label: '日時', value: '調整中' },
-  { label: '定員', value: '調整中' },
-  { label: '場所', value: '調整中' },
+  { label: 'イベント名', value: '一日で学ぶクラウドネイティブ技術実践ハンズオン' },
+  { label: '日時', value: '2026/11/17（火）10:00 - 16:30（途中お昼休憩あり）' },
+  {
+    label: '会場',
+    value:
+      '株式会社スリーシェイク（〒104-0061 東京都中央区銀座8丁目21番1号 住友不動産汐留浜離宮ビル 7F）',
+  },
+  {
+    label: '定員',
+    value: 'オフライン25名（先着）（お早めの申込みをお願いいたします。）',
+  },
+  { label: '参加費', value: '無料' },
 ]
 
 const ossList = [
@@ -37,8 +45,7 @@ type Registration =
   | { status: 'closed' }
 const registration: Registration = { status: 'upcoming' }
 
-// TODO(CNDW2026): 問い合わせ先はCNKのものを流用中。担当確定後に更新。
-const cancelPolicy = `申し込み後にキャンセルを希望される場合は、お手数ですが、Xで南（[@south__1003](https://x.com/south__1003)）またはakiran（[@chao_akira](https://x.com/chao_akira)）までご連絡をお願いします。`
+const cancelPolicy = `申し込み後にキャンセルを希望される場合は、お手数ですが、Xでよしたけ（[@yoshitake945d](https://x.com/yoshitake945d)）までご連絡をお願いします。`
 const cancelPolicyHtml = await marked.parseInline(cancelPolicy)
 
 const title = 'ハンズオン | CloudNative Days'

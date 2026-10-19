@@ -190,7 +190,7 @@ ENABLE_SPONSORS=true ENABLE_TIMETABLE=true ENABLE_SESSIONS=true ENABLE_JOBBOARD=
 
 `/handson` で実行委員有志提供のハンズオンを紹介する（kaigi.cloudnativedays.jp の `/handson` を移植）。機能フラグはなく、ページとNavbar/Footerのリンクは常に生成される。
 
-掲載内容は `src/pages/handson/index.astro` の frontmatter に直書きしている。`TODO(CNDW2026)` の箇所（開催概要・申し込み状態・キャンセル時の連絡先）は確定後に更新する。申し込み状態 `registration` は `{ status: 'upcoming' }`（準備中）→ `{ status: 'open', url }`（申し込みボタン表示）→ `{ status: 'closed' }`（募集終了）と切り替える。
+掲載内容は `src/pages/handson/index.astro` の frontmatter に直書きしている。`TODO(CNDW2026)` の箇所（申し込み状態）は確定後に更新する。申し込み状態 `registration` は `{ status: 'upcoming' }`（準備中）→ `{ status: 'open', url }`（申し込みボタン表示）→ `{ status: 'closed' }`（募集終了）と切り替える。
 
 ## ブログ
 
