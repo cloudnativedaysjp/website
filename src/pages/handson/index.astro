@@ -45,7 +45,7 @@ type Registration =
   | { status: 'closed' }
 const registration: Registration = { status: 'upcoming' }
 
-const cancelPolicy = `申し込み後にキャンセルを希望される場合は、お手数ですが、Xでよしたけ（[@yoshitake945d](https://x.com/yoshitake945d)）までご連絡をお願いします。`
+const cancelPolicy = `申し込み後にキャンセルを希望される場合は、お手数ですが、Xでよしたけ（[@yoshitake945](https://x.com/yoshitake945)）までご連絡をお願いします。`
 const cancelPolicyHtml = await marked.parseInline(cancelPolicy)
 
 const title = 'ハンズオン | CloudNative Days'
