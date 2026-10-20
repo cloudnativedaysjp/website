@@ -499,5 +499,15 @@
     "twitterId": "azihsoyn",
     "avatarUrl": "https://dreamkast-prod-bucket.s3.ap-northeast-1.amazonaws.com/avatar/0cb092655f36cafc9bffb3f1b0c5bdd6.jpeg",
     "localAssetPath": "2446.jpeg"
+  },
+  {
+    "id": 2447,
+    "name": "HIROTAKA TORIGOE",
+    "company": "KDDI株式会社",
+    "jobTitle": "部長",
+    "profile": "KDDI入社後、エンジニアとしてモバイル網のトラヒック分析システムなどのOSS領域や、通話・インターネットの課金システムなどのBSS領域の開発運用を担当。トラヒック分析やコンテンツマーケティング分析(CRM)の領域では、全社システムの統合・最適化を実施。以後、プロジェクトマネージャーとして決済・課金系、認証系、ストレージ系など、法人・コンシューマ向けサービスシステムの開発運用を統括し、AI駆動開発によるプロセス変革を推進。",
+    "githubId": "",
+    "twitterId": "",
+    "avatarUrl": "dummy.png"
   }
 ]
