@@ -192,6 +192,10 @@ ENABLE_SPONSORS=true ENABLE_TIMETABLE=true ENABLE_SESSIONS=true ENABLE_JOBBOARD=
 
 掲載内容は `src/pages/handson/index.astro` の frontmatter に直書きしている。`TODO(CNDW2026)` の箇所（申し込み状態）は確定後に更新する。申し込み状態 `registration` は `{ status: 'upcoming' }`（準備中）→ `{ status: 'open', url }`（申し込みボタン表示）→ `{ status: 'closed' }`（募集終了）と切り替える。
 
+## Co-located Events
+
+`/co-located` でCNDW2026と併催されるイベント（Cloud Native Woman Gathering Meetup、Kubernetes Upstream Training in Japan）を紹介する。機能フラグはなく、ページとNavbar/Footerのリンクは常に生成される。掲載内容は `src/pages/co-located/index.astro` の frontmatter（`coLocatedEvents` 配列）に直書きしており、各イベントの ocgroups.dev ページから転記している。申し込みは各 ocgroups.dev ページで行う。
+
 ## ブログ
 
 - **検索**: MiniSearchを使用したクライアント検索。`src/pages/posts/search-index.json.ts` がビルド時に検索インデックスを生成し、`/posts` の検索ボックスから利用する
