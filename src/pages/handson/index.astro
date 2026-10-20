@@ -1,0 +1,182 @@
+---
+// Hands-on introduction page. Ported from kaigi.cloudnativedays.jp
+// (src/pages/handson/index.astro), stripped of BudouX/PageHeader and
+// restyled to the current site idiom.
+import { Icon } from 'astro-icon/components'
+import { marked } from 'marked'
+import Layout from '../../layouts/Layout.astro'
+
+const eventDetails = [
+  { label: 'イベント名', value: '一日で学ぶクラウドネイティブ技術実践ハンズオン' },
+  { label: '日時', value: '2026/11/17（火）10:00 - 16:30（途中お昼休憩あり）' },
+  {
+    label: '会場',
+    value:
+      '株式会社スリーシェイク（〒104-0061 東京都中央区銀座8丁目21番1号 住友不動産汐留浜離宮ビル 7F）',
+  },
+  {
+    label: '定員',
+    value: 'オフライン25名（先着）（お早めの申込みをお願いいたします。）',
+  },
+  { label: '参加費', value: '無料' },
+]
+
+const ossList = [
+  'Docker',
+  'Kubernetes',
+  'Prometheus',
+  'Grafana',
+  'Pyroscope',
+  'Loki',
+  'Tempo',
+  'OpenTelemetry',
+  'Cilium',
+  'Argo CD',
+  'Argo Rollouts',
+  'Istio',
+  'Hubble',
+]
+
+// TODO(CNDW2026): 募集開始時に { status: 'open', url: '<申し込みURL>' }、
+// 締め切り後に { status: 'closed' } へ切り替える。
+type Registration =
+  | { status: 'upcoming' }
+  | { status: 'open'; url: string }
+  | { status: 'closed' }
+const registration: Registration = { status: 'upcoming' }
+
+const cancelPolicy = `申し込み後にキャンセルを希望される場合は、お手数ですが、Xでよしたけ（[@yoshitake945](https://x.com/yoshitake945)）までご連絡をお願いします。`
+const cancelPolicyHtml = await marked.parseInline(cancelPolicy)
+
+const title = 'ハンズオン | CloudNative Days'
+const description = 'CloudNative Days ハンズオンの紹介ページです。'
+---
+
+<Layout title={title} description={description} ogImage="/favicon.svg">
+  <main class="pt-24 pb-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <nav class="mb-8">
+        <a
+          href="/"
+          class="inline-flex items-center gap-2 text-gray-600 hover:text-indigo-600 transition-colors"
+        >
+          <Icon name="tabler:arrow-left" class="w-5 h-5" />
+          <span>トップページに戻る</span>
+        </a>
+      </nav>
+
+      <h1 class="text-3xl md:text-4xl font-bold text-center text-black mb-4">
+        ハンズオン
+      </h1>
+      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+        CloudNative Days 実行委員有志が提供するハンズオンです。
+      </p>
+
+      <div class="flex flex-col gap-16">
+        <section>
+          <h2
+            class="text-2xl font-bold border-b-2 border-indigo-600 pb-2 mb-6 text-gray-800"
+          >
+            開催概要
+          </h2>
+          <dl
+            class="bg-white/80 rounded-2xl shadow-sm border border-gray-100 overflow-hidden divide-y divide-gray-100"
+          >
+            {
+              eventDetails.map(({ label, value }) => (
+                <div class="flex flex-col md:flex-row">
+                  <dt class="md:w-1/4 shrink-0 bg-gray-50 px-4 py-3 font-bold text-gray-700">
+                    {label}
+                  </dt>
+                  <dd class="px-4 py-3 text-gray-800 break-words">{value}</dd>
+                </div>
+              ))
+            }
+          </dl>
+        </section>
+
+        <section>
+          <h2
+            class="text-2xl font-bold border-b-2 border-indigo-600 pb-2 mb-6 text-gray-800"
+          >
+            学べるOSS
+          </h2>
+          <div class="text-gray-800 leading-relaxed space-y-4">
+            <p>
+              このハンズオンは、Kubernetesやクラウドネイティブ技術に精通したメンバーが、現在デファクトとなっている（デファクトになりそうな）新しい技術について一気に学べるように設計したハンズオンです。下記のような様々なトピックを、手を動かしながら1日で学ぶことができます。
+            </p>
+            <p>
+              過去に開催した際には、申し込みわずか半日で定員の4倍の申し込みがあり、急遽増枠した大人気イベントです。
+            </p>
+          </div>
+          <ul class="mt-6 grid grid-cols-2 md:grid-cols-3 gap-3">
+            {
+              ossList.map((oss) => (
+                <li class="bg-white/80 border border-gray-100 rounded-lg px-4 py-2 text-gray-800 shadow-sm">
+                  {oss}
+                </li>
+              ))
+            }
+          </ul>
+          <div class="text-center mt-10">
+            <a
+              href="/posts/cndw-handson"
+              class="inline-flex items-center gap-2 px-4 py-2 text-sm font-bold text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg transition-colors"
+            >
+              <span>ハンズオン紹介ブログを読む</span>
+              <Icon name="tabler:arrow-right" class="w-4 h-4" />
+            </a>
+          </div>
+        </section>
+
+        <section>
+          <h2
+            class="text-2xl font-bold border-b-2 border-indigo-600 pb-2 mb-6 text-gray-800"
+          >
+            申し込み
+          </h2>
+          {
+            registration.status === 'open' ? (
+              <div class="text-center">
+                <a
+                  href={registration.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 px-6 py-3 font-bold text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg transition-colors"
+                >
+                  <span>ハンズオンに申し込む</span>
+                  <Icon name="tabler:external-link" class="w-5 h-5" />
+                </a>
+              </div>
+            ) : registration.status === 'closed' ? (
+              <div class="bg-white/80 border border-gray-100 rounded-2xl shadow-sm p-6 text-center">
+                <p class="text-2xl font-bold text-indigo-600 mb-2">
+                  募集を終了しました
+                </p>
+                <p class="text-gray-700">
+                  参加人数が上限に達したため、ハンズオンの参加者募集を締め切らせていただきました。たくさんのお申し込みをありがとうございました。
+                </p>
+              </div>
+            ) : (
+              <p class="text-gray-800">
+                申し込み方法は決まり次第こちらでお知らせします。
+              </p>
+            )
+          }
+        </section>
+
+        <section>
+          <h2
+            class="text-2xl font-bold border-b-2 border-indigo-600 pb-2 mb-6 text-gray-800"
+          >
+            キャンセルについて
+          </h2>
+          <p
+            class="text-gray-800 leading-relaxed [&_a]:text-indigo-600 [&_a]:underline"
+            set:html={cancelPolicyHtml}
+          />
+        </section>
+      </div>
+    </div>
+  </main>
+</Layout>
