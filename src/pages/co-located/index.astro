@@ -1,0 +1,176 @@
+---
+// Co-located events page. Event details are copied from each event's
+// ocgroups.dev (Cloud Native Community Japan) page; registration happens there.
+import { Icon } from 'astro-icon/components'
+import Layout from '../../layouts/Layout.astro'
+
+type AgendaItem = { time: string; title: string }
+type CoLocatedEvent = {
+  id: string
+  name: string
+  summary: string[]
+  details: { label: string; value: string }[]
+  agenda: AgendaItem[]
+  url: string
+}
+
+const coLocatedEvents: CoLocatedEvent[] = [
+  {
+    id: 'woman-gathering',
+    name: 'Cloud Native Woman Gathering Meetup in Japan at CNDW2026',
+    summary: [
+      'CloudNative Days Winter 2026 の前夜祭イベントであり、CNCJ で新たに設立された Woman Gathering SIG にとって初めてのミートアップです。',
+      'Cloud Native 分野に関わる女性・ジェンダーマイノリティが、安心してつながり、経験や知識、課題を共有しながら、これからの Cloud Native Community への関わり方を一緒に考えられる場を目指しています。',
+      '第1回は「まず、みんなの声を聞く」をテーマに、参加者の興味や経験、疑問をもとにその場で話したいテーマを決めていく対話型のイベントです。経験年数や Cloud Native Community への参加歴は問いません。',
+    ],
+    details: [
+      { label: '日時', value: '2026/11/16（月）19:00 - 21:00' },
+      { label: '形式', value: 'オフライン' },
+      {
+        label: '会場',
+        value: '銀座松竹スクエア 5F（会場スポンサー: 株式会社LayerX）',
+      },
+      { label: '定員', value: '50名' },
+      { label: '主催', value: 'Cloud Native Community Japan Woman Gathering SIG' },
+    ],
+    agenda: [
+      { time: '19:00 - 19:10', title: 'オープニング' },
+      { time: '19:10 - 19:25', title: 'CNDWの見どころ紹介' },
+      { time: '19:25 - 20:00', title: 'ワークショップ' },
+      { time: '20:00 - 21:00', title: '懇親会' },
+    ],
+    url: 'https://ocgroups.dev/cncf/group/bqd97by/event/xh4bjp5',
+  },
+  {
+    id: 'upstream-training',
+    name: 'Kubernetes Upstream Training in Japan at CNDW2026',
+    summary: [
+      'Kubernetes コミュニティでコントリビューションを始めたい方のためのコミュニティ参加入門講座です。Kubernetes コミュニティの説明、参加のための心構え、様々なコントリビューション方法、Kubernetes コミュニティ公式の Slack や練習用リポジトリを用いたコントリビューションの練習を日本語で紹介します。',
+      '講師陣は現役のメンテナーやコントリビューターが担当します。今回は懇親会もあり、具体的なコントリビューション相談やネットワーキングにご活用いただけます。',
+      '簡単な事前課題があります。詳細はイベントページをご確認ください。',
+    ],
+    details: [
+      { label: '日時', value: '2026/11/17（火）16:45 - 21:00（懇親会含む）' },
+      { label: '形式', value: 'ハイブリッド（リモート参加はZoom）' },
+      {
+        label: '会場',
+        value:
+          '株式会社スリーシェイク（〒104-0061 東京都中央区銀座8丁目21番1号 住友不動産汐留浜離宮ビル 7F）',
+      },
+      { label: '定員', value: '現地参加30名、リモート参加50名' },
+      { label: '申し込み締切', value: '2026/11/13（金）13:00' },
+      {
+        label: '主催',
+        value: 'Kubernetes Upstream Training Japan（Cloud Native Community Japan SIG）',
+      },
+    ],
+    agenda: [
+      { time: '16:45 - 17:00', title: '開場' },
+      { time: '17:00 - 17:05', title: 'オープニング' },
+      { time: '17:05 - 17:30', title: 'コントリビューション入門' },
+      { time: '17:30 - 18:00', title: 'ハンズオン' },
+      { time: '18:00 - 18:05', title: '休憩' },
+      { time: '18:05 - 18:30', title: 'Kubernetes コミュニティの構成' },
+      { time: '18:30 - 18:55', title: 'Kubernetes 開発環境' },
+      { time: '18:55 - 19:00', title: 'クロージング' },
+      { time: '19:00 - 21:00', title: '懇親会（現地のみ）' },
+    ],
+    url: 'https://ocgroups.dev/cncf/group/bqd97by/event/gdw2ngn',
+  },
+]
+
+const title = 'Co-located Events | CloudNative Days'
+const description =
+  'CloudNative Days Winter 2026 と併催されるCo-located Eventsの紹介ページです。'
+---
+
+<Layout title={title} description={description} ogImage="/favicon.svg">
+  <main class="pt-24 pb-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <nav class="mb-8">
+        <a
+          href="/"
+          class="inline-flex items-center gap-2 text-gray-600 hover:text-indigo-600 transition-colors"
+        >
+          <Icon name="tabler:arrow-left" class="w-5 h-5" />
+          <span>トップページに戻る</span>
+        </a>
+      </nav>
+
+      <h1 class="text-3xl md:text-4xl font-bold text-center text-black mb-4">
+        Co-located Events
+      </h1>
+      <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+        CloudNative Days Winter 2026 と併催されるイベントです。各イベントの申し込みは、それぞれのイベントページから行ってください。
+      </p>
+
+      <ul class="flex flex-col md:flex-row justify-center gap-3 mb-12">
+        {
+          coLocatedEvents.map(({ id, name }) => (
+            <li>
+              <a
+                href={`#${id}`}
+                class="block bg-white/80 border border-gray-100 rounded-lg px-4 py-2 text-sm text-gray-800 shadow-sm hover:text-indigo-600 transition-colors"
+              >
+                {name}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <div class="flex flex-col gap-16">
+        {
+          coLocatedEvents.map(({ id, name, summary, details, agenda, url }) => (
+            <section id={id} class="scroll-mt-24">
+              <h2 class="text-2xl font-bold border-b-2 border-indigo-600 pb-2 mb-6 text-gray-800">
+                {name}
+              </h2>
+              <div class="text-gray-800 leading-relaxed space-y-4 mb-8">
+                {summary.map((paragraph) => (
+                  <p>{paragraph}</p>
+                ))}
+              </div>
+
+              <h3 class="text-lg font-bold text-gray-800 mb-3">開催概要</h3>
+              <dl class="bg-white/80 rounded-2xl shadow-sm border border-gray-100 overflow-hidden divide-y divide-gray-100 mb-8">
+                {details.map(({ label, value }) => (
+                  <div class="flex flex-col md:flex-row">
+                    <dt class="md:w-1/4 shrink-0 bg-gray-50 px-4 py-3 font-bold text-gray-700">
+                      {label}
+                    </dt>
+                    <dd class="px-4 py-3 text-gray-800 break-words">{value}</dd>
+                  </div>
+                ))}
+              </dl>
+
+              <h3 class="text-lg font-bold text-gray-800 mb-3">アジェンダ</h3>
+              <ol class="bg-white/80 rounded-2xl shadow-sm border border-gray-100 overflow-hidden divide-y divide-gray-100">
+                {agenda.map(({ time, title }) => (
+                  <li class="flex gap-4 px-4 py-2">
+                    <span class="w-32 shrink-0 font-mono text-sm text-gray-600 pt-0.5">
+                      {time}
+                    </span>
+                    <span class="text-gray-800">{title}</span>
+                  </li>
+                ))}
+              </ol>
+
+              <div class="text-center mt-10">
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 px-6 py-3 font-bold text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg transition-colors"
+                >
+                  <span>詳細・申し込みはこちら</span>
+                  <Icon name="tabler:external-link" class="w-5 h-5" />
+                </a>
+              </div>
+            </section>
+          ))
+        }
+      </div>
+    </div>
+  </main>
+</Layout>
