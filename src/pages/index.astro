@@ -6,9 +6,53 @@ import Staff from '../components/Staff.astro'
 import Layout from '../layouts/Layout.astro'
 import MascotPeek from '../components/MascotPeek.astro'
 import { FEATURES } from '../features'
+import { PUBLIC_SITE_TITLE } from '../server-constants'
+
+const siteUrl = Astro.site?.toString()
+const organizer = {
+  '@type': 'Organization',
+  name: 'CloudNative Days 実行委員会',
+  url: siteUrl,
+}
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: PUBLIC_SITE_TITLE,
+    alternateName: ['CNDW', 'CNDW2026'],
+    url: siteUrl,
+    inLanguage: 'ja',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Event',
+    name: 'CloudNative Days Winter 2026',
+    alternateName: ['CNDW2026', 'CNDW'],
+    description: 'Scaling Together をテーマに、クラウドネイティブに取り組むエンジニアが集うテックカンファレンス。',
+    url: siteUrl,
+    startDate: '2026-11-18',
+    endDate: '2026-11-19',
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/MixedEventAttendanceMode',
+    location: [
+      {
+        '@type': 'Place',
+        name: '有明セントラルタワーホール&カンファレンス',
+        address: {
+          '@type': 'PostalAddress',
+          addressRegion: '東京都',
+          addressLocality: '江東区',
+          addressCountry: 'JP',
+        },
+      },
+      { '@type': 'VirtualLocation', url: siteUrl },
+    ],
+    organizer,
+  },
+]
 ---
 
-<Layout title="CloudNative Days Winter 2026 #CNDW2026 | 2026年11月18日〜19日 有明" description="CloudNative Days はコミュニティ、企業、技術者が一堂に会し、クラウドネイティブムーブメントを牽引することを目的としたテックカンファレンスです。" ogImage="/favicon.svg" isTopPage={true}>
+<Layout title="CloudNative Days Winter 2026 #CNDW2026 | 2026年11月18日〜19日 有明" description="CloudNative Days Winter 2026（略称 CNDW2026、CNDW）は、コミュニティ、企業、技術者が一堂に会し、クラウドネイティブムーブメントを牽引することを目的としたテックカンファレンスです。2026年11月18日〜19日、有明セントラルタワーホール&カンファレンスとオンラインのハイブリッドで開催。" ogImage="/favicon.svg" isTopPage={true} jsonLd={jsonLd}>
   <main>
     <Hero title="CloudNative Days Winter 2026" logo="/images/assets/cndw2026.png">
       <div class="max-w-4xl mx-auto">

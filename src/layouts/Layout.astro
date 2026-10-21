@@ -9,9 +9,17 @@ export interface Props {
   url?: URL | undefined
   ogImage: string
   isTopPage?: boolean
+  jsonLd?: Record<string, unknown>[]
 }
 
-const { title, description, url, ogImage, isTopPage = false } = Astro.props
+const {
+  title,
+  description,
+  url,
+  ogImage,
+  isTopPage = false,
+  jsonLd = [],
+} = Astro.props
 
 const navLinks = [
   FEATURES.timetable && { href: '/timetable/day1', text: 'タイムテーブル' },
@@ -63,6 +71,14 @@ const navLinks = [
     />
     <script src="https://unpkg.com/video.js/dist/video.js"></script>
     <title>{title}</title>
+    {
+      jsonLd.map((data) => (
+        <script
+          type="application/ld+json"
+          set:html={JSON.stringify(data).replace(/</g, '\\u003c')}
+        />
+      ))
+    }
   </head>
   <script
     type="text/partytown"
