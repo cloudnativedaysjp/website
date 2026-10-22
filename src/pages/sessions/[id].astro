@@ -53,6 +53,14 @@ const description = normalizedAbstract
     : normalizedAbstract
   : `${talk.title}のセッション詳細ページです。`
 
+// public/images/ogp/sessions/{talk.id}.jpg があればセッション固有のOGP画像を使う
+const sessionOgpImages = import.meta.glob('/public/images/ogp/sessions/*.jpg', {
+  query: '?url',
+  import: 'default',
+})
+const ogpPath = `/images/ogp/sessions/${talk.id}.jpg`
+const ogImage = `/public${ogpPath}` in sessionOgpImages ? ogpPath : '/favicon.svg'
+
 const siteOrigin = Astro.site?.origin ?? 'https://cloudnativedays.jp'
 
 const breadcrumbSchema = {
@@ -88,7 +96,7 @@ const eventSchema = {
 <Layout
   title={`${talk.title} | CloudNative Days Winter 2026`}
   description={description}
-  ogImage="/favicon.svg"
+  ogImage={ogImage}
 >
   <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <script is:inline type="application/ld+json" set:html={JSON.stringify(eventSchema)} />

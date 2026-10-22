@@ -21,6 +21,10 @@ const {
   jsonLd = [],
 } = Astro.props
 
+// og:image / twitter:image はクローラーが解決できるよう絶対URLにする
+const absoluteOgImage =
+  ogImage && Astro.site ? new URL(ogImage, Astro.site).href : ogImage
+
 const navLinks = [
   FEATURES.timetable && { href: '/timetable/day1', text: 'タイムテーブル' },
   FEATURES.sessions && { href: '/sessions', text: 'セッション' },
@@ -51,11 +55,11 @@ const navLinks = [
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:site_name" content={PUBLIC_SITE_TITLE} />
-    <meta property="og:image" content={ogImage} />
+    <meta property="og:image" content={absoluteOgImage} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image" content={absoluteOgImage} />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link
