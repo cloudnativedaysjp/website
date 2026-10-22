@@ -1,0 +1,132 @@
+---
+import { FEATURES } from "../features";
+import { getTimetableData } from "../lib/dreamkast/timetable";
+import SessionCard from "./SessionCard.astro";
+
+const showSessions = FEATURES.sessions || FEATURES.timetable;
+const timetables = showSessions ? await getTimetableData() : [];
+const talks = timetables.flatMap((timetable) =>
+  timetable.slots.flatMap((slot) => (slot.kind === "talks" ? slot.talks : [])),
+);
+---
+
+<section class="pt-24">
+  <div class="container mx-auto px-4">
+    <h2 class="text-black relative px-4 text-4xl font-bold mb-16 text-center">
+      見どころ
+    </h2>
+
+    <div class="max-w-5xl mx-auto space-y-16">
+      {
+        showSessions && (
+          <div class="bg-white rounded-xl shadow-md p-6 md:p-10">
+            <h3
+              id="highlights-sessions"
+              class="text-3xl font-bold text-gray-700 mb-6 text-center"
+            >
+              セッション
+            </h3>
+            <p class="text-2xl text-gray-700 leading-relaxed text-center mb-8">
+              全46講演！現場での「リアル」、くまなくお伝えします！
+            </p>
+
+            {talks.length > 0 && (
+              <div
+                role="region"
+                aria-labelledby="highlights-sessions"
+                tabindex="0"
+                data-auto-scroll-sessions
+                class="overflow-x-auto rounded-xl focus-visible:outline focus-visible:outline-2 focus-visible:outline-indigo-600"
+              >
+                <ul class="flex items-start gap-4 pb-4">
+                  {talks.map((talk) => (
+                    <li class="w-72 md:w-96 shrink-0">
+                      <SessionCard talk={talk} headingTag="h4" />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+              {FEATURES.sessions && (
+                <a
+                  href="/sessions"
+                  class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 hover:scale-105 transition-all duration-300"
+                >
+                  セッション一覧を見る！
+                </a>
+              )}
+              {FEATURES.timetable && (
+                <a
+                  href="/timetable/day1"
+                  class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 hover:scale-105 transition-all duration-300"
+                >
+                  タイムテーブルを見る！
+                </a>
+              )}
+            </div>
+          </div>
+        )
+      }
+
+      <div class="bg-white rounded-xl shadow-md p-6 md:p-10 text-center">
+        <h3 class="text-3xl font-bold text-gray-700 mb-6">ハンズオン</h3>
+        <div class="space-y-4 text-lg text-gray-700 leading-relaxed text-left">
+          <p class="text-2xl text-center">大人気企画のハンズオン、今回もやります！</p>
+          <p>
+            クラウドネイティブ技術をこれから学びたい入門者の方向けから、さらに使いこなしたい上級者の方向けまで、多様なハンズオンをご用意しております！
+          </p>
+          <p>経験豊富なメンターと、手を動かしながら一緒に学びましょう！</p>
+        </div>
+        <div class="mt-8">
+          <a
+            href="/handson"
+            class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 hover:scale-105 transition-all duration-300"
+          >
+            詳しくはこちら！
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-6 md:p-10 text-center">
+        <h3 class="text-3xl font-bold text-gray-700 mb-6">Co-located Events</h3>
+        <div class="space-y-4 text-lg text-gray-700 leading-relaxed text-left">
+          <p class="text-2xl text-center">併催イベント！2件あります！</p>
+          <ul class="list-none space-y-4">
+            <li>
+              <h4 class="font-bold">
+                Cloud Native Woman Gathering Meetup in Japan at CNDW2026
+              </h4>
+              <p>
+                Cloud Native分野に関わる女性・ジェンダーマイノリティが、経験や知識、課題を共有できる対話型のイベントです！
+              </p>
+            </li>
+            <li>
+              <h4 class="font-bold">
+                Kubernetes Upstream Training in Japan at CNDW2026
+              </h4>
+              <p>
+                現役メンテナーやコントリビューターと一緒に、Kubernetesコミュニティへのコントリビューションの第一歩を踏み出してみませんか？
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-8">
+          <a
+            href="/co-located"
+            class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 hover:scale-105 transition-all duration-300"
+          >
+            詳しくはこちら！
+          </a>
+        </div>
+      </div>
+
+      <p class="text-2xl text-gray-700 leading-relaxed text-center">
+        まだまだあります！随時公開予定！
+      </p>
+    </div>
+  </div>
+</section>
+
+<script src="../scripts/session-auto-scroll.js"></script>

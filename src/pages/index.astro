@@ -1,8 +1,11 @@
 ---
 import Hero from '../components/Hero.astro'
+import Highlights from '../components/Highlights.astro'
 import LatestPosts from '../components/LatestPosts.astro'
+import MascotPeek from '../components/MascotPeek.astro'
 import Sponsors from '../components/Sponsors.astro'
 import Staff from '../components/Staff.astro'
+import { FEATURES } from '../features'
 import Layout from '../layouts/Layout.astro'
 import MascotPeek from '../components/MascotPeek.astro'
 import { FEATURES } from '../features'
@@ -113,6 +116,8 @@ const jsonLd = [
         </div>
       </div>
     </section>
+
+    <Highlights />
 
     <LatestPosts />
 
