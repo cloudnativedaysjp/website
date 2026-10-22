@@ -7,19 +7,27 @@ export interface Props {
   title: string
   description: string
   url?: URL | undefined
-  ogImage: string
+  ogImage?: string
   isTopPage?: boolean
   jsonLd?: Record<string, unknown>[]
 }
+
+const DEFAULT_OG_IMAGE = '/images/ogp/default.jpg'
 
 const {
   title,
   description,
   url,
-  ogImage,
+  ogImage = DEFAULT_OG_IMAGE,
   isTopPage = false,
   jsonLd = [],
 } = Astro.props
+
+// og:image / twitter:image はクローラーが解決できるよう絶対URLにする
+const resolvedOgImage = ogImage || DEFAULT_OG_IMAGE
+const absoluteOgImage = Astro.site
+  ? new URL(resolvedOgImage, Astro.site).href
+  : resolvedOgImage
 
 const navLinks = [
   FEATURES.timetable && { href: '/timetable/day1', text: 'タイムテーブル' },
@@ -51,11 +59,11 @@ const navLinks = [
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:site_name" content={PUBLIC_SITE_TITLE} />
-    <meta property="og:image" content={ogImage} />
+    <meta property="og:image" content={absoluteOgImage} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:image" content={absoluteOgImage} />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link

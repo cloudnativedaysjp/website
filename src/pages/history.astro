@@ -4,7 +4,6 @@ import Layout from "../layouts/Layout.astro";
 
 const title = "CloudNative Daysの歩み";
 const description = "Japan Container Daysから始まり、CloudNative Daysへと発展してきたイベントの歴史を振り返ります。";
-const ogImage = "/favicon.svg";
 
 // ロゴが存在するイベント一覧
 const eventsWithLogo = [
@@ -298,7 +297,7 @@ const formatLabel = (format: string) => {
 };
 ---
 
-<Layout title={title} description={description} ogImage={ogImage}>
+<Layout title={title} description={description}>
   <main class="pt-24 pb-16">
     <div class="max-w-4xl mx-auto px-4">
       {/* ナビゲーション */}

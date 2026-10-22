@@ -18,7 +18,7 @@ const talks = talkMap.get(abbr || '')
 const title = conference?.name || '';
 const description = conference?.theme || '';
 const url = Astro.url;
-const ogImage = conference?.image || '/favicon.svg';
+const ogImage = conference?.image;
 ---
 
 <Layout title={title} description={description} url={url} ogImage={ogImage}>
