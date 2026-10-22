@@ -44,7 +44,7 @@ const conference = Conferences.find((conference) => conference.abbr == abbr);
 
 const title = talk?.title || "";
 const description = talk?.abstract || "";
-const ogImage = conference?.image || "/favicon.svg";
+const ogImage = conference?.image;
 
 // Get slide embed data if documentUrl exists
 const slideEmbed = talk?.documentUrl ? await getSlideEmbed(talk.documentUrl) : null;

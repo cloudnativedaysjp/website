@@ -59,7 +59,7 @@ const sessionOgpImages = import.meta.glob('/public/images/ogp/sessions/*.jpg', {
   import: 'default',
 })
 const ogpPath = `/images/ogp/sessions/${talk.id}.jpg`
-const ogImage = `/public${ogpPath}` in sessionOgpImages ? ogpPath : '/favicon.svg'
+const ogImage = `/public${ogpPath}` in sessionOgpImages ? ogpPath : undefined
 
 const siteOrigin = Astro.site?.origin ?? 'https://cloudnativedays.jp'
 
