@@ -37,13 +37,15 @@ const ossList = [
   'Hubble',
 ]
 
-// TODO(CNDW2026): 募集開始時に { status: 'open', url: '<申し込みURL>' }、
-// 締め切り後に { status: 'closed' } へ切り替える。
+// TODO(CNDW2026): 締め切り後に { status: 'closed' } へ切り替える。
 type Registration =
   | { status: 'upcoming' }
   | { status: 'open'; url: string }
   | { status: 'closed' }
-const registration: Registration = { status: 'upcoming' }
+const registration: Registration = {
+  status: 'open',
+  url: 'https://event.cloudnativedays.jp/cndw2026/hands-on',
+}
 
 const cancelPolicy = `申し込み後にキャンセルを希望される場合は、お手数ですが、Xでよしたけ（[@yoshitake945](https://x.com/yoshitake945)）までご連絡をお願いします。`
 const cancelPolicyHtml = await marked.parseInline(cancelPolicy)
